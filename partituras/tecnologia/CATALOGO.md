@@ -1,12 +1,14 @@
-# Catálogo de Partituras de Tecnologia
+# 💻 Catálogo · Tecnologia
 
-> **212 templates** de partitura prontos para arrastar para o canvas do Maestri. Cada um traz os terminais com suas responsabilidades já embutidas, as notas compartilhadas (contrato, workboard, findings), os portais de verificação e todas as conexões — é só soltar e reger.
+> Engenharia ponta a ponta: features, bugs, release, infra, dados, IA, migração, mobile.
 
-Para importar tudo de uma vez, use o pacote [`Tecnologia.maestripartituras`](./Tecnologia.maestripartituras) (painel de Partituras → menu ⋯ → **Importar Partituras…**). Para um template só, arraste o `.maestripartitura` correspondente para o canvas ou dê duplo clique no Finder.
+> **212 partituras** nesta área, prontas para arrastar para o canvas do Maestri. Cada uma traz os terminais com responsabilidades embutidas, as notas compartilhadas, os portais de verificação e todas as conexões.
 
-> ⚠️ Adicionar uma partitura ao canvas **inicia os terminais dela e executa os comandos na sua máquina**. Os comandos usam `claude`, `codex`, `gemini` — os agentes que o Maestri espera já instalados. Leia os comandos na tela de revisão antes de importar. Os red teams e qualquer engajamento ofensivo só operam em **escopo autorizado**, nunca em produção e nunca com dados de pessoas reais.
+Importar tudo desta área: pacote [`Tecnologia.maestripartituras`](./Tecnologia.maestripartituras) (painel de Partituras → ⋯ → **Importar Partituras…**). Um template só: arraste o `.maestripartitura` para o canvas.
 
-## Índice por família
+> ⚠️ Adicionar uma partitura ao canvas **inicia os terminais dela e executa os comandos na sua máquina** (`claude`, `codex`, `gemini`). Leia os comandos na tela de revisão antes de importar e só aceite de fontes confiáveis. Red team e qualquer engajamento ofensivo só operam em **escopo autorizado**, nunca em produção e nunca com dados de pessoas reais.
+
+## Famílias
 
 - [AI Feature](#ai-feature) — 7 templates
 - [API Contract](#api-contract) — 4 templates
@@ -32,9 +34,7 @@ Para importar tudo de uma vez, use o pacote [`Tecnologia.maestripartituras`](./T
 - [Validação BFF](#validação-bff) — 8 templates
 - [War Room](#war-room) — 5 templates
 
-## Política de modelos das partituras
-
-Seguindo o catálogo de agentes do projeto: **Fable para orquestração, Opus para execução**. Os maestros/orquestradores sobem em `--model fable`; os especialistas em `--model opus`; os revisores adversariais de release e guardrails usam `codex` (um agente diferente pega o que o outro deixou passar); os duelos misturam `claude`, `codex` e `gemini` de propósito.
+**Política de modelos:** Fable rege, Opus executa, Codex/Gemini contestam. Os maestros sobem em `--model fable`; os especialistas em `--model opus`; a revisão adversarial usa `codex`/`gemini` de propósito — um modelo diferente pega o que o outro deixou passar.
 
 
 ## AI Feature

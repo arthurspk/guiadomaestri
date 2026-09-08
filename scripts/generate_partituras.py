@@ -26,10 +26,39 @@ from maestri_build import (  # noqa: E402
 )
 import roles_lib as R  # noqa: E402
 
-OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "partituras", "tecnologia")
-os.makedirs(OUT, exist_ok=True)
+BASE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "partituras")
 
-# (categoria, nome, slug, icon, color, descricao, [roles], nº nós)
+# Áreas: slug -> (rótulo, emoji, arquivo do pacote coletivo, uma linha de descrição).
+# Espelham as divisões de catálogos de agentes como o agency-agents, adaptadas
+# ao Maestri (orquestração de agentes num canvas, com notas e portais).
+AREAS = {
+    "tecnologia": ("Tecnologia", "💻", "Tecnologia.maestripartituras",
+                   "Engenharia ponta a ponta: features, bugs, release, infra, dados, IA, migração, mobile."),
+    "design": ("Design & UX", "🎨", "Design.maestripartituras",
+               "Design systems, pesquisa de UX, landing pages e auditoria de interface."),
+    "produto": ("Produto", "📦", "Produto.maestripartituras",
+                "Discovery, roadmap, PRD, síntese de feedback e análise de concorrência."),
+    "marketing": ("Marketing & Conteúdo", "📢", "Marketing.maestripartituras",
+                  "Campanhas, SEO/conteúdo, social, e-mail de ciclo de vida e blog técnico."),
+    "vendas": ("Vendas", "💼", "Vendas.maestripartituras",
+               "Prospecção outbound, propostas/RFP, sales enablement e preparo de discovery."),
+    "dados": ("Dados & Analytics", "📊", "Dados.maestripartituras",
+              "Dashboards de BI, análise exploratória, modelagem de métricas e experimentos A/B."),
+    "seguranca": ("Segurança & Compliance", "🔒", "Seguranca.maestripartituras",
+                  "LGPD, prontidão SOC 2, threat modeling e resposta a incidente de segurança."),
+    "financeiro": ("Financeiro", "💵", "Financeiro.maestripartituras",
+                   "Fechamento contábil, modelagem financeira, FP&A/orçamento e due diligence."),
+    "juridico": ("Jurídico", "⚖️", "Juridico.maestripartituras",
+                 "Revisão de contrato, intake de cliente e análise de risco/compliance."),
+    "suporte": ("Suporte & Sucesso", "🛟", "Suporte.maestripartituras",
+                "Base de conhecimento, triagem de tickets, onboarding e health/churn."),
+    "gestao": ("Gestão de Projetos", "🗂️", "Gestao.maestripartituras",
+               "Planejamento de sprint, coordenação multi-time, ata de reunião e retrospectiva."),
+    "pesquisa": ("Pesquisa & Conteúdo Técnico", "🔬", "Pesquisa.maestripartituras",
+                 "Estado da arte, síntese de pesquisa e análise competitiva de mercado."),
+}
+
+# (area_slug, categoria, nome, slug, icon, color, descricao, [roles], nº nós)
 CATALOG = []
 
 
@@ -46,13 +75,15 @@ def slugify(s):
     return slug.strip("-")
 
 
-def save(p, category):
+def save(p, category, area="tecnologia"):
     d = p.to_dict()
     slug = slugify(p.name)
-    path = os.path.join(OUT, slug + ".maestripartitura")
+    out = os.path.join(BASE, area)
+    os.makedirs(out, exist_ok=True)
+    path = os.path.join(out, slug + ".maestripartitura")
     with open(path, "w", encoding="utf-8") as f:
         json.dump(d, f, ensure_ascii=False, indent=2)
-    CATALOG.append((category, p.name, slug, p.icon, p.color, p.description,
+    CATALOG.append((area, category, p.name, slug, p.icon, p.color, p.description,
                     [r["name"] for r in d["roles"]], len(d["payload"]["nodes"])))
     return d
 
@@ -1123,6 +1154,398 @@ def fam_incident(inc):
 
 
 # ===========================================================================
+# ÁREAS DE NEGÓCIO — times genéricos (não-código) inspirados nas divisões de
+# catálogos de agentes como o agency-agents, adaptados ao Maestri.
+# ===========================================================================
+
+def _area_team(area, name, description, icon, ck, orchestrator_domain, deliverable,
+               strategist_focus, specialists, reviewer_lane, category,
+               portal_url="https://example.com", portal_name="Verificação",
+               reviewer_cmd=CMD_CODEX, extra_orch=""):
+    """Monta um time de área: Maestro (fable) + Estrategista (opus) + N
+    especialistas (opus) + Revisor (codex/gemini), com briefing + board + findings
+    e um portal para verificação viva na web. `specialists` é uma lista de
+    (role_name, prompt, colorkey, terminal_name)."""
+    p = Partitura(name=name, description=description, icon=icon, color=COLORS[ck])
+    area_label = AREAS[area][0]
+    p.role("Maestro", R.area_orchestrator(area_label.lower(), deliverable, extra=extra_orch),
+           color=COLORS["pink"])
+    p.role("Estrategista", R.area_strategist(area_label.lower(), strategist_focus),
+           color=COLORS["indigo"])
+    for rn, pr, cc, _tn in specialists:
+        p.role(rn, pr, color=COLORS[cc])
+    p.role("Revisor", R.area_reviewer(area_label.lower(), reviewer_lane), color=COLORS["orange"])
+
+    n_workers = len(specialists) + 2
+    m = p.terminal("Maestro", role="Maestro", manager=True, command=CMD_FABLE)
+    pos = grid_positions(n_workers, cols=4, gx=940, gy=780, y0=820)
+    tids = [p.terminal("Estrategista · briefing", role="Estrategista", command=CMD_OPUS,
+                       x=pos[0][0], y=pos[0][1])]
+    for i, (rn, _pr, _cc, tn) in enumerate(specialists, start=1):
+        tids.append(p.terminal(tn, role=rn, command=CMD_OPUS, x=pos[i][0], y=pos[i][1]))
+    wd = p.terminal("Revisor · achados", role="Revisor", command=reviewer_cmd,
+                    x=pos[n_workers - 1][0], y=pos[n_workers - 1][1])
+    tids.append(wd)
+
+    brief = p.note("briefing.md", R.AREA_BRIEF_EMPTY, x=1300, y=-380, color="blue")
+    board = p.note("board.md", R.AREA_BOARD_EMPTY, x=1880, y=-380, color="green")
+    findings = p.note("findings.md", R.AREA_FINDINGS_EMPTY, x=1300, y=-40, color="yellow")
+    portal = p.portal(portal_name, portal_url, x=-1460, y=-1080)
+
+    hub_layout(p, m, tids, note_nodes=[brief, board, findings])
+    p.connect_portal(p.portal_node_id(portal_name), m)
+    p.connect_portal(p.portal_node_id(portal_name), wd)
+    return save(p, category, area=area)
+
+
+def _sp(area, title, focus, cc, tn, rules=""):
+    return (title, R.area_specialist(area, title, focus, rules=rules), cc, tn)
+
+
+# ---- Design & UX ----------------------------------------------------------
+DESIGN = [
+    ("Design System", "biblioteca de componentes, tokens e documentação viva", "purple", "square.grid.2x2"),
+    ("Redesign de Fluxo", "repensar um fluxo confuso ponta a ponta com base em evidência", "blue", "arrow.triangle.branch"),
+    ("Pesquisa de UX", "entrevistas, testes de usabilidade e síntese de insights", "teal", "person.2"),
+    ("Landing Page", "página de conversão: proposta de valor, prova, CTA", "orange", "rectangle.on.rectangle"),
+    ("Auditoria de UI", "auditar consistência visual, hierarquia e acessibilidade", "pink", "magnifyingglass"),
+]
+
+
+def fam_design(v):
+    name_short, desc, ck, icon = v
+    return _area_team(
+        "design", f"Design & UX · {name_short}",
+        f"Time de design para {desc}. Estrategista escreve o briefing, especialistas produzem, "
+        f"o revisor confere consistência e acessibilidade ao vivo no portal.",
+        icon, ck, f"design ({name_short})", "um design pronto e verificado",
+        f"design de {name_short}: {desc}",
+        [
+            _sp("design", "UI Designer", f"Você desenha a interface de {name_short}: {desc}. "
+                "Hierarquia visual, tokens, estados, consistência.", "blue", "Pixel · UI",
+                rules="- Acessibilidade (contraste, foco, alvos de toque) é requisito, não enfeite."),
+            _sp("design", "UX Researcher", f"Você embasa {name_short} em evidência de usuário: "
+                "hipóteses, testes, síntese. Sem inventar dado de pesquisa.", "teal", "Lens · UX",
+                rules="- Todo insight rastreia até uma observação real; opinião é marcada como opinião."),
+        ],
+        "consistência visual e acessibilidade", "Design & UX",
+        portal_url="http://localhost:5173", portal_name="Preview/Figma",
+        reviewer_cmd=CMD_GEMINI,
+    )
+
+
+# ---- Produto --------------------------------------------------------------
+PRODUTO = [
+    ("Discovery", "descobrir o problema certo antes de construir a solução", "indigo", "sparkles"),
+    ("Roadmap & Priorização", "priorizar por impacto e esforço com critério explícito", "blue", "list.number"),
+    ("PRD / Spec", "escrever o documento de requisitos que o time constrói sem drift", "green", "doc.text"),
+    ("Síntese de Feedback", "transformar feedback bruto em temas e decisões", "orange", "bubble.left.and.bubble.right"),
+    ("Análise de Concorrência", "mapear concorrentes, lacunas e posicionamento", "purple", "chart.bar.doc.horizontal"),
+]
+
+
+def fam_product(v):
+    name_short, desc, ck, icon = v
+    return _area_team(
+        "produto", f"Produto · {name_short}",
+        f"Time de produto para {desc}. Do problema ao documento, com evidência e revisão adversarial.",
+        icon, ck, f"produto ({name_short})", "uma decisão de produto sustentada",
+        f"produto: {name_short} — {desc}",
+        [
+            _sp("produto", "Product Manager", f"Você conduz {name_short}: {desc}. Foca no problema, "
+                "no usuário e no resultado, não na feature favorita.", "blue", "Compass · PM",
+                rules="- Toda prioridade tem um porquê explícito (impacto × esforço × risco)."),
+            _sp("produto", "Product Analyst", f"Você traz os dados de {name_short}: métricas, "
+                "feedback, concorrência. Números com fonte, não palpite.", "green", "Signal · dados",
+                rules="- Nenhuma afirmação de mercado sem fonte; o que não dá pra sustentar vira pergunta."),
+        ],
+        "clareza do problema e sustentação por evidência", "Produto",
+        portal_url="https://news.ycombinator.com", portal_name="Mercado/Concorrência",
+    )
+
+
+# ---- Marketing & Conteúdo -------------------------------------------------
+MARKETING = [
+    ("Campanha de Lançamento", "planejar e executar um lançamento multicanal", "orange", "megaphone"),
+    ("SEO & Conteúdo", "estratégia de conteúdo orientada a busca e intenção", "green", "magnifyingglass"),
+    ("Social Media", "calendário e peças para redes, por plataforma", "pink", "bubble.left"),
+    ("E-mail de Ciclo de Vida", "sequências de onboarding, ativação e retenção", "blue", "envelope"),
+    ("Blog Técnico", "artigo técnico correto, útil e verificado contra o código", "indigo", "doc.richtext"),
+]
+
+
+def fam_marketing(v):
+    name_short, desc, ck, icon = v
+    return _area_team(
+        "marketing", f"Marketing · {name_short}",
+        f"Time de marketing/conteúdo para {desc}. Briefing de mensagem, produção em paralelo, "
+        f"revisão de marca e fato, verificação viva no portal.",
+        icon, ck, f"marketing ({name_short})", "conteúdo pronto e alinhado à marca",
+        f"marketing: {name_short} — {desc}",
+        [
+            _sp("marketing", "Content Strategist", f"Você define ângulo e estrutura de {name_short}: "
+                f"{desc}. Mensagem clara para o público certo.", "orange", "Angle · estratégia",
+                rules="- O ângulo serve ao público e ao objetivo, não ao hype."),
+            _sp("marketing", "Copywriter", f"Você escreve as peças de {name_short}: claras, honestas, "
+                "no tom da marca. Sem promessa que o produto não cumpre.", "pink", "Ink · copy",
+                rules="- Nada de claim sem lastro; afirmação factual passa pelo revisor."),
+        ],
+        "alinhamento de marca e exatidão factual", "Marketing & Conteúdo",
+        portal_url="https://example.com", portal_name="Peça publicada",
+        reviewer_cmd=CMD_GEMINI,
+    )
+
+
+# ---- Vendas ---------------------------------------------------------------
+VENDAS = [
+    ("Prospecção Outbound", "sequências multicanal baseadas em sinal", "green", "paperplane"),
+    ("Proposta / RFP", "resposta a RFP com temas de ganho e prova", "blue", "doc.text"),
+    ("Sales Enablement", "materiais que ajudam o time a vender melhor", "orange", "books.vertical"),
+    ("Preparo de Discovery", "roteiro de descoberta e qualificação (SPIN/MEDDPICC)", "purple", "list.bullet.clipboard"),
+]
+
+
+def fam_sales(v):
+    name_short, desc, ck, icon = v
+    return _area_team(
+        "vendas", f"Vendas · {name_short}",
+        f"Time de vendas para {desc}. Mensagem sob medida, produção em paralelo, revisão de "
+        f"precisão e conformidade.",
+        icon, ck, f"vendas ({name_short})", "material de vendas pronto e preciso",
+        f"vendas: {name_short} — {desc}",
+        [
+            _sp("vendas", "Account Strategist", f"Você desenha a abordagem de {name_short}: {desc}. "
+                "Foco no problema do cliente, não no seu produto.", "blue", "Reach · estratégia",
+                rules="- Personalização por sinal real; nada de spray-and-pray."),
+            _sp("vendas", "Sales Writer", f"Você escreve as peças de {name_short}: diretas, "
+                "específicas, honestas. Sem promessa fora do que foi aprovado.", "orange", "Pitch · copy",
+                rules="- Nenhum número ou caso de cliente sem aprovação e fonte."),
+        ],
+        "precisão da mensagem e conformidade", "Vendas",
+        portal_url="https://example.com", portal_name="Conta/Concorrente",
+    )
+
+
+# ---- Dados & Analytics ----------------------------------------------------
+DADOS = [
+    ("Dashboard de BI", "painel confiável com métricas definidas e testadas", "blue", "chart.bar"),
+    ("Análise Exploratória", "explorar dados para responder uma pergunta de negócio", "purple", "chart.xyaxis.line"),
+    ("Modelagem de Métricas", "definir métricas em dbt/semantic layer, sem ambiguidade", "green", "function"),
+    ("Experimento A/B", "desenhar, rodar e ler um experimento com rigor estatístico", "orange", "flask"),
+]
+
+
+def fam_analytics(v):
+    name_short, desc, ck, icon = v
+    return _area_team(
+        "dados", f"Dados & Analytics · {name_short}",
+        f"Time de dados para {desc}. Definição antes de número, análise em paralelo, revisão "
+        f"estatística adversarial. Nenhum número sem fonte e definição.",
+        icon, ck, f"analytics ({name_short})", "uma análise confiável e reprodutível",
+        f"analytics: {name_short} — {desc}",
+        [
+            _sp("dados", "Data Analyst", f"Você produz {name_short}: {desc}. Toda métrica tem "
+                "definição escrita e query reproduzível.", "blue", "Query · análise",
+                rules="- Nenhum número no dashboard sem definição e fonte rastreável."),
+            _sp("dados", "Analytics Engineer", f"Você modela e testa os dados de {name_short}: "
+                "camada semântica, testes de dados, freshness.", "green", "Model · dbt",
+                rules="- Um teste de dados que nunca falha não prova nada; teste os casos ruins."),
+        ],
+        "corretude estatística e reprodutibilidade", "Dados & Analytics",
+        portal_url="http://localhost:3000", portal_name="Dashboard/Notebook",
+    )
+
+
+# ---- Segurança & Compliance (governança, distinto do Red Team técnico) ----
+SEGURANCA = [
+    ("Auditoria LGPD", "mapear dados pessoais, bases legais e direitos do titular", "red", "lock.shield"),
+    ("Prontidão SOC 2", "levantar controles, gaps e evidências para SOC 2", "orange", "checkmark.shield"),
+    ("Threat Modeling", "modelar ameaças de um sistema (STRIDE) e mitigações", "pink", "exclamationmark.shield"),
+    ("Resposta a Incidente (SecOps)", "playbook e condução de um incidente de segurança", "purple", "bell.badge"),
+]
+
+
+def fam_compliance(v):
+    name_short, desc, ck, icon = v
+    return _area_team(
+        "seguranca", f"Segurança & Compliance · {name_short}",
+        f"Time de segurança/governança para {desc}. Levanta, documenta e recomenda — achados com "
+        f"evidência, nunca alegação sem lastro. Só escopo autorizado.",
+        icon, ck, f"segurança e compliance ({name_short})", "um relatório de conformidade acionável",
+        f"segurança/compliance: {name_short} — {desc}",
+        [
+            _sp("seguranca", "Compliance Analyst", f"Você conduz {name_short}: {desc}. Mapeia contra "
+                "o framework, aponta gaps com evidência e recomenda remediação.", "red", "Ledger · controles",
+                rules="- Um controle só é 'atendido' com evidência; intenção não conta. Só escopo autorizado."),
+            _sp("seguranca", "Security Architect", f"Você avalia o desenho de {name_short} por risco: "
+                "superfícies, confiança, dados sensíveis, mitigações.", "orange", "Bastion · risco",
+                rules="- Nunca exponha exploit; o produto é achado + mitigação, não dano."),
+        ],
+        "rastreabilidade de evidência e escopo", "Segurança & Compliance",
+        portal_url="https://example.com", portal_name="Sistema (autorizado)",
+    )
+
+
+# ---- Financeiro -----------------------------------------------------------
+FINANCEIRO = [
+    ("Fechamento Mensal", "conciliação e fechamento com trilha de auditoria", "green", "calendar"),
+    ("Modelagem Financeira", "modelo de projeção com premissas explícitas e cenários", "blue", "chart.line.uptrend.xyaxis"),
+    ("FP&A / Orçamento", "orçamento, forecast e análise de variação", "orange", "chart.pie"),
+    ("Due Diligence", "análise de valuation e riscos de um investimento", "purple", "doc.text.magnifyingglass"),
+]
+
+
+def fam_finance(v):
+    name_short, desc, ck, icon = v
+    return _area_team(
+        "financeiro", f"Financeiro · {name_short}",
+        f"Time financeiro para {desc}. Premissa antes de número, análise em paralelo, revisão "
+        f"adversarial de premissas e aritmética. Nenhum número sem fonte.",
+        icon, ck, f"financeiro ({name_short})", "uma análise financeira sustentada",
+        f"financeiro: {name_short} — {desc}",
+        [
+            _sp("financeiro", "Financial Analyst", f"Você produz {name_short}: {desc}. Premissas "
+                "explícitas, cenários, aritmética conferível.", "blue", "Model · análise",
+                rules="- Toda premissa é declarada; nenhum número aparece sem fonte ou cálculo mostrado."),
+            _sp("financeiro", "Controller", f"Você garante a integridade contábil de {name_short}: "
+                "conciliação, trilha de auditoria, conformidade com a norma.", "green", "Ledger · controle",
+                rules="- O que não fecha vira achado, não é arredondado para fechar."),
+        ],
+        "integridade de premissas e aritmética", "Financeiro",
+        portal_url="http://localhost:3000", portal_name="Planilha/Painel",
+    )
+
+
+# ---- Jurídico -------------------------------------------------------------
+JURIDICO = [
+    ("Revisão de Contrato", "revisar cláusulas, riscos e desvios do padrão", "indigo", "doc.text"),
+    ("Intake de Cliente", "qualificar e triar um novo caso com checagem de conflito", "blue", "person.badge.plus"),
+    ("Análise de Risco & Compliance", "avaliar exposição regulatória e recomendar mitigação", "red", "exclamationmark.triangle"),
+]
+
+
+def fam_legal(v):
+    name_short, desc, ck, icon = v
+    return _area_team(
+        "juridico", f"Jurídico · {name_short}",
+        f"Time jurídico de apoio para {desc}. Analisa, sinaliza risco e recomenda — não substitui "
+        f"parecer de advogado responsável. Achados com base, nunca invenção.",
+        icon, ck, f"jurídico ({name_short})", "uma análise jurídica de apoio, sinalizada",
+        f"jurídico: {name_short} — {desc}",
+        [
+            _sp("juridico", "Legal Analyst", f"Você conduz {name_short}: {desc}. Aponta cláusulas, "
+                "riscos e desvios com referência ao texto e ao padrão.", "indigo", "Clause · análise",
+                rules="- Toda sinalização cita o trecho; nada de interpretação sem âncora no documento. "
+                      "Isto é apoio, não parecer final: recomende revisão humana."),
+            _sp("juridico", "Compliance Reviewer", f"Você checa {name_short} contra a norma aplicável: "
+                "o que exige atenção, o que é bloqueante.", "red", "Statute · compliance",
+                rules="- Não invente jurisprudência nem artigo; o que não confirmar, marca a confirmar."),
+        ],
+        "fundamentação e sinalização de risco", "Jurídico",
+        portal_url="https://example.com", portal_name="Fonte legal",
+    )
+
+
+# ---- Suporte & Sucesso ----------------------------------------------------
+SUPORTE = [
+    ("Base de Conhecimento", "artigos de ajuda claros e verificados contra o produto", "teal", "questionmark.circle"),
+    ("Triagem de Tickets", "classificar, priorizar e rotear tickets com playbook", "blue", "tray.full"),
+    ("Onboarding de Cliente", "levar o cliente ao primeiro valor rápido", "green", "figure.walk"),
+    ("Health Score & Churn", "medir saúde da conta e agir antes do churn", "orange", "heart.text.square"),
+]
+
+
+def fam_support(v):
+    name_short, desc, ck, icon = v
+    return _area_team(
+        "suporte", f"Suporte & Sucesso · {name_short}",
+        f"Time de suporte/sucesso para {desc}. Playbook antes de resposta, execução em paralelo, "
+        f"revisão de exatidão e tom. Nada de resposta que o produto não sustenta.",
+        icon, ck, f"suporte e sucesso ({name_short})", "uma resposta/artefato de suporte confiável",
+        f"suporte/sucesso: {name_short} — {desc}",
+        [
+            _sp("suporte", "Support Specialist", f"Você produz {name_short}: {desc}. Empático, claro "
+                "e correto; verifica o comportamento real antes de afirmar.", "teal", "Aid · suporte",
+                rules="- Nenhuma instrução que você não verificou no produto; passo a passo é testado."),
+            _sp("suporte", "Customer Success Manager", f"Você olha {name_short} pela lente de "
+                "retenção: valor, saúde da conta, próximos passos.", "orange", "Anchor · sucesso",
+                rules="- Sinal de churn é achado acionável, não observação solta."),
+        ],
+        "exatidão da resposta e tom", "Suporte & Sucesso",
+        portal_url="http://localhost:5173", portal_name="Produto/Central de ajuda",
+        reviewer_cmd=CMD_GEMINI,
+    )
+
+
+# ---- Gestão de Projetos ---------------------------------------------------
+GESTAO = [
+    ("Planejamento de Sprint", "converter objetivos em um sprint realista e priorizado", "blue", "calendar.badge.clock"),
+    ("Coordenação Multi-time", "alinhar dependências entre times com donos e datas", "indigo", "point.3.connected.trianglepath.dotted"),
+    ("Ata de Reunião", "transformar uma reunião em decisões e ações com dono", "green", "text.badge.checkmark"),
+    ("Retrospectiva", "conduzir uma retro que gera ações concretas, sem culpa", "purple", "arrow.triangle.2.circlepath"),
+]
+
+
+def fam_pmo(v):
+    name_short, desc, ck, icon = v
+    return _area_team(
+        "gestao", f"Gestão · {name_short}",
+        f"Time de gestão de projetos para {desc}. Plano antes de execução, coordenação em paralelo, "
+        f"revisão de realismo e clareza. Toda ação tem dono e data.",
+        icon, ck, f"gestão de projetos ({name_short})", "um plano/artefato de gestão acionável",
+        f"gestão: {name_short} — {desc}",
+        [
+            _sp("gestao", "Project Manager", f"Você conduz {name_short}: {desc}. Escopo realista, "
+                "dependências mapeadas, cada item com dono e critério de pronto.", "blue", "Plan · PM",
+                rules="- Nada de tarefa órfã; toda ação tem dono, data e definição de pronto."),
+            _sp("gestao", "Scrum Facilitator", f"Você facilita {name_short} sem virar dono do "
+                "trabalho: remove impedimento, mantém o ritmo, protege o foco.", "purple", "Cadence · facilitação",
+                rules="- Facilita, não decide pelo time; decisões ficam registradas na nota."),
+        ],
+        "realismo do plano e clareza de posse", "Gestão de Projetos",
+        portal_url="http://localhost:3000", portal_name="Board/Jira",
+    )
+
+
+# ---- Pesquisa & Conteúdo Técnico ------------------------------------------
+PESQUISA = [
+    ("Estado da Arte", "levantar e sintetizar o que já existe sobre um tema", "indigo", "books.vertical"),
+    ("Síntese de Pesquisa", "transformar muitas fontes em uma síntese confiável e citada", "blue", "doc.on.doc"),
+    ("Análise de Mercado", "mapear um mercado, players e tendências com fontes", "green", "chart.bar.doc.horizontal"),
+]
+
+
+def fam_research(v):
+    name_short, desc, ck, icon = v
+    return _area_team(
+        "pesquisa", f"Pesquisa · {name_short}",
+        f"Time de pesquisa para {desc}. Pergunta antes de coleta, síntese em paralelo, revisão "
+        f"crítica de fontes. Toda afirmação é citada; nada de fonte inventada.",
+        icon, ck, f"pesquisa ({name_short})", "uma síntese confiável e citada",
+        f"pesquisa: {name_short} — {desc}",
+        [
+            _sp("pesquisa", "Researcher", f"Você conduz {name_short}: {desc}. Fontes primárias "
+                "quando dá, cada afirmação com citação, sem extrapolar.", "indigo", "Cite · pesquisa",
+                rules="- Nenhuma fonte inventada; distinga o que a fonte diz do que você infere."),
+            _sp("pesquisa", "Synthesist", f"Você organiza {name_short} numa síntese útil: "
+                "estrutura, contradições entre fontes, lacunas.", "blue", "Weave · síntese",
+                rules="- Contradição entre fontes é registrada, não escondida atrás de uma média."),
+        ],
+        "qualidade e rastreabilidade das fontes", "Pesquisa & Conteúdo Técnico",
+        portal_url="https://scholar.google.com", portal_name="Fontes",
+        reviewer_cmd=CMD_GEMINI,
+    )
+
+
+NEW_AREA_FAMILIES = [
+    (DESIGN, fam_design), (PRODUTO, fam_product), (MARKETING, fam_marketing),
+    (VENDAS, fam_sales), (DADOS, fam_analytics), (SEGURANCA, fam_compliance),
+    (FINANCEIRO, fam_finance), (JURIDICO, fam_legal), (SUPORTE, fam_support),
+    (GESTAO, fam_pmo), (PESQUISA, fam_research),
+]
+
+
+# ===========================================================================
 # Runner
 # ===========================================================================
 
@@ -1171,61 +1594,123 @@ def main():
     for inc in INCIDENTS:
         fam_incident(inc)
 
-    # Pacote coletivo .maestripartituras
-    all_parts = []
-    for _, _, slug, *_ in CATALOG:
-        with open(os.path.join(OUT, slug + ".maestripartitura"), encoding="utf-8") as f:
-            all_parts.append(json.load(f))
-    with open(os.path.join(OUT, "Tecnologia.maestripartituras"), "w", encoding="utf-8") as f:
-        json.dump(pack(all_parts), f, ensure_ascii=False, indent=2)
+    # Áreas de negócio (não-código)
+    for variants, fam in NEW_AREA_FAMILIES:
+        for v in variants:
+            fam(v)
 
-    _write_catalog()
+    # Pacotes coletivos por área + catálogos + índice mestre
+    _write_packs()
+    for area in AREAS:
+        _write_area_catalog(area)
+    _write_master_catalog()
 
-    print(f"Gerados {len(CATALOG)} templates de partitura.")
-    cats = Counter(c[0] for c in CATALOG)
-    for k, v in sorted(cats.items(), key=lambda x: (-x[1], x[0])):
-        print(f"  {v:3d}  {k}")
+    print(f"Gerados {len(CATALOG)} templates de partitura em {len({c[0] for c in CATALOG})} áreas.")
+    per_area = Counter(c[0] for c in CATALOG)
+    for area in AREAS:
+        if per_area.get(area):
+            print(f"  {per_area[area]:3d}  {AREAS[area][0]}")
     return CATALOG
 
 
-def _write_catalog():
+def _write_packs():
+    """Um pacote .maestripartituras por área + um pacote mestre com tudo."""
+    everything = []
+    for area, (_label, _emoji, packfile, _d) in AREAS.items():
+        parts = []
+        for row in CATALOG:
+            if row[0] != area:
+                continue
+            with open(os.path.join(BASE, area, row[3] + ".maestripartitura"), encoding="utf-8") as f:
+                obj = json.load(f)
+            parts.append(obj)
+            everything.append(obj)
+        if parts:
+            with open(os.path.join(BASE, area, packfile), "w", encoding="utf-8") as f:
+                json.dump(pack(parts), f, ensure_ascii=False, indent=2)
+    with open(os.path.join(BASE, "Guia-do-Maestri.maestripartituras"), "w", encoding="utf-8") as f:
+        json.dump(pack(everything), f, ensure_ascii=False, indent=2)
+
+
+_MODELS_NOTE = (
+    "**Política de modelos:** Fable rege, Opus executa, Codex/Gemini contestam. Os maestros "
+    "sobem em `--model fable`; os especialistas em `--model opus`; a revisão adversarial usa "
+    "`codex`/`gemini` de propósito — um modelo diferente pega o que o outro deixou passar.\n"
+)
+
+_SAFETY_NOTE = (
+    "> ⚠️ Adicionar uma partitura ao canvas **inicia os terminais dela e executa os comandos na "
+    "sua máquina** (`claude`, `codex`, `gemini`). Leia os comandos na tela de revisão antes de "
+    "importar e só aceite de fontes confiáveis. Red team e qualquer engajamento ofensivo só "
+    "operam em **escopo autorizado**, nunca em produção e nunca com dados de pessoas reais.\n"
+)
+
+
+def _rows_for_area(area):
+    return [r for r in CATALOG if r[0] == area]
+
+
+def _write_area_catalog(area):
+    rows = _rows_for_area(area)
+    if not rows:
+        return
+    label, emoji, packfile, area_desc = AREAS[area]
     by_cat = defaultdict(list)
-    for cat, name, slug, icon, color, desc, roles, nn in CATALOG:
-        by_cat[cat].append((name, slug, icon, color, desc, roles, nn))
-    lines = []
-    lines.append("# Catálogo de Partituras de Tecnologia\n")
-    lines.append(f"> **{len(CATALOG)} templates** de partitura prontos para arrastar para o canvas "
-                 "do Maestri. Cada um traz os terminais com suas responsabilidades já embutidas, as "
-                 "notas compartilhadas (contrato, workboard, findings), os portais de verificação e "
-                 "todas as conexões — é só soltar e reger.\n")
-    lines.append("Para importar tudo de uma vez, use o pacote "
-                 "[`Tecnologia.maestripartituras`](./Tecnologia.maestripartituras) "
-                 "(painel de Partituras → menu ⋯ → **Importar Partituras…**). Para um template só, "
-                 "arraste o `.maestripartitura` correspondente para o canvas ou dê duplo clique no Finder.\n")
-    lines.append("> ⚠️ Adicionar uma partitura ao canvas **inicia os terminais dela e executa os "
-                 "comandos na sua máquina**. Os comandos usam `claude`, `codex`, `gemini` — os agentes "
-                 "que o Maestri espera já instalados. Leia os comandos na tela de revisão antes de "
-                 "importar. Os red teams e qualquer engajamento ofensivo só operam em **escopo "
-                 "autorizado**, nunca em produção e nunca com dados de pessoas reais.\n")
-    lines.append("## Índice por família\n")
+    for _a, cat, name, slug, icon, color, desc, roles, nn in rows:
+        by_cat[cat].append((name, slug, desc, roles, nn))
+    lines = [f"# {emoji} Catálogo · {label}\n", f"> {area_desc}\n",
+             f"> **{len(rows)} partituras** nesta área, prontas para arrastar para o canvas do "
+             "Maestri. Cada uma traz os terminais com responsabilidades embutidas, as notas "
+             "compartilhadas, os portais de verificação e todas as conexões.\n",
+             f"Importar tudo desta área: pacote [`{packfile}`](./{packfile}) "
+             "(painel de Partituras → ⋯ → **Importar Partituras…**). Um template só: arraste o "
+             "`.maestripartitura` para o canvas.\n",
+             _SAFETY_NOTE, "## Famílias\n"]
     for cat in sorted(by_cat):
         lines.append(f"- [{cat}](#{slugify(cat)}) — {len(by_cat[cat])} templates")
     lines.append("")
-    lines.append("## Política de modelos das partituras\n")
-    lines.append("Seguindo o catálogo de agentes do projeto: **Fable para orquestração, Opus para "
-                 "execução**. Os maestros/orquestradores sobem em `--model fable`; os especialistas em "
-                 "`--model opus`; os revisores adversariais de release e guardrails usam `codex` (um "
-                 "agente diferente pega o que o outro deixou passar); os duelos misturam `claude`, "
-                 "`codex` e `gemini` de propósito.\n")
+    lines.append(_MODELS_NOTE)
     for cat in sorted(by_cat):
         lines.append(f"\n## {cat}\n")
         lines.append("| Partitura | Responsabilidades | Nós | Arquivo |")
         lines.append("|---|---|---|---|")
-        for name, slug, icon, color, desc, roles, nn in sorted(by_cat[cat]):
-            roles_str = " · ".join(roles)
-            lines.append(f"| **{name}**<br><sub>{desc}</sub> | {roles_str} | {nn} | "
+        for name, slug, desc, roles, nn in sorted(by_cat[cat]):
+            lines.append(f"| **{name}**<br><sub>{desc}</sub> | {' · '.join(roles)} | {nn} | "
                          f"[`{slug}`](./{slug}.maestripartitura) |")
-    with open(os.path.join(OUT, "CATALOGO.md"), "w", encoding="utf-8") as f:
+    with open(os.path.join(BASE, area, "CATALOGO.md"), "w", encoding="utf-8") as f:
+        f.write("\n".join(lines) + "\n")
+
+
+def _write_master_catalog():
+    total = len(CATALOG)
+    per_area = Counter(c[0] for c in CATALOG)
+    fams_per_area = {a: len({r[1] for r in CATALOG if r[0] == a}) for a in AREAS}
+    lines = ["# 🎼 Catálogo de Partituras — por área\n",
+             f"> **{total} partituras** de Maestri, divididas em "
+             f"**{sum(1 for a in AREAS if per_area.get(a))} áreas**. Cada área tem o seu próprio "
+             "catálogo detalhado e um pacote coletivo para importar de uma vez.\n",
+             "Importar **tudo** (todas as áreas): pacote "
+             "[`Guia-do-Maestri.maestripartituras`](./Guia-do-Maestri.maestripartituras).\n",
+             _SAFETY_NOTE, "## Áreas\n",
+             "| Área | Partituras | Famílias | Catálogo | Pacote |",
+             "|---|:--:|:--:|---|---|"]
+    for area, (label, emoji, packfile, _d) in AREAS.items():
+        if not per_area.get(area):
+            continue
+        lines.append(f"| {emoji} **{label}** | {per_area[area]} | {fams_per_area[area]} | "
+                     f"[abrir](./{area}/CATALOGO.md) | [`{packfile}`](./{area}/{packfile}) |")
+    lines.append("")
+    lines.append(_MODELS_NOTE)
+    lines.append("## O que cada área cobre\n")
+    for area, (label, emoji, _pf, area_desc) in AREAS.items():
+        if not per_area.get(area):
+            continue
+        cats = sorted({r[1] for r in CATALOG if r[0] == area})
+        lines.append(f"### {emoji} {label}")
+        lines.append(f"{area_desc}")
+        lines.append(f"Famílias: {', '.join(cats)}.")
+        lines.append(f"→ [Catálogo de {label}](./{area}/CATALOGO.md)\n")
+    with open(os.path.join(BASE, "CATALOGO.md"), "w", encoding="utf-8") as f:
         f.write("\n".join(lines) + "\n")
 
 

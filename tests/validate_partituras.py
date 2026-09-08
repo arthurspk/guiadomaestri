@@ -24,7 +24,7 @@ import os
 import sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-OUT = os.path.join(ROOT, "partituras", "tecnologia")
+PART = os.path.join(ROOT, "partituras")
 REF = os.path.join(ROOT, "referencia", "partituras-oficiais", "Money_Send_Pipeline.maestripartitura")
 
 
@@ -42,7 +42,7 @@ def main():
     for n in ref["payload"]["nodes"]:
         ref_inner.setdefault(_node_kind(n), set(n["content"][_node_kind(n)]["_0"].keys()))
 
-    files = sorted(glob.glob(os.path.join(OUT, "*.maestripartitura")))
+    files = sorted(glob.glob(os.path.join(PART, "*", "*.maestripartitura")))
     if not files:
         print("FALHA: nenhum .maestripartitura encontrado — rode o gerador primeiro.")
         return 1
@@ -111,16 +111,33 @@ def main():
             if c["noteNodeIdA"] not in node_ids or c["noteNodeIdB"] not in node_ids:
                 errors.append(f"{name}: noteToNoteConnection aponta para id inexistente")
 
-    # Pacote coletivo
-    packpath = os.path.join(OUT, "Tecnologia.maestripartituras")
-    if not os.path.exists(packpath):
-        errors.append("Tecnologia.maestripartituras não existe")
-    else:
-        pk = json.load(open(packpath, encoding="utf-8"))
+    # Pacotes coletivos: um por área + o mestre. Cada um soma as partituras da pasta.
+    packs = sorted(glob.glob(os.path.join(PART, "*", "*.maestripartituras")))
+    packs.append(os.path.join(PART, "Guia-do-Maestri.maestripartituras"))
+    if len(packs) < 2:
+        errors.append("nenhum pacote .maestripartituras por área encontrado")
+    total_in_area_packs = 0
+    for pkpath in packs:
+        if not os.path.exists(pkpath):
+            errors.append(f"pacote ausente: {os.path.basename(pkpath)}")
+            continue
+        pk = json.load(open(pkpath, encoding="utf-8"))
         if set(pk) != {"formatVersion", "partituras"}:
-            errors.append(f"pacote coletivo com chaves erradas: {set(pk)}")
-        elif len(pk["partituras"]) != len(files):
-            errors.append(f"pacote tem {len(pk['partituras'])} partituras, esperado {len(files)}")
+            errors.append(f"{os.path.basename(pkpath)}: chaves de pacote erradas: {set(pk)}")
+            continue
+        is_master = os.path.dirname(pkpath) == PART
+        n = len(pk["partituras"])
+        if is_master:
+            if n != len(files):
+                errors.append(f"pacote mestre tem {n} partituras, esperado {len(files)}")
+        else:
+            area_dir = os.path.dirname(pkpath)
+            area_files = glob.glob(os.path.join(area_dir, "*.maestripartitura"))
+            total_in_area_packs += n
+            if n != len(area_files):
+                errors.append(f"{os.path.basename(pkpath)}: {n} partituras, esperado {len(area_files)}")
+    if total_in_area_packs != len(files):
+        errors.append(f"soma dos pacotes de área ({total_in_area_packs}) != total ({len(files)})")
 
     if errors:
         print(f"FALHA: {len(errors)} divergência(s):")
