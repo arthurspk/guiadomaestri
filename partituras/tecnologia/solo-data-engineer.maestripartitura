@@ -1,0 +1,335 @@
+{
+  "appVersion": "0.45.6",
+  "color": "#AF52DE",
+  "createdAt": "2026-09-08T12:00:00Z",
+  "description": "Um único especialista (Data Engineer) trabalhando sozinho: pipelines, qualidade de dados, modelagem dimensional. Planeja, executa e verifica você mesmo, com um portal para checar o resultado.",
+  "formatVersion": 1,
+  "icon": "cylinder.split.1x2",
+  "id": "55D76FA2-9592-3C92-C34C-A09FCA5A4A6C",
+  "name": "Solo · Data Engineer",
+  "payload": {
+    "connections": [],
+    "drawings": [],
+    "nodes": [
+      {
+        "content": {
+          "terminal": {
+            "_0": {
+              "agentType": "claude_code",
+              "autoScrollLocked": false,
+              "color": "#007AFF",
+              "command": "claude --dangerously-skip-permissions --model opus",
+              "icon": "seal",
+              "id": "EB19026A-E04A-FAA3-C9F3-394F9190C854",
+              "isManager": false,
+              "isUnloaded": false,
+              "lastActiveAt": "1970-01-01T00:00:00Z",
+              "monitorWithOmbro": true,
+              "name": "Data Engineer",
+              "scrollbackFile": "",
+              "scrollbackLineCount": 0,
+              "shellPath": "",
+              "shortcutMode": {
+                "kind": "automatic"
+              },
+              "status": "restored",
+              "workingDirectory": "",
+              "assignedRoleId": "13278CA6-0431-C261-AE22-E77DAC8A21BF"
+            }
+          }
+        },
+        "createdAt": "2026-09-08T12:00:00Z",
+        "frame": [
+          [
+            9000,
+            8000
+          ],
+          [
+            860,
+            600
+          ]
+        ],
+        "id": "647703FF-F49E-EC7C-9520-4E5207FDF183",
+        "isLocked": false,
+        "lastModifiedAt": "2026-09-08T12:00:00Z",
+        "zIndex": 51
+      },
+      {
+        "content": {
+          "stickyNote": {
+            "_0": {
+              "color": "yellow",
+              "fileName": "scratchpad.md",
+              "fontSize": 14,
+              "hasCustomName": true,
+              "isContentLocked": false,
+              "isPreviewing": true,
+              "storageMode": {
+                "managed": {}
+              }
+            }
+          }
+        },
+        "createdAt": "2026-09-08T12:00:00Z",
+        "frame": [
+          [
+            10120,
+            7960
+          ],
+          [
+            520,
+            300
+          ]
+        ],
+        "id": "8135273F-0538-F7C4-E542-ABB9E4802E8F",
+        "isLocked": false,
+        "lastModifiedAt": "2026-09-08T12:00:00Z",
+        "zIndex": 52
+      },
+      {
+        "content": {
+          "portal": {
+            "_0": {
+              "chromeHidden": false,
+              "currentURL": "http://localhost:5173",
+              "id": "0C7A7F94-A614-492C-CDE6-8DA979250EEE",
+              "isUnloaded": false,
+              "name": "Proving Ground",
+              "source": {
+                "url": {
+                  "_0": "http://localhost:5173"
+                }
+              },
+              "status": "idle",
+              "storageScope": "isolated",
+              "surface": {
+                "browser": {}
+              }
+            }
+          }
+        },
+        "createdAt": "2026-09-08T12:00:00Z",
+        "frame": [
+          [
+            10120,
+            8380
+          ],
+          [
+            1200,
+            760
+          ]
+        ],
+        "id": "4D7042F7-0125-0E16-3FDC-D06A59246F9E",
+        "isLocked": false,
+        "lastModifiedAt": "2026-09-08T12:00:00Z",
+        "zIndex": 53
+      }
+    ],
+    "noteConnections": [
+      {
+        "createdAt": "2026-09-08T12:00:00Z",
+        "id": "5CC0CB27-D343-5A97-E61C-75BB6578525C",
+        "noteNodeId": "8135273F-0538-F7C4-E542-ABB9E4802E8F",
+        "ropePoints": [
+          [
+            9860.0,
+            8300.0
+          ],
+          [
+            9873.0,
+            8294.254427
+          ],
+          [
+            9886.0,
+            8288.416408
+          ],
+          [
+            9899.0,
+            8282.395772
+          ],
+          [
+            9912.0,
+            8276.106846
+          ],
+          [
+            9925.0,
+            8269.470563
+          ],
+          [
+            9938.0,
+            8262.416408
+          ],
+          [
+            9951.0,
+            8254.884157
+          ],
+          [
+            9964.0,
+            8246.825356
+          ],
+          [
+            9977.0,
+            8238.20452
+          ],
+          [
+            9990.0,
+            8229.0
+          ],
+          [
+            10003.0,
+            8219.20452
+          ],
+          [
+            10016.0,
+            8208.825356
+          ],
+          [
+            10029.0,
+            8197.884157
+          ],
+          [
+            10042.0,
+            8186.416408
+          ],
+          [
+            10055.0,
+            8174.470563
+          ],
+          [
+            10068.0,
+            8162.106846
+          ],
+          [
+            10081.0,
+            8149.395772
+          ],
+          [
+            10094.0,
+            8136.416408
+          ],
+          [
+            10107.0,
+            8123.254427
+          ],
+          [
+            10120.0,
+            8110.0
+          ]
+        ],
+        "terminalId": "EB19026A-E04A-FAA3-C9F3-394F9190C854"
+      }
+    ],
+    "noteTexts": {
+      "8135273F-0538-F7C4-E542-ABB9E4802E8F": "# scratchpad — Data Engineer\n\nSeu caderno: plano, decisões, o que verificou e o que ficou em aberto. É a fonte de verdade entre sessões.\n"
+    },
+    "noteToNoteConnections": [],
+    "portalConnections": [
+      {
+        "createdAt": "2026-09-08T12:00:00Z",
+        "id": "227DDA68-3D70-9F68-90EB-B2DE7C0F8CA1",
+        "portalNodeId": "4D7042F7-0125-0E16-3FDC-D06A59246F9E",
+        "ropePoints": [
+          [
+            9860.0,
+            8300.0
+          ],
+          [
+            9873.0,
+            8326.754427
+          ],
+          [
+            9886.0,
+            8353.416408
+          ],
+          [
+            9899.0,
+            8379.895772
+          ],
+          [
+            9912.0,
+            8406.106846
+          ],
+          [
+            9925.0,
+            8431.970563
+          ],
+          [
+            9938.0,
+            8457.416408
+          ],
+          [
+            9951.0,
+            8482.384157
+          ],
+          [
+            9964.0,
+            8506.825356
+          ],
+          [
+            9977.0,
+            8530.70452
+          ],
+          [
+            9990.0,
+            8554.0
+          ],
+          [
+            10003.0,
+            8576.70452
+          ],
+          [
+            10016.0,
+            8598.825356
+          ],
+          [
+            10029.0,
+            8620.384157
+          ],
+          [
+            10042.0,
+            8641.416408
+          ],
+          [
+            10055.0,
+            8661.970563
+          ],
+          [
+            10068.0,
+            8682.106846
+          ],
+          [
+            10081.0,
+            8701.895772
+          ],
+          [
+            10094.0,
+            8721.416408
+          ],
+          [
+            10107.0,
+            8740.754427
+          ],
+          [
+            10120.0,
+            8760.0
+          ]
+        ],
+        "terminalId": "EB19026A-E04A-FAA3-C9F3-394F9190C854"
+      }
+    ],
+    "portalToPortalConnections": [],
+    "sourceWorkingDirectory": "",
+    "sourceWorkspaceId": "9B263D9C-5FFA-EDE9-AAB1-703AF893F32C"
+  },
+  "roles": [
+    {
+      "color": "#AF52DE",
+      "icon": "person.text.rectangle",
+      "id": "13278CA6-0431-C261-AE22-E77DAC8A21BF",
+      "name": "Data Engineer",
+      "prompt": "Você é o Data Engineer, trabalhando sozinho para o usuário. Sem time para delegar: você planeja,\nexecuta e verifica você mesmo. Foco: pipelines, qualidade de dados, modelagem dimensional.\n\n- Responda em pt-BR; código, identificadores e flags em inglês.\n- Comece entendendo o pedido e o codebase antes de escrever. Se o objetivo é ambíguo,\n  pergunte ao usuário antes de assumir — uma pergunta custa menos que refazer.\n- Planeje em voz alta: liste os passos, depois execute. Trabalhe em incrementos pequenos e\n  verificáveis; rode testes ou um script direcionado e cite a saída real.\n- Você é dono do seu runtime: suba processos de longa duração em background com log em\n  arquivo, prove com `curl` que responderam, derrube no fim.\n- Nunca invente capacidade nem alegue verificação que você não viu. Confirme versões e APIs\n  na doc oficial. Escreva bem: HTML semântico e acessibilidade real, sem `any` nem cast que mente, trate estados de erro/loading/vazio, prefira estado derivado a efeitos, sem refactor de carona fora da sua fatia.\n\n- Feche reportando ao usuário: o que fez, como verificou, o que ficou em aberto.",
+      "schemaVersion": 1
+    }
+  ],
+  "workspaceId": "9B263D9C-5FFA-EDE9-AAB1-703AF893F32C"
+}

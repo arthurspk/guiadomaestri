@@ -1,0 +1,1317 @@
+{
+  "appVersion": "0.45.6",
+  "color": "#AF52DE",
+  "createdAt": "2026-09-08T12:00:00Z",
+  "description": "Sala de guerra para dados inconsistentes, ledger fora do zero, dupla escrita. Comandante organiza a resposta; trilhas de investigação, mitigação e comunicação em paralelo. Mitigar primeiro, causa raiz depois, post-mortem sem culpa.",
+  "formatVersion": 1,
+  "icon": "cylinder",
+  "id": "DF140579-48DE-7007-4BD2-E7350F8D349D",
+  "name": "War Room · Corrupção de dados",
+  "payload": {
+    "connections": [
+      {
+        "createdAt": "2026-09-08T12:00:00Z",
+        "id": "A6DB30ED-350B-497F-67CF-3B931524B51C",
+        "ropePoints": [
+          [
+            9430.0,
+            8600.0
+          ],
+          [
+            9381.0,
+            8614.754427
+          ],
+          [
+            9332.0,
+            8629.416408
+          ],
+          [
+            9283.0,
+            8643.895772
+          ],
+          [
+            9234.0,
+            8658.106846
+          ],
+          [
+            9185.0,
+            8671.970563
+          ],
+          [
+            9136.0,
+            8685.416408
+          ],
+          [
+            9087.0,
+            8698.384157
+          ],
+          [
+            9038.0,
+            8710.825356
+          ],
+          [
+            8989.0,
+            8722.70452
+          ],
+          [
+            8940.0,
+            8734.0
+          ],
+          [
+            8891.0,
+            8744.70452
+          ],
+          [
+            8842.0,
+            8754.825356
+          ],
+          [
+            8793.0,
+            8764.384157
+          ],
+          [
+            8744.0,
+            8773.416408
+          ],
+          [
+            8695.0,
+            8781.970563
+          ],
+          [
+            8646.0,
+            8790.106846
+          ],
+          [
+            8597.0,
+            8797.895772
+          ],
+          [
+            8548.0,
+            8805.416408
+          ],
+          [
+            8499.0,
+            8812.754427
+          ],
+          [
+            8450.0,
+            8820.0
+          ]
+        ],
+        "terminalIdA": "F174AFF7-DB59-041F-2A3F-44AA51D87246",
+        "terminalIdB": "0040939A-9788-3C5E-2288-00B18246E7DC"
+      },
+      {
+        "createdAt": "2026-09-08T12:00:00Z",
+        "id": "47CD3801-86C7-47DA-A5A8-6908628F8B41",
+        "ropePoints": [
+          [
+            9430.0,
+            8600.0
+          ],
+          [
+            9430.0,
+            8614.754427
+          ],
+          [
+            9430.0,
+            8629.416408
+          ],
+          [
+            9430.0,
+            8643.895772
+          ],
+          [
+            9430.0,
+            8658.106846
+          ],
+          [
+            9430.0,
+            8671.970563
+          ],
+          [
+            9430.0,
+            8685.416408
+          ],
+          [
+            9430.0,
+            8698.384157
+          ],
+          [
+            9430.0,
+            8710.825356
+          ],
+          [
+            9430.0,
+            8722.70452
+          ],
+          [
+            9430.0,
+            8734.0
+          ],
+          [
+            9430.0,
+            8744.70452
+          ],
+          [
+            9430.0,
+            8754.825356
+          ],
+          [
+            9430.0,
+            8764.384157
+          ],
+          [
+            9430.0,
+            8773.416408
+          ],
+          [
+            9430.0,
+            8781.970563
+          ],
+          [
+            9430.0,
+            8790.106846
+          ],
+          [
+            9430.0,
+            8797.895772
+          ],
+          [
+            9430.0,
+            8805.416408
+          ],
+          [
+            9430.0,
+            8812.754427
+          ],
+          [
+            9430.0,
+            8820.0
+          ]
+        ],
+        "terminalIdA": "F174AFF7-DB59-041F-2A3F-44AA51D87246",
+        "terminalIdB": "58E622E9-FB5B-2109-E4F5-83E7E28A56A6"
+      },
+      {
+        "createdAt": "2026-09-08T12:00:00Z",
+        "id": "B6F3601E-030A-1C85-72AB-89281D08A3D1",
+        "ropePoints": [
+          [
+            9430.0,
+            8600.0
+          ],
+          [
+            9479.0,
+            8614.754427
+          ],
+          [
+            9528.0,
+            8629.416408
+          ],
+          [
+            9577.0,
+            8643.895772
+          ],
+          [
+            9626.0,
+            8658.106846
+          ],
+          [
+            9675.0,
+            8671.970563
+          ],
+          [
+            9724.0,
+            8685.416408
+          ],
+          [
+            9773.0,
+            8698.384157
+          ],
+          [
+            9822.0,
+            8710.825356
+          ],
+          [
+            9871.0,
+            8722.70452
+          ],
+          [
+            9920.0,
+            8734.0
+          ],
+          [
+            9969.0,
+            8744.70452
+          ],
+          [
+            10018.0,
+            8754.825356
+          ],
+          [
+            10067.0,
+            8764.384157
+          ],
+          [
+            10116.0,
+            8773.416408
+          ],
+          [
+            10165.0,
+            8781.970563
+          ],
+          [
+            10214.0,
+            8790.106846
+          ],
+          [
+            10263.0,
+            8797.895772
+          ],
+          [
+            10312.0,
+            8805.416408
+          ],
+          [
+            10361.0,
+            8812.754427
+          ],
+          [
+            10410.0,
+            8820.0
+          ]
+        ],
+        "terminalIdA": "F174AFF7-DB59-041F-2A3F-44AA51D87246",
+        "terminalIdB": "66B4428C-BC70-BF44-1045-DA600163FB10"
+      },
+      {
+        "createdAt": "2026-09-08T12:00:00Z",
+        "id": "62453B07-D3A0-A89E-5381-3CD21E032FE0",
+        "ropePoints": [
+          [
+            8880.0,
+            9120.0
+          ],
+          [
+            8886.0,
+            9123.754427
+          ],
+          [
+            8892.0,
+            9127.416408
+          ],
+          [
+            8898.0,
+            9130.895772
+          ],
+          [
+            8904.0,
+            9134.106846
+          ],
+          [
+            8910.0,
+            9136.970563
+          ],
+          [
+            8916.0,
+            9139.416408
+          ],
+          [
+            8922.0,
+            9141.384157
+          ],
+          [
+            8928.0,
+            9142.825356
+          ],
+          [
+            8934.0,
+            9143.70452
+          ],
+          [
+            8940.0,
+            9144.0
+          ],
+          [
+            8946.0,
+            9143.70452
+          ],
+          [
+            8952.0,
+            9142.825356
+          ],
+          [
+            8958.0,
+            9141.384157
+          ],
+          [
+            8964.0,
+            9139.416408
+          ],
+          [
+            8970.0,
+            9136.970563
+          ],
+          [
+            8976.0,
+            9134.106846
+          ],
+          [
+            8982.0,
+            9130.895772
+          ],
+          [
+            8988.0,
+            9127.416408
+          ],
+          [
+            8994.0,
+            9123.754427
+          ],
+          [
+            9000.0,
+            9120.0
+          ]
+        ],
+        "terminalIdA": "0040939A-9788-3C5E-2288-00B18246E7DC",
+        "terminalIdB": "58E622E9-FB5B-2109-E4F5-83E7E28A56A6"
+      },
+      {
+        "createdAt": "2026-09-08T12:00:00Z",
+        "id": "747E8D92-B384-59F2-0771-A47203AAA28D",
+        "ropePoints": [
+          [
+            9860.0,
+            9120.0
+          ],
+          [
+            9866.0,
+            9123.754427
+          ],
+          [
+            9872.0,
+            9127.416408
+          ],
+          [
+            9878.0,
+            9130.895772
+          ],
+          [
+            9884.0,
+            9134.106846
+          ],
+          [
+            9890.0,
+            9136.970563
+          ],
+          [
+            9896.0,
+            9139.416408
+          ],
+          [
+            9902.0,
+            9141.384157
+          ],
+          [
+            9908.0,
+            9142.825356
+          ],
+          [
+            9914.0,
+            9143.70452
+          ],
+          [
+            9920.0,
+            9144.0
+          ],
+          [
+            9926.0,
+            9143.70452
+          ],
+          [
+            9932.0,
+            9142.825356
+          ],
+          [
+            9938.0,
+            9141.384157
+          ],
+          [
+            9944.0,
+            9139.416408
+          ],
+          [
+            9950.0,
+            9136.970563
+          ],
+          [
+            9956.0,
+            9134.106846
+          ],
+          [
+            9962.0,
+            9130.895772
+          ],
+          [
+            9968.0,
+            9127.416408
+          ],
+          [
+            9974.0,
+            9123.754427
+          ],
+          [
+            9980.0,
+            9120.0
+          ]
+        ],
+        "terminalIdA": "58E622E9-FB5B-2109-E4F5-83E7E28A56A6",
+        "terminalIdB": "66B4428C-BC70-BF44-1045-DA600163FB10"
+      }
+    ],
+    "drawings": [],
+    "nodes": [
+      {
+        "content": {
+          "terminal": {
+            "_0": {
+              "agentType": "claude_code",
+              "autoScrollLocked": false,
+              "color": "#007AFF",
+              "command": "claude --dangerously-skip-permissions --model fable",
+              "icon": "seal",
+              "id": "F174AFF7-DB59-041F-2A3F-44AA51D87246",
+              "isManager": true,
+              "isUnloaded": false,
+              "lastActiveAt": "1970-01-01T00:00:00Z",
+              "monitorWithOmbro": true,
+              "name": "IC · comando",
+              "scrollbackFile": "",
+              "scrollbackLineCount": 0,
+              "shellPath": "",
+              "shortcutMode": {
+                "kind": "automatic"
+              },
+              "status": "restored",
+              "workingDirectory": "",
+              "assignedRoleId": "D8517626-7E72-4B6D-C4A6-50130C756E70"
+            }
+          }
+        },
+        "createdAt": "2026-09-08T12:00:00Z",
+        "frame": [
+          [
+            9000,
+            8000
+          ],
+          [
+            860,
+            600
+          ]
+        ],
+        "id": "EFC9762E-DF7B-3449-C966-D14047D35C92",
+        "isLocked": false,
+        "lastModifiedAt": "2026-09-08T12:00:00Z",
+        "zIndex": 51
+      },
+      {
+        "content": {
+          "terminal": {
+            "_0": {
+              "agentType": "claude_code",
+              "autoScrollLocked": false,
+              "color": "#007AFF",
+              "command": "claude --dangerously-skip-permissions --model opus",
+              "icon": "seal",
+              "id": "0040939A-9788-3C5E-2288-00B18246E7DC",
+              "isManager": false,
+              "isUnloaded": false,
+              "lastActiveAt": "1970-01-01T00:00:00Z",
+              "monitorWithOmbro": true,
+              "name": "Trace · investigação",
+              "scrollbackFile": "",
+              "scrollbackLineCount": 0,
+              "shellPath": "",
+              "shortcutMode": {
+                "kind": "automatic"
+              },
+              "status": "restored",
+              "workingDirectory": "",
+              "assignedRoleId": "2B445A5A-3B2D-3A8C-0288-D0577A3F8F0D"
+            }
+          }
+        },
+        "createdAt": "2026-09-08T12:00:00Z",
+        "frame": [
+          [
+            8020.0,
+            8820
+          ],
+          [
+            860,
+            600
+          ]
+        ],
+        "id": "6EAD224C-72C5-A0AC-3AD1-B0ED0376FE0B",
+        "isLocked": false,
+        "lastModifiedAt": "2026-09-08T12:00:00Z",
+        "zIndex": 52
+      },
+      {
+        "content": {
+          "terminal": {
+            "_0": {
+              "agentType": "claude_code",
+              "autoScrollLocked": false,
+              "color": "#007AFF",
+              "command": "claude --dangerously-skip-permissions --model opus",
+              "icon": "seal",
+              "id": "58E622E9-FB5B-2109-E4F5-83E7E28A56A6",
+              "isManager": false,
+              "isUnloaded": false,
+              "lastActiveAt": "1970-01-01T00:00:00Z",
+              "monitorWithOmbro": true,
+              "name": "Clamp · mitigação",
+              "scrollbackFile": "",
+              "scrollbackLineCount": 0,
+              "shellPath": "",
+              "shortcutMode": {
+                "kind": "automatic"
+              },
+              "status": "restored",
+              "workingDirectory": "",
+              "assignedRoleId": "F1C46372-1DF6-5919-849E-405C74FC5478"
+            }
+          }
+        },
+        "createdAt": "2026-09-08T12:00:00Z",
+        "frame": [
+          [
+            9000.0,
+            8820
+          ],
+          [
+            860,
+            600
+          ]
+        ],
+        "id": "2B21D48D-AFF2-E171-239D-AE9FDC9E7868",
+        "isLocked": false,
+        "lastModifiedAt": "2026-09-08T12:00:00Z",
+        "zIndex": 53
+      },
+      {
+        "content": {
+          "terminal": {
+            "_0": {
+              "agentType": "claude_code",
+              "autoScrollLocked": false,
+              "color": "#007AFF",
+              "command": "claude --dangerously-skip-permissions --model opus",
+              "icon": "seal",
+              "id": "66B4428C-BC70-BF44-1045-DA600163FB10",
+              "isManager": false,
+              "isUnloaded": false,
+              "lastActiveAt": "1970-01-01T00:00:00Z",
+              "monitorWithOmbro": true,
+              "name": "Herald · comunicação",
+              "scrollbackFile": "",
+              "scrollbackLineCount": 0,
+              "shellPath": "",
+              "shortcutMode": {
+                "kind": "automatic"
+              },
+              "status": "restored",
+              "workingDirectory": "",
+              "assignedRoleId": "DD0C6C54-D128-44E5-F1DE-B055411EA32B"
+            }
+          }
+        },
+        "createdAt": "2026-09-08T12:00:00Z",
+        "frame": [
+          [
+            9980.0,
+            8820
+          ],
+          [
+            860,
+            600
+          ]
+        ],
+        "id": "54837B40-E16D-1A30-8752-5973C50965FE",
+        "isLocked": false,
+        "lastModifiedAt": "2026-09-08T12:00:00Z",
+        "zIndex": 54
+      },
+      {
+        "content": {
+          "stickyNote": {
+            "_0": {
+              "color": "red",
+              "fileName": "incident-timeline.md",
+              "fontSize": 14,
+              "hasCustomName": true,
+              "isContentLocked": false,
+              "isPreviewing": true,
+              "storageMode": {
+                "managed": {}
+              }
+            }
+          }
+        },
+        "createdAt": "2026-09-08T12:00:00Z",
+        "frame": [
+          [
+            10300,
+            7620
+          ],
+          [
+            520,
+            440
+          ]
+        ],
+        "id": "A3E45715-22E4-6376-8AFC-500977BA2166",
+        "isLocked": false,
+        "lastModifiedAt": "2026-09-08T12:00:00Z",
+        "zIndex": 55
+      },
+      {
+        "content": {
+          "portal": {
+            "_0": {
+              "chromeHidden": false,
+              "currentURL": "http://localhost:3000",
+              "id": "0AB1FAD9-67A7-14A9-6703-CF4F3CF182A3",
+              "isUnloaded": false,
+              "name": "Dashboards",
+              "source": {
+                "url": {
+                  "_0": "http://localhost:3000"
+                }
+              },
+              "status": "idle",
+              "storageScope": "isolated",
+              "surface": {
+                "browser": {}
+              }
+            }
+          }
+        },
+        "createdAt": "2026-09-08T12:00:00Z",
+        "frame": [
+          [
+            7560,
+            6940
+          ],
+          [
+            1200,
+            760
+          ]
+        ],
+        "id": "0258DEC9-A0B2-1C5F-9071-7423C0B9D568",
+        "isLocked": false,
+        "lastModifiedAt": "2026-09-08T12:00:00Z",
+        "zIndex": 56
+      }
+    ],
+    "noteConnections": [
+      {
+        "createdAt": "2026-09-08T12:00:00Z",
+        "id": "71A73E81-1CA3-CF45-78BE-B5AB54EED5EA",
+        "noteNodeId": "A3E45715-22E4-6376-8AFC-500977BA2166",
+        "ropePoints": [
+          [
+            9860.0,
+            8300.0
+          ],
+          [
+            9882.0,
+            8280.754427
+          ],
+          [
+            9904.0,
+            8261.416408
+          ],
+          [
+            9926.0,
+            8241.895772
+          ],
+          [
+            9948.0,
+            8222.106846
+          ],
+          [
+            9970.0,
+            8201.970563
+          ],
+          [
+            9992.0,
+            8181.416408
+          ],
+          [
+            10014.0,
+            8160.384157
+          ],
+          [
+            10036.0,
+            8138.825356
+          ],
+          [
+            10058.0,
+            8116.70452
+          ],
+          [
+            10080.0,
+            8094.0
+          ],
+          [
+            10102.0,
+            8070.70452
+          ],
+          [
+            10124.0,
+            8046.825356
+          ],
+          [
+            10146.0,
+            8022.384157
+          ],
+          [
+            10168.0,
+            7997.416408
+          ],
+          [
+            10190.0,
+            7971.970563
+          ],
+          [
+            10212.0,
+            7946.106846
+          ],
+          [
+            10234.0,
+            7919.895772
+          ],
+          [
+            10256.0,
+            7893.416408
+          ],
+          [
+            10278.0,
+            7866.754427
+          ],
+          [
+            10300.0,
+            7840.0
+          ]
+        ],
+        "terminalId": "F174AFF7-DB59-041F-2A3F-44AA51D87246"
+      },
+      {
+        "createdAt": "2026-09-08T12:00:00Z",
+        "id": "2151B937-3B97-D3BF-2E1E-A791489CBBAC",
+        "noteNodeId": "A3E45715-22E4-6376-8AFC-500977BA2166",
+        "ropePoints": [
+          [
+            8880.0,
+            9120.0
+          ],
+          [
+            8951.0,
+            9059.754427
+          ],
+          [
+            9022.0,
+            8999.416408
+          ],
+          [
+            9093.0,
+            8938.895772
+          ],
+          [
+            9164.0,
+            8878.106846
+          ],
+          [
+            9235.0,
+            8816.970563
+          ],
+          [
+            9306.0,
+            8755.416408
+          ],
+          [
+            9377.0,
+            8693.384157
+          ],
+          [
+            9448.0,
+            8630.825356
+          ],
+          [
+            9519.0,
+            8567.70452
+          ],
+          [
+            9590.0,
+            8504.0
+          ],
+          [
+            9661.0,
+            8439.70452
+          ],
+          [
+            9732.0,
+            8374.825356
+          ],
+          [
+            9803.0,
+            8309.384157
+          ],
+          [
+            9874.0,
+            8243.416408
+          ],
+          [
+            9945.0,
+            8176.970563
+          ],
+          [
+            10016.0,
+            8110.106846
+          ],
+          [
+            10087.0,
+            8042.895772
+          ],
+          [
+            10158.0,
+            7975.416408
+          ],
+          [
+            10229.0,
+            7907.754427
+          ],
+          [
+            10300.0,
+            7840.0
+          ]
+        ],
+        "terminalId": "0040939A-9788-3C5E-2288-00B18246E7DC"
+      },
+      {
+        "createdAt": "2026-09-08T12:00:00Z",
+        "id": "A403D692-C079-C6DC-5A92-206D81BB363A",
+        "noteNodeId": "A3E45715-22E4-6376-8AFC-500977BA2166",
+        "ropePoints": [
+          [
+            9430.0,
+            8820.0
+          ],
+          [
+            9486.5,
+            8785.754427
+          ],
+          [
+            9543.0,
+            8751.416408
+          ],
+          [
+            9599.5,
+            8716.895772
+          ],
+          [
+            9656.0,
+            8682.106846
+          ],
+          [
+            9712.5,
+            8646.970563
+          ],
+          [
+            9769.0,
+            8611.416408
+          ],
+          [
+            9825.5,
+            8575.384157
+          ],
+          [
+            9882.0,
+            8538.825356
+          ],
+          [
+            9938.5,
+            8501.70452
+          ],
+          [
+            9995.0,
+            8464.0
+          ],
+          [
+            10051.5,
+            8425.70452
+          ],
+          [
+            10108.0,
+            8386.825356
+          ],
+          [
+            10164.5,
+            8347.384157
+          ],
+          [
+            10221.0,
+            8307.416408
+          ],
+          [
+            10277.5,
+            8266.970563
+          ],
+          [
+            10334.0,
+            8226.106846
+          ],
+          [
+            10390.5,
+            8184.895772
+          ],
+          [
+            10447.0,
+            8143.416408
+          ],
+          [
+            10503.5,
+            8101.754427
+          ],
+          [
+            10560.0,
+            8060.0
+          ]
+        ],
+        "terminalId": "58E622E9-FB5B-2109-E4F5-83E7E28A56A6"
+      },
+      {
+        "createdAt": "2026-09-08T12:00:00Z",
+        "id": "9645FA8B-1492-CF46-CB1F-8DFC9FD96834",
+        "noteNodeId": "A3E45715-22E4-6376-8AFC-500977BA2166",
+        "ropePoints": [
+          [
+            10410.0,
+            8820.0
+          ],
+          [
+            10417.5,
+            8785.754427
+          ],
+          [
+            10425.0,
+            8751.416408
+          ],
+          [
+            10432.5,
+            8716.895772
+          ],
+          [
+            10440.0,
+            8682.106846
+          ],
+          [
+            10447.5,
+            8646.970563
+          ],
+          [
+            10455.0,
+            8611.416408
+          ],
+          [
+            10462.5,
+            8575.384157
+          ],
+          [
+            10470.0,
+            8538.825356
+          ],
+          [
+            10477.5,
+            8501.70452
+          ],
+          [
+            10485.0,
+            8464.0
+          ],
+          [
+            10492.5,
+            8425.70452
+          ],
+          [
+            10500.0,
+            8386.825356
+          ],
+          [
+            10507.5,
+            8347.384157
+          ],
+          [
+            10515.0,
+            8307.416408
+          ],
+          [
+            10522.5,
+            8266.970563
+          ],
+          [
+            10530.0,
+            8226.106846
+          ],
+          [
+            10537.5,
+            8184.895772
+          ],
+          [
+            10545.0,
+            8143.416408
+          ],
+          [
+            10552.5,
+            8101.754427
+          ],
+          [
+            10560.0,
+            8060.0
+          ]
+        ],
+        "terminalId": "66B4428C-BC70-BF44-1045-DA600163FB10"
+      }
+    ],
+    "noteTexts": {
+      "A3E45715-22E4-6376-8AFC-500977BA2166": "# incident-timeline\n\nStatus: nenhum incidente ativo.\n\nUso: o Comandante de Incidente declara o incidente no topo (início, severidade, sintoma,\nraio de impacto, desconhecidos). Toda ação, hipótese testada e decisão entra aqui com\ncarimbo de hora. Mitigado primeiro, causa raiz depois; post-mortem sem culpa ao fim.\n\n## Timeline\n(hora — ação/observação — quem)\n\n## Hipóteses\n(testadas e descartadas, com evidência)\n\n## Ações de mitigação\n(o que paramos o sangramento, com hora e evidência)\n\n## Post-mortem\n(linha do tempo, causa raiz confirmada, itens de ação com dono)\n"
+    },
+    "noteToNoteConnections": [],
+    "portalConnections": [
+      {
+        "createdAt": "2026-09-08T12:00:00Z",
+        "id": "8810A2AD-0ADE-DB40-F6BE-75B5B8939A16",
+        "portalNodeId": "0258DEC9-A0B2-1C5F-9071-7423C0B9D568",
+        "ropePoints": [
+          [
+            9430.0,
+            8000.0
+          ],
+          [
+            9366.5,
+            7988.754427
+          ],
+          [
+            9303.0,
+            7977.416408
+          ],
+          [
+            9239.5,
+            7965.895772
+          ],
+          [
+            9176.0,
+            7954.106846
+          ],
+          [
+            9112.5,
+            7941.970563
+          ],
+          [
+            9049.0,
+            7929.416408
+          ],
+          [
+            8985.5,
+            7916.384157
+          ],
+          [
+            8922.0,
+            7902.825356
+          ],
+          [
+            8858.5,
+            7888.70452
+          ],
+          [
+            8795.0,
+            7874.0
+          ],
+          [
+            8731.5,
+            7858.70452
+          ],
+          [
+            8668.0,
+            7842.825356
+          ],
+          [
+            8604.5,
+            7826.384157
+          ],
+          [
+            8541.0,
+            7809.416408
+          ],
+          [
+            8477.5,
+            7791.970563
+          ],
+          [
+            8414.0,
+            7774.106846
+          ],
+          [
+            8350.5,
+            7755.895772
+          ],
+          [
+            8287.0,
+            7737.416408
+          ],
+          [
+            8223.5,
+            7718.754427
+          ],
+          [
+            8160.0,
+            7700.0
+          ]
+        ],
+        "terminalId": "F174AFF7-DB59-041F-2A3F-44AA51D87246"
+      },
+      {
+        "createdAt": "2026-09-08T12:00:00Z",
+        "id": "E5C9AA17-3D24-C890-9676-2F362E5D3610",
+        "portalNodeId": "0258DEC9-A0B2-1C5F-9071-7423C0B9D568",
+        "ropePoints": [
+          [
+            8450.0,
+            8820.0
+          ],
+          [
+            8435.5,
+            8767.754427
+          ],
+          [
+            8421.0,
+            8715.416408
+          ],
+          [
+            8406.5,
+            8662.895772
+          ],
+          [
+            8392.0,
+            8610.106846
+          ],
+          [
+            8377.5,
+            8556.970563
+          ],
+          [
+            8363.0,
+            8503.416408
+          ],
+          [
+            8348.5,
+            8449.384157
+          ],
+          [
+            8334.0,
+            8394.825356
+          ],
+          [
+            8319.5,
+            8339.70452
+          ],
+          [
+            8305.0,
+            8284.0
+          ],
+          [
+            8290.5,
+            8227.70452
+          ],
+          [
+            8276.0,
+            8170.825356
+          ],
+          [
+            8261.5,
+            8113.384157
+          ],
+          [
+            8247.0,
+            8055.416408
+          ],
+          [
+            8232.5,
+            7996.970563
+          ],
+          [
+            8218.0,
+            7938.106846
+          ],
+          [
+            8203.5,
+            7878.895772
+          ],
+          [
+            8189.0,
+            7819.416408
+          ],
+          [
+            8174.5,
+            7759.754427
+          ],
+          [
+            8160.0,
+            7700.0
+          ]
+        ],
+        "terminalId": "0040939A-9788-3C5E-2288-00B18246E7DC"
+      }
+    ],
+    "portalToPortalConnections": [],
+    "sourceWorkingDirectory": "",
+    "sourceWorkspaceId": "9B263D9C-5FFA-EDE9-AAB1-703AF893F32C"
+  },
+  "roles": [
+    {
+      "color": "#FF3B30",
+      "icon": "person.text.rectangle",
+      "id": "D8517626-7E72-4B6D-C4A6-50130C756E70",
+      "name": "Incident Commander",
+      "prompt": "Você é o Comandante de Incidente (IC) de uma war room para dados inconsistentes, ledger fora do zero, dupla escrita. Você não conserta com as\npróprias mãos — você mantém a resposta organizada, comunica e decide. Prioridade um é\nmitigar; causa raiz vem depois.\n\nSetup: rode `maestri list` para ver seus colegas, as notas compartilhadas e o Maestro (marcado `maestro: true`). O Maestro coordena o time e fala pelo usuário.\n\nLOOP DE INCIDENTE\n1. Declare o incidente na nota `incident-timeline`: início, severidade, sintoma, raio de\n   impacto (usuários, valor, dados), e o que ainda é desconhecido. Carimbe a hora em tudo.\n2. Delegue trilhas em paralelo com `maestri ask --batch`: investigação (o que quebrou),\n   mitigação (como paramos a dor agora, mesmo que feio), comunicação (o que dizer a quem).\n3. Estabilize antes de embelezar: um rollback ou feature-flag que para o sangramento vem\n   antes do conserto elegante. Registre toda ação com hora na timeline.\n4. Uma única fonte de verdade: a timeline. Decisões, hipóteses testadas e descartadas,\n   próximos passos — tudo nela.\n5. `maestri notify` o humano quando precisar de uma decisão que passa do seu mandato\n   (comunicação pública, acionar terceiro, aceitar perda de dados).\n6. Ao mitigar, declare mitigado com evidência e abra o post-mortem sem culpa: linha do\n   tempo, causa raiz confirmada, itens de ação com dono. Nunca alegue mitigação que você\n   não viu confirmada.",
+      "schemaVersion": 1
+    },
+    {
+      "color": "#FF9500",
+      "icon": "person.text.rectangle",
+      "id": "2B445A5A-3B2D-3A8C-0288-D0577A3F8F0D",
+      "name": "Investigator",
+      "prompt": "Você é o Investigador de Incidente deste time. Você acha o que quebrou em dados inconsistentes, ledger fora do zero, dupla escrita: logs, métricas, mudanças recentes, correlação. Você reporta hipóteses testadas com evidência, não palpites.\n\n- Responda ao usuário em pt-BR; mantenha código, identificadores e flags em inglês.\n- Setup: rode `maestri list` para ver seus colegas, as notas compartilhadas e o Maestro (marcado `maestro: true`). O Maestro coordena o time e fala pelo usuário.\n- Contrato antes de código: leia a nota do contrato e a sua fatia no workboard antes de\n  escrever qualquer linha. Fique dentro das suas fronteiras de arquivo.\n- Nunca chute diante de ambiguidade. Dúvida de contrato ou de interface vai para o Arquiteto; dúvida de produto ou intenção vai para o Maestro, com `maestri ask \"<nome>\" \"<pergunta>\"`. Uma pergunta custa um minuto; um palpite errado custa o time inteiro.\n- Nunca invente capacidade nem alegue verificação que você não fez. Confirme versões e\n  APIs na doc oficial antes de fixar.\n- Escreva bem: HTML semântico e acessibilidade real, sem `any` nem cast que mente, trate estados de erro/loading/vazio, prefira estado derivado a efeitos, sem refactor de carona fora da sua fatia. Não suba servidores, emuladores ou simuladores — o Maestro é dono do runtime. Peça se precisar de algo rodando.\n- Separe confirmado de suspeito; toda hipótese descartada fica registrada na timeline.\n- Ao terminar qualquer tarefa, responda a quem pediu com `maestri ask \"<nome>\" \"<resumo>\"` para que a espera dele se resolva.",
+      "schemaVersion": 1
+    },
+    {
+      "color": "#007AFF",
+      "icon": "person.text.rectangle",
+      "id": "F1C46372-1DF6-5919-849E-405C74FC5478",
+      "name": "Mitigation Engineer",
+      "prompt": "Você é o Engenheiro de Mitigação deste time. Você para o sangramento de dados inconsistentes, ledger fora do zero, dupla escrita agora: rollback, feature-flag, escala, isolamento — mesmo que feio. Elegância vem depois.\n\n- Responda ao usuário em pt-BR; mantenha código, identificadores e flags em inglês.\n- Setup: rode `maestri list` para ver seus colegas, as notas compartilhadas e o Maestro (marcado `maestro: true`). O Maestro coordena o time e fala pelo usuário.\n- Contrato antes de código: leia a nota do contrato e a sua fatia no workboard antes de\n  escrever qualquer linha. Fique dentro das suas fronteiras de arquivo.\n- Nunca chute diante de ambiguidade. Dúvida de contrato ou de interface vai para o Arquiteto; dúvida de produto ou intenção vai para o Maestro, com `maestri ask \"<nome>\" \"<pergunta>\"`. Uma pergunta custa um minuto; um palpite errado custa o time inteiro.\n- Nunca invente capacidade nem alegue verificação que você não fez. Confirme versões e\n  APIs na doc oficial antes de fixar.\n- Escreva bem: HTML semântico e acessibilidade real, sem `any` nem cast que mente, trate estados de erro/loading/vazio, prefira estado derivado a efeitos, sem refactor de carona fora da sua fatia. Não suba servidores, emuladores ou simuladores — o Maestro é dono do runtime. Peça se precisar de algo rodando.\n- Estabilizar antes de embelezar; registre toda ação com hora e prove que reduziu a dor.\n- Ao terminar qualquer tarefa, responda a quem pediu com `maestri ask \"<nome>\" \"<resumo>\"` para que a espera dele se resolva.",
+      "schemaVersion": 1
+    },
+    {
+      "color": "#AF52DE",
+      "icon": "person.text.rectangle",
+      "id": "DD0C6C54-D128-44E5-F1DE-B055411EA32B",
+      "name": "Comms Lead",
+      "prompt": "Você é o Líder de Comunicação deste time. Você mantém quem precisa saber informado sobre dados inconsistentes, ledger fora do zero, dupla escrita: status claro, honesto, sem jargão, no ritmo certo. Você não conserta; você comunica.\n\n- Responda ao usuário em pt-BR; mantenha código, identificadores e flags em inglês.\n- Setup: rode `maestri list` para ver seus colegas, as notas compartilhadas e o Maestro (marcado `maestro: true`). O Maestro coordena o time e fala pelo usuário.\n- Contrato antes de código: leia a nota do contrato e a sua fatia no workboard antes de\n  escrever qualquer linha. Fique dentro das suas fronteiras de arquivo.\n- Nunca chute diante de ambiguidade. Dúvida de contrato ou de interface vai para o Arquiteto; dúvida de produto ou intenção vai para o Maestro, com `maestri ask \"<nome>\" \"<pergunta>\"`. Uma pergunta custa um minuto; um palpite errado custa o time inteiro.\n- Nunca invente capacidade nem alegue verificação que você não fez. Confirme versões e\n  APIs na doc oficial antes de fixar.\n- Escreva bem: HTML semântico e acessibilidade real, sem `any` nem cast que mente, trate estados de erro/loading/vazio, prefira estado derivado a efeitos, sem refactor de carona fora da sua fatia. Não suba servidores, emuladores ou simuladores — o Maestro é dono do runtime. Peça se precisar de algo rodando.\n- Comunicação externa passa por aprovação humana via `maestri notify`.\n- Ao terminar qualquer tarefa, responda a quem pediu com `maestri ask \"<nome>\" \"<resumo>\"` para que a espera dele se resolva.",
+      "schemaVersion": 1
+    }
+  ],
+  "workspaceId": "9B263D9C-5FFA-EDE9-AAB1-703AF893F32C"
+}

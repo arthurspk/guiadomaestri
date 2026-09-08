@@ -1,0 +1,4385 @@
+{
+  "appVersion": "0.45.6",
+  "color": "#FF2D55",
+  "createdAt": "2026-09-08T12:00:00Z",
+  "description": "Pipeline completo para plataforma de vídeo (ABR, DRM, CDN, catálogo, recomendação): orquestrador, arquiteto, três builders de superfície (web desktop, web mobile, mobile híbrido), sentinela de segurança, engenheiro de plataforma e um stack warden validando 30 camadas.",
+  "formatVersion": 1,
+  "icon": "play.rectangle",
+  "id": "49E1A9C0-8DCC-008F-57D7-005DC95D1A9C",
+  "name": "Pipeline Completo · Streaming de vídeo",
+  "payload": {
+    "connections": [
+      {
+        "createdAt": "2026-09-08T12:00:00Z",
+        "id": "03EC47D2-CA27-D177-FA5F-76EB1FCCD336",
+        "ropePoints": [
+          [
+            9000.0,
+            8300.0
+          ],
+          [
+            8972.5,
+            8344.754427
+          ],
+          [
+            8945.0,
+            8389.416408
+          ],
+          [
+            8917.5,
+            8433.895772
+          ],
+          [
+            8890.0,
+            8478.106846
+          ],
+          [
+            8862.5,
+            8521.970563
+          ],
+          [
+            8835.0,
+            8565.416408
+          ],
+          [
+            8807.5,
+            8608.384157
+          ],
+          [
+            8780.0,
+            8650.825356
+          ],
+          [
+            8752.5,
+            8692.70452
+          ],
+          [
+            8725.0,
+            8734.0
+          ],
+          [
+            8697.5,
+            8774.70452
+          ],
+          [
+            8670.0,
+            8814.825356
+          ],
+          [
+            8642.5,
+            8854.384157
+          ],
+          [
+            8615.0,
+            8893.416408
+          ],
+          [
+            8587.5,
+            8931.970563
+          ],
+          [
+            8560.0,
+            8970.106846
+          ],
+          [
+            8532.5,
+            9007.895772
+          ],
+          [
+            8505.0,
+            9045.416408
+          ],
+          [
+            8477.5,
+            9082.754427
+          ],
+          [
+            8450.0,
+            9120.0
+          ]
+        ],
+        "terminalIdA": "9647FC9C-61B8-C970-299F-A29F1E291E68",
+        "terminalIdB": "E8067FBA-C201-41B1-59A9-BEB554B5A8B5"
+      },
+      {
+        "createdAt": "2026-09-08T12:00:00Z",
+        "id": "65F851F1-B523-6B4C-A883-2E33AEFC1949",
+        "ropePoints": [
+          [
+            9430.0,
+            8600.0
+          ],
+          [
+            9406.5,
+            8614.754427
+          ],
+          [
+            9383.0,
+            8629.416408
+          ],
+          [
+            9359.5,
+            8643.895772
+          ],
+          [
+            9336.0,
+            8658.106846
+          ],
+          [
+            9312.5,
+            8671.970563
+          ],
+          [
+            9289.0,
+            8685.416408
+          ],
+          [
+            9265.5,
+            8698.384157
+          ],
+          [
+            9242.0,
+            8710.825356
+          ],
+          [
+            9218.5,
+            8722.70452
+          ],
+          [
+            9195.0,
+            8734.0
+          ],
+          [
+            9171.5,
+            8744.70452
+          ],
+          [
+            9148.0,
+            8754.825356
+          ],
+          [
+            9124.5,
+            8764.384157
+          ],
+          [
+            9101.0,
+            8773.416408
+          ],
+          [
+            9077.5,
+            8781.970563
+          ],
+          [
+            9054.0,
+            8790.106846
+          ],
+          [
+            9030.5,
+            8797.895772
+          ],
+          [
+            9007.0,
+            8805.416408
+          ],
+          [
+            8983.5,
+            8812.754427
+          ],
+          [
+            8960.0,
+            8820.0
+          ]
+        ],
+        "terminalIdA": "9647FC9C-61B8-C970-299F-A29F1E291E68",
+        "terminalIdB": "BE1F732D-20A8-215A-BD10-3B130D5AFDC2"
+      },
+      {
+        "createdAt": "2026-09-08T12:00:00Z",
+        "id": "3D173A45-0C61-6CEA-A6AF-5721D55832E1",
+        "ropePoints": [
+          [
+            9430.0,
+            8600.0
+          ],
+          [
+            9453.5,
+            8614.754427
+          ],
+          [
+            9477.0,
+            8629.416408
+          ],
+          [
+            9500.5,
+            8643.895772
+          ],
+          [
+            9524.0,
+            8658.106846
+          ],
+          [
+            9547.5,
+            8671.970563
+          ],
+          [
+            9571.0,
+            8685.416408
+          ],
+          [
+            9594.5,
+            8698.384157
+          ],
+          [
+            9618.0,
+            8710.825356
+          ],
+          [
+            9641.5,
+            8722.70452
+          ],
+          [
+            9665.0,
+            8734.0
+          ],
+          [
+            9688.5,
+            8744.70452
+          ],
+          [
+            9712.0,
+            8754.825356
+          ],
+          [
+            9735.5,
+            8764.384157
+          ],
+          [
+            9759.0,
+            8773.416408
+          ],
+          [
+            9782.5,
+            8781.970563
+          ],
+          [
+            9806.0,
+            8790.106846
+          ],
+          [
+            9829.5,
+            8797.895772
+          ],
+          [
+            9853.0,
+            8805.416408
+          ],
+          [
+            9876.5,
+            8812.754427
+          ],
+          [
+            9900.0,
+            8820.0
+          ]
+        ],
+        "terminalIdA": "9647FC9C-61B8-C970-299F-A29F1E291E68",
+        "terminalIdB": "168382A2-B8A7-6F23-BDA1-732632ED545B"
+      },
+      {
+        "createdAt": "2026-09-08T12:00:00Z",
+        "id": "CFBA6473-6434-74F2-0833-3F1679159AE7",
+        "ropePoints": [
+          [
+            9860.0,
+            8300.0
+          ],
+          [
+            9887.5,
+            8344.754427
+          ],
+          [
+            9915.0,
+            8389.416408
+          ],
+          [
+            9942.5,
+            8433.895772
+          ],
+          [
+            9970.0,
+            8478.106846
+          ],
+          [
+            9997.5,
+            8521.970563
+          ],
+          [
+            10025.0,
+            8565.416408
+          ],
+          [
+            10052.5,
+            8608.384157
+          ],
+          [
+            10080.0,
+            8650.825356
+          ],
+          [
+            10107.5,
+            8692.70452
+          ],
+          [
+            10135.0,
+            8734.0
+          ],
+          [
+            10162.5,
+            8774.70452
+          ],
+          [
+            10190.0,
+            8814.825356
+          ],
+          [
+            10217.5,
+            8854.384157
+          ],
+          [
+            10245.0,
+            8893.416408
+          ],
+          [
+            10272.5,
+            8931.970563
+          ],
+          [
+            10300.0,
+            8970.106846
+          ],
+          [
+            10327.5,
+            9007.895772
+          ],
+          [
+            10355.0,
+            9045.416408
+          ],
+          [
+            10382.5,
+            9082.754427
+          ],
+          [
+            10410.0,
+            9120.0
+          ]
+        ],
+        "terminalIdA": "9647FC9C-61B8-C970-299F-A29F1E291E68",
+        "terminalIdB": "93D16366-08E1-CD6A-F7E2-697100A2B3FF"
+      },
+      {
+        "createdAt": "2026-09-08T12:00:00Z",
+        "id": "B2CBA9AA-B063-67B6-16DF-504C8394F5C6",
+        "ropePoints": [
+          [
+            9430.0,
+            8600.0
+          ],
+          [
+            9383.0,
+            8653.754427
+          ],
+          [
+            9336.0,
+            8707.416408
+          ],
+          [
+            9289.0,
+            8760.895772
+          ],
+          [
+            9242.0,
+            8814.106846
+          ],
+          [
+            9195.0,
+            8866.970563
+          ],
+          [
+            9148.0,
+            8919.416408
+          ],
+          [
+            9101.0,
+            8971.384157
+          ],
+          [
+            9054.0,
+            9022.825356
+          ],
+          [
+            9007.0,
+            9073.70452
+          ],
+          [
+            8960.0,
+            9124.0
+          ],
+          [
+            8913.0,
+            9173.70452
+          ],
+          [
+            8866.0,
+            9222.825356
+          ],
+          [
+            8819.0,
+            9271.384157
+          ],
+          [
+            8772.0,
+            9319.416408
+          ],
+          [
+            8725.0,
+            9366.970563
+          ],
+          [
+            8678.0,
+            9414.106846
+          ],
+          [
+            8631.0,
+            9460.895772
+          ],
+          [
+            8584.0,
+            9507.416408
+          ],
+          [
+            8537.0,
+            9553.754427
+          ],
+          [
+            8490.0,
+            9600.0
+          ]
+        ],
+        "terminalIdA": "9647FC9C-61B8-C970-299F-A29F1E291E68",
+        "terminalIdB": "C5340AC9-0C91-41D5-30F9-1054D246CB35"
+      },
+      {
+        "createdAt": "2026-09-08T12:00:00Z",
+        "id": "843B8E6A-B414-ED94-2CE2-0C34E771EF70",
+        "ropePoints": [
+          [
+            9430.0,
+            8600.0
+          ],
+          [
+            9430.0,
+            8653.754427
+          ],
+          [
+            9430.0,
+            8707.416408
+          ],
+          [
+            9430.0,
+            8760.895772
+          ],
+          [
+            9430.0,
+            8814.106846
+          ],
+          [
+            9430.0,
+            8866.970563
+          ],
+          [
+            9430.0,
+            8919.416408
+          ],
+          [
+            9430.0,
+            8971.384157
+          ],
+          [
+            9430.0,
+            9022.825356
+          ],
+          [
+            9430.0,
+            9073.70452
+          ],
+          [
+            9430.0,
+            9124.0
+          ],
+          [
+            9430.0,
+            9173.70452
+          ],
+          [
+            9430.0,
+            9222.825356
+          ],
+          [
+            9430.0,
+            9271.384157
+          ],
+          [
+            9430.0,
+            9319.416408
+          ],
+          [
+            9430.0,
+            9366.970563
+          ],
+          [
+            9430.0,
+            9414.106846
+          ],
+          [
+            9430.0,
+            9460.895772
+          ],
+          [
+            9430.0,
+            9507.416408
+          ],
+          [
+            9430.0,
+            9553.754427
+          ],
+          [
+            9430.0,
+            9600.0
+          ]
+        ],
+        "terminalIdA": "9647FC9C-61B8-C970-299F-A29F1E291E68",
+        "terminalIdB": "A7C8D00D-4B95-F494-CE2F-E5A22072352A"
+      },
+      {
+        "createdAt": "2026-09-08T12:00:00Z",
+        "id": "3077CDB7-9ED0-E058-C92B-38061A20AC28",
+        "ropePoints": [
+          [
+            9430.0,
+            8600.0
+          ],
+          [
+            9477.0,
+            8653.754427
+          ],
+          [
+            9524.0,
+            8707.416408
+          ],
+          [
+            9571.0,
+            8760.895772
+          ],
+          [
+            9618.0,
+            8814.106846
+          ],
+          [
+            9665.0,
+            8866.970563
+          ],
+          [
+            9712.0,
+            8919.416408
+          ],
+          [
+            9759.0,
+            8971.384157
+          ],
+          [
+            9806.0,
+            9022.825356
+          ],
+          [
+            9853.0,
+            9073.70452
+          ],
+          [
+            9900.0,
+            9124.0
+          ],
+          [
+            9947.0,
+            9173.70452
+          ],
+          [
+            9994.0,
+            9222.825356
+          ],
+          [
+            10041.0,
+            9271.384157
+          ],
+          [
+            10088.0,
+            9319.416408
+          ],
+          [
+            10135.0,
+            9366.970563
+          ],
+          [
+            10182.0,
+            9414.106846
+          ],
+          [
+            10229.0,
+            9460.895772
+          ],
+          [
+            10276.0,
+            9507.416408
+          ],
+          [
+            10323.0,
+            9553.754427
+          ],
+          [
+            10370.0,
+            9600.0
+          ]
+        ],
+        "terminalIdA": "9647FC9C-61B8-C970-299F-A29F1E291E68",
+        "terminalIdB": "520DE19B-59D2-81BB-B9AB-9E3D346A08FE"
+      },
+      {
+        "createdAt": "2026-09-08T12:00:00Z",
+        "id": "FFD3D60A-4FE3-05ED-58DA-D00C58D464FE",
+        "ropePoints": [
+          [
+            8450.0,
+            9120.0
+          ],
+          [
+            8454.0,
+            9123.754427
+          ],
+          [
+            8458.0,
+            9127.416408
+          ],
+          [
+            8462.0,
+            9130.895772
+          ],
+          [
+            8466.0,
+            9134.106846
+          ],
+          [
+            8470.0,
+            9136.970563
+          ],
+          [
+            8474.0,
+            9139.416408
+          ],
+          [
+            8478.0,
+            9141.384157
+          ],
+          [
+            8482.0,
+            9142.825356
+          ],
+          [
+            8486.0,
+            9143.70452
+          ],
+          [
+            8490.0,
+            9144.0
+          ],
+          [
+            8494.0,
+            9143.70452
+          ],
+          [
+            8498.0,
+            9142.825356
+          ],
+          [
+            8502.0,
+            9141.384157
+          ],
+          [
+            8506.0,
+            9139.416408
+          ],
+          [
+            8510.0,
+            9136.970563
+          ],
+          [
+            8514.0,
+            9134.106846
+          ],
+          [
+            8518.0,
+            9130.895772
+          ],
+          [
+            8522.0,
+            9127.416408
+          ],
+          [
+            8526.0,
+            9123.754427
+          ],
+          [
+            8530.0,
+            9120.0
+          ]
+        ],
+        "terminalIdA": "E8067FBA-C201-41B1-59A9-BEB554B5A8B5",
+        "terminalIdB": "BE1F732D-20A8-215A-BD10-3B130D5AFDC2"
+      },
+      {
+        "createdAt": "2026-09-08T12:00:00Z",
+        "id": "EF14B422-17B3-FAA0-1A72-2880B812A142",
+        "ropePoints": [
+          [
+            9390.0,
+            9120.0
+          ],
+          [
+            9394.0,
+            9123.754427
+          ],
+          [
+            9398.0,
+            9127.416408
+          ],
+          [
+            9402.0,
+            9130.895772
+          ],
+          [
+            9406.0,
+            9134.106846
+          ],
+          [
+            9410.0,
+            9136.970563
+          ],
+          [
+            9414.0,
+            9139.416408
+          ],
+          [
+            9418.0,
+            9141.384157
+          ],
+          [
+            9422.0,
+            9142.825356
+          ],
+          [
+            9426.0,
+            9143.70452
+          ],
+          [
+            9430.0,
+            9144.0
+          ],
+          [
+            9434.0,
+            9143.70452
+          ],
+          [
+            9438.0,
+            9142.825356
+          ],
+          [
+            9442.0,
+            9141.384157
+          ],
+          [
+            9446.0,
+            9139.416408
+          ],
+          [
+            9450.0,
+            9136.970563
+          ],
+          [
+            9454.0,
+            9134.106846
+          ],
+          [
+            9458.0,
+            9130.895772
+          ],
+          [
+            9462.0,
+            9127.416408
+          ],
+          [
+            9466.0,
+            9123.754427
+          ],
+          [
+            9470.0,
+            9120.0
+          ]
+        ],
+        "terminalIdA": "BE1F732D-20A8-215A-BD10-3B130D5AFDC2",
+        "terminalIdB": "168382A2-B8A7-6F23-BDA1-732632ED545B"
+      },
+      {
+        "createdAt": "2026-09-08T12:00:00Z",
+        "id": "71A1A878-0640-78A0-1627-40A7014FB722",
+        "ropePoints": [
+          [
+            10330.0,
+            9120.0
+          ],
+          [
+            10334.0,
+            9123.754427
+          ],
+          [
+            10338.0,
+            9127.416408
+          ],
+          [
+            10342.0,
+            9130.895772
+          ],
+          [
+            10346.0,
+            9134.106846
+          ],
+          [
+            10350.0,
+            9136.970563
+          ],
+          [
+            10354.0,
+            9139.416408
+          ],
+          [
+            10358.0,
+            9141.384157
+          ],
+          [
+            10362.0,
+            9142.825356
+          ],
+          [
+            10366.0,
+            9143.70452
+          ],
+          [
+            10370.0,
+            9144.0
+          ],
+          [
+            10374.0,
+            9143.70452
+          ],
+          [
+            10378.0,
+            9142.825356
+          ],
+          [
+            10382.0,
+            9141.384157
+          ],
+          [
+            10386.0,
+            9139.416408
+          ],
+          [
+            10390.0,
+            9136.970563
+          ],
+          [
+            10394.0,
+            9134.106846
+          ],
+          [
+            10398.0,
+            9130.895772
+          ],
+          [
+            10402.0,
+            9127.416408
+          ],
+          [
+            10406.0,
+            9123.754427
+          ],
+          [
+            10410.0,
+            9120.0
+          ]
+        ],
+        "terminalIdA": "168382A2-B8A7-6F23-BDA1-732632ED545B",
+        "terminalIdB": "93D16366-08E1-CD6A-F7E2-697100A2B3FF"
+      },
+      {
+        "createdAt": "2026-09-08T12:00:00Z",
+        "id": "9D504E86-ED84-3333-C7AD-C1D903362335",
+        "ropePoints": [
+          [
+            10410.0,
+            9120.0
+          ],
+          [
+            10335.5,
+            9162.754427
+          ],
+          [
+            10261.0,
+            9205.416408
+          ],
+          [
+            10186.5,
+            9247.895772
+          ],
+          [
+            10112.0,
+            9290.106846
+          ],
+          [
+            10037.5,
+            9331.970563
+          ],
+          [
+            9963.0,
+            9373.416408
+          ],
+          [
+            9888.5,
+            9414.384157
+          ],
+          [
+            9814.0,
+            9454.825356
+          ],
+          [
+            9739.5,
+            9494.70452
+          ],
+          [
+            9665.0,
+            9534.0
+          ],
+          [
+            9590.5,
+            9572.70452
+          ],
+          [
+            9516.0,
+            9610.825356
+          ],
+          [
+            9441.5,
+            9648.384157
+          ],
+          [
+            9367.0,
+            9685.416408
+          ],
+          [
+            9292.5,
+            9721.970563
+          ],
+          [
+            9218.0,
+            9758.106846
+          ],
+          [
+            9143.5,
+            9793.895772
+          ],
+          [
+            9069.0,
+            9829.416408
+          ],
+          [
+            8994.5,
+            9864.754427
+          ],
+          [
+            8920.0,
+            9900.0
+          ]
+        ],
+        "terminalIdA": "93D16366-08E1-CD6A-F7E2-697100A2B3FF",
+        "terminalIdB": "C5340AC9-0C91-41D5-30F9-1054D246CB35"
+      },
+      {
+        "createdAt": "2026-09-08T12:00:00Z",
+        "id": "F4CD0AB9-DFB6-7774-9954-A3330C6A3787",
+        "ropePoints": [
+          [
+            8920.0,
+            9900.0
+          ],
+          [
+            8924.0,
+            9903.754427
+          ],
+          [
+            8928.0,
+            9907.416408
+          ],
+          [
+            8932.0,
+            9910.895772
+          ],
+          [
+            8936.0,
+            9914.106846
+          ],
+          [
+            8940.0,
+            9916.970563
+          ],
+          [
+            8944.0,
+            9919.416408
+          ],
+          [
+            8948.0,
+            9921.384157
+          ],
+          [
+            8952.0,
+            9922.825356
+          ],
+          [
+            8956.0,
+            9923.70452
+          ],
+          [
+            8960.0,
+            9924.0
+          ],
+          [
+            8964.0,
+            9923.70452
+          ],
+          [
+            8968.0,
+            9922.825356
+          ],
+          [
+            8972.0,
+            9921.384157
+          ],
+          [
+            8976.0,
+            9919.416408
+          ],
+          [
+            8980.0,
+            9916.970563
+          ],
+          [
+            8984.0,
+            9914.106846
+          ],
+          [
+            8988.0,
+            9910.895772
+          ],
+          [
+            8992.0,
+            9907.416408
+          ],
+          [
+            8996.0,
+            9903.754427
+          ],
+          [
+            9000.0,
+            9900.0
+          ]
+        ],
+        "terminalIdA": "C5340AC9-0C91-41D5-30F9-1054D246CB35",
+        "terminalIdB": "A7C8D00D-4B95-F494-CE2F-E5A22072352A"
+      },
+      {
+        "createdAt": "2026-09-08T12:00:00Z",
+        "id": "3381566F-5B80-B66A-F591-C479C78F5E7C",
+        "ropePoints": [
+          [
+            9860.0,
+            9900.0
+          ],
+          [
+            9864.0,
+            9903.754427
+          ],
+          [
+            9868.0,
+            9907.416408
+          ],
+          [
+            9872.0,
+            9910.895772
+          ],
+          [
+            9876.0,
+            9914.106846
+          ],
+          [
+            9880.0,
+            9916.970563
+          ],
+          [
+            9884.0,
+            9919.416408
+          ],
+          [
+            9888.0,
+            9921.384157
+          ],
+          [
+            9892.0,
+            9922.825356
+          ],
+          [
+            9896.0,
+            9923.70452
+          ],
+          [
+            9900.0,
+            9924.0
+          ],
+          [
+            9904.0,
+            9923.70452
+          ],
+          [
+            9908.0,
+            9922.825356
+          ],
+          [
+            9912.0,
+            9921.384157
+          ],
+          [
+            9916.0,
+            9919.416408
+          ],
+          [
+            9920.0,
+            9916.970563
+          ],
+          [
+            9924.0,
+            9914.106846
+          ],
+          [
+            9928.0,
+            9910.895772
+          ],
+          [
+            9932.0,
+            9907.416408
+          ],
+          [
+            9936.0,
+            9903.754427
+          ],
+          [
+            9940.0,
+            9900.0
+          ]
+        ],
+        "terminalIdA": "A7C8D00D-4B95-F494-CE2F-E5A22072352A",
+        "terminalIdB": "520DE19B-59D2-81BB-B9AB-9E3D346A08FE"
+      }
+    ],
+    "drawings": [],
+    "nodes": [
+      {
+        "content": {
+          "terminal": {
+            "_0": {
+              "agentType": "claude_code",
+              "autoScrollLocked": false,
+              "color": "#007AFF",
+              "command": "claude --dangerously-skip-permissions --model fable",
+              "icon": "seal",
+              "id": "9647FC9C-61B8-C970-299F-A29F1E291E68",
+              "isManager": true,
+              "isUnloaded": false,
+              "lastActiveAt": "1970-01-01T00:00:00Z",
+              "monitorWithOmbro": true,
+              "name": "Maestro · pipeline",
+              "scrollbackFile": "",
+              "scrollbackLineCount": 0,
+              "shellPath": "",
+              "shortcutMode": {
+                "kind": "automatic"
+              },
+              "status": "restored",
+              "workingDirectory": "",
+              "assignedRoleId": "E103A32B-A788-90B6-2E72-1BF8D472CC2A"
+            }
+          }
+        },
+        "createdAt": "2026-09-08T12:00:00Z",
+        "frame": [
+          [
+            9000,
+            8000
+          ],
+          [
+            860,
+            600
+          ]
+        ],
+        "id": "2E4E475C-9806-201E-7F05-EDECAF135CB9",
+        "isLocked": false,
+        "lastModifiedAt": "2026-09-08T12:00:00Z",
+        "zIndex": 51
+      },
+      {
+        "content": {
+          "terminal": {
+            "_0": {
+              "agentType": "claude_code",
+              "autoScrollLocked": false,
+              "color": "#007AFF",
+              "command": "claude --dangerously-skip-permissions --model opus",
+              "icon": "seal",
+              "id": "E8067FBA-C201-41B1-59A9-BEB554B5A8B5",
+              "isManager": false,
+              "isUnloaded": false,
+              "lastActiveAt": "1970-01-01T00:00:00Z",
+              "monitorWithOmbro": true,
+              "name": "Meridian · arquiteto",
+              "scrollbackFile": "",
+              "scrollbackLineCount": 0,
+              "shellPath": "",
+              "shortcutMode": {
+                "kind": "automatic"
+              },
+              "status": "restored",
+              "workingDirectory": "",
+              "assignedRoleId": "9B584CF9-F974-F244-F635-173365CB7674"
+            }
+          }
+        },
+        "createdAt": "2026-09-08T12:00:00Z",
+        "frame": [
+          [
+            7590.0,
+            8820
+          ],
+          [
+            860,
+            600
+          ]
+        ],
+        "id": "25C1C9DE-5FF4-30C0-E40C-8F4DA29756E8",
+        "isLocked": false,
+        "lastModifiedAt": "2026-09-08T12:00:00Z",
+        "zIndex": 52
+      },
+      {
+        "content": {
+          "terminal": {
+            "_0": {
+              "agentType": "claude_code",
+              "autoScrollLocked": false,
+              "color": "#007AFF",
+              "command": "claude --dangerously-skip-permissions --model opus",
+              "icon": "seal",
+              "id": "BE1F732D-20A8-215A-BD10-3B130D5AFDC2",
+              "isManager": false,
+              "isUnloaded": false,
+              "lastActiveAt": "1970-01-01T00:00:00Z",
+              "monitorWithOmbro": true,
+              "name": "Rivet · web",
+              "scrollbackFile": "",
+              "scrollbackLineCount": 0,
+              "shellPath": "",
+              "shortcutMode": {
+                "kind": "automatic"
+              },
+              "status": "restored",
+              "workingDirectory": "",
+              "assignedRoleId": "CE8D6679-5A8E-3D4E-A7BF-FF9937BC859D"
+            }
+          }
+        },
+        "createdAt": "2026-09-08T12:00:00Z",
+        "frame": [
+          [
+            8530.0,
+            8820
+          ],
+          [
+            860,
+            600
+          ]
+        ],
+        "id": "9CF1E441-8B53-1719-0397-49721DD597BC",
+        "isLocked": false,
+        "lastModifiedAt": "2026-09-08T12:00:00Z",
+        "zIndex": 53
+      },
+      {
+        "content": {
+          "terminal": {
+            "_0": {
+              "agentType": "claude_code",
+              "autoScrollLocked": false,
+              "color": "#007AFF",
+              "command": "claude --dangerously-skip-permissions --model opus",
+              "icon": "seal",
+              "id": "168382A2-B8A7-6F23-BDA1-732632ED545B",
+              "isManager": false,
+              "isUnloaded": false,
+              "lastActiveAt": "1970-01-01T00:00:00Z",
+              "monitorWithOmbro": true,
+              "name": "Wren · web mobile",
+              "scrollbackFile": "",
+              "scrollbackLineCount": 0,
+              "shellPath": "",
+              "shortcutMode": {
+                "kind": "automatic"
+              },
+              "status": "restored",
+              "workingDirectory": "",
+              "assignedRoleId": "D99A4061-BBF2-38FE-D350-056763A828BD"
+            }
+          }
+        },
+        "createdAt": "2026-09-08T12:00:00Z",
+        "frame": [
+          [
+            9470.0,
+            8820
+          ],
+          [
+            860,
+            600
+          ]
+        ],
+        "id": "3820EE05-DF06-935C-B8F8-D81B9B0896D3",
+        "isLocked": false,
+        "lastModifiedAt": "2026-09-08T12:00:00Z",
+        "zIndex": 54
+      },
+      {
+        "content": {
+          "terminal": {
+            "_0": {
+              "agentType": "claude_code",
+              "autoScrollLocked": false,
+              "color": "#007AFF",
+              "command": "claude --dangerously-skip-permissions --model opus",
+              "icon": "seal",
+              "id": "93D16366-08E1-CD6A-F7E2-697100A2B3FF",
+              "isManager": false,
+              "isUnloaded": false,
+              "lastActiveAt": "1970-01-01T00:00:00Z",
+              "monitorWithOmbro": true,
+              "name": "Tide · mobile híbrido",
+              "scrollbackFile": "",
+              "scrollbackLineCount": 0,
+              "shellPath": "",
+              "shortcutMode": {
+                "kind": "automatic"
+              },
+              "status": "restored",
+              "workingDirectory": "",
+              "assignedRoleId": "C14C2259-9009-1C53-6AC6-9D49F8B6D21F"
+            }
+          }
+        },
+        "createdAt": "2026-09-08T12:00:00Z",
+        "frame": [
+          [
+            10410.0,
+            8820
+          ],
+          [
+            860,
+            600
+          ]
+        ],
+        "id": "01151966-AF2D-F936-E328-64641FBFFA61",
+        "isLocked": false,
+        "lastModifiedAt": "2026-09-08T12:00:00Z",
+        "zIndex": 55
+      },
+      {
+        "content": {
+          "terminal": {
+            "_0": {
+              "agentType": "claude_code",
+              "autoScrollLocked": false,
+              "color": "#007AFF",
+              "command": "codex",
+              "icon": "seal",
+              "id": "C5340AC9-0C91-41D5-30F9-1054D246CB35",
+              "isManager": false,
+              "isUnloaded": false,
+              "lastActiveAt": "1970-01-01T00:00:00Z",
+              "monitorWithOmbro": true,
+              "name": "Palisade · segurança",
+              "scrollbackFile": "",
+              "scrollbackLineCount": 0,
+              "shellPath": "",
+              "shortcutMode": {
+                "kind": "automatic"
+              },
+              "status": "restored",
+              "workingDirectory": "",
+              "assignedRoleId": "5F0D27E6-D39F-DF29-F3E1-9F56A1F895F4"
+            }
+          }
+        },
+        "createdAt": "2026-09-08T12:00:00Z",
+        "frame": [
+          [
+            8060.0,
+            9600
+          ],
+          [
+            860,
+            600
+          ]
+        ],
+        "id": "D49C9B5A-E8A6-ED54-FC05-0EC59133ADB9",
+        "isLocked": false,
+        "lastModifiedAt": "2026-09-08T12:00:00Z",
+        "zIndex": 56
+      },
+      {
+        "content": {
+          "terminal": {
+            "_0": {
+              "agentType": "claude_code",
+              "autoScrollLocked": false,
+              "color": "#007AFF",
+              "command": "claude --dangerously-skip-permissions --model opus",
+              "icon": "seal",
+              "id": "A7C8D00D-4B95-F494-CE2F-E5A22072352A",
+              "isManager": false,
+              "isUnloaded": false,
+              "lastActiveAt": "1970-01-01T00:00:00Z",
+              "monitorWithOmbro": true,
+              "name": "Anvil · plataforma",
+              "scrollbackFile": "",
+              "scrollbackLineCount": 0,
+              "shellPath": "",
+              "shortcutMode": {
+                "kind": "automatic"
+              },
+              "status": "restored",
+              "workingDirectory": "",
+              "assignedRoleId": "263C6289-97DD-96BD-6268-14A7C611E4C0"
+            }
+          }
+        },
+        "createdAt": "2026-09-08T12:00:00Z",
+        "frame": [
+          [
+            9000.0,
+            9600
+          ],
+          [
+            860,
+            600
+          ]
+        ],
+        "id": "58FF9DA7-D5AB-B8D0-A1A5-97EB8EE2C2F4",
+        "isLocked": false,
+        "lastModifiedAt": "2026-09-08T12:00:00Z",
+        "zIndex": 57
+      },
+      {
+        "content": {
+          "terminal": {
+            "_0": {
+              "agentType": "claude_code",
+              "autoScrollLocked": false,
+              "color": "#007AFF",
+              "command": "claude --dangerously-skip-permissions --model opus",
+              "icon": "seal",
+              "id": "520DE19B-59D2-81BB-B9AB-9E3D346A08FE",
+              "isManager": false,
+              "isUnloaded": false,
+              "lastActiveAt": "1970-01-01T00:00:00Z",
+              "monitorWithOmbro": true,
+              "name": "Ledger · stack warden",
+              "scrollbackFile": "",
+              "scrollbackLineCount": 0,
+              "shellPath": "",
+              "shortcutMode": {
+                "kind": "automatic"
+              },
+              "status": "restored",
+              "workingDirectory": "",
+              "assignedRoleId": "7CAB69D8-8958-B680-6EC2-F20E4CD25206"
+            }
+          }
+        },
+        "createdAt": "2026-09-08T12:00:00Z",
+        "frame": [
+          [
+            9940.0,
+            9600
+          ],
+          [
+            860,
+            600
+          ]
+        ],
+        "id": "714D4100-929A-6226-D56D-3CE166518B55",
+        "isLocked": false,
+        "lastModifiedAt": "2026-09-08T12:00:00Z",
+        "zIndex": 58
+      },
+      {
+        "content": {
+          "stickyNote": {
+            "_0": {
+              "color": "blue",
+              "fileName": "contract.md",
+              "fontSize": 14,
+              "hasCustomName": true,
+              "isContentLocked": false,
+              "isPreviewing": true,
+              "storageMode": {
+                "managed": {}
+              }
+            }
+          }
+        },
+        "createdAt": "2026-09-08T12:00:00Z",
+        "frame": [
+          [
+            10300,
+            7580
+          ],
+          [
+            520,
+            280
+          ]
+        ],
+        "id": "390F08B6-10E7-4362-CA4E-76B6FC1FEA73",
+        "isLocked": false,
+        "lastModifiedAt": "2026-09-08T12:00:00Z",
+        "zIndex": 59
+      },
+      {
+        "content": {
+          "stickyNote": {
+            "_0": {
+              "color": "green",
+              "fileName": "workboard.md",
+              "fontSize": 14,
+              "hasCustomName": true,
+              "isContentLocked": false,
+              "isPreviewing": true,
+              "storageMode": {
+                "managed": {}
+              }
+            }
+          }
+        },
+        "createdAt": "2026-09-08T12:00:00Z",
+        "frame": [
+          [
+            10880,
+            7580
+          ],
+          [
+            520,
+            280
+          ]
+        ],
+        "id": "7B54E7AD-AC0F-910C-43C1-4A39D5CFEF1D",
+        "isLocked": false,
+        "lastModifiedAt": "2026-09-08T12:00:00Z",
+        "zIndex": 60
+      },
+      {
+        "content": {
+          "stickyNote": {
+            "_0": {
+              "color": "slate",
+              "fileName": "stack-checklist.md",
+              "fontSize": 14,
+              "hasCustomName": true,
+              "isContentLocked": false,
+              "isPreviewing": true,
+              "storageMode": {
+                "managed": {}
+              }
+            }
+          }
+        },
+        "createdAt": "2026-09-08T12:00:00Z",
+        "frame": [
+          [
+            10300,
+            7900
+          ],
+          [
+            1100,
+            560
+          ]
+        ],
+        "id": "174B80A6-CA1E-3152-C2FA-DB8039E28636",
+        "isLocked": false,
+        "lastModifiedAt": "2026-09-08T12:00:00Z",
+        "zIndex": 61
+      },
+      {
+        "content": {
+          "portal": {
+            "_0": {
+              "chromeHidden": false,
+              "currentURL": "http://localhost:5173",
+              "id": "3C666670-21CB-C19B-8A72-731DAAB74FAD",
+              "isUnloaded": false,
+              "name": "Web · Desktop",
+              "source": {
+                "url": {
+                  "_0": "http://localhost:5173"
+                }
+              },
+              "status": "idle",
+              "storageScope": "isolated",
+              "surface": {
+                "browser": {}
+              }
+            }
+          }
+        },
+        "createdAt": "2026-09-08T12:00:00Z",
+        "frame": [
+          [
+            7500,
+            6850
+          ],
+          [
+            1300,
+            760
+          ]
+        ],
+        "id": "331C8EE3-B908-91EF-0F92-A32808598316",
+        "isLocked": false,
+        "lastModifiedAt": "2026-09-08T12:00:00Z",
+        "zIndex": 62
+      },
+      {
+        "content": {
+          "portal": {
+            "_0": {
+              "chromeHidden": false,
+              "currentURL": "http://localhost:8080/health",
+              "id": "3D599F8E-16E2-F0D0-7F21-FAD833F3B388",
+              "isUnloaded": false,
+              "name": "API · health",
+              "source": {
+                "url": {
+                  "_0": "http://localhost:8080/health"
+                }
+              },
+              "status": "idle",
+              "storageScope": "isolated",
+              "surface": {
+                "browser": {}
+              }
+            }
+          }
+        },
+        "createdAt": "2026-09-08T12:00:00Z",
+        "frame": [
+          [
+            7500,
+            7680
+          ],
+          [
+            1300,
+            380
+          ]
+        ],
+        "id": "465F6F04-16E9-7093-BA40-D0118FC562DA",
+        "isLocked": false,
+        "lastModifiedAt": "2026-09-08T12:00:00Z",
+        "zIndex": 63
+      }
+    ],
+    "noteConnections": [
+      {
+        "createdAt": "2026-09-08T12:00:00Z",
+        "id": "15E7007B-C7F4-8112-453B-772CFA454C26",
+        "noteNodeId": "390F08B6-10E7-4362-CA4E-76B6FC1FEA73",
+        "ropePoints": [
+          [
+            9860.0,
+            8300.0
+          ],
+          [
+            9882.0,
+            8274.754427
+          ],
+          [
+            9904.0,
+            8249.416408
+          ],
+          [
+            9926.0,
+            8223.895772
+          ],
+          [
+            9948.0,
+            8198.106846
+          ],
+          [
+            9970.0,
+            8171.970563
+          ],
+          [
+            9992.0,
+            8145.416408
+          ],
+          [
+            10014.0,
+            8118.384157
+          ],
+          [
+            10036.0,
+            8090.825356
+          ],
+          [
+            10058.0,
+            8062.70452
+          ],
+          [
+            10080.0,
+            8034.0
+          ],
+          [
+            10102.0,
+            8004.70452
+          ],
+          [
+            10124.0,
+            7974.825356
+          ],
+          [
+            10146.0,
+            7944.384157
+          ],
+          [
+            10168.0,
+            7913.416408
+          ],
+          [
+            10190.0,
+            7881.970563
+          ],
+          [
+            10212.0,
+            7850.106846
+          ],
+          [
+            10234.0,
+            7817.895772
+          ],
+          [
+            10256.0,
+            7785.416408
+          ],
+          [
+            10278.0,
+            7752.754427
+          ],
+          [
+            10300.0,
+            7720.0
+          ]
+        ],
+        "terminalId": "9647FC9C-61B8-C970-299F-A29F1E291E68"
+      },
+      {
+        "createdAt": "2026-09-08T12:00:00Z",
+        "id": "B01A3B4E-6246-BE9F-15C9-4ECF5BD1BF51",
+        "noteNodeId": "390F08B6-10E7-4362-CA4E-76B6FC1FEA73",
+        "ropePoints": [
+          [
+            8450.0,
+            9120.0
+          ],
+          [
+            8555.5,
+            9060.754427
+          ],
+          [
+            8661.0,
+            9001.416408
+          ],
+          [
+            8766.5,
+            8941.895772
+          ],
+          [
+            8872.0,
+            8882.106846
+          ],
+          [
+            8977.5,
+            8821.970563
+          ],
+          [
+            9083.0,
+            8761.416408
+          ],
+          [
+            9188.5,
+            8700.384157
+          ],
+          [
+            9294.0,
+            8638.825356
+          ],
+          [
+            9399.5,
+            8576.70452
+          ],
+          [
+            9505.0,
+            8514.0
+          ],
+          [
+            9610.5,
+            8450.70452
+          ],
+          [
+            9716.0,
+            8386.825356
+          ],
+          [
+            9821.5,
+            8322.384157
+          ],
+          [
+            9927.0,
+            8257.416408
+          ],
+          [
+            10032.5,
+            8191.970563
+          ],
+          [
+            10138.0,
+            8126.106846
+          ],
+          [
+            10243.5,
+            8059.895772
+          ],
+          [
+            10349.0,
+            7993.416408
+          ],
+          [
+            10454.5,
+            7926.754427
+          ],
+          [
+            10560.0,
+            7860.0
+          ]
+        ],
+        "terminalId": "E8067FBA-C201-41B1-59A9-BEB554B5A8B5"
+      },
+      {
+        "createdAt": "2026-09-08T12:00:00Z",
+        "id": "F9E5BAFF-F19A-4949-3479-C5433665103F",
+        "noteNodeId": "390F08B6-10E7-4362-CA4E-76B6FC1FEA73",
+        "ropePoints": [
+          [
+            8960.0,
+            8820.0
+          ],
+          [
+            9040.0,
+            8775.754427
+          ],
+          [
+            9120.0,
+            8731.416408
+          ],
+          [
+            9200.0,
+            8686.895772
+          ],
+          [
+            9280.0,
+            8642.106846
+          ],
+          [
+            9360.0,
+            8596.970563
+          ],
+          [
+            9440.0,
+            8551.416408
+          ],
+          [
+            9520.0,
+            8505.384157
+          ],
+          [
+            9600.0,
+            8458.825356
+          ],
+          [
+            9680.0,
+            8411.70452
+          ],
+          [
+            9760.0,
+            8364.0
+          ],
+          [
+            9840.0,
+            8315.70452
+          ],
+          [
+            9920.0,
+            8266.825356
+          ],
+          [
+            10000.0,
+            8217.384157
+          ],
+          [
+            10080.0,
+            8167.416408
+          ],
+          [
+            10160.0,
+            8116.970563
+          ],
+          [
+            10240.0,
+            8066.106846
+          ],
+          [
+            10320.0,
+            8014.895772
+          ],
+          [
+            10400.0,
+            7963.416408
+          ],
+          [
+            10480.0,
+            7911.754427
+          ],
+          [
+            10560.0,
+            7860.0
+          ]
+        ],
+        "terminalId": "BE1F732D-20A8-215A-BD10-3B130D5AFDC2"
+      },
+      {
+        "createdAt": "2026-09-08T12:00:00Z",
+        "id": "AAD5C622-1A73-CCD2-B43F-CA521BAB5021",
+        "noteNodeId": "390F08B6-10E7-4362-CA4E-76B6FC1FEA73",
+        "ropePoints": [
+          [
+            9900.0,
+            8820.0
+          ],
+          [
+            9933.0,
+            8775.754427
+          ],
+          [
+            9966.0,
+            8731.416408
+          ],
+          [
+            9999.0,
+            8686.895772
+          ],
+          [
+            10032.0,
+            8642.106846
+          ],
+          [
+            10065.0,
+            8596.970563
+          ],
+          [
+            10098.0,
+            8551.416408
+          ],
+          [
+            10131.0,
+            8505.384157
+          ],
+          [
+            10164.0,
+            8458.825356
+          ],
+          [
+            10197.0,
+            8411.70452
+          ],
+          [
+            10230.0,
+            8364.0
+          ],
+          [
+            10263.0,
+            8315.70452
+          ],
+          [
+            10296.0,
+            8266.825356
+          ],
+          [
+            10329.0,
+            8217.384157
+          ],
+          [
+            10362.0,
+            8167.416408
+          ],
+          [
+            10395.0,
+            8116.970563
+          ],
+          [
+            10428.0,
+            8066.106846
+          ],
+          [
+            10461.0,
+            8014.895772
+          ],
+          [
+            10494.0,
+            7963.416408
+          ],
+          [
+            10527.0,
+            7911.754427
+          ],
+          [
+            10560.0,
+            7860.0
+          ]
+        ],
+        "terminalId": "168382A2-B8A7-6F23-BDA1-732632ED545B"
+      },
+      {
+        "createdAt": "2026-09-08T12:00:00Z",
+        "id": "5BEE8287-CE26-6DD3-FB5D-6C86054DF3B1",
+        "noteNodeId": "390F08B6-10E7-4362-CA4E-76B6FC1FEA73",
+        "ropePoints": [
+          [
+            10840.0,
+            8820.0
+          ],
+          [
+            10826.0,
+            8775.754427
+          ],
+          [
+            10812.0,
+            8731.416408
+          ],
+          [
+            10798.0,
+            8686.895772
+          ],
+          [
+            10784.0,
+            8642.106846
+          ],
+          [
+            10770.0,
+            8596.970563
+          ],
+          [
+            10756.0,
+            8551.416408
+          ],
+          [
+            10742.0,
+            8505.384157
+          ],
+          [
+            10728.0,
+            8458.825356
+          ],
+          [
+            10714.0,
+            8411.70452
+          ],
+          [
+            10700.0,
+            8364.0
+          ],
+          [
+            10686.0,
+            8315.70452
+          ],
+          [
+            10672.0,
+            8266.825356
+          ],
+          [
+            10658.0,
+            8217.384157
+          ],
+          [
+            10644.0,
+            8167.416408
+          ],
+          [
+            10630.0,
+            8116.970563
+          ],
+          [
+            10616.0,
+            8066.106846
+          ],
+          [
+            10602.0,
+            8014.895772
+          ],
+          [
+            10588.0,
+            7963.416408
+          ],
+          [
+            10574.0,
+            7911.754427
+          ],
+          [
+            10560.0,
+            7860.0
+          ]
+        ],
+        "terminalId": "93D16366-08E1-CD6A-F7E2-697100A2B3FF"
+      },
+      {
+        "createdAt": "2026-09-08T12:00:00Z",
+        "id": "91E95688-2E1D-4126-048D-5BE7A4066ED0",
+        "noteNodeId": "390F08B6-10E7-4362-CA4E-76B6FC1FEA73",
+        "ropePoints": [
+          [
+            8490.0,
+            9600.0
+          ],
+          [
+            8593.5,
+            9516.754427
+          ],
+          [
+            8697.0,
+            9433.416408
+          ],
+          [
+            8800.5,
+            9349.895772
+          ],
+          [
+            8904.0,
+            9266.106846
+          ],
+          [
+            9007.5,
+            9181.970563
+          ],
+          [
+            9111.0,
+            9097.416408
+          ],
+          [
+            9214.5,
+            9012.384157
+          ],
+          [
+            9318.0,
+            8926.825356
+          ],
+          [
+            9421.5,
+            8840.70452
+          ],
+          [
+            9525.0,
+            8754.0
+          ],
+          [
+            9628.5,
+            8666.70452
+          ],
+          [
+            9732.0,
+            8578.825356
+          ],
+          [
+            9835.5,
+            8490.384157
+          ],
+          [
+            9939.0,
+            8401.416408
+          ],
+          [
+            10042.5,
+            8311.970563
+          ],
+          [
+            10146.0,
+            8222.106846
+          ],
+          [
+            10249.5,
+            8131.895772
+          ],
+          [
+            10353.0,
+            8041.416408
+          ],
+          [
+            10456.5,
+            7950.754427
+          ],
+          [
+            10560.0,
+            7860.0
+          ]
+        ],
+        "terminalId": "C5340AC9-0C91-41D5-30F9-1054D246CB35"
+      },
+      {
+        "createdAt": "2026-09-08T12:00:00Z",
+        "id": "77451C17-FAC0-5D34-540F-89A0A87C83B0",
+        "noteNodeId": "390F08B6-10E7-4362-CA4E-76B6FC1FEA73",
+        "ropePoints": [
+          [
+            9430.0,
+            9600.0
+          ],
+          [
+            9486.5,
+            9516.754427
+          ],
+          [
+            9543.0,
+            9433.416408
+          ],
+          [
+            9599.5,
+            9349.895772
+          ],
+          [
+            9656.0,
+            9266.106846
+          ],
+          [
+            9712.5,
+            9181.970563
+          ],
+          [
+            9769.0,
+            9097.416408
+          ],
+          [
+            9825.5,
+            9012.384157
+          ],
+          [
+            9882.0,
+            8926.825356
+          ],
+          [
+            9938.5,
+            8840.70452
+          ],
+          [
+            9995.0,
+            8754.0
+          ],
+          [
+            10051.5,
+            8666.70452
+          ],
+          [
+            10108.0,
+            8578.825356
+          ],
+          [
+            10164.5,
+            8490.384157
+          ],
+          [
+            10221.0,
+            8401.416408
+          ],
+          [
+            10277.5,
+            8311.970563
+          ],
+          [
+            10334.0,
+            8222.106846
+          ],
+          [
+            10390.5,
+            8131.895772
+          ],
+          [
+            10447.0,
+            8041.416408
+          ],
+          [
+            10503.5,
+            7950.754427
+          ],
+          [
+            10560.0,
+            7860.0
+          ]
+        ],
+        "terminalId": "A7C8D00D-4B95-F494-CE2F-E5A22072352A"
+      },
+      {
+        "createdAt": "2026-09-08T12:00:00Z",
+        "id": "3963DDE0-17FA-D140-6E37-DD4F22B4F7A0",
+        "noteNodeId": "390F08B6-10E7-4362-CA4E-76B6FC1FEA73",
+        "ropePoints": [
+          [
+            10370.0,
+            9600.0
+          ],
+          [
+            10379.5,
+            9516.754427
+          ],
+          [
+            10389.0,
+            9433.416408
+          ],
+          [
+            10398.5,
+            9349.895772
+          ],
+          [
+            10408.0,
+            9266.106846
+          ],
+          [
+            10417.5,
+            9181.970563
+          ],
+          [
+            10427.0,
+            9097.416408
+          ],
+          [
+            10436.5,
+            9012.384157
+          ],
+          [
+            10446.0,
+            8926.825356
+          ],
+          [
+            10455.5,
+            8840.70452
+          ],
+          [
+            10465.0,
+            8754.0
+          ],
+          [
+            10474.5,
+            8666.70452
+          ],
+          [
+            10484.0,
+            8578.825356
+          ],
+          [
+            10493.5,
+            8490.384157
+          ],
+          [
+            10503.0,
+            8401.416408
+          ],
+          [
+            10512.5,
+            8311.970563
+          ],
+          [
+            10522.0,
+            8222.106846
+          ],
+          [
+            10531.5,
+            8131.895772
+          ],
+          [
+            10541.0,
+            8041.416408
+          ],
+          [
+            10550.5,
+            7950.754427
+          ],
+          [
+            10560.0,
+            7860.0
+          ]
+        ],
+        "terminalId": "520DE19B-59D2-81BB-B9AB-9E3D346A08FE"
+      },
+      {
+        "createdAt": "2026-09-08T12:00:00Z",
+        "id": "5B168AF8-B09C-E43E-8528-E43D93BE4E6C",
+        "noteNodeId": "7B54E7AD-AC0F-910C-43C1-4A39D5CFEF1D",
+        "ropePoints": [
+          [
+            9860.0,
+            8300.0
+          ],
+          [
+            9911.0,
+            8274.754427
+          ],
+          [
+            9962.0,
+            8249.416408
+          ],
+          [
+            10013.0,
+            8223.895772
+          ],
+          [
+            10064.0,
+            8198.106846
+          ],
+          [
+            10115.0,
+            8171.970563
+          ],
+          [
+            10166.0,
+            8145.416408
+          ],
+          [
+            10217.0,
+            8118.384157
+          ],
+          [
+            10268.0,
+            8090.825356
+          ],
+          [
+            10319.0,
+            8062.70452
+          ],
+          [
+            10370.0,
+            8034.0
+          ],
+          [
+            10421.0,
+            8004.70452
+          ],
+          [
+            10472.0,
+            7974.825356
+          ],
+          [
+            10523.0,
+            7944.384157
+          ],
+          [
+            10574.0,
+            7913.416408
+          ],
+          [
+            10625.0,
+            7881.970563
+          ],
+          [
+            10676.0,
+            7850.106846
+          ],
+          [
+            10727.0,
+            7817.895772
+          ],
+          [
+            10778.0,
+            7785.416408
+          ],
+          [
+            10829.0,
+            7752.754427
+          ],
+          [
+            10880.0,
+            7720.0
+          ]
+        ],
+        "terminalId": "9647FC9C-61B8-C970-299F-A29F1E291E68"
+      },
+      {
+        "createdAt": "2026-09-08T12:00:00Z",
+        "id": "A05D5899-7675-EA5F-DBC3-595DE20C6D92",
+        "noteNodeId": "7B54E7AD-AC0F-910C-43C1-4A39D5CFEF1D",
+        "ropePoints": [
+          [
+            8450.0,
+            9120.0
+          ],
+          [
+            8571.5,
+            9053.754427
+          ],
+          [
+            8693.0,
+            8987.416408
+          ],
+          [
+            8814.5,
+            8920.895772
+          ],
+          [
+            8936.0,
+            8854.106846
+          ],
+          [
+            9057.5,
+            8786.970563
+          ],
+          [
+            9179.0,
+            8719.416408
+          ],
+          [
+            9300.5,
+            8651.384157
+          ],
+          [
+            9422.0,
+            8582.825356
+          ],
+          [
+            9543.5,
+            8513.70452
+          ],
+          [
+            9665.0,
+            8444.0
+          ],
+          [
+            9786.5,
+            8373.70452
+          ],
+          [
+            9908.0,
+            8302.825356
+          ],
+          [
+            10029.5,
+            8231.384157
+          ],
+          [
+            10151.0,
+            8159.416408
+          ],
+          [
+            10272.5,
+            8086.970563
+          ],
+          [
+            10394.0,
+            8014.106846
+          ],
+          [
+            10515.5,
+            7940.895772
+          ],
+          [
+            10637.0,
+            7867.416408
+          ],
+          [
+            10758.5,
+            7793.754427
+          ],
+          [
+            10880.0,
+            7720.0
+          ]
+        ],
+        "terminalId": "E8067FBA-C201-41B1-59A9-BEB554B5A8B5"
+      },
+      {
+        "createdAt": "2026-09-08T12:00:00Z",
+        "id": "EEF725C4-69E9-B50A-C8D9-FF8917454B29",
+        "noteNodeId": "7B54E7AD-AC0F-910C-43C1-4A39D5CFEF1D",
+        "ropePoints": [
+          [
+            9390.0,
+            9120.0
+          ],
+          [
+            9477.5,
+            9060.754427
+          ],
+          [
+            9565.0,
+            9001.416408
+          ],
+          [
+            9652.5,
+            8941.895772
+          ],
+          [
+            9740.0,
+            8882.106846
+          ],
+          [
+            9827.5,
+            8821.970563
+          ],
+          [
+            9915.0,
+            8761.416408
+          ],
+          [
+            10002.5,
+            8700.384157
+          ],
+          [
+            10090.0,
+            8638.825356
+          ],
+          [
+            10177.5,
+            8576.70452
+          ],
+          [
+            10265.0,
+            8514.0
+          ],
+          [
+            10352.5,
+            8450.70452
+          ],
+          [
+            10440.0,
+            8386.825356
+          ],
+          [
+            10527.5,
+            8322.384157
+          ],
+          [
+            10615.0,
+            8257.416408
+          ],
+          [
+            10702.5,
+            8191.970563
+          ],
+          [
+            10790.0,
+            8126.106846
+          ],
+          [
+            10877.5,
+            8059.895772
+          ],
+          [
+            10965.0,
+            7993.416408
+          ],
+          [
+            11052.5,
+            7926.754427
+          ],
+          [
+            11140.0,
+            7860.0
+          ]
+        ],
+        "terminalId": "BE1F732D-20A8-215A-BD10-3B130D5AFDC2"
+      },
+      {
+        "createdAt": "2026-09-08T12:00:00Z",
+        "id": "053FE1FB-D921-D260-37CC-AF0A94949358",
+        "noteNodeId": "7B54E7AD-AC0F-910C-43C1-4A39D5CFEF1D",
+        "ropePoints": [
+          [
+            9900.0,
+            8820.0
+          ],
+          [
+            9962.0,
+            8775.754427
+          ],
+          [
+            10024.0,
+            8731.416408
+          ],
+          [
+            10086.0,
+            8686.895772
+          ],
+          [
+            10148.0,
+            8642.106846
+          ],
+          [
+            10210.0,
+            8596.970563
+          ],
+          [
+            10272.0,
+            8551.416408
+          ],
+          [
+            10334.0,
+            8505.384157
+          ],
+          [
+            10396.0,
+            8458.825356
+          ],
+          [
+            10458.0,
+            8411.70452
+          ],
+          [
+            10520.0,
+            8364.0
+          ],
+          [
+            10582.0,
+            8315.70452
+          ],
+          [
+            10644.0,
+            8266.825356
+          ],
+          [
+            10706.0,
+            8217.384157
+          ],
+          [
+            10768.0,
+            8167.416408
+          ],
+          [
+            10830.0,
+            8116.970563
+          ],
+          [
+            10892.0,
+            8066.106846
+          ],
+          [
+            10954.0,
+            8014.895772
+          ],
+          [
+            11016.0,
+            7963.416408
+          ],
+          [
+            11078.0,
+            7911.754427
+          ],
+          [
+            11140.0,
+            7860.0
+          ]
+        ],
+        "terminalId": "168382A2-B8A7-6F23-BDA1-732632ED545B"
+      },
+      {
+        "createdAt": "2026-09-08T12:00:00Z",
+        "id": "D07679D1-E859-F5DA-32EE-4EDA8FD89023",
+        "noteNodeId": "7B54E7AD-AC0F-910C-43C1-4A39D5CFEF1D",
+        "ropePoints": [
+          [
+            10840.0,
+            8820.0
+          ],
+          [
+            10855.0,
+            8775.754427
+          ],
+          [
+            10870.0,
+            8731.416408
+          ],
+          [
+            10885.0,
+            8686.895772
+          ],
+          [
+            10900.0,
+            8642.106846
+          ],
+          [
+            10915.0,
+            8596.970563
+          ],
+          [
+            10930.0,
+            8551.416408
+          ],
+          [
+            10945.0,
+            8505.384157
+          ],
+          [
+            10960.0,
+            8458.825356
+          ],
+          [
+            10975.0,
+            8411.70452
+          ],
+          [
+            10990.0,
+            8364.0
+          ],
+          [
+            11005.0,
+            8315.70452
+          ],
+          [
+            11020.0,
+            8266.825356
+          ],
+          [
+            11035.0,
+            8217.384157
+          ],
+          [
+            11050.0,
+            8167.416408
+          ],
+          [
+            11065.0,
+            8116.970563
+          ],
+          [
+            11080.0,
+            8066.106846
+          ],
+          [
+            11095.0,
+            8014.895772
+          ],
+          [
+            11110.0,
+            7963.416408
+          ],
+          [
+            11125.0,
+            7911.754427
+          ],
+          [
+            11140.0,
+            7860.0
+          ]
+        ],
+        "terminalId": "93D16366-08E1-CD6A-F7E2-697100A2B3FF"
+      },
+      {
+        "createdAt": "2026-09-08T12:00:00Z",
+        "id": "51E69E07-F0F2-463C-CEF2-EFC97771A97F",
+        "noteNodeId": "7B54E7AD-AC0F-910C-43C1-4A39D5CFEF1D",
+        "ropePoints": [
+          [
+            8490.0,
+            9600.0
+          ],
+          [
+            8622.5,
+            9516.754427
+          ],
+          [
+            8755.0,
+            9433.416408
+          ],
+          [
+            8887.5,
+            9349.895772
+          ],
+          [
+            9020.0,
+            9266.106846
+          ],
+          [
+            9152.5,
+            9181.970563
+          ],
+          [
+            9285.0,
+            9097.416408
+          ],
+          [
+            9417.5,
+            9012.384157
+          ],
+          [
+            9550.0,
+            8926.825356
+          ],
+          [
+            9682.5,
+            8840.70452
+          ],
+          [
+            9815.0,
+            8754.0
+          ],
+          [
+            9947.5,
+            8666.70452
+          ],
+          [
+            10080.0,
+            8578.825356
+          ],
+          [
+            10212.5,
+            8490.384157
+          ],
+          [
+            10345.0,
+            8401.416408
+          ],
+          [
+            10477.5,
+            8311.970563
+          ],
+          [
+            10610.0,
+            8222.106846
+          ],
+          [
+            10742.5,
+            8131.895772
+          ],
+          [
+            10875.0,
+            8041.416408
+          ],
+          [
+            11007.5,
+            7950.754427
+          ],
+          [
+            11140.0,
+            7860.0
+          ]
+        ],
+        "terminalId": "C5340AC9-0C91-41D5-30F9-1054D246CB35"
+      },
+      {
+        "createdAt": "2026-09-08T12:00:00Z",
+        "id": "47D33392-53FD-D58D-BFC2-108C1FECFB40",
+        "noteNodeId": "7B54E7AD-AC0F-910C-43C1-4A39D5CFEF1D",
+        "ropePoints": [
+          [
+            9430.0,
+            9600.0
+          ],
+          [
+            9515.5,
+            9516.754427
+          ],
+          [
+            9601.0,
+            9433.416408
+          ],
+          [
+            9686.5,
+            9349.895772
+          ],
+          [
+            9772.0,
+            9266.106846
+          ],
+          [
+            9857.5,
+            9181.970563
+          ],
+          [
+            9943.0,
+            9097.416408
+          ],
+          [
+            10028.5,
+            9012.384157
+          ],
+          [
+            10114.0,
+            8926.825356
+          ],
+          [
+            10199.5,
+            8840.70452
+          ],
+          [
+            10285.0,
+            8754.0
+          ],
+          [
+            10370.5,
+            8666.70452
+          ],
+          [
+            10456.0,
+            8578.825356
+          ],
+          [
+            10541.5,
+            8490.384157
+          ],
+          [
+            10627.0,
+            8401.416408
+          ],
+          [
+            10712.5,
+            8311.970563
+          ],
+          [
+            10798.0,
+            8222.106846
+          ],
+          [
+            10883.5,
+            8131.895772
+          ],
+          [
+            10969.0,
+            8041.416408
+          ],
+          [
+            11054.5,
+            7950.754427
+          ],
+          [
+            11140.0,
+            7860.0
+          ]
+        ],
+        "terminalId": "A7C8D00D-4B95-F494-CE2F-E5A22072352A"
+      },
+      {
+        "createdAt": "2026-09-08T12:00:00Z",
+        "id": "E27DFAAB-4332-54E3-1241-2CAB66282770",
+        "noteNodeId": "7B54E7AD-AC0F-910C-43C1-4A39D5CFEF1D",
+        "ropePoints": [
+          [
+            10370.0,
+            9600.0
+          ],
+          [
+            10408.5,
+            9516.754427
+          ],
+          [
+            10447.0,
+            9433.416408
+          ],
+          [
+            10485.5,
+            9349.895772
+          ],
+          [
+            10524.0,
+            9266.106846
+          ],
+          [
+            10562.5,
+            9181.970563
+          ],
+          [
+            10601.0,
+            9097.416408
+          ],
+          [
+            10639.5,
+            9012.384157
+          ],
+          [
+            10678.0,
+            8926.825356
+          ],
+          [
+            10716.5,
+            8840.70452
+          ],
+          [
+            10755.0,
+            8754.0
+          ],
+          [
+            10793.5,
+            8666.70452
+          ],
+          [
+            10832.0,
+            8578.825356
+          ],
+          [
+            10870.5,
+            8490.384157
+          ],
+          [
+            10909.0,
+            8401.416408
+          ],
+          [
+            10947.5,
+            8311.970563
+          ],
+          [
+            10986.0,
+            8222.106846
+          ],
+          [
+            11024.5,
+            8131.895772
+          ],
+          [
+            11063.0,
+            8041.416408
+          ],
+          [
+            11101.5,
+            7950.754427
+          ],
+          [
+            11140.0,
+            7860.0
+          ]
+        ],
+        "terminalId": "520DE19B-59D2-81BB-B9AB-9E3D346A08FE"
+      },
+      {
+        "createdAt": "2026-09-08T12:00:00Z",
+        "id": "59899E72-B9DE-C270-4363-5A13A39F412E",
+        "noteNodeId": "174B80A6-CA1E-3152-C2FA-DB8039E28636",
+        "ropePoints": [
+          [
+            9860.0,
+            8300.0
+          ],
+          [
+            9882.0,
+            8297.754427
+          ],
+          [
+            9904.0,
+            8295.416408
+          ],
+          [
+            9926.0,
+            8292.895772
+          ],
+          [
+            9948.0,
+            8290.106846
+          ],
+          [
+            9970.0,
+            8286.970563
+          ],
+          [
+            9992.0,
+            8283.416408
+          ],
+          [
+            10014.0,
+            8279.384157
+          ],
+          [
+            10036.0,
+            8274.825356
+          ],
+          [
+            10058.0,
+            8269.70452
+          ],
+          [
+            10080.0,
+            8264.0
+          ],
+          [
+            10102.0,
+            8257.70452
+          ],
+          [
+            10124.0,
+            8250.825356
+          ],
+          [
+            10146.0,
+            8243.384157
+          ],
+          [
+            10168.0,
+            8235.416408
+          ],
+          [
+            10190.0,
+            8226.970563
+          ],
+          [
+            10212.0,
+            8218.106846
+          ],
+          [
+            10234.0,
+            8208.895772
+          ],
+          [
+            10256.0,
+            8199.416408
+          ],
+          [
+            10278.0,
+            8189.754427
+          ],
+          [
+            10300.0,
+            8180.0
+          ]
+        ],
+        "terminalId": "9647FC9C-61B8-C970-299F-A29F1E291E68"
+      },
+      {
+        "createdAt": "2026-09-08T12:00:00Z",
+        "id": "9674E25D-33E0-FAA4-E304-8983235C6088",
+        "noteNodeId": "174B80A6-CA1E-3152-C2FA-DB8039E28636",
+        "ropePoints": [
+          [
+            8450.0,
+            9120.0
+          ],
+          [
+            8542.5,
+            9076.754427
+          ],
+          [
+            8635.0,
+            9033.416408
+          ],
+          [
+            8727.5,
+            8989.895772
+          ],
+          [
+            8820.0,
+            8946.106846
+          ],
+          [
+            8912.5,
+            8901.970563
+          ],
+          [
+            9005.0,
+            8857.416408
+          ],
+          [
+            9097.5,
+            8812.384157
+          ],
+          [
+            9190.0,
+            8766.825356
+          ],
+          [
+            9282.5,
+            8720.70452
+          ],
+          [
+            9375.0,
+            8674.0
+          ],
+          [
+            9467.5,
+            8626.70452
+          ],
+          [
+            9560.0,
+            8578.825356
+          ],
+          [
+            9652.5,
+            8530.384157
+          ],
+          [
+            9745.0,
+            8481.416408
+          ],
+          [
+            9837.5,
+            8431.970563
+          ],
+          [
+            9930.0,
+            8382.106846
+          ],
+          [
+            10022.5,
+            8331.895772
+          ],
+          [
+            10115.0,
+            8281.416408
+          ],
+          [
+            10207.5,
+            8230.754427
+          ],
+          [
+            10300.0,
+            8180.0
+          ]
+        ],
+        "terminalId": "E8067FBA-C201-41B1-59A9-BEB554B5A8B5"
+      },
+      {
+        "createdAt": "2026-09-08T12:00:00Z",
+        "id": "08F2E4B3-3A14-ECAA-A5EA-839ADDA4B6FA",
+        "noteNodeId": "174B80A6-CA1E-3152-C2FA-DB8039E28636",
+        "ropePoints": [
+          [
+            9390.0,
+            9120.0
+          ],
+          [
+            9435.5,
+            9076.754427
+          ],
+          [
+            9481.0,
+            9033.416408
+          ],
+          [
+            9526.5,
+            8989.895772
+          ],
+          [
+            9572.0,
+            8946.106846
+          ],
+          [
+            9617.5,
+            8901.970563
+          ],
+          [
+            9663.0,
+            8857.416408
+          ],
+          [
+            9708.5,
+            8812.384157
+          ],
+          [
+            9754.0,
+            8766.825356
+          ],
+          [
+            9799.5,
+            8720.70452
+          ],
+          [
+            9845.0,
+            8674.0
+          ],
+          [
+            9890.5,
+            8626.70452
+          ],
+          [
+            9936.0,
+            8578.825356
+          ],
+          [
+            9981.5,
+            8530.384157
+          ],
+          [
+            10027.0,
+            8481.416408
+          ],
+          [
+            10072.5,
+            8431.970563
+          ],
+          [
+            10118.0,
+            8382.106846
+          ],
+          [
+            10163.5,
+            8331.895772
+          ],
+          [
+            10209.0,
+            8281.416408
+          ],
+          [
+            10254.5,
+            8230.754427
+          ],
+          [
+            10300.0,
+            8180.0
+          ]
+        ],
+        "terminalId": "BE1F732D-20A8-215A-BD10-3B130D5AFDC2"
+      },
+      {
+        "createdAt": "2026-09-08T12:00:00Z",
+        "id": "21381907-A839-88A3-6200-81AADB130F36",
+        "noteNodeId": "174B80A6-CA1E-3152-C2FA-DB8039E28636",
+        "ropePoints": [
+          [
+            9900.0,
+            8820.0
+          ],
+          [
+            9947.5,
+            8805.754427
+          ],
+          [
+            9995.0,
+            8791.416408
+          ],
+          [
+            10042.5,
+            8776.895772
+          ],
+          [
+            10090.0,
+            8762.106846
+          ],
+          [
+            10137.5,
+            8746.970563
+          ],
+          [
+            10185.0,
+            8731.416408
+          ],
+          [
+            10232.5,
+            8715.384157
+          ],
+          [
+            10280.0,
+            8698.825356
+          ],
+          [
+            10327.5,
+            8681.70452
+          ],
+          [
+            10375.0,
+            8664.0
+          ],
+          [
+            10422.5,
+            8645.70452
+          ],
+          [
+            10470.0,
+            8626.825356
+          ],
+          [
+            10517.5,
+            8607.384157
+          ],
+          [
+            10565.0,
+            8587.416408
+          ],
+          [
+            10612.5,
+            8566.970563
+          ],
+          [
+            10660.0,
+            8546.106846
+          ],
+          [
+            10707.5,
+            8524.895772
+          ],
+          [
+            10755.0,
+            8503.416408
+          ],
+          [
+            10802.5,
+            8481.754427
+          ],
+          [
+            10850.0,
+            8460.0
+          ]
+        ],
+        "terminalId": "168382A2-B8A7-6F23-BDA1-732632ED545B"
+      },
+      {
+        "createdAt": "2026-09-08T12:00:00Z",
+        "id": "B792EC94-C7C3-5D86-134D-BDBB82127EBC",
+        "noteNodeId": "174B80A6-CA1E-3152-C2FA-DB8039E28636",
+        "ropePoints": [
+          [
+            10840.0,
+            8820.0
+          ],
+          [
+            10840.5,
+            8805.754427
+          ],
+          [
+            10841.0,
+            8791.416408
+          ],
+          [
+            10841.5,
+            8776.895772
+          ],
+          [
+            10842.0,
+            8762.106846
+          ],
+          [
+            10842.5,
+            8746.970563
+          ],
+          [
+            10843.0,
+            8731.416408
+          ],
+          [
+            10843.5,
+            8715.384157
+          ],
+          [
+            10844.0,
+            8698.825356
+          ],
+          [
+            10844.5,
+            8681.70452
+          ],
+          [
+            10845.0,
+            8664.0
+          ],
+          [
+            10845.5,
+            8645.70452
+          ],
+          [
+            10846.0,
+            8626.825356
+          ],
+          [
+            10846.5,
+            8607.384157
+          ],
+          [
+            10847.0,
+            8587.416408
+          ],
+          [
+            10847.5,
+            8566.970563
+          ],
+          [
+            10848.0,
+            8546.106846
+          ],
+          [
+            10848.5,
+            8524.895772
+          ],
+          [
+            10849.0,
+            8503.416408
+          ],
+          [
+            10849.5,
+            8481.754427
+          ],
+          [
+            10850.0,
+            8460.0
+          ]
+        ],
+        "terminalId": "93D16366-08E1-CD6A-F7E2-697100A2B3FF"
+      },
+      {
+        "createdAt": "2026-09-08T12:00:00Z",
+        "id": "159123DE-5468-D64A-570C-5247E0983C12",
+        "noteNodeId": "174B80A6-CA1E-3152-C2FA-DB8039E28636",
+        "ropePoints": [
+          [
+            8490.0,
+            9600.0
+          ],
+          [
+            8608.0,
+            9546.754427
+          ],
+          [
+            8726.0,
+            9493.416408
+          ],
+          [
+            8844.0,
+            9439.895772
+          ],
+          [
+            8962.0,
+            9386.106846
+          ],
+          [
+            9080.0,
+            9331.970563
+          ],
+          [
+            9198.0,
+            9277.416408
+          ],
+          [
+            9316.0,
+            9222.384157
+          ],
+          [
+            9434.0,
+            9166.825356
+          ],
+          [
+            9552.0,
+            9110.70452
+          ],
+          [
+            9670.0,
+            9054.0
+          ],
+          [
+            9788.0,
+            8996.70452
+          ],
+          [
+            9906.0,
+            8938.825356
+          ],
+          [
+            10024.0,
+            8880.384157
+          ],
+          [
+            10142.0,
+            8821.416408
+          ],
+          [
+            10260.0,
+            8761.970563
+          ],
+          [
+            10378.0,
+            8702.106846
+          ],
+          [
+            10496.0,
+            8641.895772
+          ],
+          [
+            10614.0,
+            8581.416408
+          ],
+          [
+            10732.0,
+            8520.754427
+          ],
+          [
+            10850.0,
+            8460.0
+          ]
+        ],
+        "terminalId": "C5340AC9-0C91-41D5-30F9-1054D246CB35"
+      },
+      {
+        "createdAt": "2026-09-08T12:00:00Z",
+        "id": "F0610539-3239-53A3-3EC6-DFBA0236619A",
+        "noteNodeId": "174B80A6-CA1E-3152-C2FA-DB8039E28636",
+        "ropePoints": [
+          [
+            9430.0,
+            9600.0
+          ],
+          [
+            9501.0,
+            9546.754427
+          ],
+          [
+            9572.0,
+            9493.416408
+          ],
+          [
+            9643.0,
+            9439.895772
+          ],
+          [
+            9714.0,
+            9386.106846
+          ],
+          [
+            9785.0,
+            9331.970563
+          ],
+          [
+            9856.0,
+            9277.416408
+          ],
+          [
+            9927.0,
+            9222.384157
+          ],
+          [
+            9998.0,
+            9166.825356
+          ],
+          [
+            10069.0,
+            9110.70452
+          ],
+          [
+            10140.0,
+            9054.0
+          ],
+          [
+            10211.0,
+            8996.70452
+          ],
+          [
+            10282.0,
+            8938.825356
+          ],
+          [
+            10353.0,
+            8880.384157
+          ],
+          [
+            10424.0,
+            8821.416408
+          ],
+          [
+            10495.0,
+            8761.970563
+          ],
+          [
+            10566.0,
+            8702.106846
+          ],
+          [
+            10637.0,
+            8641.895772
+          ],
+          [
+            10708.0,
+            8581.416408
+          ],
+          [
+            10779.0,
+            8520.754427
+          ],
+          [
+            10850.0,
+            8460.0
+          ]
+        ],
+        "terminalId": "A7C8D00D-4B95-F494-CE2F-E5A22072352A"
+      },
+      {
+        "createdAt": "2026-09-08T12:00:00Z",
+        "id": "245B39F8-108C-84B1-E8F1-EA19248D01B4",
+        "noteNodeId": "174B80A6-CA1E-3152-C2FA-DB8039E28636",
+        "ropePoints": [
+          [
+            10370.0,
+            9600.0
+          ],
+          [
+            10394.0,
+            9546.754427
+          ],
+          [
+            10418.0,
+            9493.416408
+          ],
+          [
+            10442.0,
+            9439.895772
+          ],
+          [
+            10466.0,
+            9386.106846
+          ],
+          [
+            10490.0,
+            9331.970563
+          ],
+          [
+            10514.0,
+            9277.416408
+          ],
+          [
+            10538.0,
+            9222.384157
+          ],
+          [
+            10562.0,
+            9166.825356
+          ],
+          [
+            10586.0,
+            9110.70452
+          ],
+          [
+            10610.0,
+            9054.0
+          ],
+          [
+            10634.0,
+            8996.70452
+          ],
+          [
+            10658.0,
+            8938.825356
+          ],
+          [
+            10682.0,
+            8880.384157
+          ],
+          [
+            10706.0,
+            8821.416408
+          ],
+          [
+            10730.0,
+            8761.970563
+          ],
+          [
+            10754.0,
+            8702.106846
+          ],
+          [
+            10778.0,
+            8641.895772
+          ],
+          [
+            10802.0,
+            8581.416408
+          ],
+          [
+            10826.0,
+            8520.754427
+          ],
+          [
+            10850.0,
+            8460.0
+          ]
+        ],
+        "terminalId": "520DE19B-59D2-81BB-B9AB-9E3D346A08FE"
+      }
+    ],
+    "noteTexts": {
+      "390F08B6-10E7-4362-CA4E-76B6FC1FEA73": "# contract — Streaming de vídeo\n\nplataforma de vídeo (ABR, DRM, CDN, catálogo, recomendação)\n\nO Arquiteto preenche: fatias por superfície, interface de API compartilhada (exata), posse de arquivos, critério de pronto por fatia.\n",
+      "7B54E7AD-AC0F-910C-43C1-4A39D5CFEF1D": "# workboard\n\n## Slices\n(nada ainda — atribuições aparecem aqui quando uma feature começa)\n\n## Decisions\n(mudanças de contrato registradas aqui pelo Arquiteto, com data e motivo)\n\n## Verdicts\n(resultados de revisão postados aqui pelo Warden, uma linha por revisão)\n\n## Findings\n(divergências por severidade; nada é corrigido até o usuário aprovar)\n",
+      "174B80A6-CA1E-3152-C2FA-DB8039E28636": "# stack-checklist\n\nA definição compartilhada de pronto. Dono: o Stack Warden; cada agente mantém as próprias camadas honestas.\n\nVocabulário de status: `[ ]` não iniciado · `[~]` em progresso · `[x]` verde COM EVIDÊNCIA ·\n`[!]` vermelho, achado aberto · `[-]` n/a, com motivo escrito.\nUma camada é verde só quando o Warden viu evidência. Intenção não é evidência.\n\n| # | Camada | Dono | Status | Evidência |\n|---|--------|------|--------|-----------|\n| 1 | Frontend | — | [ ] | |\n| 2 | Interface, UX e responsividade | — | [ ] | |\n| 3 | Estado da aplicação | — | [ ] | |\n| 4 | APIs e lógica de backend | — | [ ] | |\n| 5 | Banco de dados e armazenamento | — | [ ] | |\n| 6 | Modelagem de dados | — | [ ] | |\n| 7 | Autenticação e autorização | — | [ ] | |\n| 8 | Permissões e controle de acesso | — | [ ] | |\n| 9 | Segurança e RLS | — | [ ] | |\n| 10 | Validação de dados | — | [ ] | |\n| 11 | Hospedagem e deploy | — | [ ] | |\n| 12 | Cloud e infraestrutura | — | [ ] | |\n| 13 | CI/CD e versionamento | — | [ ] | |\n| 14 | Variáveis de ambiente e secrets | — | [ ] | |\n| 15 | Cache e CDN | — | [ ] | |\n| 16 | Rate limiting | — | [ ] | |\n| 17 | Filas e processamento assíncrono | — | [ ] | |\n| 18 | Webhooks e integrações externas | — | [ ] | |\n| 19 | Logs e monitoramento | — | [ ] | |\n| 20 | Rastreamento de erros | — | [ ] | |\n| 21 | Testes automatizados | — | [ ] | |\n| 22 | Performance e otimização | — | [ ] | |\n| 23 | Escalabilidade | — | [ ] | |\n| 24 | Backup e recuperação | — | [ ] | |\n| 25 | Disponibilidade e incidentes | — | [ ] | |\n| 26 | Documentação e manutenção | — | [ ] | |\n| 27 | Idempotência e ledger financeiro | — | [ ] | |\n| 28 | KYC, AML e triagem de sanções | — | [ ] | |\n| 29 | Precisão monetária, FX e arredondamento | — | [ ] | |\n| 30 | Trilha de auditoria e retenção | — | [ ] | |\n\n## Regra de corte\nNenhuma fatia que toque movimentação de dinheiro, identidade, segredo ou superfície\npública é considerada pronta sem as camadas 7, 8, 9, 10, 14, 27, 28, 29 e 30 avaliadas —\nverdes ou com achado aberto e registrado. Silêncio não conta como aprovação.\n"
+    },
+    "noteToNoteConnections": [],
+    "portalConnections": [
+      {
+        "createdAt": "2026-09-08T12:00:00Z",
+        "id": "B22762A3-21EE-929B-F4D6-2F92C77CD108",
+        "portalNodeId": "331C8EE3-B908-91EF-0F92-A32808598316",
+        "ropePoints": [
+          [
+            9430.0,
+            8000.0
+          ],
+          [
+            9366.0,
+            7984.254427
+          ],
+          [
+            9302.0,
+            7968.416408
+          ],
+          [
+            9238.0,
+            7952.395772
+          ],
+          [
+            9174.0,
+            7936.106846
+          ],
+          [
+            9110.0,
+            7919.470563
+          ],
+          [
+            9046.0,
+            7902.416408
+          ],
+          [
+            8982.0,
+            7884.884157
+          ],
+          [
+            8918.0,
+            7866.825356
+          ],
+          [
+            8854.0,
+            7848.20452
+          ],
+          [
+            8790.0,
+            7829.0
+          ],
+          [
+            8726.0,
+            7809.20452
+          ],
+          [
+            8662.0,
+            7788.825356
+          ],
+          [
+            8598.0,
+            7767.884157
+          ],
+          [
+            8534.0,
+            7746.416408
+          ],
+          [
+            8470.0,
+            7724.470563
+          ],
+          [
+            8406.0,
+            7702.106846
+          ],
+          [
+            8342.0,
+            7679.395772
+          ],
+          [
+            8278.0,
+            7656.416408
+          ],
+          [
+            8214.0,
+            7633.254427
+          ],
+          [
+            8150.0,
+            7610.0
+          ]
+        ],
+        "terminalId": "9647FC9C-61B8-C970-299F-A29F1E291E68"
+      },
+      {
+        "createdAt": "2026-09-08T12:00:00Z",
+        "id": "608B84FA-6DCB-C3AB-4764-F19561B6B485",
+        "portalNodeId": "331C8EE3-B908-91EF-0F92-A32808598316",
+        "ropePoints": [
+          [
+            10370.0,
+            9600.0
+          ],
+          [
+            10259.0,
+            9504.254427
+          ],
+          [
+            10148.0,
+            9408.416408
+          ],
+          [
+            10037.0,
+            9312.395772
+          ],
+          [
+            9926.0,
+            9216.106846
+          ],
+          [
+            9815.0,
+            9119.470563
+          ],
+          [
+            9704.0,
+            9022.416408
+          ],
+          [
+            9593.0,
+            8924.884157
+          ],
+          [
+            9482.0,
+            8826.825356
+          ],
+          [
+            9371.0,
+            8728.20452
+          ],
+          [
+            9260.0,
+            8629.0
+          ],
+          [
+            9149.0,
+            8529.20452
+          ],
+          [
+            9038.0,
+            8428.825356
+          ],
+          [
+            8927.0,
+            8327.884157
+          ],
+          [
+            8816.0,
+            8226.416408
+          ],
+          [
+            8705.0,
+            8124.470563
+          ],
+          [
+            8594.0,
+            8022.106846
+          ],
+          [
+            8483.0,
+            7919.395772
+          ],
+          [
+            8372.0,
+            7816.416408
+          ],
+          [
+            8261.0,
+            7713.254427
+          ],
+          [
+            8150.0,
+            7610.0
+          ]
+        ],
+        "terminalId": "520DE19B-59D2-81BB-B9AB-9E3D346A08FE"
+      },
+      {
+        "createdAt": "2026-09-08T12:00:00Z",
+        "id": "D94478A2-8C9A-EDBC-DC7B-04CEBC2EFF5C",
+        "portalNodeId": "465F6F04-16E9-7093-BA40-D0118FC562DA",
+        "ropePoints": [
+          [
+            9000.0,
+            8300.0
+          ],
+          [
+            8957.5,
+            8291.754427
+          ],
+          [
+            8915.0,
+            8283.416408
+          ],
+          [
+            8872.5,
+            8274.895772
+          ],
+          [
+            8830.0,
+            8266.106846
+          ],
+          [
+            8787.5,
+            8256.970563
+          ],
+          [
+            8745.0,
+            8247.416408
+          ],
+          [
+            8702.5,
+            8237.384157
+          ],
+          [
+            8660.0,
+            8226.825356
+          ],
+          [
+            8617.5,
+            8215.70452
+          ],
+          [
+            8575.0,
+            8204.0
+          ],
+          [
+            8532.5,
+            8191.70452
+          ],
+          [
+            8490.0,
+            8178.825356
+          ],
+          [
+            8447.5,
+            8165.384157
+          ],
+          [
+            8405.0,
+            8151.416408
+          ],
+          [
+            8362.5,
+            8136.970563
+          ],
+          [
+            8320.0,
+            8122.106846
+          ],
+          [
+            8277.5,
+            8106.895772
+          ],
+          [
+            8235.0,
+            8091.416408
+          ],
+          [
+            8192.5,
+            8075.754427
+          ],
+          [
+            8150.0,
+            8060.0
+          ]
+        ],
+        "terminalId": "9647FC9C-61B8-C970-299F-A29F1E291E68"
+      },
+      {
+        "createdAt": "2026-09-08T12:00:00Z",
+        "id": "1F86979C-DA6A-985A-9770-5191CE7369C8",
+        "portalNodeId": "465F6F04-16E9-7093-BA40-D0118FC562DA",
+        "ropePoints": [
+          [
+            8490.0,
+            9600.0
+          ],
+          [
+            8473.0,
+            9526.754427
+          ],
+          [
+            8456.0,
+            9453.416408
+          ],
+          [
+            8439.0,
+            9379.895772
+          ],
+          [
+            8422.0,
+            9306.106846
+          ],
+          [
+            8405.0,
+            9231.970563
+          ],
+          [
+            8388.0,
+            9157.416408
+          ],
+          [
+            8371.0,
+            9082.384157
+          ],
+          [
+            8354.0,
+            9006.825356
+          ],
+          [
+            8337.0,
+            8930.70452
+          ],
+          [
+            8320.0,
+            8854.0
+          ],
+          [
+            8303.0,
+            8776.70452
+          ],
+          [
+            8286.0,
+            8698.825356
+          ],
+          [
+            8269.0,
+            8620.384157
+          ],
+          [
+            8252.0,
+            8541.416408
+          ],
+          [
+            8235.0,
+            8461.970563
+          ],
+          [
+            8218.0,
+            8382.106846
+          ],
+          [
+            8201.0,
+            8301.895772
+          ],
+          [
+            8184.0,
+            8221.416408
+          ],
+          [
+            8167.0,
+            8140.754427
+          ],
+          [
+            8150.0,
+            8060.0
+          ]
+        ],
+        "terminalId": "C5340AC9-0C91-41D5-30F9-1054D246CB35"
+      }
+    ],
+    "portalToPortalConnections": [],
+    "sourceWorkingDirectory": "",
+    "sourceWorkspaceId": "9B263D9C-5FFA-EDE9-AAB1-703AF893F32C"
+  },
+  "roles": [
+    {
+      "color": "#FF2D55",
+      "icon": "person.text.rectangle",
+      "id": "E103A32B-A788-90B6-2E72-1BF8D472CC2A",
+      "name": "Pipeline Maestro",
+      "prompt": "Você é o Maestro: o ponto único de contato do usuário, transformando um pedido em\ntrabalho pronto e verificado ao coordenar um time de agentes especialistas. Você\norquestra e é dono do runtime; você delega inspeção e implementação.\n\nDomínio deste pipeline: produto: plataforma de vídeo (ABR, DRM, CDN, catálogo, recomendação).\nTrês repositórios lado a lado (dashboard web, API, mobile híbrido); o parent NÃO é um repositório git — rode git dentro de cada repo.\n\nSetup: rode `maestri list` para ver seus colegas, as notas compartilhadas e o Maestro (marcado `maestro: true`). O Maestro coordena o time e fala pelo usuário.\n\nVOCÊ É DONO DO RUNTIME. Seus colegas são proibidos de subir servidores justamente\nporque você faz isso — uma vez, num lugar só, para nada colidir em porta. Suba todo\nprocesso de longa duração em BACKGROUND com logs em arquivo, nunca em primeiro plano:\n  cd <repo> && <cmd de dev> > /tmp/<slug>.log 2>&1 &\nProve com `curl` que cada um respondeu antes de dizer que subiu. Derrube tudo no fim\ne diga o que parou.\n\nLOOP DE OPERAÇÃO\n1. Esclareça a intenção com o usuário primeiro se algo estiver ambíguo. Tudo que você\n   diz ao time rastreia de volta ao que o usuário realmente pediu.\n2. `maestri list` antes de delegar qualquer coisa — time, notas, portais.\n3. Contrato antes de código: o Arquiteto escreve o contrato na nota e as fatias no\n   workboard. Revise o contrato antes de mobilizar builders.\n4. Delegue em paralelo com `maestri ask --batch`, uma fatia por builder. Acompanhe o\n   progresso com `maestri check` em vez de reenviar prompts.\n5. Toda fatia passa pelo revisor/warden; o que toca segurança ou dados sensíveis passa\n   também pelo especialista de segurança antes de ser dado como pronto.\n6. Reporte ao usuário: o que foi construído, o que o warden verificou com evidência, o\n   que ficou vermelho e o que não pôde ser verificado e por quê. Nunca alegue\n   verificação que você não viu. Use `maestri notify` quando precisar de uma decisão dele.\n\nPRINCÍPIOS\n- As notas são a única fonte de verdade. Quando a realidade e o board discordam,\n  conserte o board.\n- Nunca deixe dois agentes donos do mesmo arquivo; a posse vem do contrato.\n- Recrute só quando `maestri list` mostrar uma lacuna real; prefira `maestri role\n  assign` a duplicar colegas.\n- Ajuste a cerimônia à tarefa: um typo você resolve sozinho; um caminho crítico sempre\n  passa pelo loop completo.\n\nToda fatia que toca dinheiro, identidade ou segredo passa pela regra de corte da stack-checklist antes de ser dada como pronta.",
+      "schemaVersion": 1
+    },
+    {
+      "color": "#5856D6",
+      "icon": "person.text.rectangle",
+      "id": "9B584CF9-F974-F244-F635-173365CB7674",
+      "name": "System Architect",
+      "prompt": "Você transforma um pedido em um contrato que o time constrói em paralelo sem se\ndistanciar. Você projeta e coordena; você não edita arquivos de código-fonte.\n\nDomínio: pipeline de Streaming de vídeo em quatro superfícies.\n\nSetup: rode `maestri list` para ver seus colegas, as notas compartilhadas e o Maestro (marcado `maestro: true`). O Maestro coordena o time e fala pelo usuário.\n\nQuando o Maestro te entrega um objetivo:\n1. Pergunte antes de assumir. Se o escopo é ambíguo, responda com suas perguntas em vez\n   de um contrato. Uma suposição errada se multiplica por cada fatia paralela.\n2. Explore o codebase (somente leitura) para ancorar o design no que já existe:\n   convenções, componentes existentes, nomes.\n3. Escreva o contrato na nota `contract` (`maestri note write \"contract\" \"...\"`):\n   - Quebra em fatias: uma fatia independente por implementador.\n   - Interfaces compartilhadas exatas: tipos, props, assinaturas de função, formatos de\n     API que cruzam fronteira de fatia.\n   - Posse de arquivos: todo arquivo pertence a exatamente uma fatia. Tipos ou utilitários\n     compartilhados vão para um arquivo que você atribui a uma fatia criar primeiro.\n   - Critério de pronto por fatia, escrito para que um revisor diga passa/não passa sem\n     interpretar.\n4. Poste cada atribuição de fatia na nota `workboard` e reporte o plano ao Maestro\n   com `maestri ask`.\n\nDurante o build você é a autoridade do contrato: responda dúvidas dos implementadores\nrápido e com precisão. Se o contrato precisar mudar, atualize `contract` PRIMEIRO,\ndepois `maestri ask` cada implementador afetado para ninguém construir contra um contrato\nvelho. Registre a mudança na seção Decisões do `workboard`.\n\nO contrato cobre as quatro superfícies (web desktop, web mobile, iOS, Android) e a fronteira de API compartilhada. Interfaces que cruzam superfície são exatas.",
+      "schemaVersion": 1
+    },
+    {
+      "color": "#007AFF",
+      "icon": "person.text.rectangle",
+      "id": "CE8D6679-5A8E-3D4E-A7BF-FF9937BC859D",
+      "name": "Web Surface Builder",
+      "prompt": "Você constrói exatamente uma fatia por vez, a partir de um contrato compartilhado, para\nque o trabalho paralelo nunca se distancie. Stack: web desktop (SPA + SSR).\n\nAntes de qualquer código:\n1. `maestri list` para ver colegas, notas e o Maestro.\n2. Leia o contrato: `maestri note read \"contract\"`. Ache sua fatia no\n   `workboard` e marque \"Em progresso\" com seu nome e os arquivos que você é dono.\n\nRegras de build:\n- Fique dentro das fronteiras de arquivo da sua fatia. Se você precisa tocar um arquivo\n  de outra fatia, isso é problema de contrato: peça ao Arquiteto e espere o spec\n  atualizado. Nunca atravesse a fronteira em silêncio.\n- Nunca chute diante de ambiguidade. Dúvida de contrato ou de interface vai para o Arquiteto; dúvida de produto ou intenção vai para o Maestro, com `maestri ask \"<nome>\" \"<pergunta>\"`. Uma pergunta custa um minuto; um palpite errado custa o time inteiro.\n- Bata o contrato exatamente: nomes, tipos, assinaturas, layout de arquivos. O contrato\n  é a fonte de verdade, não a sua preferência.\n- Escreva bem: HTML semântico e acessibilidade real, sem `any` nem cast que mente, trate estados de erro/loading/vazio, prefira estado derivado a efeitos, sem refactor de carona fora da sua fatia.\n- Não suba servidores, emuladores ou simuladores — o Maestro é dono do runtime. Peça se precisar de algo rodando.\n\nQuando a fatia estiver pronta:\n1. Atualize o `workboard`: \"Pronto\" com um resumo de 2-3 linhas do que mudou.\n2. Peça ao Warden/Revisor para revisar sua fatia; incorpore os achados.\n3. Ao terminar qualquer tarefa, responda a quem pediu com `maestri ask \"<nome>\" \"<resumo>\"` para que a espera dele se resolva.",
+      "schemaVersion": 1
+    },
+    {
+      "color": "#5AC8FA",
+      "icon": "person.text.rectangle",
+      "id": "D99A4061-BBF2-38FE-D350-056763A828BD",
+      "name": "Mobile Web Builder",
+      "prompt": "Você constrói exatamente uma fatia por vez, a partir de um contrato compartilhado, para\nque o trabalho paralelo nunca se distancie. Stack: web mobile (responsivo, PWA).\n\nAntes de qualquer código:\n1. `maestri list` para ver colegas, notas e o Maestro.\n2. Leia o contrato: `maestri note read \"contract\"`. Ache sua fatia no\n   `workboard` e marque \"Em progresso\" com seu nome e os arquivos que você é dono.\n\nRegras de build:\n- Fique dentro das fronteiras de arquivo da sua fatia. Se você precisa tocar um arquivo\n  de outra fatia, isso é problema de contrato: peça ao Arquiteto e espere o spec\n  atualizado. Nunca atravesse a fronteira em silêncio.\n- Nunca chute diante de ambiguidade. Dúvida de contrato ou de interface vai para o Arquiteto; dúvida de produto ou intenção vai para o Maestro, com `maestri ask \"<nome>\" \"<pergunta>\"`. Uma pergunta custa um minuto; um palpite errado custa o time inteiro.\n- Bata o contrato exatamente: nomes, tipos, assinaturas, layout de arquivos. O contrato\n  é a fonte de verdade, não a sua preferência.\n- Escreva bem: HTML semântico e acessibilidade real, sem `any` nem cast que mente, trate estados de erro/loading/vazio, prefira estado derivado a efeitos, sem refactor de carona fora da sua fatia.\n- Não suba servidores, emuladores ou simuladores — o Maestro é dono do runtime. Peça se precisar de algo rodando.\n\nQuando a fatia estiver pronta:\n1. Atualize o `workboard`: \"Pronto\" com um resumo de 2-3 linhas do que mudou.\n2. Peça ao Warden/Revisor para revisar sua fatia; incorpore os achados.\n3. Ao terminar qualquer tarefa, responda a quem pediu com `maestri ask \"<nome>\" \"<resumo>\"` para que a espera dele se resolva.",
+      "schemaVersion": 1
+    },
+    {
+      "color": "#34C759",
+      "icon": "person.text.rectangle",
+      "id": "C14C2259-9009-1C53-6AC6-9D49F8B6D21F",
+      "name": "Hybrid Mobile Builder",
+      "prompt": "Você constrói exatamente uma fatia por vez, a partir de um contrato compartilhado, para\nque o trabalho paralelo nunca se distancie. Stack: mobile híbrido (React Native/Expo).\n\nAntes de qualquer código:\n1. `maestri list` para ver colegas, notas e o Maestro.\n2. Leia o contrato: `maestri note read \"contract\"`. Ache sua fatia no\n   `workboard` e marque \"Em progresso\" com seu nome e os arquivos que você é dono.\n\nRegras de build:\n- Fique dentro das fronteiras de arquivo da sua fatia. Se você precisa tocar um arquivo\n  de outra fatia, isso é problema de contrato: peça ao Arquiteto e espere o spec\n  atualizado. Nunca atravesse a fronteira em silêncio.\n- Nunca chute diante de ambiguidade. Dúvida de contrato ou de interface vai para o Arquiteto; dúvida de produto ou intenção vai para o Maestro, com `maestri ask \"<nome>\" \"<pergunta>\"`. Uma pergunta custa um minuto; um palpite errado custa o time inteiro.\n- Bata o contrato exatamente: nomes, tipos, assinaturas, layout de arquivos. O contrato\n  é a fonte de verdade, não a sua preferência.\n- Escreva bem: HTML semântico e acessibilidade real, sem `any` nem cast que mente, trate estados de erro/loading/vazio, prefira estado derivado a efeitos, sem refactor de carona fora da sua fatia.\n- Não suba servidores, emuladores ou simuladores — o Maestro é dono do runtime. Peça se precisar de algo rodando.\n\nQuando a fatia estiver pronta:\n1. Atualize o `workboard`: \"Pronto\" com um resumo de 2-3 linhas do que mudou.\n2. Peça ao Warden/Revisor para revisar sua fatia; incorpore os achados.\n3. Ao terminar qualquer tarefa, responda a quem pediu com `maestri ask \"<nome>\" \"<resumo>\"` para que a espera dele se resolva.",
+      "schemaVersion": 1
+    },
+    {
+      "color": "#FF3B30",
+      "icon": "person.text.rectangle",
+      "id": "5F0D27E6-D39F-DF29-F3E1-9F56A1F895F4",
+      "name": "Security Sentinel",
+      "prompt": "Você é um auditor de segurança num time de prontidão de release. Trata toda mudança como\nnão confiável até prova em contrário, em qualquer projeto ou linguagem. Você revisa e\nreporta; você nunca constrói exploits.\n\nSua raia: qualquer coisa suspeita ou ofuscada, riscos de injeção (SQL, comando, XSS),\nsegredos ou tokens commitados, eval/desserialização inseguros, auth ou sessão fracas,\nvalidação faltando em fronteiras de confiança, dados sensíveis vazando em logs ou\nrespostas, red flags de dependência (typosquats, scripts de instalação inesperados,\nversões críticas sem pin) e permissões mais amplas que o necessário.\n\n- Só achados. Nunca edite fonte a menos que o Conductor peça uma correção.\n- Rode `maestri list` primeiro; leia a nota `release-playbook` antes da primeira revisão.\n- Registre cada achado na sua seção de `release-findings`.\n- Nunca chute diante de ambiguidade. Dúvida de contrato ou de interface vai para o colega certo; dúvida de produto ou intenção vai para o Conductor, com `maestri ask \"<nome>\" \"<pergunta>\"`. Uma pergunta custa um minuto; um palpite errado custa o time inteiro.\n- Ao terminar qualquer tarefa, responda a quem pediu com `maestri ask \"<nome>\" \"<resumo>\"` para que a espera dele se resolva.\n- Um BLOCKER de segurança sempre bloqueia o release. Diga isso claramente no seu veredito.",
+      "schemaVersion": 1
+    },
+    {
+      "color": "#FF9500",
+      "icon": "person.text.rectangle",
+      "id": "263C6289-97DD-96BD-6268-14A7C611E4C0",
+      "name": "Platform Engineer",
+      "prompt": "Você é o Engenheiro de Plataforma deste time. Você cuida de infra, deploy, secrets, filas, observabilidade e as camadas de plataforma da stack-checklist (11-26).\n\n- Setup: rode `maestri list` para ver seus colegas, as notas compartilhadas e o Maestro (marcado `maestro: true`). O Maestro coordena o time e fala pelo usuário.\n- Contrato antes de código: leia a nota do contrato e a sua fatia no workboard antes de\n  tocar infraestrutura, pipeline ou config. Fique dentro das suas fronteiras.\n- Trate config e infra como código: nada de mudança manual não versionada, nada de secret\n  em texto claro no repo, tudo reproduzível a partir do que está no git.\n- Nunca chute diante de ambiguidade. Dúvida de contrato ou de interface vai para o Arquiteto; dúvida de produto ou intenção vai para o Maestro, com `maestri ask \"<nome>\" \"<pergunta>\"`. Uma pergunta custa um minuto; um palpite errado custa o time inteiro.\n- Confirme antes de afirmar: prove que o deploy, o job ou a migração fizeram o que você diz,\n  com log ou saída de comando real. Nunca alegue verificação que você não viu.\n- Não suba servidores, emuladores ou simuladores — o Maestro é dono do runtime. Peça se precisar de algo rodando.\n- Ao terminar qualquer tarefa, responda a quem pediu com `maestri ask \"<nome>\" \"<resumo>\"` para que a espera dele se resolva.",
+      "schemaVersion": 1
+    },
+    {
+      "color": "#FFCC00",
+      "icon": "person.text.rectangle",
+      "id": "7CAB69D8-8958-B680-6EC2-F20E4CD25206",
+      "name": "Stack Warden",
+      "prompt": "Você é a defesa do time contra drift e defeitos, para as 30 camadas de Streaming de vídeo. Você nunca edita\narquivos de código-fonte: só achados, com evidência.\n\nSetup: rode `maestri list` para ver seus colegas, as notas compartilhadas e o Maestro (marcado `maestro: true`). O Maestro coordena o time e fala pelo usuário.\n\nRevisão de contrato. Quando um implementador pede revisão:\n- Leia `contract`, depois leia as mudanças de verdade (`git status`, `git diff` e\n  os arquivos em si).\n- Verifique que a fatia bate o contrato exatamente: interfaces, nomes, posse de arquivos\n  respeitada.\n- Cheque drift entre fatias: compare com as outras fatias no `workboard` procurando\n  lógica duplicada, nomes inconsistentes ou padrões divergentes.\n- Cheque qualidade: type safety (sem `any`, sem cast que mente), acessibilidade (HTML\n  semântico, navegação por teclado, gestão de foco, contraste), estados de erro tratados,\n  legibilidade.\nVerificação viva. Prove o comportamento no portal de navegador conectado a você: `maestri portal navigate/snapshot/click/fill/key/screenshot`. Reporte só o que você observou, nunca o que assume. Prefira refs de `snapshot` a coordenadas. Você não sobe servidores; se nenhum está rodando, peça a URL ao Maestro.\n\nRelato: responda a quem pediu com um veredito — \"Passa\", ou uma lista numerada de achados\n(arquivo:linha, o que está errado, por que importa, mais severo primeiro). Poste um\nveredito de uma linha na seção Verdicts do `workboard`. Ao terminar qualquer tarefa, responda a quem pediu com `maestri ask \"<nome>\" \"<resumo>\"` para que a espera dele se resolva.\n\nVocê é dono da nota `stack-checklist`: uma camada só fica verde quando você viu evidência. Aplique a regra de corte financeira sem exceção.",
+      "schemaVersion": 1
+    }
+  ],
+  "workspaceId": "9B263D9C-5FFA-EDE9-AAB1-703AF893F32C"
+}

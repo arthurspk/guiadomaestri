@@ -1,0 +1,1736 @@
+{
+  "appVersion": "0.45.6",
+  "color": "#34C759",
+  "createdAt": "2026-09-08T12:00:00Z",
+  "description": "Caça um bug em Vue 3.6 + Nuxt 4 + Node 24 + Express 5 com método científico: reprodução determinística, causa raiz com prova, menor conserto correto, verificação adversarial independente no portal.",
+  "formatVersion": 1,
+  "icon": "ladybug",
+  "id": "9EE3C7B1-ED76-1A4F-55DB-05A1DF188763",
+  "name": "Depuração · Vue + Node",
+  "payload": {
+    "connections": [
+      {
+        "createdAt": "2026-09-08T12:00:00Z",
+        "id": "439D2926-5E94-CCEB-8D30-C416E8ACF70F",
+        "ropePoints": [
+          [
+            9000.0,
+            8300.0
+          ],
+          [
+            8972.5,
+            8343.754427
+          ],
+          [
+            8945.0,
+            8387.416408
+          ],
+          [
+            8917.5,
+            8430.895772
+          ],
+          [
+            8890.0,
+            8474.106846
+          ],
+          [
+            8862.5,
+            8516.970563
+          ],
+          [
+            8835.0,
+            8559.416408
+          ],
+          [
+            8807.5,
+            8601.384157
+          ],
+          [
+            8780.0,
+            8642.825356
+          ],
+          [
+            8752.5,
+            8683.70452
+          ],
+          [
+            8725.0,
+            8724.0
+          ],
+          [
+            8697.5,
+            8763.70452
+          ],
+          [
+            8670.0,
+            8802.825356
+          ],
+          [
+            8642.5,
+            8841.384157
+          ],
+          [
+            8615.0,
+            8879.416408
+          ],
+          [
+            8587.5,
+            8916.970563
+          ],
+          [
+            8560.0,
+            8954.106846
+          ],
+          [
+            8532.5,
+            8990.895772
+          ],
+          [
+            8505.0,
+            9027.416408
+          ],
+          [
+            8477.5,
+            9063.754427
+          ],
+          [
+            8450.0,
+            9100.0
+          ]
+        ],
+        "terminalIdA": "D0B0FAAB-9DB7-5F45-FD8C-3D8C2599832D",
+        "terminalIdB": "A426073C-D0A7-ED5C-0090-6D9FC67ED90F"
+      },
+      {
+        "createdAt": "2026-09-08T12:00:00Z",
+        "id": "DAA54043-780B-6F56-D042-3AF8842AA80C",
+        "ropePoints": [
+          [
+            9430.0,
+            8600.0
+          ],
+          [
+            9406.5,
+            8613.754427
+          ],
+          [
+            9383.0,
+            8627.416408
+          ],
+          [
+            9359.5,
+            8640.895772
+          ],
+          [
+            9336.0,
+            8654.106846
+          ],
+          [
+            9312.5,
+            8666.970563
+          ],
+          [
+            9289.0,
+            8679.416408
+          ],
+          [
+            9265.5,
+            8691.384157
+          ],
+          [
+            9242.0,
+            8702.825356
+          ],
+          [
+            9218.5,
+            8713.70452
+          ],
+          [
+            9195.0,
+            8724.0
+          ],
+          [
+            9171.5,
+            8733.70452
+          ],
+          [
+            9148.0,
+            8742.825356
+          ],
+          [
+            9124.5,
+            8751.384157
+          ],
+          [
+            9101.0,
+            8759.416408
+          ],
+          [
+            9077.5,
+            8766.970563
+          ],
+          [
+            9054.0,
+            8774.106846
+          ],
+          [
+            9030.5,
+            8780.895772
+          ],
+          [
+            9007.0,
+            8787.416408
+          ],
+          [
+            8983.5,
+            8793.754427
+          ],
+          [
+            8960.0,
+            8800.0
+          ]
+        ],
+        "terminalIdA": "D0B0FAAB-9DB7-5F45-FD8C-3D8C2599832D",
+        "terminalIdB": "10DD3A78-25EA-4A00-F308-249A57D1222D"
+      },
+      {
+        "createdAt": "2026-09-08T12:00:00Z",
+        "id": "FCFB7F88-3515-FA21-E595-945E881FFDE2",
+        "ropePoints": [
+          [
+            9430.0,
+            8600.0
+          ],
+          [
+            9453.5,
+            8613.754427
+          ],
+          [
+            9477.0,
+            8627.416408
+          ],
+          [
+            9500.5,
+            8640.895772
+          ],
+          [
+            9524.0,
+            8654.106846
+          ],
+          [
+            9547.5,
+            8666.970563
+          ],
+          [
+            9571.0,
+            8679.416408
+          ],
+          [
+            9594.5,
+            8691.384157
+          ],
+          [
+            9618.0,
+            8702.825356
+          ],
+          [
+            9641.5,
+            8713.70452
+          ],
+          [
+            9665.0,
+            8724.0
+          ],
+          [
+            9688.5,
+            8733.70452
+          ],
+          [
+            9712.0,
+            8742.825356
+          ],
+          [
+            9735.5,
+            8751.384157
+          ],
+          [
+            9759.0,
+            8759.416408
+          ],
+          [
+            9782.5,
+            8766.970563
+          ],
+          [
+            9806.0,
+            8774.106846
+          ],
+          [
+            9829.5,
+            8780.895772
+          ],
+          [
+            9853.0,
+            8787.416408
+          ],
+          [
+            9876.5,
+            8793.754427
+          ],
+          [
+            9900.0,
+            8800.0
+          ]
+        ],
+        "terminalIdA": "D0B0FAAB-9DB7-5F45-FD8C-3D8C2599832D",
+        "terminalIdB": "8257F884-F139-D789-2B4D-4954E374D21C"
+      },
+      {
+        "createdAt": "2026-09-08T12:00:00Z",
+        "id": "66DE7E0C-1E92-B48E-5BA1-2C321D0CCF29",
+        "ropePoints": [
+          [
+            9860.0,
+            8300.0
+          ],
+          [
+            9887.5,
+            8343.754427
+          ],
+          [
+            9915.0,
+            8387.416408
+          ],
+          [
+            9942.5,
+            8430.895772
+          ],
+          [
+            9970.0,
+            8474.106846
+          ],
+          [
+            9997.5,
+            8516.970563
+          ],
+          [
+            10025.0,
+            8559.416408
+          ],
+          [
+            10052.5,
+            8601.384157
+          ],
+          [
+            10080.0,
+            8642.825356
+          ],
+          [
+            10107.5,
+            8683.70452
+          ],
+          [
+            10135.0,
+            8724.0
+          ],
+          [
+            10162.5,
+            8763.70452
+          ],
+          [
+            10190.0,
+            8802.825356
+          ],
+          [
+            10217.5,
+            8841.384157
+          ],
+          [
+            10245.0,
+            8879.416408
+          ],
+          [
+            10272.5,
+            8916.970563
+          ],
+          [
+            10300.0,
+            8954.106846
+          ],
+          [
+            10327.5,
+            8990.895772
+          ],
+          [
+            10355.0,
+            9027.416408
+          ],
+          [
+            10382.5,
+            9063.754427
+          ],
+          [
+            10410.0,
+            9100.0
+          ]
+        ],
+        "terminalIdA": "D0B0FAAB-9DB7-5F45-FD8C-3D8C2599832D",
+        "terminalIdB": "AEE68459-2047-0BC4-7B46-B60F4135AD5E"
+      },
+      {
+        "createdAt": "2026-09-08T12:00:00Z",
+        "id": "2CC499CB-7D4B-C132-0718-E742C2B4C812",
+        "ropePoints": [
+          [
+            8450.0,
+            9100.0
+          ],
+          [
+            8454.0,
+            9103.754427
+          ],
+          [
+            8458.0,
+            9107.416408
+          ],
+          [
+            8462.0,
+            9110.895772
+          ],
+          [
+            8466.0,
+            9114.106846
+          ],
+          [
+            8470.0,
+            9116.970563
+          ],
+          [
+            8474.0,
+            9119.416408
+          ],
+          [
+            8478.0,
+            9121.384157
+          ],
+          [
+            8482.0,
+            9122.825356
+          ],
+          [
+            8486.0,
+            9123.70452
+          ],
+          [
+            8490.0,
+            9124.0
+          ],
+          [
+            8494.0,
+            9123.70452
+          ],
+          [
+            8498.0,
+            9122.825356
+          ],
+          [
+            8502.0,
+            9121.384157
+          ],
+          [
+            8506.0,
+            9119.416408
+          ],
+          [
+            8510.0,
+            9116.970563
+          ],
+          [
+            8514.0,
+            9114.106846
+          ],
+          [
+            8518.0,
+            9110.895772
+          ],
+          [
+            8522.0,
+            9107.416408
+          ],
+          [
+            8526.0,
+            9103.754427
+          ],
+          [
+            8530.0,
+            9100.0
+          ]
+        ],
+        "terminalIdA": "A426073C-D0A7-ED5C-0090-6D9FC67ED90F",
+        "terminalIdB": "10DD3A78-25EA-4A00-F308-249A57D1222D"
+      },
+      {
+        "createdAt": "2026-09-08T12:00:00Z",
+        "id": "2741C2D9-33BD-7195-6E5C-2EFFE1961D53",
+        "ropePoints": [
+          [
+            9390.0,
+            9100.0
+          ],
+          [
+            9394.0,
+            9103.754427
+          ],
+          [
+            9398.0,
+            9107.416408
+          ],
+          [
+            9402.0,
+            9110.895772
+          ],
+          [
+            9406.0,
+            9114.106846
+          ],
+          [
+            9410.0,
+            9116.970563
+          ],
+          [
+            9414.0,
+            9119.416408
+          ],
+          [
+            9418.0,
+            9121.384157
+          ],
+          [
+            9422.0,
+            9122.825356
+          ],
+          [
+            9426.0,
+            9123.70452
+          ],
+          [
+            9430.0,
+            9124.0
+          ],
+          [
+            9434.0,
+            9123.70452
+          ],
+          [
+            9438.0,
+            9122.825356
+          ],
+          [
+            9442.0,
+            9121.384157
+          ],
+          [
+            9446.0,
+            9119.416408
+          ],
+          [
+            9450.0,
+            9116.970563
+          ],
+          [
+            9454.0,
+            9114.106846
+          ],
+          [
+            9458.0,
+            9110.895772
+          ],
+          [
+            9462.0,
+            9107.416408
+          ],
+          [
+            9466.0,
+            9103.754427
+          ],
+          [
+            9470.0,
+            9100.0
+          ]
+        ],
+        "terminalIdA": "10DD3A78-25EA-4A00-F308-249A57D1222D",
+        "terminalIdB": "8257F884-F139-D789-2B4D-4954E374D21C"
+      },
+      {
+        "createdAt": "2026-09-08T12:00:00Z",
+        "id": "FAF6F355-D720-0C23-87A3-66B3B1166C2C",
+        "ropePoints": [
+          [
+            10330.0,
+            9100.0
+          ],
+          [
+            10334.0,
+            9103.754427
+          ],
+          [
+            10338.0,
+            9107.416408
+          ],
+          [
+            10342.0,
+            9110.895772
+          ],
+          [
+            10346.0,
+            9114.106846
+          ],
+          [
+            10350.0,
+            9116.970563
+          ],
+          [
+            10354.0,
+            9119.416408
+          ],
+          [
+            10358.0,
+            9121.384157
+          ],
+          [
+            10362.0,
+            9122.825356
+          ],
+          [
+            10366.0,
+            9123.70452
+          ],
+          [
+            10370.0,
+            9124.0
+          ],
+          [
+            10374.0,
+            9123.70452
+          ],
+          [
+            10378.0,
+            9122.825356
+          ],
+          [
+            10382.0,
+            9121.384157
+          ],
+          [
+            10386.0,
+            9119.416408
+          ],
+          [
+            10390.0,
+            9116.970563
+          ],
+          [
+            10394.0,
+            9114.106846
+          ],
+          [
+            10398.0,
+            9110.895772
+          ],
+          [
+            10402.0,
+            9107.416408
+          ],
+          [
+            10406.0,
+            9103.754427
+          ],
+          [
+            10410.0,
+            9100.0
+          ]
+        ],
+        "terminalIdA": "8257F884-F139-D789-2B4D-4954E374D21C",
+        "terminalIdB": "AEE68459-2047-0BC4-7B46-B60F4135AD5E"
+      }
+    ],
+    "drawings": [],
+    "nodes": [
+      {
+        "content": {
+          "terminal": {
+            "_0": {
+              "agentType": "claude_code",
+              "autoScrollLocked": false,
+              "color": "#007AFF",
+              "command": "claude --dangerously-skip-permissions --model fable",
+              "icon": "seal",
+              "id": "D0B0FAAB-9DB7-5F45-FD8C-3D8C2599832D",
+              "isManager": true,
+              "isUnloaded": false,
+              "lastActiveAt": "1970-01-01T00:00:00Z",
+              "monitorWithOmbro": true,
+              "name": "Maestro · depuração",
+              "scrollbackFile": "",
+              "scrollbackLineCount": 0,
+              "shellPath": "",
+              "shortcutMode": {
+                "kind": "automatic"
+              },
+              "status": "restored",
+              "workingDirectory": "",
+              "assignedRoleId": "84CCC6B3-7150-3857-C7F5-9D89D3DC0729"
+            }
+          }
+        },
+        "createdAt": "2026-09-08T12:00:00Z",
+        "frame": [
+          [
+            9000,
+            8000
+          ],
+          [
+            860,
+            600
+          ]
+        ],
+        "id": "5EC2CDA6-B4BC-0ED3-4BFE-E2C82FC1D096",
+        "isLocked": false,
+        "lastModifiedAt": "2026-09-08T12:00:00Z",
+        "zIndex": 51
+      },
+      {
+        "content": {
+          "terminal": {
+            "_0": {
+              "agentType": "claude_code",
+              "autoScrollLocked": false,
+              "color": "#007AFF",
+              "command": "claude --dangerously-skip-permissions --model opus",
+              "icon": "seal",
+              "id": "A426073C-D0A7-ED5C-0090-6D9FC67ED90F",
+              "isManager": false,
+              "isUnloaded": false,
+              "lastActiveAt": "1970-01-01T00:00:00Z",
+              "monitorWithOmbro": true,
+              "name": "Echo · repro",
+              "scrollbackFile": "",
+              "scrollbackLineCount": 0,
+              "shellPath": "",
+              "shortcutMode": {
+                "kind": "automatic"
+              },
+              "status": "restored",
+              "workingDirectory": "",
+              "assignedRoleId": "9B6949F1-6AFE-C174-9F04-6B2CEDFE9B78"
+            }
+          }
+        },
+        "createdAt": "2026-09-08T12:00:00Z",
+        "frame": [
+          [
+            7590.0,
+            8800
+          ],
+          [
+            860,
+            600
+          ]
+        ],
+        "id": "C351CDF0-FC0C-BBE0-2986-57E6A9AEEF05",
+        "isLocked": false,
+        "lastModifiedAt": "2026-09-08T12:00:00Z",
+        "zIndex": 52
+      },
+      {
+        "content": {
+          "terminal": {
+            "_0": {
+              "agentType": "claude_code",
+              "autoScrollLocked": false,
+              "color": "#007AFF",
+              "command": "claude --dangerously-skip-permissions --model opus",
+              "icon": "seal",
+              "id": "10DD3A78-25EA-4A00-F308-249A57D1222D",
+              "isManager": false,
+              "isUnloaded": false,
+              "lastActiveAt": "1970-01-01T00:00:00Z",
+              "monitorWithOmbro": true,
+              "name": "Probe · causa raiz",
+              "scrollbackFile": "",
+              "scrollbackLineCount": 0,
+              "shellPath": "",
+              "shortcutMode": {
+                "kind": "automatic"
+              },
+              "status": "restored",
+              "workingDirectory": "",
+              "assignedRoleId": "550C914A-1359-7367-D0F6-08B77CE3A572"
+            }
+          }
+        },
+        "createdAt": "2026-09-08T12:00:00Z",
+        "frame": [
+          [
+            8530.0,
+            8800
+          ],
+          [
+            860,
+            600
+          ]
+        ],
+        "id": "C98A1A92-FA96-3A9B-D433-F5816B514CDE",
+        "isLocked": false,
+        "lastModifiedAt": "2026-09-08T12:00:00Z",
+        "zIndex": 53
+      },
+      {
+        "content": {
+          "terminal": {
+            "_0": {
+              "agentType": "claude_code",
+              "autoScrollLocked": false,
+              "color": "#007AFF",
+              "command": "claude --dangerously-skip-permissions --model opus",
+              "icon": "seal",
+              "id": "8257F884-F139-D789-2B4D-4954E374D21C",
+              "isManager": false,
+              "isUnloaded": false,
+              "lastActiveAt": "1970-01-01T00:00:00Z",
+              "monitorWithOmbro": true,
+              "name": "Forge · correção",
+              "scrollbackFile": "",
+              "scrollbackLineCount": 0,
+              "shellPath": "",
+              "shortcutMode": {
+                "kind": "automatic"
+              },
+              "status": "restored",
+              "workingDirectory": "",
+              "assignedRoleId": "617D500D-89AE-B240-E9A5-9947FA7A7E4D"
+            }
+          }
+        },
+        "createdAt": "2026-09-08T12:00:00Z",
+        "frame": [
+          [
+            9470.0,
+            8800
+          ],
+          [
+            860,
+            600
+          ]
+        ],
+        "id": "F76F600E-876B-8F06-3401-3B38E87389B0",
+        "isLocked": false,
+        "lastModifiedAt": "2026-09-08T12:00:00Z",
+        "zIndex": 54
+      },
+      {
+        "content": {
+          "terminal": {
+            "_0": {
+              "agentType": "claude_code",
+              "autoScrollLocked": false,
+              "color": "#007AFF",
+              "command": "codex",
+              "icon": "seal",
+              "id": "AEE68459-2047-0BC4-7B46-B60F4135AD5E",
+              "isManager": false,
+              "isUnloaded": false,
+              "lastActiveAt": "1970-01-01T00:00:00Z",
+              "monitorWithOmbro": true,
+              "name": "Sentry · verificação",
+              "scrollbackFile": "",
+              "scrollbackLineCount": 0,
+              "shellPath": "",
+              "shortcutMode": {
+                "kind": "automatic"
+              },
+              "status": "restored",
+              "workingDirectory": "",
+              "assignedRoleId": "FDAA46BE-5F9E-E5AC-AEDF-2724278203E4"
+            }
+          }
+        },
+        "createdAt": "2026-09-08T12:00:00Z",
+        "frame": [
+          [
+            10410.0,
+            8800
+          ],
+          [
+            860,
+            600
+          ]
+        ],
+        "id": "5C59FD3B-744A-7362-0ED6-2F3198726FCE",
+        "isLocked": false,
+        "lastModifiedAt": "2026-09-08T12:00:00Z",
+        "zIndex": 55
+      },
+      {
+        "content": {
+          "stickyNote": {
+            "_0": {
+              "color": "purple",
+              "fileName": "case-file.md",
+              "fontSize": 14,
+              "hasCustomName": true,
+              "isContentLocked": false,
+              "isPreviewing": true,
+              "storageMode": {
+                "managed": {}
+              }
+            }
+          }
+        },
+        "createdAt": "2026-09-08T12:00:00Z",
+        "frame": [
+          [
+            10300,
+            7640
+          ],
+          [
+            520,
+            300
+          ]
+        ],
+        "id": "B51F660F-DF51-E769-A9BE-F857F80A725E",
+        "isLocked": false,
+        "lastModifiedAt": "2026-09-08T12:00:00Z",
+        "zIndex": 56
+      },
+      {
+        "content": {
+          "portal": {
+            "_0": {
+              "chromeHidden": false,
+              "currentURL": "http://localhost:5173",
+              "id": "04BEC402-FB18-0907-417B-B48816974488",
+              "isUnloaded": false,
+              "name": "Repro",
+              "source": {
+                "url": {
+                  "_0": "http://localhost:5173"
+                }
+              },
+              "status": "idle",
+              "storageScope": "isolated",
+              "surface": {
+                "browser": {}
+              }
+            }
+          }
+        },
+        "createdAt": "2026-09-08T12:00:00Z",
+        "frame": [
+          [
+            7580,
+            6950
+          ],
+          [
+            1200,
+            760
+          ]
+        ],
+        "id": "8068DA93-1807-01B6-9F8D-97DF24287F3E",
+        "isLocked": false,
+        "lastModifiedAt": "2026-09-08T12:00:00Z",
+        "zIndex": 57
+      }
+    ],
+    "noteConnections": [
+      {
+        "createdAt": "2026-09-08T12:00:00Z",
+        "id": "78B4B8D7-3E30-732E-75C5-B397ED419DD6",
+        "noteNodeId": "B51F660F-DF51-E769-A9BE-F857F80A725E",
+        "ropePoints": [
+          [
+            9860.0,
+            8300.0
+          ],
+          [
+            9882.0,
+            8278.254427
+          ],
+          [
+            9904.0,
+            8256.416408
+          ],
+          [
+            9926.0,
+            8234.395772
+          ],
+          [
+            9948.0,
+            8212.106846
+          ],
+          [
+            9970.0,
+            8189.470563
+          ],
+          [
+            9992.0,
+            8166.416408
+          ],
+          [
+            10014.0,
+            8142.884157
+          ],
+          [
+            10036.0,
+            8118.825356
+          ],
+          [
+            10058.0,
+            8094.20452
+          ],
+          [
+            10080.0,
+            8069.0
+          ],
+          [
+            10102.0,
+            8043.20452
+          ],
+          [
+            10124.0,
+            8016.825356
+          ],
+          [
+            10146.0,
+            7989.884157
+          ],
+          [
+            10168.0,
+            7962.416408
+          ],
+          [
+            10190.0,
+            7934.470563
+          ],
+          [
+            10212.0,
+            7906.106846
+          ],
+          [
+            10234.0,
+            7877.395772
+          ],
+          [
+            10256.0,
+            7848.416408
+          ],
+          [
+            10278.0,
+            7819.254427
+          ],
+          [
+            10300.0,
+            7790.0
+          ]
+        ],
+        "terminalId": "D0B0FAAB-9DB7-5F45-FD8C-3D8C2599832D"
+      },
+      {
+        "createdAt": "2026-09-08T12:00:00Z",
+        "id": "350B450F-70A0-F495-2E25-36F51B2AB105",
+        "noteNodeId": "B51F660F-DF51-E769-A9BE-F857F80A725E",
+        "ropePoints": [
+          [
+            8450.0,
+            9100.0
+          ],
+          [
+            8542.5,
+            9038.254427
+          ],
+          [
+            8635.0,
+            8976.416408
+          ],
+          [
+            8727.5,
+            8914.395772
+          ],
+          [
+            8820.0,
+            8852.106846
+          ],
+          [
+            8912.5,
+            8789.470563
+          ],
+          [
+            9005.0,
+            8726.416408
+          ],
+          [
+            9097.5,
+            8662.884157
+          ],
+          [
+            9190.0,
+            8598.825356
+          ],
+          [
+            9282.5,
+            8534.20452
+          ],
+          [
+            9375.0,
+            8469.0
+          ],
+          [
+            9467.5,
+            8403.20452
+          ],
+          [
+            9560.0,
+            8336.825356
+          ],
+          [
+            9652.5,
+            8269.884157
+          ],
+          [
+            9745.0,
+            8202.416408
+          ],
+          [
+            9837.5,
+            8134.470563
+          ],
+          [
+            9930.0,
+            8066.106846
+          ],
+          [
+            10022.5,
+            7997.395772
+          ],
+          [
+            10115.0,
+            7928.416408
+          ],
+          [
+            10207.5,
+            7859.254427
+          ],
+          [
+            10300.0,
+            7790.0
+          ]
+        ],
+        "terminalId": "A426073C-D0A7-ED5C-0090-6D9FC67ED90F"
+      },
+      {
+        "createdAt": "2026-09-08T12:00:00Z",
+        "id": "F43E68ED-6633-11AA-F14D-B86B38D29ADE",
+        "noteNodeId": "B51F660F-DF51-E769-A9BE-F857F80A725E",
+        "ropePoints": [
+          [
+            8960.0,
+            8800.0
+          ],
+          [
+            9040.0,
+            8760.754427
+          ],
+          [
+            9120.0,
+            8721.416408
+          ],
+          [
+            9200.0,
+            8681.895772
+          ],
+          [
+            9280.0,
+            8642.106846
+          ],
+          [
+            9360.0,
+            8601.970563
+          ],
+          [
+            9440.0,
+            8561.416408
+          ],
+          [
+            9520.0,
+            8520.384157
+          ],
+          [
+            9600.0,
+            8478.825356
+          ],
+          [
+            9680.0,
+            8436.70452
+          ],
+          [
+            9760.0,
+            8394.0
+          ],
+          [
+            9840.0,
+            8350.70452
+          ],
+          [
+            9920.0,
+            8306.825356
+          ],
+          [
+            10000.0,
+            8262.384157
+          ],
+          [
+            10080.0,
+            8217.416408
+          ],
+          [
+            10160.0,
+            8171.970563
+          ],
+          [
+            10240.0,
+            8126.106846
+          ],
+          [
+            10320.0,
+            8079.895772
+          ],
+          [
+            10400.0,
+            8033.416408
+          ],
+          [
+            10480.0,
+            7986.754427
+          ],
+          [
+            10560.0,
+            7940.0
+          ]
+        ],
+        "terminalId": "10DD3A78-25EA-4A00-F308-249A57D1222D"
+      },
+      {
+        "createdAt": "2026-09-08T12:00:00Z",
+        "id": "44362B1E-03A6-19D4-FFEA-E73A88CCCAF3",
+        "noteNodeId": "B51F660F-DF51-E769-A9BE-F857F80A725E",
+        "ropePoints": [
+          [
+            9900.0,
+            8800.0
+          ],
+          [
+            9933.0,
+            8760.754427
+          ],
+          [
+            9966.0,
+            8721.416408
+          ],
+          [
+            9999.0,
+            8681.895772
+          ],
+          [
+            10032.0,
+            8642.106846
+          ],
+          [
+            10065.0,
+            8601.970563
+          ],
+          [
+            10098.0,
+            8561.416408
+          ],
+          [
+            10131.0,
+            8520.384157
+          ],
+          [
+            10164.0,
+            8478.825356
+          ],
+          [
+            10197.0,
+            8436.70452
+          ],
+          [
+            10230.0,
+            8394.0
+          ],
+          [
+            10263.0,
+            8350.70452
+          ],
+          [
+            10296.0,
+            8306.825356
+          ],
+          [
+            10329.0,
+            8262.384157
+          ],
+          [
+            10362.0,
+            8217.416408
+          ],
+          [
+            10395.0,
+            8171.970563
+          ],
+          [
+            10428.0,
+            8126.106846
+          ],
+          [
+            10461.0,
+            8079.895772
+          ],
+          [
+            10494.0,
+            8033.416408
+          ],
+          [
+            10527.0,
+            7986.754427
+          ],
+          [
+            10560.0,
+            7940.0
+          ]
+        ],
+        "terminalId": "8257F884-F139-D789-2B4D-4954E374D21C"
+      },
+      {
+        "createdAt": "2026-09-08T12:00:00Z",
+        "id": "0B8CA8BB-1187-D6A1-9E17-F270C5FAD88E",
+        "noteNodeId": "B51F660F-DF51-E769-A9BE-F857F80A725E",
+        "ropePoints": [
+          [
+            10840.0,
+            8800.0
+          ],
+          [
+            10826.0,
+            8760.754427
+          ],
+          [
+            10812.0,
+            8721.416408
+          ],
+          [
+            10798.0,
+            8681.895772
+          ],
+          [
+            10784.0,
+            8642.106846
+          ],
+          [
+            10770.0,
+            8601.970563
+          ],
+          [
+            10756.0,
+            8561.416408
+          ],
+          [
+            10742.0,
+            8520.384157
+          ],
+          [
+            10728.0,
+            8478.825356
+          ],
+          [
+            10714.0,
+            8436.70452
+          ],
+          [
+            10700.0,
+            8394.0
+          ],
+          [
+            10686.0,
+            8350.70452
+          ],
+          [
+            10672.0,
+            8306.825356
+          ],
+          [
+            10658.0,
+            8262.384157
+          ],
+          [
+            10644.0,
+            8217.416408
+          ],
+          [
+            10630.0,
+            8171.970563
+          ],
+          [
+            10616.0,
+            8126.106846
+          ],
+          [
+            10602.0,
+            8079.895772
+          ],
+          [
+            10588.0,
+            8033.416408
+          ],
+          [
+            10574.0,
+            7986.754427
+          ],
+          [
+            10560.0,
+            7940.0
+          ]
+        ],
+        "terminalId": "AEE68459-2047-0BC4-7B46-B60F4135AD5E"
+      }
+    ],
+    "noteTexts": {
+      "B51F660F-DF51-E769-A9BE-F857F80A725E": "# case-file: caso de depuração compartilhado\n\nStatus: nenhum caso ativo.\n\nComo esta nota é usada:\n- O Debug Maestro abre cada caso no topo: sintoma, ambiente, caminho absoluto do repo,\n  hipóteses iniciais.\n- Colegas anexam achados sob seus cabeçalhos: Repro, Root cause, Fix, Verification,\n  Follow-ups.\n- Um caso ativo no topo; casos antigos arquivados abaixo de um divisor `---`.\n"
+    },
+    "noteToNoteConnections": [],
+    "portalConnections": [
+      {
+        "createdAt": "2026-09-08T12:00:00Z",
+        "id": "C419DBC7-BD7A-F319-F529-B1A27E657B40",
+        "portalNodeId": "8068DA93-1807-01B6-9F8D-97DF24287F3E",
+        "ropePoints": [
+          [
+            9430.0,
+            8000.0
+          ],
+          [
+            9367.5,
+            7989.254427
+          ],
+          [
+            9305.0,
+            7978.416408
+          ],
+          [
+            9242.5,
+            7967.395772
+          ],
+          [
+            9180.0,
+            7956.106846
+          ],
+          [
+            9117.5,
+            7944.470563
+          ],
+          [
+            9055.0,
+            7932.416408
+          ],
+          [
+            8992.5,
+            7919.884157
+          ],
+          [
+            8930.0,
+            7906.825356
+          ],
+          [
+            8867.5,
+            7893.20452
+          ],
+          [
+            8805.0,
+            7879.0
+          ],
+          [
+            8742.5,
+            7864.20452
+          ],
+          [
+            8680.0,
+            7848.825356
+          ],
+          [
+            8617.5,
+            7832.884157
+          ],
+          [
+            8555.0,
+            7816.416408
+          ],
+          [
+            8492.5,
+            7799.470563
+          ],
+          [
+            8430.0,
+            7782.106846
+          ],
+          [
+            8367.5,
+            7764.395772
+          ],
+          [
+            8305.0,
+            7746.416408
+          ],
+          [
+            8242.5,
+            7728.254427
+          ],
+          [
+            8180.0,
+            7710.0
+          ]
+        ],
+        "terminalId": "D0B0FAAB-9DB7-5F45-FD8C-3D8C2599832D"
+      },
+      {
+        "createdAt": "2026-09-08T12:00:00Z",
+        "id": "5A3C13BB-A420-E717-CCAB-0C926D79030E",
+        "portalNodeId": "8068DA93-1807-01B6-9F8D-97DF24287F3E",
+        "ropePoints": [
+          [
+            8020.0,
+            8800.0
+          ],
+          [
+            8028.0,
+            8749.254427
+          ],
+          [
+            8036.0,
+            8698.416408
+          ],
+          [
+            8044.0,
+            8647.395772
+          ],
+          [
+            8052.0,
+            8596.106846
+          ],
+          [
+            8060.0,
+            8544.470563
+          ],
+          [
+            8068.0,
+            8492.416408
+          ],
+          [
+            8076.0,
+            8439.884157
+          ],
+          [
+            8084.0,
+            8386.825356
+          ],
+          [
+            8092.0,
+            8333.20452
+          ],
+          [
+            8100.0,
+            8279.0
+          ],
+          [
+            8108.0,
+            8224.20452
+          ],
+          [
+            8116.0,
+            8168.825356
+          ],
+          [
+            8124.0,
+            8112.884157
+          ],
+          [
+            8132.0,
+            8056.416408
+          ],
+          [
+            8140.0,
+            7999.470563
+          ],
+          [
+            8148.0,
+            7942.106846
+          ],
+          [
+            8156.0,
+            7884.395772
+          ],
+          [
+            8164.0,
+            7826.416408
+          ],
+          [
+            8172.0,
+            7768.254427
+          ],
+          [
+            8180.0,
+            7710.0
+          ]
+        ],
+        "terminalId": "A426073C-D0A7-ED5C-0090-6D9FC67ED90F"
+      },
+      {
+        "createdAt": "2026-09-08T12:00:00Z",
+        "id": "3E55C224-BB13-8F73-D487-8466D8E1C90C",
+        "portalNodeId": "8068DA93-1807-01B6-9F8D-97DF24287F3E",
+        "ropePoints": [
+          [
+            10410.0,
+            9100.0
+          ],
+          [
+            10298.5,
+            9034.254427
+          ],
+          [
+            10187.0,
+            8968.416408
+          ],
+          [
+            10075.5,
+            8902.395772
+          ],
+          [
+            9964.0,
+            8836.106846
+          ],
+          [
+            9852.5,
+            8769.470563
+          ],
+          [
+            9741.0,
+            8702.416408
+          ],
+          [
+            9629.5,
+            8634.884157
+          ],
+          [
+            9518.0,
+            8566.825356
+          ],
+          [
+            9406.5,
+            8498.20452
+          ],
+          [
+            9295.0,
+            8429.0
+          ],
+          [
+            9183.5,
+            8359.20452
+          ],
+          [
+            9072.0,
+            8288.825356
+          ],
+          [
+            8960.5,
+            8217.884157
+          ],
+          [
+            8849.0,
+            8146.416408
+          ],
+          [
+            8737.5,
+            8074.470563
+          ],
+          [
+            8626.0,
+            8002.106846
+          ],
+          [
+            8514.5,
+            7929.395772
+          ],
+          [
+            8403.0,
+            7856.416408
+          ],
+          [
+            8291.5,
+            7783.254427
+          ],
+          [
+            8180.0,
+            7710.0
+          ]
+        ],
+        "terminalId": "AEE68459-2047-0BC4-7B46-B60F4135AD5E"
+      }
+    ],
+    "portalToPortalConnections": [],
+    "sourceWorkingDirectory": "",
+    "sourceWorkspaceId": "9B263D9C-5FFA-EDE9-AAB1-703AF893F32C"
+  },
+  "roles": [
+    {
+      "color": "#AF52DE",
+      "icon": "person.text.rectangle",
+      "id": "84CCC6B3-7150-3857-C7F5-9D89D3DC0729",
+      "name": "Debug Maestro",
+      "prompt": "Você é o Debug Maestro, coordenador de um time de depuração de propósito geral. Você\nraciocina sobre relatos, delega ângulos de ataque, sintetiza achados e decide. Você não\nimplementa correções.\n\nSeus especialistas: Reprodutor (transforma um relato em passos determinísticos de repro\ncom evidência observado-vs-esperado), Analista de Causa Raiz (rastreia o defeito a uma\ncausa específica — arquivo, linha, mecanismo — com prova), Engenheiro de Correção\n(implementa o menor conserto correto para uma causa confirmada) e Verificador (verifica\nde forma adversarial, caça regressões e dirige um portal para evidência de UI).\n\nQuando um relato de bug chega:\n1. Triagem primeiro, sozinho: reafirme o sintoma, o raio de impacto e que evidência\n   confirmaria ou mataria as causas prováveis. Pergunte ao usuário só se o relato for\n   vago demais para agir.\n2. Abra o caso: escreva um brief na nota \"case-file\" com sintoma, ambiente, caminho\n   absoluto do repo, hipóteses iniciais e perguntas em aberto. Um caso ativo por vez.\n3. Espalhe em paralelo com `maestri ask --batch`: dê ao Reprodutor e ao Analista missões\n   focadas, cada uma com o caminho do repo e uma hipótese concreta a confirmar ou matar.\n   Nunca mande um \"dá uma olhada\" vago.\n4. Sintetize: leia as respostas mais o case-file. Se os achados conflitam, repasse a\n   contradição aos dois e faça-os resolver com evidência.\n5. Comissione a correção: briefe o Engenheiro com a causa confirmada, os passos de repro e\n   a restrição — menor conserto que ataca a causa, não o sintoma.\n6. A verificação é independente: o Engenheiro passa a bola ao Verificador; você lê o\n   veredito no case-file. Nada está pronto na palavra do próprio autor.\n7. Reporte ao usuário: causa, correção, evidência de verificação, riscos residuais. Curto\n   e concreto.",
+      "schemaVersion": 1
+    },
+    {
+      "color": "#007AFF",
+      "icon": "person.text.rectangle",
+      "id": "9B6949F1-6AFE-C174-9F04-6B2CEDFE9B78",
+      "name": "Reprodutor",
+      "prompt": "Você é o Reprodutor de Bug num time de depuração. Seu produto é uma reprodução confiável,\nnão um conserto. Você nunca edita arquivos de fonte.\n\nDado um relato, reduza-o aos passos mínimos e determinísticos que disparam a falha, e\ncapture observado vs esperado com evidência: texto de erro exato, logs, screenshots. Uma\nfalha em reproduzir também é um achado: reporte exatamente o que você tentou e o que\ndiferiu do relato.\n\n1. Rode `maestri list` primeiro. Leia `maestri note read \"case-file\"` antes de começar.\n2. Peça de volta antes de chutar: se a missão não tem detalhes de ambiente, versões ou uma\n   definição de \"quebrado\", mande um lote de perguntas precisas ao maestro com `maestri ask`.\n3. Para bugs de UI, use um portal: se `maestri list` mostra um ligado a você, dirija com\n   `maestri portal snapshot / click / fill / screenshot`; senão crie com `maestri portal\n   create <url> \"Repro\"`.\n4. Publique em case-file sob um cabeçalho Repro: passos, observado, esperado, evidência.\n   Depois responda ao maestro com um resumo de três linhas.",
+      "schemaVersion": 1
+    },
+    {
+      "color": "#FF9500",
+      "icon": "person.text.rectangle",
+      "id": "550C914A-1359-7367-D0F6-08B77CE3A572",
+      "name": "Analista de Causa Raiz",
+      "prompt": "Você é o Analista de Causa Raiz num time de depuração. Você acha o porquê, com prova. Você\nnunca edita fonte; seu produto é uma causa dita com precisão: arquivo, linha, mecanismo,\ncondições de disparo.\n\n1. Rode `maestri list` e leia `case-file` antes de começar.\n2. Forme duas ou três hipóteses concorrentes e tente matá-las barato (grep no caminho de\n   código, leia os módulos suspeitos, cheque `git log` e `git blame` por mudanças recentes)\n   antes de ir fundo em uma. Reporte hipóteses rejeitadas também; elas poupam o time de\n   re-checar becos sem saída.\n3. Peça de volta em vez de assumir: contexto faltando (comportamento esperado, quando\n   funcionava) é pergunta ao maestro via `maestri ask`, não um chute.\n4. Use o Reprodutor como sua bancada de experimentos: peça a ele para rodar testes\n   discriminantes quando precisar de evidência de runtime.\n5. Separe confirmado de suspeito. Confirmado é quando você rastreou o valor ou estado que\n   falha até a linha exata; qualquer coisa menos é suspeito, com seu raciocínio dito.\n6. Publique em case-file sob Root cause: a causa, a cadeia de evidência, hipóteses\n   rejeitadas e um parágrafo de direção de correção (a implementação é do Engenheiro).",
+      "schemaVersion": 1
+    },
+    {
+      "color": "#34C759",
+      "icon": "person.text.rectangle",
+      "id": "617D500D-89AE-B240-E9A5-9947FA7A7E4D",
+      "name": "Engenheiro de Correção",
+      "prompt": "Você é o Engenheiro de Correção num time de depuração. Você implementa o menor conserto\ncorreto para uma causa raiz confirmada: ataca a causa, nunca só o sintoma.\n\n1. Rode `maestri list` e leia `case-file` (passos de repro e análise de causa).\n2. Peça de volta antes de codar se a causa está marcada como suspeita, ou se a correção\n   muda comportamento ou uma API.\n3. Mantenha o diff mínimo e idiomático: siga o estilo ao redor, sem refactor de carona, sem\n   abstrações novas. Problemas adjacentes vão para uma seção Follow-ups no case-file.\n4. Prove para você mesmo primeiro: rode os passos de repro ou os testes relevantes antes do\n   hand-off. Se o projeto tem testes perto do bug, adicione ou atualize o que teria pegado.\n5. Publique em case-file sob Fix: o que mudou, por que ataca a causa, arquivos tocados, como\n   você se auto-testou.\n6. Passe para verificação independente: `maestri ask` o Verificador apontando para o\n   case-file. Um conserto não está pronto até o Verificador passar.",
+      "schemaVersion": 1
+    },
+    {
+      "color": "#FF3B30",
+      "icon": "person.text.rectangle",
+      "id": "FDAA46BE-5F9E-E5AC-AEDF-2724278203E4",
+      "name": "Verificador",
+      "prompt": "Você é o Verificador de Correção num time de depuração, o último portão antes de um conserto\nser chamado de pronto. Você é profissionalmente cético: tenta quebrar a correção, não\nconfirmá-la. Você nunca edita fonte.\n\n1. Rode `maestri list` e leia `case-file` (repro, causa, resumo da correção).\n2. Verifique rodando, não lendo: execute os passos originais de repro contra o código\n   corrigido; o bug tem que sumir pela razão declarada. Depois sonde as bordas: entradas de\n   contorno, caminhos de erro, o estado que a correção toca.\n3. Para UI, dirija seu portal: aponte para o app rodando com `maestri portal edit <nome>\n   --url <url>`, depois snapshot/click/fill/screenshot para evidência antes e depois.\n4. Cace regressões: rode a suíte relevante quando existir e re-cheque as features vizinhas\n   que compartilham o código tocado.\n5. Peça de volta em vez de assumir: se você não consegue rodar o app ou os passos não são\n   claros, pergunte. Uma checagem que você não conseguiu de fato fazer é reportada como não\n   verificada, nunca liberada no chute.\n6. Publique o veredito em case-file sob Verification: passa ou falha, o que você rodou,\n   evidência, preocupações restantes. Responda a quem pediu com um veredito de uma linha.",
+      "schemaVersion": 1
+    }
+  ],
+  "workspaceId": "9B263D9C-5FFA-EDE9-AAB1-703AF893F32C"
+}

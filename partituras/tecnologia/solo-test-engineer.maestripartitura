@@ -1,0 +1,335 @@
+{
+  "appVersion": "0.45.6",
+  "color": "#FFCC00",
+  "createdAt": "2026-09-08T12:00:00Z",
+  "description": "Um único especialista (Test Engineer) trabalhando sozinho: cobertura significativa, testes determinísticos, fixtures. Planeja, executa e verifica você mesmo, com um portal para checar o resultado.",
+  "formatVersion": 1,
+  "icon": "checkmark.seal",
+  "id": "7447A946-1654-9C25-81F9-AE08A25951DC",
+  "name": "Solo · Test Engineer",
+  "payload": {
+    "connections": [],
+    "drawings": [],
+    "nodes": [
+      {
+        "content": {
+          "terminal": {
+            "_0": {
+              "agentType": "claude_code",
+              "autoScrollLocked": false,
+              "color": "#007AFF",
+              "command": "claude --dangerously-skip-permissions --model opus",
+              "icon": "seal",
+              "id": "711C89ED-FF8B-C11D-3AA0-E5828CC145B9",
+              "isManager": false,
+              "isUnloaded": false,
+              "lastActiveAt": "1970-01-01T00:00:00Z",
+              "monitorWithOmbro": true,
+              "name": "Test Engineer",
+              "scrollbackFile": "",
+              "scrollbackLineCount": 0,
+              "shellPath": "",
+              "shortcutMode": {
+                "kind": "automatic"
+              },
+              "status": "restored",
+              "workingDirectory": "",
+              "assignedRoleId": "9B40A047-15E8-51FC-13B6-06D6414E5847"
+            }
+          }
+        },
+        "createdAt": "2026-09-08T12:00:00Z",
+        "frame": [
+          [
+            9000,
+            8000
+          ],
+          [
+            860,
+            600
+          ]
+        ],
+        "id": "2A23D0C0-DF48-172A-F606-FE02913A8BD9",
+        "isLocked": false,
+        "lastModifiedAt": "2026-09-08T12:00:00Z",
+        "zIndex": 51
+      },
+      {
+        "content": {
+          "stickyNote": {
+            "_0": {
+              "color": "yellow",
+              "fileName": "scratchpad.md",
+              "fontSize": 14,
+              "hasCustomName": true,
+              "isContentLocked": false,
+              "isPreviewing": true,
+              "storageMode": {
+                "managed": {}
+              }
+            }
+          }
+        },
+        "createdAt": "2026-09-08T12:00:00Z",
+        "frame": [
+          [
+            10120,
+            7960
+          ],
+          [
+            520,
+            300
+          ]
+        ],
+        "id": "C6F580BD-4A54-BB95-D87F-33D53B2C79EF",
+        "isLocked": false,
+        "lastModifiedAt": "2026-09-08T12:00:00Z",
+        "zIndex": 52
+      },
+      {
+        "content": {
+          "portal": {
+            "_0": {
+              "chromeHidden": false,
+              "currentURL": "http://localhost:5173",
+              "id": "C9908788-647B-C836-2484-2D468C5C4E73",
+              "isUnloaded": false,
+              "name": "Proving Ground",
+              "source": {
+                "url": {
+                  "_0": "http://localhost:5173"
+                }
+              },
+              "status": "idle",
+              "storageScope": "isolated",
+              "surface": {
+                "browser": {}
+              }
+            }
+          }
+        },
+        "createdAt": "2026-09-08T12:00:00Z",
+        "frame": [
+          [
+            10120,
+            8380
+          ],
+          [
+            1200,
+            760
+          ]
+        ],
+        "id": "1F76142B-64AA-FE90-AA03-2077746FFA6C",
+        "isLocked": false,
+        "lastModifiedAt": "2026-09-08T12:00:00Z",
+        "zIndex": 53
+      }
+    ],
+    "noteConnections": [
+      {
+        "createdAt": "2026-09-08T12:00:00Z",
+        "id": "28B528DD-0465-DB3B-A8EF-D1B58CA65A97",
+        "noteNodeId": "C6F580BD-4A54-BB95-D87F-33D53B2C79EF",
+        "ropePoints": [
+          [
+            9860.0,
+            8300.0
+          ],
+          [
+            9873.0,
+            8294.254427
+          ],
+          [
+            9886.0,
+            8288.416408
+          ],
+          [
+            9899.0,
+            8282.395772
+          ],
+          [
+            9912.0,
+            8276.106846
+          ],
+          [
+            9925.0,
+            8269.470563
+          ],
+          [
+            9938.0,
+            8262.416408
+          ],
+          [
+            9951.0,
+            8254.884157
+          ],
+          [
+            9964.0,
+            8246.825356
+          ],
+          [
+            9977.0,
+            8238.20452
+          ],
+          [
+            9990.0,
+            8229.0
+          ],
+          [
+            10003.0,
+            8219.20452
+          ],
+          [
+            10016.0,
+            8208.825356
+          ],
+          [
+            10029.0,
+            8197.884157
+          ],
+          [
+            10042.0,
+            8186.416408
+          ],
+          [
+            10055.0,
+            8174.470563
+          ],
+          [
+            10068.0,
+            8162.106846
+          ],
+          [
+            10081.0,
+            8149.395772
+          ],
+          [
+            10094.0,
+            8136.416408
+          ],
+          [
+            10107.0,
+            8123.254427
+          ],
+          [
+            10120.0,
+            8110.0
+          ]
+        ],
+        "terminalId": "711C89ED-FF8B-C11D-3AA0-E5828CC145B9"
+      }
+    ],
+    "noteTexts": {
+      "C6F580BD-4A54-BB95-D87F-33D53B2C79EF": "# scratchpad — Test Engineer\n\nSeu caderno: plano, decisões, o que verificou e o que ficou em aberto. É a fonte de verdade entre sessões.\n"
+    },
+    "noteToNoteConnections": [],
+    "portalConnections": [
+      {
+        "createdAt": "2026-09-08T12:00:00Z",
+        "id": "964E4E4C-164F-C406-5806-189136B20009",
+        "portalNodeId": "1F76142B-64AA-FE90-AA03-2077746FFA6C",
+        "ropePoints": [
+          [
+            9860.0,
+            8300.0
+          ],
+          [
+            9873.0,
+            8326.754427
+          ],
+          [
+            9886.0,
+            8353.416408
+          ],
+          [
+            9899.0,
+            8379.895772
+          ],
+          [
+            9912.0,
+            8406.106846
+          ],
+          [
+            9925.0,
+            8431.970563
+          ],
+          [
+            9938.0,
+            8457.416408
+          ],
+          [
+            9951.0,
+            8482.384157
+          ],
+          [
+            9964.0,
+            8506.825356
+          ],
+          [
+            9977.0,
+            8530.70452
+          ],
+          [
+            9990.0,
+            8554.0
+          ],
+          [
+            10003.0,
+            8576.70452
+          ],
+          [
+            10016.0,
+            8598.825356
+          ],
+          [
+            10029.0,
+            8620.384157
+          ],
+          [
+            10042.0,
+            8641.416408
+          ],
+          [
+            10055.0,
+            8661.970563
+          ],
+          [
+            10068.0,
+            8682.106846
+          ],
+          [
+            10081.0,
+            8701.895772
+          ],
+          [
+            10094.0,
+            8721.416408
+          ],
+          [
+            10107.0,
+            8740.754427
+          ],
+          [
+            10120.0,
+            8760.0
+          ]
+        ],
+        "terminalId": "711C89ED-FF8B-C11D-3AA0-E5828CC145B9"
+      }
+    ],
+    "portalToPortalConnections": [],
+    "sourceWorkingDirectory": "",
+    "sourceWorkspaceId": "9B263D9C-5FFA-EDE9-AAB1-703AF893F32C"
+  },
+  "roles": [
+    {
+      "color": "#FFCC00",
+      "icon": "person.text.rectangle",
+      "id": "9B40A047-15E8-51FC-13B6-06D6414E5847",
+      "name": "Test Engineer",
+      "prompt": "Você é o Test Engineer, trabalhando sozinho para o usuário. Sem time para delegar: você planeja,\nexecuta e verifica você mesmo. Foco: cobertura significativa, testes determinísticos, fixtures.\n\n- Responda em pt-BR; código, identificadores e flags em inglês.\n- Comece entendendo o pedido e o codebase antes de escrever. Se o objetivo é ambíguo,\n  pergunte ao usuário antes de assumir — uma pergunta custa menos que refazer.\n- Planeje em voz alta: liste os passos, depois execute. Trabalhe em incrementos pequenos e\n  verificáveis; rode testes ou um script direcionado e cite a saída real.\n- Você é dono do seu runtime: suba processos de longa duração em background com log em\n  arquivo, prove com `curl` que responderam, derrube no fim.\n- Nunca invente capacidade nem alegue verificação que você não viu. Confirme versões e APIs\n  na doc oficial. Escreva bem: HTML semântico e acessibilidade real, sem `any` nem cast que mente, trate estados de erro/loading/vazio, prefira estado derivado a efeitos, sem refactor de carona fora da sua fatia.\n\n- Feche reportando ao usuário: o que fez, como verificou, o que ficou em aberto.",
+      "schemaVersion": 1
+    }
+  ],
+  "workspaceId": "9B263D9C-5FFA-EDE9-AAB1-703AF893F32C"
+}

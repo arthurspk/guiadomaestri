@@ -1,0 +1,335 @@
+{
+  "appVersion": "0.45.6",
+  "color": "#FF3B30",
+  "createdAt": "2026-09-08T12:00:00Z",
+  "description": "Um único especialista (Security Engineer) trabalhando sozinho: hardening, threat modeling, revisão de segredos. Planeja, executa e verifica você mesmo, com um portal para checar o resultado.",
+  "formatVersion": 1,
+  "icon": "lock.shield",
+  "id": "34322C99-B8C9-2671-69CD-FC57FE29DBB1",
+  "name": "Solo · Security Engineer",
+  "payload": {
+    "connections": [],
+    "drawings": [],
+    "nodes": [
+      {
+        "content": {
+          "terminal": {
+            "_0": {
+              "agentType": "claude_code",
+              "autoScrollLocked": false,
+              "color": "#007AFF",
+              "command": "claude --dangerously-skip-permissions --model opus",
+              "icon": "seal",
+              "id": "61EA8F21-1360-3B17-6769-A65635F15C13",
+              "isManager": false,
+              "isUnloaded": false,
+              "lastActiveAt": "1970-01-01T00:00:00Z",
+              "monitorWithOmbro": true,
+              "name": "Security Engineer",
+              "scrollbackFile": "",
+              "scrollbackLineCount": 0,
+              "shellPath": "",
+              "shortcutMode": {
+                "kind": "automatic"
+              },
+              "status": "restored",
+              "workingDirectory": "",
+              "assignedRoleId": "BD63D0C4-AAD3-89A8-38F4-B68BDD84F6CD"
+            }
+          }
+        },
+        "createdAt": "2026-09-08T12:00:00Z",
+        "frame": [
+          [
+            9000,
+            8000
+          ],
+          [
+            860,
+            600
+          ]
+        ],
+        "id": "797EEE25-8486-DB4F-180A-6BA4FEA819A2",
+        "isLocked": false,
+        "lastModifiedAt": "2026-09-08T12:00:00Z",
+        "zIndex": 51
+      },
+      {
+        "content": {
+          "stickyNote": {
+            "_0": {
+              "color": "yellow",
+              "fileName": "scratchpad.md",
+              "fontSize": 14,
+              "hasCustomName": true,
+              "isContentLocked": false,
+              "isPreviewing": true,
+              "storageMode": {
+                "managed": {}
+              }
+            }
+          }
+        },
+        "createdAt": "2026-09-08T12:00:00Z",
+        "frame": [
+          [
+            10120,
+            7960
+          ],
+          [
+            520,
+            300
+          ]
+        ],
+        "id": "F28BFA5C-64C2-4BF1-EC67-12B54BA29135",
+        "isLocked": false,
+        "lastModifiedAt": "2026-09-08T12:00:00Z",
+        "zIndex": 52
+      },
+      {
+        "content": {
+          "portal": {
+            "_0": {
+              "chromeHidden": false,
+              "currentURL": "http://localhost:5173",
+              "id": "4A60C747-3045-C069-9BD1-1F60F71F26DB",
+              "isUnloaded": false,
+              "name": "Proving Ground",
+              "source": {
+                "url": {
+                  "_0": "http://localhost:5173"
+                }
+              },
+              "status": "idle",
+              "storageScope": "isolated",
+              "surface": {
+                "browser": {}
+              }
+            }
+          }
+        },
+        "createdAt": "2026-09-08T12:00:00Z",
+        "frame": [
+          [
+            10120,
+            8380
+          ],
+          [
+            1200,
+            760
+          ]
+        ],
+        "id": "4DCDFC96-6711-B475-E223-402CFBC750CF",
+        "isLocked": false,
+        "lastModifiedAt": "2026-09-08T12:00:00Z",
+        "zIndex": 53
+      }
+    ],
+    "noteConnections": [
+      {
+        "createdAt": "2026-09-08T12:00:00Z",
+        "id": "C3539C2F-01B7-D9EF-84AF-68B29D9EEC87",
+        "noteNodeId": "F28BFA5C-64C2-4BF1-EC67-12B54BA29135",
+        "ropePoints": [
+          [
+            9860.0,
+            8300.0
+          ],
+          [
+            9873.0,
+            8294.254427
+          ],
+          [
+            9886.0,
+            8288.416408
+          ],
+          [
+            9899.0,
+            8282.395772
+          ],
+          [
+            9912.0,
+            8276.106846
+          ],
+          [
+            9925.0,
+            8269.470563
+          ],
+          [
+            9938.0,
+            8262.416408
+          ],
+          [
+            9951.0,
+            8254.884157
+          ],
+          [
+            9964.0,
+            8246.825356
+          ],
+          [
+            9977.0,
+            8238.20452
+          ],
+          [
+            9990.0,
+            8229.0
+          ],
+          [
+            10003.0,
+            8219.20452
+          ],
+          [
+            10016.0,
+            8208.825356
+          ],
+          [
+            10029.0,
+            8197.884157
+          ],
+          [
+            10042.0,
+            8186.416408
+          ],
+          [
+            10055.0,
+            8174.470563
+          ],
+          [
+            10068.0,
+            8162.106846
+          ],
+          [
+            10081.0,
+            8149.395772
+          ],
+          [
+            10094.0,
+            8136.416408
+          ],
+          [
+            10107.0,
+            8123.254427
+          ],
+          [
+            10120.0,
+            8110.0
+          ]
+        ],
+        "terminalId": "61EA8F21-1360-3B17-6769-A65635F15C13"
+      }
+    ],
+    "noteTexts": {
+      "F28BFA5C-64C2-4BF1-EC67-12B54BA29135": "# scratchpad — Security Engineer\n\nSeu caderno: plano, decisões, o que verificou e o que ficou em aberto. É a fonte de verdade entre sessões.\n"
+    },
+    "noteToNoteConnections": [],
+    "portalConnections": [
+      {
+        "createdAt": "2026-09-08T12:00:00Z",
+        "id": "A5DDBF54-B47B-CA70-C04F-9A0D1AB188B1",
+        "portalNodeId": "4DCDFC96-6711-B475-E223-402CFBC750CF",
+        "ropePoints": [
+          [
+            9860.0,
+            8300.0
+          ],
+          [
+            9873.0,
+            8326.754427
+          ],
+          [
+            9886.0,
+            8353.416408
+          ],
+          [
+            9899.0,
+            8379.895772
+          ],
+          [
+            9912.0,
+            8406.106846
+          ],
+          [
+            9925.0,
+            8431.970563
+          ],
+          [
+            9938.0,
+            8457.416408
+          ],
+          [
+            9951.0,
+            8482.384157
+          ],
+          [
+            9964.0,
+            8506.825356
+          ],
+          [
+            9977.0,
+            8530.70452
+          ],
+          [
+            9990.0,
+            8554.0
+          ],
+          [
+            10003.0,
+            8576.70452
+          ],
+          [
+            10016.0,
+            8598.825356
+          ],
+          [
+            10029.0,
+            8620.384157
+          ],
+          [
+            10042.0,
+            8641.416408
+          ],
+          [
+            10055.0,
+            8661.970563
+          ],
+          [
+            10068.0,
+            8682.106846
+          ],
+          [
+            10081.0,
+            8701.895772
+          ],
+          [
+            10094.0,
+            8721.416408
+          ],
+          [
+            10107.0,
+            8740.754427
+          ],
+          [
+            10120.0,
+            8760.0
+          ]
+        ],
+        "terminalId": "61EA8F21-1360-3B17-6769-A65635F15C13"
+      }
+    ],
+    "portalToPortalConnections": [],
+    "sourceWorkingDirectory": "",
+    "sourceWorkspaceId": "9B263D9C-5FFA-EDE9-AAB1-703AF893F32C"
+  },
+  "roles": [
+    {
+      "color": "#FF3B30",
+      "icon": "person.text.rectangle",
+      "id": "BD63D0C4-AAD3-89A8-38F4-B68BDD84F6CD",
+      "name": "Security Engineer",
+      "prompt": "Você é o Security Engineer, trabalhando sozinho para o usuário. Sem time para delegar: você planeja,\nexecuta e verifica você mesmo. Foco: hardening, threat modeling, revisão de segredos.\n\n- Responda em pt-BR; código, identificadores e flags em inglês.\n- Comece entendendo o pedido e o codebase antes de escrever. Se o objetivo é ambíguo,\n  pergunte ao usuário antes de assumir — uma pergunta custa menos que refazer.\n- Planeje em voz alta: liste os passos, depois execute. Trabalhe em incrementos pequenos e\n  verificáveis; rode testes ou um script direcionado e cite a saída real.\n- Você é dono do seu runtime: suba processos de longa duração em background com log em\n  arquivo, prove com `curl` que responderam, derrube no fim.\n- Nunca invente capacidade nem alegue verificação que você não viu. Confirme versões e APIs\n  na doc oficial. Escreva bem: HTML semântico e acessibilidade real, sem `any` nem cast que mente, trate estados de erro/loading/vazio, prefira estado derivado a efeitos, sem refactor de carona fora da sua fatia.\n\n- Feche reportando ao usuário: o que fez, como verificou, o que ficou em aberto.",
+      "schemaVersion": 1
+    }
+  ],
+  "workspaceId": "9B263D9C-5FFA-EDE9-AAB1-703AF893F32C"
+}

@@ -1,0 +1,335 @@
+{
+  "appVersion": "0.45.6",
+  "color": "#34C759",
+  "createdAt": "2026-09-08T12:00:00Z",
+  "description": "Um único especialista (Backend Engineer) trabalhando sozinho: APIs, modelagem de dados, transações, idempotência. Planeja, executa e verifica você mesmo, com um portal para checar o resultado.",
+  "formatVersion": 1,
+  "icon": "server.rack",
+  "id": "ED933681-A9A0-A07C-443D-97333CCB01BD",
+  "name": "Solo · Backend Engineer",
+  "payload": {
+    "connections": [],
+    "drawings": [],
+    "nodes": [
+      {
+        "content": {
+          "terminal": {
+            "_0": {
+              "agentType": "claude_code",
+              "autoScrollLocked": false,
+              "color": "#007AFF",
+              "command": "claude --dangerously-skip-permissions --model opus",
+              "icon": "seal",
+              "id": "3E7CA076-93B6-4AEE-3B28-5D05D57FBFAC",
+              "isManager": false,
+              "isUnloaded": false,
+              "lastActiveAt": "1970-01-01T00:00:00Z",
+              "monitorWithOmbro": true,
+              "name": "Backend Engineer",
+              "scrollbackFile": "",
+              "scrollbackLineCount": 0,
+              "shellPath": "",
+              "shortcutMode": {
+                "kind": "automatic"
+              },
+              "status": "restored",
+              "workingDirectory": "",
+              "assignedRoleId": "F23079C8-553B-0EF6-D8C5-D96E114A5D34"
+            }
+          }
+        },
+        "createdAt": "2026-09-08T12:00:00Z",
+        "frame": [
+          [
+            9000,
+            8000
+          ],
+          [
+            860,
+            600
+          ]
+        ],
+        "id": "6F191C95-8D91-F92F-0E03-45E07177A841",
+        "isLocked": false,
+        "lastModifiedAt": "2026-09-08T12:00:00Z",
+        "zIndex": 51
+      },
+      {
+        "content": {
+          "stickyNote": {
+            "_0": {
+              "color": "yellow",
+              "fileName": "scratchpad.md",
+              "fontSize": 14,
+              "hasCustomName": true,
+              "isContentLocked": false,
+              "isPreviewing": true,
+              "storageMode": {
+                "managed": {}
+              }
+            }
+          }
+        },
+        "createdAt": "2026-09-08T12:00:00Z",
+        "frame": [
+          [
+            10120,
+            7960
+          ],
+          [
+            520,
+            300
+          ]
+        ],
+        "id": "C9BF9A8C-4AB1-2DCF-C878-5A38F39F99FD",
+        "isLocked": false,
+        "lastModifiedAt": "2026-09-08T12:00:00Z",
+        "zIndex": 52
+      },
+      {
+        "content": {
+          "portal": {
+            "_0": {
+              "chromeHidden": false,
+              "currentURL": "http://localhost:5173",
+              "id": "E1285690-71A7-DA19-13DE-618476550053",
+              "isUnloaded": false,
+              "name": "Proving Ground",
+              "source": {
+                "url": {
+                  "_0": "http://localhost:5173"
+                }
+              },
+              "status": "idle",
+              "storageScope": "isolated",
+              "surface": {
+                "browser": {}
+              }
+            }
+          }
+        },
+        "createdAt": "2026-09-08T12:00:00Z",
+        "frame": [
+          [
+            10120,
+            8380
+          ],
+          [
+            1200,
+            760
+          ]
+        ],
+        "id": "4CEA8FE6-F0B3-EFC5-C692-392ECA59929F",
+        "isLocked": false,
+        "lastModifiedAt": "2026-09-08T12:00:00Z",
+        "zIndex": 53
+      }
+    ],
+    "noteConnections": [
+      {
+        "createdAt": "2026-09-08T12:00:00Z",
+        "id": "61167708-6673-6921-42BE-5157EC59DC8D",
+        "noteNodeId": "C9BF9A8C-4AB1-2DCF-C878-5A38F39F99FD",
+        "ropePoints": [
+          [
+            9860.0,
+            8300.0
+          ],
+          [
+            9873.0,
+            8294.254427
+          ],
+          [
+            9886.0,
+            8288.416408
+          ],
+          [
+            9899.0,
+            8282.395772
+          ],
+          [
+            9912.0,
+            8276.106846
+          ],
+          [
+            9925.0,
+            8269.470563
+          ],
+          [
+            9938.0,
+            8262.416408
+          ],
+          [
+            9951.0,
+            8254.884157
+          ],
+          [
+            9964.0,
+            8246.825356
+          ],
+          [
+            9977.0,
+            8238.20452
+          ],
+          [
+            9990.0,
+            8229.0
+          ],
+          [
+            10003.0,
+            8219.20452
+          ],
+          [
+            10016.0,
+            8208.825356
+          ],
+          [
+            10029.0,
+            8197.884157
+          ],
+          [
+            10042.0,
+            8186.416408
+          ],
+          [
+            10055.0,
+            8174.470563
+          ],
+          [
+            10068.0,
+            8162.106846
+          ],
+          [
+            10081.0,
+            8149.395772
+          ],
+          [
+            10094.0,
+            8136.416408
+          ],
+          [
+            10107.0,
+            8123.254427
+          ],
+          [
+            10120.0,
+            8110.0
+          ]
+        ],
+        "terminalId": "3E7CA076-93B6-4AEE-3B28-5D05D57FBFAC"
+      }
+    ],
+    "noteTexts": {
+      "C9BF9A8C-4AB1-2DCF-C878-5A38F39F99FD": "# scratchpad — Backend Engineer\n\nSeu caderno: plano, decisões, o que verificou e o que ficou em aberto. É a fonte de verdade entre sessões.\n"
+    },
+    "noteToNoteConnections": [],
+    "portalConnections": [
+      {
+        "createdAt": "2026-09-08T12:00:00Z",
+        "id": "8B9155AB-FF4A-D4C1-B4A5-5B732D8CEF9C",
+        "portalNodeId": "4CEA8FE6-F0B3-EFC5-C692-392ECA59929F",
+        "ropePoints": [
+          [
+            9860.0,
+            8300.0
+          ],
+          [
+            9873.0,
+            8326.754427
+          ],
+          [
+            9886.0,
+            8353.416408
+          ],
+          [
+            9899.0,
+            8379.895772
+          ],
+          [
+            9912.0,
+            8406.106846
+          ],
+          [
+            9925.0,
+            8431.970563
+          ],
+          [
+            9938.0,
+            8457.416408
+          ],
+          [
+            9951.0,
+            8482.384157
+          ],
+          [
+            9964.0,
+            8506.825356
+          ],
+          [
+            9977.0,
+            8530.70452
+          ],
+          [
+            9990.0,
+            8554.0
+          ],
+          [
+            10003.0,
+            8576.70452
+          ],
+          [
+            10016.0,
+            8598.825356
+          ],
+          [
+            10029.0,
+            8620.384157
+          ],
+          [
+            10042.0,
+            8641.416408
+          ],
+          [
+            10055.0,
+            8661.970563
+          ],
+          [
+            10068.0,
+            8682.106846
+          ],
+          [
+            10081.0,
+            8701.895772
+          ],
+          [
+            10094.0,
+            8721.416408
+          ],
+          [
+            10107.0,
+            8740.754427
+          ],
+          [
+            10120.0,
+            8760.0
+          ]
+        ],
+        "terminalId": "3E7CA076-93B6-4AEE-3B28-5D05D57FBFAC"
+      }
+    ],
+    "portalToPortalConnections": [],
+    "sourceWorkingDirectory": "",
+    "sourceWorkspaceId": "9B263D9C-5FFA-EDE9-AAB1-703AF893F32C"
+  },
+  "roles": [
+    {
+      "color": "#34C759",
+      "icon": "person.text.rectangle",
+      "id": "F23079C8-553B-0EF6-D8C5-D96E114A5D34",
+      "name": "Backend Engineer",
+      "prompt": "Você é o Backend Engineer, trabalhando sozinho para o usuário. Sem time para delegar: você planeja,\nexecuta e verifica você mesmo. Foco: APIs, modelagem de dados, transações, idempotência.\n\n- Responda em pt-BR; código, identificadores e flags em inglês.\n- Comece entendendo o pedido e o codebase antes de escrever. Se o objetivo é ambíguo,\n  pergunte ao usuário antes de assumir — uma pergunta custa menos que refazer.\n- Planeje em voz alta: liste os passos, depois execute. Trabalhe em incrementos pequenos e\n  verificáveis; rode testes ou um script direcionado e cite a saída real.\n- Você é dono do seu runtime: suba processos de longa duração em background com log em\n  arquivo, prove com `curl` que responderam, derrube no fim.\n- Nunca invente capacidade nem alegue verificação que você não viu. Confirme versões e APIs\n  na doc oficial. Escreva bem: HTML semântico e acessibilidade real, sem `any` nem cast que mente, trate estados de erro/loading/vazio, prefira estado derivado a efeitos, sem refactor de carona fora da sua fatia.\n\n- Feche reportando ao usuário: o que fez, como verificou, o que ficou em aberto.",
+      "schemaVersion": 1
+    }
+  ],
+  "workspaceId": "9B263D9C-5FFA-EDE9-AAB1-703AF893F32C"
+}
