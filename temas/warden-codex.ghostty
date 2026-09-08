@@ -1,0 +1,24 @@
+# Warden (Codex) — tema âmbar do revisor adversarial (formato Ghostty)
+# Combina com terminais de revisão (codex/gemini). Instale em ~/.maestri/terminal/themes/.
+background = 1d1710
+foreground = f2e9dc
+cursor-color = ff9500
+cursor-text = 1d1710
+selection-background = 3a2f1c
+selection-foreground = f2e9dc
+palette = 0=#3a2f1c
+palette = 1=#ff453a
+palette = 2=#32d74b
+palette = 3=#ff9500
+palette = 4=#64d2ff
+palette = 5=#bf5af2
+palette = 6=#5ac8fa
+palette = 7=#f2e9dc
+palette = 8=#8a7a5c
+palette = 9=#ff6961
+palette = 10=#5be584
+palette = 11=#ffb340
+palette = 12=#8ee0ff
+palette = 13=#da8fff
+palette = 14=#8ee0ff
+palette = 15=#ffffff

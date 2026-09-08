@@ -48,6 +48,7 @@
 [⭐ Comece por aqui](#-comece-por-aqui) <br>
 [📖 Documentação](#-documentação) <br>
 [🗂️ Partituras por área](#️-partituras-por-área) <br>
+[📦 Mais recursos para importar/exportar](#-mais-recursos-para-importarexportar) <br>
 [🧩 As 23 famílias de tecnologia](#-as-23-famílias-de-tecnologia) <br>
 [⚡ O Maestri no dia a dia](#-o-maestri-no-dia-a-dia) <br>
 [🤖 Política de modelos](#-política-de-modelos) <br>
@@ -76,8 +77,9 @@
 - [07 · **Áreas e agentes disponíveis**](docs/07-areas-e-agentes.md) — a divisão por áreas, o mapa para o agency-agents e a validação do layout.
 - [08 · **Andares + Partituras (receitas)**](docs/08-andares-e-partituras.md) — como usar os andares junto com as partituras, com receitas por situação e hooks.
 - [09 · **Portais: web, mobile e emuladores**](docs/09-portais-mobile-web-emulador.md) — como colocar portais de navegador, web-mobile e de dispositivo (simulador iOS / emulador Android) nas partituras.
+- [10 · **Importar e exportar no Maestri**](docs/10-importar-e-exportar.md) — tudo que dá para importar/exportar de forma nativa e as receitas curadas, e onde cada coisa vive no hub.
 - [🎭 · **Agentes**](agentes/README.md) — arquétipos de responsabilidade e o elenco de especialistas.
-- [📨 · **Prompt: validar o Discord do Maestri**](prompts/validar-discord-maestri.md) — prompt pronto para um Claude com acesso ao Discord validar e coletar informações.
+- [📨 · **Prompts**](prompts/README.md) — biblioteca de prompts prontos (criar partitura, validar o Discord do Maestri).
 
 ## 🗂️ Partituras por área
 
@@ -95,6 +97,18 @@
 - [🛟 **Suporte & Sucesso**](partituras/suporte/CATALOGO.md) — 4 partituras · base de conhecimento, triagem, onboarding, churn.
 - [🗂️ **Gestão de Projetos**](partituras/gestao/CATALOGO.md) — 4 partituras · sprint, coordenação multi-time, ata, retrospectiva.
 - [🔬 **Pesquisa & Conteúdo Técnico**](partituras/pesquisa/CATALOGO.md) — 3 partituras · estado da arte, síntese, análise de mercado.
+
+## 📦 Mais recursos para importar/exportar
+
+> Um hub do Maestri não é só partituras. Estes recursos usam os outros formatos portáteis do app (roles, temas, instruções, notas) ou reúnem receitas prontas. Panorama completo em [docs/10 · Importar e exportar](docs/10-importar-e-exportar.md).
+
+- [🎭 **Responsabilidades (`role.json`)**](roles/CATALOGO.md) — 30 papéis reutilizáveis no formato nativo; solte na pasta `.maestri` do projeto e use "Descobrir Responsabilidades".
+- [🎨 **Temas de terminal (Ghostty)**](temas/README.md) — 4 temas para instalar em `~/.maestri/terminal/themes/`.
+- [🧭 **Instruções `CLAUDE.md` / `AGENTS.md`**](instrucoes/README.md) — templates por stack, entregues aos agentes ao iniciar num workspace.
+- [📝 **Templates de nota**](notas/README.md) — contrato, workboard, playbook, stack-checklist, case-file e mais, para arrastar ao canvas.
+- [🧑‍🍳 **Receitas curadas**](receitas/README.md) — hooks de andar, rotinas agendadas, cliente Maestri Wire e receitas de ambientes.
+- [📨 **Prompts**](prompts/README.md) — prompts prontos para o Compositor.
+- [🗂️ **Espaços de trabalho (`.maestri`)**](workspaces/README.md) — como importar/compartilhar um workspace.
 
 ## 🧩 As 23 famílias de tecnologia
 
@@ -140,13 +154,16 @@
 
 ```bash
 python3 scripts/generate_partituras.py     # → "Gerados 257 templates em 12 áreas"
+python3 scripts/generate_hub.py            # → roles/ + notas/ + instrucoes/
 python3 tests/validate_partituras.py        # → "Zero divergências" vs a partitura oficial
+python3 tests/validate_hub.py               # → valida os role.json e a estrutura do hub
 ```
 
-- `scripts/maestri_build.py` — classe `Partitura`, serialização, ropePoints, layout.
+- `scripts/maestri_build.py` — classe `Partitura`, serialização, ropePoints, layout, portais.
 - `scripts/roles_lib.py` — prompts de responsabilidade (pt-BR) + templates de nota.
 - `scripts/generate_partituras.py` — famílias parametrizadas por catálogos, agrupadas por área.
-- `tests/validate_partituras.py` — compara chaves de topo/payload/nós/roles com o arquivo oficial.
+- `scripts/generate_hub.py` — gera a biblioteca de `role.json`, as notas avulsas e as instruções.
+- `tests/validate_partituras.py` / `tests/validate_hub.py` — validam partituras e recursos do hub.
 
 ## ⚠️ Segurança
 

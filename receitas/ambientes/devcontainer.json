@@ -1,0 +1,15 @@
+{
+  "name": "Maestri Dev Sandbox",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu-24.04",
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": { "version": "24" },
+    "ghcr.io/devcontainers/features/python:1": { "version": "3.13" },
+    "ghcr.io/devcontainers/features/git:1": {}
+  },
+  "remoteUser": "vscode",
+  "postCreateCommand": "echo 'Sandbox pronto para o Maestri (Ambiente: Docker Sandbox / Container).'",
+  "containerEnv": {
+    "TERM": "xterm-256color",
+    "COLORTERM": "truecolor"
+  }
+}

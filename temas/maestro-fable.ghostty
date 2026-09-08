@@ -1,0 +1,24 @@
+# Maestro (Fable) — tema roxo do orquestrador (formato Ghostty)
+# Combina com o terminal do maestro (--model fable). Instale em ~/.maestri/terminal/themes/.
+background = 1a1626
+foreground = ece7f5
+cursor-color = c77dff
+cursor-text = 1a1626
+selection-background = 3a2d5c
+selection-foreground = ece7f5
+palette = 0=#3a2d5c
+palette = 1=#ff5d8f
+palette = 2=#7ee787
+palette = 3=#ffd479
+palette = 4=#7aa2f7
+palette = 5=#c77dff
+palette = 6=#89ddff
+palette = 7=#ece7f5
+palette = 8=#6a5a8c
+palette = 9=#ff8fb1
+palette = 10=#a6f0ac
+palette = 11=#ffe3a3
+palette = 12=#a3c0ff
+palette = 13=#daa6ff
+palette = 14=#b3ebff
+palette = 15=#ffffff

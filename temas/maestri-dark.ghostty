@@ -1,0 +1,24 @@
+# Maestri Dark — tema de terminal (formato Ghostty)
+# Instale em ~/.maestri/terminal/themes/ e selecione nas configurações do terminal.
+background = 15151c
+foreground = e6e6f0
+cursor-color = af52de
+cursor-text = 15151c
+selection-background = 2b2b40
+selection-foreground = e6e6f0
+palette = 0=#2b2b40
+palette = 1=#ff3b30
+palette = 2=#34c759
+palette = 3=#ffcc00
+palette = 4=#007aff
+palette = 5=#af52de
+palette = 6=#5ac8fa
+palette = 7=#e6e6f0
+palette = 8=#5a5a72
+palette = 9=#ff6961
+palette = 10=#5be584
+palette = 11=#ffe066
+palette = 12=#4da3ff
+palette = 13=#c77dff
+palette = 14=#8ee0ff
+palette = 15=#ffffff

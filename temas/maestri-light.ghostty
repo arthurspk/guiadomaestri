@@ -1,0 +1,24 @@
+# Maestri Light — tema de terminal (formato Ghostty)
+# Instale em ~/.maestri/terminal/themes/ e selecione nas configurações do terminal.
+background = fbfbfd
+foreground = 1c1c22
+cursor-color = 5856d6
+cursor-text = fbfbfd
+selection-background = d9d9ec
+selection-foreground = 1c1c22
+palette = 0=#d9d9ec
+palette = 1=#d70015
+palette = 2=#248a3d
+palette = 3=#9a7d00
+palette = 4=#0040dd
+palette = 5=#8944ab
+palette = 6=#0071a4
+palette = 7=#1c1c22
+palette = 8=#8e8e93
+palette = 9=#ff3b30
+palette = 10=#34c759
+palette = 11=#ffcc00
+palette = 12=#007aff
+palette = 13=#af52de
+palette = 14=#5ac8fa
+palette = 15=#000000
