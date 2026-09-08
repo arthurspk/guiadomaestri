@@ -33,6 +33,7 @@ Sem dependências além da stdlib.
 from __future__ import annotations
 
 import hashlib
+import json
 import math
 from typing import Dict, List, Optional, Sequence, Tuple
 
@@ -260,6 +261,73 @@ class Partitura:
         self._frames[nid] = frame
         self._frames[pid] = frame
         return nid
+
+    def device_portal(self, name: str, platform: str = "ios_simulator",
+                      device: str = "", app_bundle_id: str = "", url: str = "",
+                      x: float = 0, y: float = 0, w: Optional[int] = None,
+                      h: Optional[int] = None) -> str:
+        """Cria um portal de DISPOSITIVO (simulador iOS / emulador Android / aparelho
+        físico) para verificação viva de app mobile.
+
+        ⚠️ PROVISÓRIO. As partituras oficiais que temos como referência só contêm
+        portais de navegador (`surface: {"browser": {}}`), então o JSON exato de um
+        portal de dispositivo NÃO está confirmado aqui. Esta função produz uma
+        estrutura best-effort seguindo o PADRÃO de união etiquetada do formato
+        (`surface`/`source` como o browser usa). Para uma partitura garantida:
+          1. crie o portal de dispositivo no Maestri (New Portal → Devices, ou
+             @New Device Portal no Compositor de Prompts);
+          2. exporte a partitura e copie o nó do portal;
+          3. insira-o verbatim com `raw_portal(node_dict)`.
+        Veja docs/09-portais-mobile-web-emulador.md. `platform` ∈
+        {"ios_simulator","android_emulator","android_device"}. NÃO é usada pelo
+        gerador padrão (para manter a validação byte-estável).
+        """
+        self._z += 1
+        pid = det_uuid(f"portal:{self.name}:{name}")
+        nid = det_uuid(f"portalnode:{self.name}:{name}")
+        content = {
+            "chromeHidden": False,
+            "id": pid,
+            "isUnloaded": False,
+            "name": name,
+            "source": {"device": {"_0": {
+                "platform": platform,
+                "device": device,
+                "appBundleId": app_bundle_id,
+                "url": url,
+            }}},
+            "status": "idle",
+            "storageScope": "isolated",
+            "surface": {"device": {}},
+        }
+        frame: Frame = ((self.ox + x, self.oy + y), (w or 520, h or 1080))
+        self.nodes.append(self._node({"portal": {"_0": content}}, nid, frame))
+        self._frames[nid] = frame
+        self._frames[pid] = frame
+        return nid
+
+    def raw_portal(self, node: dict, x: Optional[float] = None,
+                   y: Optional[float] = None) -> str:
+        """Insere um nó de portal VERBATIM (por exemplo, um portal de dispositivo
+        que você exportou de um Maestri real). O caminho 100% confiável para portais
+        cujo schema não está entre os exemplos oficiais. `node` deve ser o dict
+        completo do nó (com content/frame/id/zIndex/...). Devolve o id do nó."""
+        node = json.loads(json.dumps(node))  # cópia defensiva
+        self._z += 1
+        node.setdefault("zIndex", self._z)
+        node.setdefault("createdAt", self.created_at)
+        node.setdefault("lastModifiedAt", self.created_at)
+        node.setdefault("isLocked", False)
+        (fx, fy), (fw, fh) = node["frame"]
+        if x is not None or y is not None:
+            fx, fy = self.ox + (x or 0), self.oy + (y or 0)
+            node["frame"] = [[fx, fy], [fw, fh]]
+        self.nodes.append(node)
+        self._frames[node["id"]] = ((fx, fy), (fw, fh))
+        inner = node["content"]["portal"]["_0"]
+        if "id" in inner:
+            self._frames[inner["id"]] = ((fx, fy), (fw, fh))
+        return node["id"]
 
     # ------------------------------------------------------------ lookups
     def note_node_id(self, filename: str) -> str:

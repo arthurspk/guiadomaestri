@@ -57,7 +57,10 @@
 - [05 · **Modelos e segurança**](docs/05-modelos-e-seguranca.md) — Fable/Opus/Codex, skip-permissions, stack-checklist de 30 camadas, red team autorizado.
 - [06 · **O Maestri no dia a dia**](docs/06-maestri-no-dia-a-dia.md) — andares, portais, notas, rotinas e Ombro em situações reais de várias áreas.
 - [07 · **Áreas e agentes disponíveis**](docs/07-areas-e-agentes.md) — a divisão por áreas, o mapa para o agency-agents e a validação do layout.
+- [08 · **Andares + Partituras (receitas)**](docs/08-andares-e-partituras.md) — como usar os andares junto com as partituras, com receitas por situação e hooks.
+- [09 · **Portais: web, mobile e emuladores**](docs/09-portais-mobile-web-emulador.md) — como colocar portais de navegador, web-mobile e de dispositivo (simulador iOS / emulador Android) nas partituras.
 - [🎭 · **Agentes**](agentes/README.md) — arquétipos de responsabilidade e o elenco de especialistas.
+- [📨 · **Prompt: validar o Discord do Maestri**](prompts/validar-discord-maestri.md) — prompt pronto para um Claude com acesso ao Discord validar e coletar informações.
 
 ## 🗂️ Partituras por área
 
@@ -97,10 +100,10 @@
 
 ## ⚡ O Maestri no dia a dia
 
-> As partituras são o começo; o valor está no fluxo. O [guia do dia a dia](docs/06-maestri-no-dia-a-dia.md) mostra como usar as features do Maestri em situações reais.
+> As partituras são o começo; o valor está no fluxo. O [guia do dia a dia](docs/06-maestri-no-dia-a-dia.md) mostra como usar as features do Maestri em situações reais, e os docs [08](docs/08-andares-e-partituras.md) e [09](docs/09-portais-mobile-web-emulador.md) aprofundam andares e portais.
 
-- **🏢 Andares (Floors)** — cópias isoladas do repo com branch própria: toque várias frentes em paralelo sem `git stash`, com hooks de Setup/Run/Teardown. Combine com uma partitura para nascer um time inteiro isolado numa branch.
-- **🌐 Portais** — verificação viva: provar um bug, aceitar uma feature, conferir uma landing publicada, olhar um concorrente, ler um dashboard, testar no simulador mobile.
+- **🏢 Andares (Floors)** — cópias isoladas do repo com branch própria: toque várias frentes em paralelo sem `git stash`, com hooks de Setup/Run/Teardown. Combine com uma partitura para nascer um time inteiro isolado numa branch ([receitas em docs/08](docs/08-andares-e-partituras.md)).
+- **🌐 Portais** — verificação viva em navegador, web-mobile e **dispositivo** (simulador iOS / emulador Android / aparelho físico): provar um bug, aceitar uma feature, conferir uma landing, testar o app nativo ([docs/09](docs/09-portais-mobile-web-emulador.md)).
 - **📝 Notas** — a fonte de verdade que sobrevive à sessão; mova para o repo o que deve ir no git, encadeie em mapa mental, deixe o Ombro resumir.
 - **⏰ Rotinas** — o trabalho repetitivo sozinho: guardião de CI, vigia de deploy, clipping de concorrência, fechamento diário, triagem de tickets.
 - **👤 Ombro** — o co-piloto de atenção local: "o que os agentes fizeram enquanto eu estava fora?".

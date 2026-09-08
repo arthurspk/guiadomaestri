@@ -848,7 +848,11 @@ def fam_mobile(platform):
              "orange", "Argus · QA/a11y"),
         ],
         warden_domain=f"a feature mobile em {name_short}: correção, a11y e prontidão de release",
-        category="Ship Mobile", portal_url="http://localhost:19000", portal_name="Device",
+        category="Ship Mobile", portal_url="http://localhost:19000", portal_name="App (web mobile)",
+        extra_maestro="\nO portal incluído é um preview web-mobile. Para verificar o build NATIVO, "
+                   "adicione um portal de DISPOSITIVO no app (New Portal → Devices, ou "
+                   "@New Device Portal): simulador iOS, emulador Android ou aparelho físico. "
+                   "Veja docs/09-portais-mobile-web-emulador.md.",
     )
 
 
