@@ -1,0 +1,159 @@
+<p align="center">
+  <a href="https://www.themaestri.app">
+    <img src="./images/maestri-logo.png" alt="Maestri-Leitfaden" width="160" height="160">
+  </a>
+</p>
+
+<h1 align="center">Maestri-Leitfaden</h1>
+
+<p align="center">
+  <b>Der Leitfaden zum Dirigieren von KI-Agenten-Teams in <a href="https://www.themaestri.app">Maestri</a> — mit Fokus auf Technik und einem Generator für 257 fertige Partituren, nach Bereich geordnet.</b>
+</p>
+
+<p align="center">
+  <a href="partituras/CATALOGO.md"><img src="https://img.shields.io/badge/Partituren-257-5856D6?style=for-the-badge" alt="257 Partituren"></a>
+  <a href="partituras/CATALOGO.md"><img src="https://img.shields.io/badge/Bereiche-12-007AFF?style=for-the-badge" alt="12 Bereiche"></a>
+  <a href="docs/04-formato-maestripartitura.md"><img src="https://img.shields.io/badge/Format-.maestripartitura%20v1-34C759?style=for-the-badge" alt="Format"></a>
+  <a href="tests/validate_partituras.py"><img src="https://img.shields.io/badge/Validierung-0%20Abweichungen-FF9500?style=for-the-badge" alt="Validiert"></a>
+  <a href="docs/05-modelos-e-seguranca.md"><img src="https://img.shields.io/badge/Sprache-pt--BR-FFCC00?style=for-the-badge" alt="pt-BR"></a>
+</p>
+
+> **Hinweis:** Dies ist eine Übersetzung. Der Basisleitfaden und die ausführlichen Dokumente unter `docs/` sind auf brasilianischem Portugiesisch.
+
+## 🎯 Worum es geht
+
+> **Maestri** ist eine macOS-App, in der du auf einer **unendlichen Leinwand** ein **Team aus Code-Agenten dirigierst** — Claude Code, Codex, Gemini, OpenCode: Terminals sind Agenten, Markdown-Notizen sind die gemeinsame Quelle der Wahrheit, Portale sind eingebettete Browser für die Live-Überprüfung, und der **Maestro** delegiert und koordiniert. Dieses Repository ist zugleich ein **Leitfaden** und ein **Python-Generator**, der **257 Partituren** (`.maestripartitura`) erzeugt, bereit zum Ziehen auf die Leinwand und zum Dirigieren — jede ist ein vollständiges Team mit eingebetteten Verantwortlichkeiten, Notizen, Portalen und Verbindungen. Der Fokus liegt auf **Technik**, dazu 11 weitere Geschäftsbereiche (Design, Produkt, Marketing, Vertrieb, Daten, Sicherheit, Finanzen, Recht, Support, Projektmanagement, Recherche).
+
+## 💡 Wie dieser Leitfaden aufgebaut ist
+
+> Zwei Einflüsse, vereint. Die **Aufteilung nach Bereichen** (Abteilungen einer KI-Agentur) stammt von [agency-agents](https://github.com/msitarzewski/agency-agents), einem Katalog mit 230+ Agenten in 18 Abteilungen. Das **Layout** — Kopf, Vorstellung, verankertes Inhaltsverzeichnis und Abschnitte — folgt [guiadevbrasil](https://github.com/arthurspk/guiadevbrasil). Details zu diesem Vergleich in [docs/07](docs/07-areas-e-agentes.md).
+
+## 🌍 Übersetzung
+
+> Wenn du diesen Leitfaden in einer anderen Sprache lesen möchtest, wähle unten. Du kannst auch bei Übersetzungen in weitere Sprachen oder bei Korrekturen helfen; die Community dankt dir. Die ausführlichen Dokumente unter `docs/` sind auf Portugiesisch.
+
+🇧🇷・**Português (Brasil) —** [este arquivo](README.md)<br>
+🇺🇸・**English —** [Click Here](README.en.md)<br>
+🇪🇸・**Español —** [Clic aquí](README.es.md)<br>
+🇨🇳・**中文 —** [点击这里](README.zh.md)<br>
+🇮🇳・**हिन्दी —** [यहाँ क्लिक करें](README.hi.md)<br>
+🇸🇦・**العربية —** [اضغط هنا](README.ar.md)<br>
+🇫🇷・**Français —** [Cliquez ici](README.fr.md)<br>
+🇮🇹・**Italiano —** [Clicca qui](README.it.md)<br>
+🇰🇷・**한국어 —** [여기 클릭](README.ko.md)<br>
+🇷🇺・**Русский —** [Нажмите здесь](README.ru.md)<br>
+🇩🇪・**Deutsch —** [Hier klicken](README.de.md)<br>
+🇯🇵・**日本語 —** [こちらをクリック](README.ja.md)<br>
+
+## ⭐ Hier starten
+
+> Wenn du nur die Vorlagen willst: Katalog öffnen, Bereich wählen, nach Maestri ziehen.
+
+- [🎼 **Partituren-Katalog nach Bereich**](partituras/CATALOGO.md) — der Hauptindex der 257 Partituren, mit Link zu jedem Bereich und dessen Bundle.
+- [💻 **Technik-Katalog**](partituras/tecnologia/CATALOGO.md) — die 212 Engineering-Partituren (das Herz des Leitfadens).
+- [📦 **Alles auf einmal importieren**](partituras/Guia-do-Maestri.maestripartituras) — ein Bundle mit allen Bereichen (Partituren-Panel → ⋯ → Partituren importieren…).
+
+## 📖 Dokumentation
+
+> Neun Dokumente plus der Agenten-Leitfaden, auf Portugiesisch. Beginne bei 01, wenn Maestri neu für dich ist, oder springe zu 02 und 06, wenn du es schon kennst.
+
+- **01 · Konzepte** ([docs/01](docs/01-conceitos.md)) — Leinwand, Terminals, Notizen, Portale, Verbindungen, Maestro-Modus, Ombro, Batuta, Etagen (Floors), Routinen, Umgebungen, Wire.
+- **02 · Vorlagen nutzen** ([docs/02](docs/02-como-usar-os-templates.md)) — importieren, in der Praxis dirigieren, eine Partitur wählen und anpassen.
+- **03 · Kürzel und Befehle** ([docs/03](docs/03-atalhos.md)) — macOS-Tastenkürzel und die `maestri`-CLI.
+- **04 · Das `.maestripartitura`-Format** ([docs/04](docs/04-formato-maestripartitura.md)) — die JSON-Spezifikation, kalibriert an den offiziellen Dateien.
+- **05 · Modelle und Sicherheit** ([docs/05](docs/05-modelos-e-seguranca.md)) — Fable/Opus/Codex, skip-permissions, 30-Schichten-Checkliste, autorisiertes Red Team.
+- **06 · Maestri im Alltag** ([docs/06](docs/06-maestri-no-dia-a-dia.md)) — Etagen, Portale, Notizen, Routinen und Ombro in echten Situationen.
+- **07 · Bereiche und verfügbare Agenten** ([docs/07](docs/07-areas-e-agentes.md)) — die Aufteilung nach Bereichen, die Zuordnung zu agency-agents, die Layout-Validierung.
+- **08 · Etagen + Partituren (Rezepte)** ([docs/08](docs/08-andares-e-partituras.md)) — wie man Etagen zusammen mit Partituren nutzt, mit Rezepten je Situation und Hooks.
+- **09 · Portale: Web, Mobile, Emulatoren** ([docs/09](docs/09-portais-mobile-web-emulador.md)) — wie man Browser-, Mobile-Web- und Geräteportale (iOS-Simulator / Android-Emulator) in Partituren einbaut.
+- **🎭 · Agenten** ([agentes/README.md](agentes/README.md)) — Verantwortlichkeits-Archetypen und das Ensemble der Spezialisten.
+- **📨 · Prompt: Maestri-Discord validieren** ([prompts](prompts/validar-discord-maestri.md)) — ein fertiger Prompt für ein Claude mit Discord-Zugang, um Informationen zu prüfen und zu sammeln.
+
+## 🗂️ Partituren nach Bereich
+
+> 257 Partituren in 12 Bereichen. Jeder Bereich hat einen detaillierten Katalog und ein `.maestripartituras`-Bundle zum Import auf einmal.
+
+- [💻 **Technik**](partituras/tecnologia/CATALOGO.md) — 212 Partituren · End-to-End-Engineering: Features, Bugs, Release, Infra, Daten, KI, Migration, Mobile.
+- [🎨 **Design & UX**](partituras/design/CATALOGO.md) — 5 Partituren · Designsysteme, UX-Forschung, Landingpages, UI-Audit.
+- [📦 **Produkt**](partituras/produto/CATALOGO.md) — 5 Partituren · Discovery, Roadmap, PRD, Feedback-Synthese, Wettbewerb.
+- [📢 **Marketing & Content**](partituras/marketing/CATALOGO.md) — 5 Partituren · Kampagnen, SEO, Social, Lifecycle-E-Mail, Tech-Blog.
+- [💼 **Vertrieb**](partituras/vendas/CATALOGO.md) — 4 Partituren · Outbound, Angebote/RFP, Sales Enablement, Discovery.
+- [📊 **Daten & Analytics**](partituras/dados/CATALOGO.md) — 4 Partituren · BI-Dashboards, explorative Analyse, Metriken, A/B.
+- [🔒 **Sicherheit & Compliance**](partituras/seguranca/CATALOGO.md) — 4 Partituren · DSGVO/LGPD, SOC 2, Threat Modeling, Incident Response.
+- [💵 **Finanzen**](partituras/financeiro/CATALOGO.md) — 4 Partituren · Abschluss, Modellierung, FP&A, Due Diligence.
+- [⚖️ **Recht**](partituras/juridico/CATALOGO.md) — 3 Partituren · Vertragsprüfung, Intake, Risikoanalyse.
+- [🛟 **Support & Success**](partituras/suporte/CATALOGO.md) — 4 Partituren · Wissensdatenbank, Triage, Onboarding, Churn.
+- [🗂️ **Projektmanagement**](partituras/gestao/CATALOGO.md) — 4 Partituren · Sprint, Team-übergreifende Koordination, Protokoll, Retrospektive.
+- [🔬 **Recherche & Tech-Content**](partituras/pesquisa/CATALOGO.md) — 3 Partituren · Stand der Technik, Synthese, Marktanalyse.
+
+## 🧩 Die 23 Technik-Familien
+
+> Der Bereich Technik ist über Kataloge (Stacks, Domänen, Anbieter) parametrisiert. Familien × Varianten übersteigt 200 Vorlagen.
+
+- **🚢 Ship Feature** (24) — Maestro + Architekt + 2 Builder + Warden, je Stack.
+- **🐞 Debugging** (24) — Reproduzierer → Ursache → Fix → Verifizierer, je Stack.
+- **✅ Release-Gate** (24) — Conductor + 4 adversariale Reviewer, je Stack.
+- **🏗️ Scaffold** (24) — Gerüst + Setup + Vertical Slice + Warden, je Stack.
+- **🔧 Migration** (12) — Migration + Paritäts-Verifizierer, inkrementell und umkehrbar.
+- **💸 Full Pipeline** (10) — 30 Schichten über 4 Oberflächen, je Produkt (finanzielle Cutoff-Regel).
+- **☁️ Cloud & Infra** (9) — Netz/Compute + Daten/Storage + Warden, je Anbieter.
+- **🗄️ Datenbank** (9) — Schema/Migration + evidenzbasierte Indizes, je Datenbank.
+- **🔎 BFF-Validierung** (8) — SPA × BFF: Parität, CORS, Cookie, je Domäne.
+- **🧠 KI-Feature** (7) — KI + Evals & Guardrails.
+- **📱 Ship Mobile** (7) — App + QA/A11y auf einem Geräteportal.
+- **🧑‍💻 Solo** (7) — ein einzelner Spezialist.
+- **📖 Dokumentation** (5), **⚔️ Agenten-Duell** (5), **🚨 War Room** (5).
+- **🔗 API Contract** (4), **♿ Barrierefreiheit** (4), **🔁 CI/CD** (4), **🔀 Data Pipeline** (4), **📦 IaC** (4), **☸️ Kubernetes** (4), **⚡ Performance** (4), **🔴 Red Team** (4, nur autorisierter Rahmen).
+
+## ⚡ Maestri im Alltag
+
+> Die Partituren sind der Anfang; der Wert liegt im Ablauf. Der [Alltags-Leitfaden](docs/06-maestri-no-dia-a-dia.md) zeigt, wie man Maestris Funktionen in echten Situationen nutzt, und die Docs [08](docs/08-andares-e-partituras.md) und [09](docs/09-portais-mobile-web-emulador.md) vertiefen Etagen und Portale.
+
+- **🏢 Etagen (Floors)** — isolierte Kopien des Repos mit eigenem Branch: arbeite ohne `git stash` an mehreren Fronten parallel, mit Setup/Run/Teardown-Hooks. Kombiniere mit einer Partitur, um ein ganzes Team isoliert auf einem Branch hochzuziehen.
+- **🌐 Portale** — Live-Prüfung in Browser, Mobile-Web und **Gerät** (iOS-Simulator / Android-Emulator / physisches Gerät): einen Bug beweisen, ein Feature abnehmen, eine Landingpage prüfen, die native App testen.
+- **📝 Notizen** — die Quelle der Wahrheit, die die Sitzung überdauert; verschiebe ins Repo, was in git gehört, verkette zu einer Mindmap, lass Ombro zusammenfassen.
+- **⏰ Routinen** — wiederkehrende Arbeit von selbst: CI-Wächter, Deploy-Beobachter, Wettbewerber-Clipping, Tagesabschluss, Ticket-Triage.
+- **👤 Ombro** — der lokale Aufmerksamkeits-Copilot: „Was haben die Agenten gemacht, während ich weg war?“.
+
+## 🤖 Modell-Politik
+
+> Fable dirigiert, Opus führt aus, Codex/Gemini widersprechen.
+
+- **🎼 Orchestrierung** (Maestro, Conductor, IC, Judge, Lead) — `claude --dangerously-skip-permissions --model fable`.
+- **🔨 Ausführung** (Architekt, Builder, Spezialisten) — `--model opus`.
+- **🛡️ Adversariales Review** (Release, Wardens, Duell) — `codex` / `gemini`, mit Absicht: ein anderes Modell fängt, was das andere übersehen hat.
+- Details und Schutzmaßnahmen in [docs/05](docs/05-modelos-e-seguranca.md).
+
+## 🛠️ Neu generieren und validieren
+
+> Der Generator braucht nichts außer der Standardbibliothek von Python 3. Deterministische UUIDs: Neugenerieren erzeugt Byte-für-Byte identische Dateien.
+
+```bash
+python3 scripts/generate_partituras.py     # → "Gerados 257 templates em 12 áreas"
+python3 tests/validate_partituras.py        # → "Zero divergências" gegen die offizielle Partitur
+```
+
+- `scripts/maestri_build.py` — die Klasse `Partitura`, Serialisierung, ropePoints, Layout.
+- `scripts/roles_lib.py` — Verantwortlichkeits-Prompts (pt-BR) + Notiz-Vorlagen.
+- `scripts/generate_partituras.py` — durch Kataloge parametrisierte, nach Bereich gruppierte Familien.
+- `tests/validate_partituras.py` — vergleicht top/payload/Node/Rollen-Schlüssel mit der offiziellen Datei.
+
+## ⚠️ Sicherheit
+
+> Eine Partitur zur Leinwand hinzuzufügen **startet ihre Terminals und führt Befehle auf deiner Maschine aus** (`claude`, `codex`, `gemini`).
+
+- **Lies die Befehle** im Prüfbildschirm vor dem Import und akzeptiere Partituren nur aus vertrauenswürdigen Quellen.
+- **Red-Team**-Partituren und jedes offensive Engagement laufen **ausschließlich im autorisierten Rahmen**, nie in Produktion und nie mit Daten realer Personen.
+- Details in [docs/05](docs/05-modelos-e-seguranca.md).
+
+## 🔗 Referenzen
+
+- [Offizielle Maestri-Dokumentation](https://www.themaestri.app/pt-br/docs) — Leinwand, Terminals, Notizen, Portale, Etagen, Routinen, Wire.
+- [agency-agents](https://github.com/msitarzewski/agency-agents) — Katalog mit 230+ Agenten in 18 Abteilungen (Inspiration für die Bereiche).
+- [guiadevbrasil](https://github.com/arthurspk/guiadevbrasil) — pt-BR-Referenzleitfaden (Inspiration für das Layout).
+
+---
+
+<p align="center">
+  <sub>Gebaut, um Agenten zu dirigieren. Fable dirigiert, Opus führt aus, Codex und Gemini widersprechen. 🎻</sub>
+</p>

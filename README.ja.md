@@ -1,0 +1,159 @@
+<p align="center">
+  <a href="https://www.themaestri.app">
+    <img src="./images/maestri-logo.png" alt="Maestri ガイド" width="160" height="160">
+  </a>
+</p>
+
+<h1 align="center">Maestri ガイド</h1>
+
+<p align="center">
+  <b><a href="https://www.themaestri.app">Maestri</a> で AI エージェントのチームを指揮するためのガイド — 技術に重点を置き、領域ごとに整理された 257 の既製スコアを生成するジェネレーター付き。</b>
+</p>
+
+<p align="center">
+  <a href="partituras/CATALOGO.md"><img src="https://img.shields.io/badge/scores-257-5856D6?style=for-the-badge" alt="257"></a>
+  <a href="partituras/CATALOGO.md"><img src="https://img.shields.io/badge/areas-12-007AFF?style=for-the-badge" alt="12"></a>
+  <a href="docs/04-formato-maestripartitura.md"><img src="https://img.shields.io/badge/format-.maestripartitura%20v1-34C759?style=for-the-badge" alt="format"></a>
+  <a href="tests/validate_partituras.py"><img src="https://img.shields.io/badge/validation-0-FF9500?style=for-the-badge" alt="validated"></a>
+  <a href="docs/05-modelos-e-seguranca.md"><img src="https://img.shields.io/badge/language-pt--BR-FFCC00?style=for-the-badge" alt="pt-BR"></a>
+</p>
+
+> **注記:** これは翻訳です。基となるガイドおよび `docs/` 配下の詳細ドキュメントはブラジルポルトガル語で書かれています。
+
+## 🎯 これは何か
+
+> **Maestri** は、**無限のキャンバス**上で**コードエージェントのチームを指揮する** macOS アプリです — Claude Code、Codex、Gemini、OpenCode。ターミナルはエージェント、Markdown ノートは共有された真実の源、ポータルはライブ検証のための埋め込みブラウザ、そして**マエストロ**が委任し調整します。このリポジトリは**ガイド**であり、同時に **Python ジェネレーター**でもあり、キャンバスにドラッグしてすぐ指揮できる **257 のスコア**（`.maestripartitura`）を生成します。各スコアは、責務・ノート・ポータル・接続を内蔵した完全なチームです。重点は**技術**で、さらに 11 のビジネス領域（デザイン、プロダクト、マーケティング、営業、データ、セキュリティ、財務、法務、サポート、プロジェクト管理、リサーチ）があります。
+
+## 💡 本ガイドの構成
+
+> 2 つの影響を組み合わせています。**領域による分割**（AI エージェンシーの部門）は、18 部門・230+ エージェントのカタログ [agency-agents](https://github.com/msitarzewski/agency-agents) に由来します。**レイアウト** — ヘッダー、紹介、アンカー付き目次、セクション — は [guiadevbrasil](https://github.com/arthurspk/guiadevbrasil) に倣っています。比較の詳細は [docs/07](docs/07-areas-e-agentes.md)。
+
+## 🌍 翻訳
+
+> 本ガイドを別の言語で読みたい場合は下から選んでください。さらなる言語への翻訳や誤りの修正への協力も歓迎します。コミュニティは感謝します。`docs/` の詳細ドキュメントはポルトガル語です。
+
+🇧🇷・**Português (Brasil) —** [este arquivo](README.md)<br>
+🇺🇸・**English —** [Click Here](README.en.md)<br>
+🇪🇸・**Español —** [Clic aquí](README.es.md)<br>
+🇨🇳・**中文 —** [点击这里](README.zh.md)<br>
+🇮🇳・**हिन्दी —** [यहाँ क्लिक करें](README.hi.md)<br>
+🇸🇦・**العربية —** [اضغط هنا](README.ar.md)<br>
+🇫🇷・**Français —** [Cliquez ici](README.fr.md)<br>
+🇮🇹・**Italiano —** [Clicca qui](README.it.md)<br>
+🇰🇷・**한국어 —** [여기 클릭](README.ko.md)<br>
+🇷🇺・**Русский —** [Нажмите здесь](README.ru.md)<br>
+🇩🇪・**Deutsch —** [Hier klicken](README.de.md)<br>
+🇯🇵・**日本語 —** [こちらをクリック](README.ja.md)<br>
+
+## ⭐ ここから始める
+
+> テンプレートだけが欲しい場合：カタログを開き、領域を選び、Maestri にドラッグしてください。
+
+- [🎼 **領域別スコアカタログ**](partituras/CATALOGO.md) — 257 スコアのマスター索引。各領域とそのバンドルへのリンク付き。
+- [💻 **技術カタログ**](partituras/tecnologia/CATALOGO.md) — 212 のエンジニアリングスコア（ガイドの中核）。
+- [📦 **一括インポート**](partituras/Guia-do-Maestri.maestripartituras) — 全領域を含むバンドル（スコアパネル → ⋯ → スコアをインポート…）。
+
+## 📖 ドキュメント
+
+> 9 つのドキュメントとエージェントガイド、いずれもポルトガル語。Maestri が初めてなら 01 から、既に知っているなら 02 と 06 へ。
+
+- **01 · コンセプト** ([docs/01](docs/01-conceitos.md)) — キャンバス、ターミナル、ノート、ポータル、接続、マエストロモード、Ombro、Batuta、フロア（Floors）、ルーティン、環境、Wire。
+- **02 · テンプレートの使い方** ([docs/02](docs/02-como-usar-os-templates.md)) — インポート、実践的な指揮、スコアの選択と調整。
+- **03 · ショートカットとコマンド** ([docs/03](docs/03-atalhos.md)) — macOS キーボードショートカットと `maestri` CLI。
+- **04 · `.maestripartitura` 形式** ([docs/04](docs/04-formato-maestripartitura.md)) — 公式ファイルに合わせて較正した JSON 仕様。
+- **05 · モデルとセキュリティ** ([docs/05](docs/05-modelos-e-seguranca.md)) — Fable/Opus/Codex、skip-permissions、30 層スタックチェックリスト、認可済みレッドチーム。
+- **06 · 日常の Maestri** ([docs/06](docs/06-maestri-no-dia-a-dia.md)) — フロア、ポータル、ノート、ルーティン、Ombro を実際の場面で。
+- **07 · 領域と利用可能なエージェント** ([docs/07](docs/07-areas-e-agentes.md)) — 領域分割、agency-agents への対応表、レイアウト検証。
+- **08 · フロア + スコア（レシピ）** ([docs/08](docs/08-andares-e-partituras.md)) — フロアとスコアを併用する方法、場面別レシピと hooks。
+- **09 · ポータル：Web、モバイル、エミュレーター** ([docs/09](docs/09-portais-mobile-web-emulador.md)) — ブラウザ、モバイル Web、デバイスポータル（iOS シミュレーター / Android エミュレーター）をスコアに追加する方法。
+- **🎭 · エージェント** ([agentes/README.md](agentes/README.md)) — 責務の原型と専門家の顔ぶれ。
+- **📨 · プロンプト：Maestri の Discord を検証** ([prompts](prompts/validar-discord-maestri.md)) — Discord にアクセスできる Claude が情報を検証・収集するための既製プロンプト。
+
+## 🗂️ 領域別スコア
+
+> 12 領域にわたる 257 スコア。各領域には詳細カタログと、一括インポート用の `.maestripartituras` バンドルがあります。
+
+- [💻 **技術**](partituras/tecnologia/CATALOGO.md) — 212 · エンドツーエンドのエンジニアリング：機能、バグ、リリース、インフラ、データ、AI、移行、モバイル。
+- [🎨 **デザイン & UX**](partituras/design/CATALOGO.md) — 5 · デザインシステム、UX リサーチ、ランディングページ、UI 監査。
+- [📦 **プロダクト**](partituras/produto/CATALOGO.md) — 5 · discovery、ロードマップ、PRD、フィードバック統合、競合分析。
+- [📢 **マーケティング & コンテンツ**](partituras/marketing/CATALOGO.md) — 5 · キャンペーン、SEO、ソーシャル、ライフサイクルメール、技術ブログ。
+- [💼 **営業**](partituras/vendas/CATALOGO.md) — 4 · アウトバウンド、提案/RFP、セールスイネーブルメント、discovery。
+- [📊 **データ & 分析**](partituras/dados/CATALOGO.md) — 4 · BI ダッシュボード、探索的分析、指標、A/B。
+- [🔒 **セキュリティ & コンプライアンス**](partituras/seguranca/CATALOGO.md) — 4 · GDPR/LGPD、SOC 2、脅威モデリング、インシデント対応。
+- [💵 **財務**](partituras/financeiro/CATALOGO.md) — 4 · 決算、モデリング、FP&A、デューデリジェンス。
+- [⚖️ **法務**](partituras/juridico/CATALOGO.md) — 3 · 契約レビュー、インテーク、リスク分析。
+- [🛟 **サポート & サクセス**](partituras/suporte/CATALOGO.md) — 4 · ナレッジベース、トリアージ、オンボーディング、チャーン。
+- [🗂️ **プロジェクト管理**](partituras/gestao/CATALOGO.md) — 4 · スプリント、複数チーム調整、議事録、レトロスペクティブ。
+- [🔬 **リサーチ & 技術コンテンツ**](partituras/pesquisa/CATALOGO.md) — 3 · 最新動向、統合、市場分析。
+
+## 🧩 23 の技術ファミリー
+
+> 技術領域はカタログ（スタック、ドメイン、プロバイダー）でパラメータ化されています。ファミリー × バリアントは 200 テンプレートを超えます。
+
+- **🚢 Ship Feature**（24）— マエストロ + アーキテクト + ビルダー 2 + warden、スタック別。
+- **🐞 デバッグ**（24）— 再現者 → 根本原因 → 修正 → 検証者、スタック別。
+- **✅ リリースゲート**（24）— conductor + 4 名の敵対的レビュアー、スタック別。
+- **🏗️ Scaffold**（24）— 骨組み + セットアップ + 垂直スライス + warden、スタック別。
+- **🔧 移行**（12）— 移行 + 等価検証者、段階的かつ可逆。
+- **💸 フルパイプライン**（10）— 4 つの面にわたる 30 層、プロダクト別（金融カットオフ規則）。
+- **☁️ クラウド & インフラ**（9）— ネットワーク/コンピュート + データ/ストレージ + warden、プロバイダー別。
+- **🗄️ データベース**（9）— スキーマ/移行 + エビデンスに基づくインデックス、DB 別。
+- **🔎 BFF 検証**（8）— SPA × BFF：等価性、CORS、Cookie、ドメイン別。
+- **🧠 AI 機能**（7）— AI + 評価 & ガードレール。
+- **📱 Ship Mobile**（7）— アプリ + デバイスポータルでの QA/アクセシビリティ。
+- **🧑‍💻 ソロ**（7）— 単独の専門家。
+- **📖 ドキュメント**（5）、**⚔️ エージェント決闘**（5）、**🚨 ウォールーム**（5）。
+- **🔗 API Contract**（4）、**♿ アクセシビリティ**（4）、**🔁 CI/CD**（4）、**🔀 Data Pipeline**（4）、**📦 IaC**（4）、**☸️ Kubernetes**（4）、**⚡ パフォーマンス**（4）、**🔴 レッドチーム**（4、認可範囲のみ）。
+
+## ⚡ 日常の Maestri
+
+> スコアは出発点であり、価値はフローにあります。[日常ガイド](docs/06-maestri-no-dia-a-dia.md) は実際の場面で Maestri の機能をどう使うかを示し、[08](docs/08-andares-e-partituras.md) と [09](docs/09-portais-mobile-web-emulador.md) はフロアとポータルを掘り下げます。
+
+- **🏢 フロア（Floors）** — 独自ブランチを持つリポジトリの隔離コピー：`git stash` なしで複数の戦線を並行して進め、Setup/Run/Teardown フックを備えます。スコアと組み合わせれば、1 つのブランチ上に隔離されたチーム全体を立ち上げられます。
+- **🌐 ポータル** — ブラウザ、モバイル Web、**デバイス**（iOS シミュレーター / Android エミュレーター / 実機）でのライブ検証：バグの証明、機能の受け入れ、ランディングの確認、ネイティブアプリのテスト。
+- **📝 ノート** — セッションを超えて残る真実の源；git に入れるべきものはリポジトリへ移し、マインドマップとして連結し、Ombro に要約させます。
+- **⏰ ルーティン** — 反復作業を自動で：CI 番人、デプロイ監視、競合クリッピング、日次決算、チケットのトリアージ。
+- **👤 Ombro** — ローカルの注意副操縦士：「私がいない間、エージェントは何をした？」。
+
+## 🤖 モデルポリシー
+
+> Fable が指揮し、Opus が実行し、Codex/Gemini が異議を唱える。
+
+- **🎼 オーケストレーション**（マエストロ、conductor、IC、審判、lead）— `claude --dangerously-skip-permissions --model fable`。
+- **🔨 実行**（アーキテクト、ビルダー、専門家）— `--model opus`。
+- **🛡️ 敵対的レビュー**（リリース、warden、決闘）— `codex` / `gemini`、意図的に：別のモデルが、もう一方の見逃しを捕らえます。
+- 詳細と安全策は [docs/05](docs/05-modelos-e-seguranca.md)。
+
+## 🛠️ 再生成と検証
+
+> ジェネレーターは Python 3 標準ライブラリ以外に依存しません。決定的 UUID：再生成するとバイト単位で同一のファイルが得られます。
+
+```bash
+python3 scripts/generate_partituras.py     # → "Gerados 257 templates em 12 áreas"
+python3 tests/validate_partituras.py        # → 公式スコアに対して "Zero divergências"
+```
+
+- `scripts/maestri_build.py` — `Partitura` クラス、シリアライズ、ropePoints、レイアウト。
+- `scripts/roles_lib.py` — 責務プロンプト（pt-BR）+ ノートテンプレート。
+- `scripts/generate_partituras.py` — カタログでパラメータ化され、領域ごとにまとめられたファミリー。
+- `tests/validate_partituras.py` — top/payload/ノード/ロールのキーを公式ファイルと比較。
+
+## ⚠️ セキュリティ
+
+> スコアをキャンバスに追加すると、**そのターミナルが起動し、あなたのマシンでコマンドが実行されます**（`claude`、`codex`、`gemini`）。
+
+- インポート前にレビュー画面で**コマンドを読み**、信頼できる出所のスコアだけを受け入れてください。
+- **レッドチーム**スコアおよびあらゆる攻撃的活動は、**認可された範囲でのみ**動作し、決して本番環境で、決して実在の人物のデータでは行いません。
+- 詳細は [docs/05](docs/05-modelos-e-seguranca.md)。
+
+## 🔗 参考
+
+- [Maestri 公式ドキュメント](https://www.themaestri.app/pt-br/docs) — キャンバス、ターミナル、ノート、ポータル、フロア、ルーティン、Wire。
+- [agency-agents](https://github.com/msitarzewski/agency-agents) — 18 部門・230+ エージェントのカタログ（領域の着想源）。
+- [guiadevbrasil](https://github.com/arthurspk/guiadevbrasil) — 参考の pt-BR ガイド（レイアウトの着想源）。
+
+---
+
+<p align="center">
+  <sub>エージェントを指揮するために作られました。Fable が指揮し、Opus が実行し、Codex と Gemini が異議を唱えます。🎻</sub>
+</p>

@@ -4,7 +4,7 @@
   </a>
 </p>
 
-<h1 align="center">🎼 Guia do Maestri</h1>
+<h1 align="center">Guia do Maestri</h1>
 
 <p align="center">
   <b>O guia em português para reger times de agentes de IA no <a href="https://www.themaestri.app/pt-br">Maestri</a> — com ênfase em tecnologia e um gerador de 257 partituras prontas, divididas por área.</b>
@@ -25,6 +25,23 @@
 ## 💡 Como este guia é organizado
 
 > Duas influências, juntas. A **divisão por áreas** (departamentos de uma agência de IA) vem do [agency-agents](https://github.com/msitarzewski/agency-agents), catálogo com 230+ agentes em 18 divisões. O **layout** — cabeçalho, proposta, índice com âncoras e seções em pt-BR — segue o [guiadevbrasil](https://github.com/arthurspk/guiadevbrasil). Detalhes dessa validação em [docs/07](docs/07-areas-e-agentes.md).
+
+## 🌍 Tradução
+
+> Se você deseja acompanhar este guia em outro idioma, escolha abaixo. Você também pode colaborar com a tradução para outros idiomas e a correção de erros; a comunidade agradece. Os documentos detalhados em `docs/` estão em português.
+
+🇧🇷・**Português (Brasil) —** [este arquivo](README.md)<br>
+🇺🇸・**English —** [Click Here](README.en.md)<br>
+🇪🇸・**Español —** [Clic aquí](README.es.md)<br>
+🇨🇳・**中文 —** [点击这里](README.zh.md)<br>
+🇮🇳・**हिन्दी —** [यहाँ क्लिक करें](README.hi.md)<br>
+🇸🇦・**العربية —** [اضغط هنا](README.ar.md)<br>
+🇫🇷・**Français —** [Cliquez ici](README.fr.md)<br>
+🇮🇹・**Italiano —** [Clicca qui](README.it.md)<br>
+🇰🇷・**한국어 —** [여기 클릭](README.ko.md)<br>
+🇷🇺・**Русский —** [Нажмите здесь](README.ru.md)<br>
+🇩🇪・**Deutsch —** [Hier klicken](README.de.md)<br>
+🇯🇵・**日本語 —** [こちらをクリック](README.ja.md)<br>
 
 ## 📚 Índice
 
