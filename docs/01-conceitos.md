@@ -8,7 +8,7 @@ Gemini, OpenCode — em vez de pular entre abas de terminal. Ele não é um agen
 Fonte oficial: <https://www.themaestri.app/pt-br/docs>.
 
 > Este guia tem ênfase em **tecnologia**: os conceitos abaixo são a base para entender
-> as 212 partituras em [`partituras/tecnologia/`](../partituras/tecnologia/CATALOGO.md).
+> as 257 partituras em [`partituras/`](../partituras/CATALOGO.md), com ênfase na área de tecnologia.
 
 ---
 

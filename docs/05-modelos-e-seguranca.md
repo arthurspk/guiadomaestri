@@ -1,6 +1,6 @@
 # 05 · Modelos e segurança
 
-Duas decisões atravessam todas as 212 partituras: **qual modelo rege qual papel** e
+Duas decisões atravessam todas as 257 partituras: **qual modelo rege qual papel** e
 **quais salvaguardas nunca são negociáveis**. Esta página explica as duas.
 
 ---

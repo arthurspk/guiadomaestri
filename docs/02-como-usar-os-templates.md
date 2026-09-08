@@ -1,7 +1,7 @@
 # 02 · Como usar os templates
 
-As 212 partituras deste guia estão em
-[`partituras/tecnologia/`](../partituras/tecnologia/CATALOGO.md). Cada uma é um time
+As 257 partituras deste guia estão em
+[`partituras/`](../partituras/CATALOGO.md), divididas em 12 áreas. Cada uma é um time
 pronto — terminais com responsabilidades, notas compartilhadas, portais de verificação e
 conexões — que você **arrasta para o canvas do Maestri e começa a reger**.
 
@@ -21,8 +21,8 @@ Você tem duas formas:
    duplo clique nele no Finder. A tela de revisão mostra o layout, as responsabilidades e
    os **comandos de partida** — confira antes de aceitar.
 2. **O pacote inteiro.** No painel de **Partituras**, menu ⋯ → **Importar Partituras…** e
-   escolha [`Tecnologia.maestripartituras`](../partituras/tecnologia/Tecnologia.maestripartituras).
-   Isso adiciona as 212 de uma vez à sua biblioteca (a importação de pacote pula a tela
+   escolha [`Guia-do-Maestri.maestripartituras`](../partituras/Guia-do-Maestri.maestripartituras) (tudo) ou o pacote de uma área, como [`Tecnologia.maestripartituras`](../partituras/tecnologia/Tecnologia.maestripartituras).
+   Isso adiciona todas de uma vez à sua biblioteca (a importação de pacote pula a tela
    individual de cada uma e aplica suas responsabilidades locais em conflitos de nome).
 
 Atalho: `Ctrl⇧L` abre o painel de Partituras.
@@ -54,7 +54,7 @@ Atalho: `Ctrl⇧L` abre o painel de Partituras.
 
 ## Escolher a partitura certa
 
-Consulte o [CATALOGO.md](../partituras/tecnologia/CATALOGO.md), organizado por família:
+Consulte o [catálogo mestre](../partituras/CATALOGO.md), organizado por área, e o [catálogo de Tecnologia](../partituras/tecnologia/CATALOGO.md), por família:
 
 | Quero… | Família |
 |---|---|
@@ -92,11 +92,11 @@ Todos os arquivos são **gerados** pelo Python em [`scripts/`](../scripts/). Par
 regenerar (por exemplo, depois de expandir um catálogo):
 
 ```bash
-python3 scripts/generate_partituras.py     # grava 212 templates + pacote + CATALOGO.md
+python3 scripts/generate_partituras.py     # grava 257 templates + pacotes + CATALOGOs
 python3 tests/validate_partituras.py        # valida contra o formato oficial
 ```
 
-Os UUIDs são determinísticos, então regenerar produz **os mesmos arquivos byte a byte** —
+Os UUIDs são determinísticos: regenerar produz **os mesmos arquivos byte a byte** —
 o repositório fica estável no git.
 
 ---

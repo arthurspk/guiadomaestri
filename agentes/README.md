@@ -5,9 +5,15 @@ o que faz, o que **não** faz, e como se comunica com o time pela CLI `maestri`.
 os prompts são gerados por [`scripts/roles_lib.py`](../scripts/roles_lib.py), em pt-BR,
 segunda pessoa, no estilo das partituras oficiais do Maestri.
 
-As 212 partituras usam **78 responsabilidades distintas**, montadas a partir de um punhado
+As 257 partituras usam **102 responsabilidades distintas**, montadas a partir de um punhado
 de **arquétipos** parametrizados. Entender os arquétipos é entender qualquer partitura do
-catálogo.
+catálogo. Os arquétipos de tecnologia estão descritos abaixo; as áreas de negócio (design,
+produto, marketing, vendas, dados, segurança, financeiro, jurídico, suporte, gestão,
+pesquisa) usam um conjunto genérico paralelo — **Maestro de área**, **Estrategista**
+(equivalente ao arquiteto, escreve o briefing), **especialistas** e **Revisor**
+(achados-não-correções, verificação viva no portal) — com a mesma filosofia sem pressupor
+código. Veja [docs/07 · Áreas e agentes](../docs/07-areas-e-agentes.md) para o mapa
+completo e como reaproveitar agentes de catálogos externos como o agency-agents.
 
 ---
 
