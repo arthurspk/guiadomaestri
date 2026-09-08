@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://www.themaestri.app/pt-br">
-    <img src="https://img.shields.io/badge/%F0%9F%8E%BC-Guia%20do%20Maestri-5856D6?style=for-the-badge" alt="Guia do Maestri" height="40">
+    <img src="./images/maestri-logo.png" alt="Guia do Maestri" width="160" height="160">
   </a>
 </p>
 
