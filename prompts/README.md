@@ -5,6 +5,9 @@
 
 ## Prompts
 
+- **[Prompt inicial — começar do zero](./prompt-inicial.md)** — o primeiro prompt para colar
+  no maestro ao abrir o Maestri: entende o objetivo, escolhe uma partitura ou monta um time,
+  prepara notas e portal, e faz um plano antes de começar. Cole no maestro (fable).
 - **[Criar uma partitura nova](./criar-partitura.md)** — faz o maestro montar um time e um
   contrato para o seu objetivo, seguindo os princípios do guia. Cole no maestro (fable).
 - **[Validar o Discord do Maestri](./validar-discord-maestri.md)** — faz um Claude com

@@ -52,6 +52,7 @@
 [🧩 As 23 famílias de tecnologia](#-as-23-famílias-de-tecnologia) <br>
 [⚡ O Maestri no dia a dia](#-o-maestri-no-dia-a-dia) <br>
 [🤖 Política de modelos](#-política-de-modelos) <br>
+[📜 Scripts disponíveis](#-scripts-disponíveis) <br>
 [🛠️ Regenerar e validar](#️-regenerar-e-validar) <br>
 [⚠️ Segurança](#️-segurança) <br>
 [🔗 Referências](#-referências) <br>
@@ -147,6 +148,19 @@
 - **🔨 Execução** (arquiteto, builders, especialistas) — `--model opus`.
 - **🛡️ Revisão adversarial** (release, wardens, duelo) — `codex` / `gemini`, de propósito: um modelo diferente pega o que o outro deixou passar.
 - Detalhes e salvaguardas em [docs/05 · Modelos e segurança](docs/05-modelos-e-seguranca.md).
+
+## 📜 Scripts disponíveis
+
+> Todo o hub é gerado por Python (só stdlib). Detalhes de uso e como estender em [`scripts/README.md`](scripts/README.md).
+
+| Script | Tipo | O que faz |
+|---|---|---|
+| [`scripts/maestri_build.py`](scripts/maestri_build.py) | biblioteca | Classe `Partitura`, serialização `.maestripartitura`, ropePoints, layout e portais. |
+| [`scripts/roles_lib.py`](scripts/roles_lib.py) | biblioteca | Prompts de responsabilidade (pt-BR) e templates de nota. |
+| [`scripts/generate_partituras.py`](scripts/generate_partituras.py) | gerador | Monta as 257 partituras por área, os pacotes e os catálogos. |
+| [`scripts/generate_hub.py`](scripts/generate_hub.py) | gerador | Gera `roles/` (role.json), `notas/` e `instrucoes/`. |
+| [`tests/validate_partituras.py`](tests/validate_partituras.py) | validação | Compara cada partitura com a oficial de referência (zero divergências). |
+| [`tests/validate_hub.py`](tests/validate_hub.py) | validação | Valida os `role.json`, as notas e os pares `CLAUDE.md`/`AGENTS.md`. |
 
 ## 🛠️ Regenerar e validar
 
