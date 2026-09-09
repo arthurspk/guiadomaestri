@@ -66,8 +66,9 @@
 - **07 · 领域与可用智能体** ([docs/07](docs/07-areas-e-agentes.md)) —— 按领域划分、与 agency-agents 的映射、版式验证。
 - **08 · 楼层 + 乐谱（配方）** ([docs/08](docs/08-andares-e-partituras.md)) —— 如何将楼层与乐谱结合使用，含分场景配方与 hooks。
 - **09 · 门户：网页、移动、模拟器** ([docs/09](docs/09-portais-mobile-web-emulador.md)) —— 如何为乐谱添加浏览器、移动网页与设备门户（iOS 模拟器 / Android 模拟器）。
+- **10 · 在 Maestri 中导入与导出** ([docs/10](docs/10-importar-e-exportar.md)) — 所有可原生导入/导出的内容以及精选配方，及其在中心中的位置。
 - **🎭 · 智能体** ([agentes/README.md](agentes/README.md)) —— 职责原型与专家阵容。
-- **📨 · 提示词：验证 Maestri 的 Discord** ([prompts](prompts/validar-discord-maestri.md)) —— 一个现成提示词，供有 Discord 访问权限的 Claude 验证并收集信息。
+- **📨 · 提示词** ([prompts](prompts/README.md)) — 现成提示词库（创建乐谱、验证 Maestri 的 Discord）。
 
 ## 🗂️ 按领域的乐谱
 
@@ -85,6 +86,18 @@
 - [🛟 **支持与成功**](partituras/suporte/CATALOGO.md) —— 4 份 · 知识库、分诊、onboarding、流失。
 - [🗂️ **项目管理**](partituras/gestao/CATALOGO.md) —— 4 份 · 冲刺、多团队协调、会议纪要、复盘。
 - [🔬 **研究与技术内容**](partituras/pesquisa/CATALOGO.md) —— 3 份 · 现状综述、综合、市场分析。
+
+## 📦 更多可导入/导出的资源
+
+> Maestri 中心不止有乐谱。以下资源使用应用的其他可移植格式（角色、主题、说明、笔记），或汇集现成的配方。完整概览见 [docs/10 · 导入与导出](docs/10-importar-e-exportar.md)。
+
+- [🎭 **职责（`role.json`）**](roles/CATALOGO.md) — 30 个可复用的原生格式角色；放入项目的 `.maestri` 目录并使用「发现职责」。
+- [🎨 **终端主题（Ghostty）**](temas/README.md) — 4 个主题，安装到 `~/.maestri/terminal/themes/`。
+- [🧭 **`CLAUDE.md` / `AGENTS.md` 说明**](instrucoes/README.md) — 按技术栈的模板，智能体在工作区启动时自动获得。
+- [📝 **笔记模板**](notas/README.md) — 合同、workboard、playbook、技术清单、案卷等，拖到画布上。
+- [🧑‍🍳 **精选配方**](receitas/README.md) — 楼层钩子、定时例程、Maestri Wire 客户端与环境配方。
+- [📨 **提示词**](prompts/README.md) — 面向提示词编排器的现成提示词。
+- [🗂️ **工作区（`.maestri`）**](workspaces/README.md) — 如何导入/分享工作区。
 
 ## 🧩 23 个技术家族
 
@@ -130,7 +143,9 @@
 
 ```bash
 python3 scripts/generate_partituras.py     # → "Gerados 257 templates em 12 áreas"
+python3 scripts/generate_hub.py            # → roles/ + notas/ + instrucoes/
 python3 tests/validate_partituras.py        # → 与官方乐谱对比 "Zero divergências"
+python3 tests/validate_hub.py               # → 校验 role.json 与中心结构
 ```
 
 - `scripts/maestri_build.py` —— `Partitura` 类、序列化、ropePoints、布局。

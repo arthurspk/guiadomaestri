@@ -66,8 +66,9 @@
 - **07 · क्षेत्र और उपलब्ध एजेंट** ([docs/07](docs/07-areas-e-agentes.md)) — क्षेत्र-विभाजन, agency-agents से मानचित्रण, लेआउट सत्यापन।
 - **08 · Floors + Scores (रेसिपी)** ([docs/08](docs/08-andares-e-partituras.md)) — floors को scores के साथ उपयोग करना, स्थिति-अनुसार रेसिपी और hooks।
 - **09 · पोर्टल: वेब, मोबाइल, एमुलेटर** ([docs/09](docs/09-portais-mobile-web-emulador.md)) — scores में ब्राउज़र, मोबाइल-वेब और डिवाइस पोर्टल (iOS सिम्युलेटर / Android एमुलेटर) कैसे जोड़ें।
+- **10 · Maestri में इम्पोर्ट और एक्सपोर्ट** ([docs/10](docs/10-importar-e-exportar.md)) — जो कुछ नेटिव रूप से इम्पोर्ट/एक्सपोर्ट हो सकता है, साथ में क्यूरेटेड रेसिपी, और हब में हर चीज़ कहाँ है।
 - **🎭 · एजेंट** ([agentes/README.md](agentes/README.md)) — जिम्मेदारी के आदर्श और विशेषज्ञों की टोली।
-- **📨 · प्रॉम्प्ट: Maestri Discord का सत्यापन** ([prompts](prompts/validar-discord-maestri.md)) — Discord एक्सेस वाले Claude के लिए तैयार प्रॉम्प्ट, जो जानकारी सत्यापित व एकत्र करता है।
+- **📨 · प्रॉम्प्ट** ([prompts](prompts/README.md)) — तैयार प्रॉम्प्ट की लाइब्रेरी (स्कोर बनाएं, Maestri का Discord सत्यापित करें)।
 
 ## 🗂️ क्षेत्र के अनुसार स्कोर
 
@@ -85,6 +86,18 @@
 - [🛟 **सपोर्ट & सक्सेस**](partituras/suporte/CATALOGO.md) — 4 स्कोर · नॉलेज बेस, ट्राइएज, onboarding, churn।
 - [🗂️ **प्रोजेक्ट प्रबंधन**](partituras/gestao/CATALOGO.md) — 4 स्कोर · स्प्रिंट, बहु-टीम समन्वय, मीटिंग नोट्स, रेट्रो।
 - [🔬 **अनुसंधान & तकनीकी कंटेंट**](partituras/pesquisa/CATALOGO.md) — 3 स्कोर · state of the art, संश्लेषण, बाज़ार विश्लेषण।
+
+## 📦 इम्पोर्ट/एक्सपोर्ट के और संसाधन
+
+> Maestri हब सिर्फ़ स्कोर नहीं है। ये संसाधन ऐप के अन्य पोर्टेबल फ़ॉर्मैट (roles, थीम, निर्देश, नोट्स) का उपयोग करते हैं या तैयार रेसिपी समेटते हैं। पूरा अवलोकन [docs/10 · इम्पोर्ट और एक्सपोर्ट](docs/10-importar-e-exportar.md) में।
+
+- [🎭 **जिम्मेदारियाँ (`role.json`)**](roles/CATALOGO.md) — नेटिव फ़ॉर्मैट में 30 पुनःप्रयोज्य roles; प्रोजेक्ट के `.maestri` फ़ोल्डर में रखें और "Descobrir Responsabilidades" का उपयोग करें।
+- [🎨 **टर्मिनल थीम (Ghostty)**](temas/README.md) — `~/.maestri/terminal/themes/` में इंस्टॉल करने के लिए 4 थीम।
+- [🧭 **`CLAUDE.md` / `AGENTS.md` निर्देश**](instrucoes/README.md) — प्रति-स्टैक टेम्पलेट, जो एजेंट को वर्कस्पेस शुरू होने पर मिलते हैं।
+- [📝 **नोट टेम्पलेट**](notas/README.md) — कॉन्ट्रैक्ट, workboard, playbook, स्टैक-चेकलिस्ट, केस-फ़ाइल आदि, कैनवास पर खींचने के लिए।
+- [🧑‍🍳 **क्यूरेटेड रेसिपी**](receitas/README.md) — फ़्लोर hooks, शेड्यूल्ड routines, Maestri Wire क्लाइंट और पर्यावरण रेसिपी।
+- [📨 **प्रॉम्प्ट**](prompts/README.md) — Compositor के लिए तैयार प्रॉम्प्ट।
+- [🗂️ **वर्कस्पेस (`.maestri`)**](workspaces/README.md) — वर्कस्पेस इम्पोर्ट/साझा कैसे करें।
 
 ## 🧩 23 तकनीकी परिवार
 
@@ -130,7 +143,9 @@
 
 ```bash
 python3 scripts/generate_partituras.py     # → "Gerados 257 templates em 12 áreas"
+python3 scripts/generate_hub.py            # → roles/ + notas/ + instrucoes/
 python3 tests/validate_partituras.py        # → आधिकारिक स्कोर बनाम "Zero divergências"
+python3 tests/validate_hub.py               # → role.json और हब संरचना की जाँच
 ```
 
 - `scripts/maestri_build.py` — `Partitura` क्लास, serialization, ropePoints, layout।

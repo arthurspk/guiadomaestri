@@ -66,8 +66,9 @@
 - **07 · Areas and available agents** ([docs/07](docs/07-areas-e-agentes.md)) — the division by areas, the map to agency-agents, and the layout validation.
 - **08 · Floors + Scores (recipes)** ([docs/08](docs/08-andares-e-partituras.md)) — how to use floors together with scores, with per-situation recipes and hooks.
 - **09 · Portals: web, mobile, emulators** ([docs/09](docs/09-portais-mobile-web-emulador.md)) — how to add browser, mobile-web, and device portals (iOS simulator / Android emulator) to scores.
+- **10 · Import and export in Maestri** ([docs/10](docs/10-importar-e-exportar.md)) — everything you can natively import/export plus the curated recipes, and where each one lives in the hub.
 - **🎭 · Agents** ([agentes/README.md](agentes/README.md)) — responsibility archetypes and the cast of specialists.
-- **📨 · Prompt: validate the Maestri Discord** ([prompts](prompts/validar-discord-maestri.md)) — a ready prompt for a Claude with Discord access to validate and collect information.
+- **📨 · Prompts** ([prompts](prompts/README.md)) — a library of ready prompts (create a score, validate the Maestri Discord).
 
 ## 🗂️ Scores by area
 
@@ -85,6 +86,18 @@
 - [🛟 **Support & Success**](partituras/suporte/CATALOGO.md) — 4 scores · knowledge base, triage, onboarding, churn.
 - [🗂️ **Project Management**](partituras/gestao/CATALOGO.md) — 4 scores · sprint, multi-team coordination, minutes, retrospective.
 - [🔬 **Research & Technical Content**](partituras/pesquisa/CATALOGO.md) — 3 scores · state of the art, synthesis, market analysis.
+
+## 📦 More resources to import/export
+
+> A Maestri hub is more than scores. These use the app's other portable formats (roles, themes, instructions, notes) or bundle ready-made recipes. Full overview in [docs/10 · Import and export](docs/10-importar-e-exportar.md).
+
+- [🎭 **Responsibilities (`role.json`)**](roles/CATALOGO.md) — 30 reusable roles in the native format; drop into the project's `.maestri` folder and use "Discover Responsibilities".
+- [🎨 **Terminal themes (Ghostty)**](temas/README.md) — 4 themes to install in `~/.maestri/terminal/themes/`.
+- [🧭 **`CLAUDE.md` / `AGENTS.md` instructions**](instrucoes/README.md) — per-stack templates delivered to agents when they start in a workspace.
+- [📝 **Note templates**](notas/README.md) — contract, workboard, playbook, stack-checklist, case-file and more, to drag onto the canvas.
+- [🧑‍🍳 **Curated recipes**](receitas/README.md) — floor hooks, scheduled routines, a Maestri Wire client, and environment recipes.
+- [📨 **Prompts**](prompts/README.md) — ready prompts for the Prompt Composer.
+- [🗂️ **Workspaces (`.maestri`)**](workspaces/README.md) — how to import/share a workspace.
 
 ## 🧩 The 23 technology families
 
@@ -130,7 +143,9 @@
 
 ```bash
 python3 scripts/generate_partituras.py     # → "Gerados 257 templates em 12 áreas"
+python3 scripts/generate_hub.py            # → roles/ + notas/ + instrucoes/
 python3 tests/validate_partituras.py        # → "Zero divergências" vs the official score
+python3 tests/validate_hub.py               # → validates the role.json files and the hub structure
 ```
 
 - `scripts/maestri_build.py` — the `Partitura` class, serialization, ropePoints, layout.

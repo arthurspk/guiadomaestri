@@ -66,8 +66,9 @@
 - **07 · 領域と利用可能なエージェント** ([docs/07](docs/07-areas-e-agentes.md)) — 領域分割、agency-agents への対応表、レイアウト検証。
 - **08 · フロア + スコア（レシピ）** ([docs/08](docs/08-andares-e-partituras.md)) — フロアとスコアを併用する方法、場面別レシピと hooks。
 - **09 · ポータル：Web、モバイル、エミュレーター** ([docs/09](docs/09-portais-mobile-web-emulador.md)) — ブラウザ、モバイル Web、デバイスポータル（iOS シミュレーター / Android エミュレーター）をスコアに追加する方法。
+- **10 · Maestri でのインポートとエクスポート** ([docs/10](docs/10-importar-e-exportar.md)) — ネイティブにインポート/エクスポートできるすべてと、キュレートされたレシピ、そして各要素がハブのどこにあるか。
 - **🎭 · エージェント** ([agentes/README.md](agentes/README.md)) — 責務の原型と専門家の顔ぶれ。
-- **📨 · プロンプト：Maestri の Discord を検証** ([prompts](prompts/validar-discord-maestri.md)) — Discord にアクセスできる Claude が情報を検証・収集するための既製プロンプト。
+- **📨 · プロンプト** ([prompts](prompts/README.md)) — 既成プロンプトのライブラリ（スコア作成、Maestri の Discord 検証）。
 
 ## 🗂️ 領域別スコア
 
@@ -85,6 +86,18 @@
 - [🛟 **サポート & サクセス**](partituras/suporte/CATALOGO.md) — 4 · ナレッジベース、トリアージ、オンボーディング、チャーン。
 - [🗂️ **プロジェクト管理**](partituras/gestao/CATALOGO.md) — 4 · スプリント、複数チーム調整、議事録、レトロスペクティブ。
 - [🔬 **リサーチ & 技術コンテンツ**](partituras/pesquisa/CATALOGO.md) — 3 · 最新動向、統合、市場分析。
+
+## 📦 インポート/エクスポートできる追加リソース
+
+> Maestri ハブはスコアだけではありません。これらはアプリの他の可搬フォーマット（ロール、テーマ、指示、ノート）を使うか、既成のレシピをまとめます。全体像は [docs/10 · インポートとエクスポート](docs/10-importar-e-exportar.md)。
+
+- [🎭 **責務（`role.json`）**](roles/CATALOGO.md) — ネイティブ形式の再利用可能なロール 30 個。プロジェクトの `.maestri` フォルダに入れ「責務を検出」を使います。
+- [🎨 **ターミナルテーマ（Ghostty）**](temas/README.md) — `~/.maestri/terminal/themes/` にインストールする 4 テーマ。
+- [🧭 **`CLAUDE.md` / `AGENTS.md` 指示**](instrucoes/README.md) — スタック別テンプレート。ワークスペース開始時にエージェントへ渡されます。
+- [📝 **ノートテンプレート**](notas/README.md) — 契約、workboard、playbook、スタックチェックリスト、ケースファイルなど、キャンバスへドラッグ。
+- [🧑‍🍳 **キュレートされたレシピ**](receitas/README.md) — フロアフック、定期ルーティン、Maestri Wire クライアント、環境レシピ。
+- [📨 **プロンプト**](prompts/README.md) — プロンプトコンポーザー用の既成プロンプト。
+- [🗂️ **ワークスペース（`.maestri`）**](workspaces/README.md) — ワークスペースのインポート/共有方法。
 
 ## 🧩 23 の技術ファミリー
 
@@ -130,7 +143,9 @@
 
 ```bash
 python3 scripts/generate_partituras.py     # → "Gerados 257 templates em 12 áreas"
+python3 scripts/generate_hub.py            # → roles/ + notas/ + instrucoes/
 python3 tests/validate_partituras.py        # → 公式スコアに対して "Zero divergências"
+python3 tests/validate_hub.py               # → role.json とハブ構造を検証
 ```
 
 - `scripts/maestri_build.py` — `Partitura` クラス、シリアライズ、ropePoints、レイアウト。

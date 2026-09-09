@@ -66,8 +66,9 @@
 - **07 · المجالات والوكلاء المتاحون** ([docs/07](docs/07-areas-e-agentes.md)) — التقسيم حسب المجالات، الخريطة إلى agency-agents، والتحقق من التخطيط.
 - **08 · الطوابق + البارتيتورات (وصفات)** ([docs/08](docs/08-andares-e-partituras.md)) — كيفية استخدام الطوابق مع البارتيتورات، بوصفات حسب الموقف وhooks.
 - **09 · البوابات: ويب، موبايل، محاكيات** ([docs/09](docs/09-portais-mobile-web-emulador.md)) — كيفية إضافة بوابات المتصفح وويب-الموبايل والأجهزة (محاكي iOS / محاكي Android) إلى البارتيتورات.
+- **10 · الاستيراد والتصدير في Maestri** ([docs/10](docs/10-importar-e-exportar.md)) — كل ما يمكن استيراده/تصديره أصليًا إضافةً إلى الوصفات المختارة، وأين يوجد كل شيء في المركز.
 - **🎭 · الوكلاء** ([agentes/README.md](agentes/README.md)) — أنماط المسؤولية وطاقم المتخصصين.
-- **📨 · موجّه: التحقق من ديسكورد Maestri** ([prompts](prompts/validar-discord-maestri.md)) — موجّه جاهز لـClaude لديه وصول إلى ديسكورد للتحقق وجمع المعلومات.
+- **📨 · الموجّهات** ([prompts](prompts/README.md)) — مكتبة موجّهات جاهزة (إنشاء بارتيتورة، التحقق من ديسكورد Maestri).
 
 ## 🗂️ البارتيتورات حسب المجال
 
@@ -85,6 +86,18 @@
 - [🛟 **الدعم والنجاح**](partituras/suporte/CATALOGO.md) — 4 · قاعدة المعرفة، الفرز، الإعداد، الفقدان (churn).
 - [🗂️ **إدارة المشاريع**](partituras/gestao/CATALOGO.md) — 4 · السبرنت، تنسيق متعدد الفرق، محاضر الاجتماعات، المراجعة.
 - [🔬 **البحث والمحتوى التقني**](partituras/pesquisa/CATALOGO.md) — 3 · أحدث ما توصّل إليه المجال، التجميع، تحليل السوق.
+
+## 📦 موارد إضافية للاستيراد/التصدير
+
+> مركز Maestri ليس مجرد بارتيتورات. تستخدم هذه الموارد صيغ التطبيق المحمولة الأخرى (الأدوار، السمات، التعليمات، الملاحظات) أو تجمع وصفات جاهزة. نظرة كاملة في [docs/10 · الاستيراد والتصدير](docs/10-importar-e-exportar.md).
+
+- [🎭 **المسؤوليات (`role.json`)**](roles/CATALOGO.md) — 30 دورًا قابلًا لإعادة الاستخدام بالصيغة الأصلية؛ ضعها في مجلد `.maestri` للمشروع واستخدم «اكتشاف المسؤوليات».
+- [🎨 **سمات الطرفية (Ghostty)**](temas/README.md) — 4 سمات للتثبيت في `~/.maestri/terminal/themes/`.
+- [🧭 **تعليمات `CLAUDE.md` / `AGENTS.md`**](instrucoes/README.md) — قوالب حسب الحزمة التقنية، تُسلَّم للوكلاء عند البدء في مساحة عمل.
+- [📝 **قوالب الملاحظات**](notas/README.md) — العقد، workboard، playbook، قائمة الطبقات، ملف القضية والمزيد، للسحب إلى اللوحة.
+- [🧑‍🍳 **وصفات مختارة**](receitas/README.md) — خطافات الطوابق، روتينات مجدولة، عميل Maestri Wire، ووصفات البيئات.
+- [📨 **الموجّهات**](prompts/README.md) — موجّهات جاهزة لمُؤلِّف الموجّهات.
+- [🗂️ **مساحات العمل (`.maestri`)**](workspaces/README.md) — كيفية استيراد/مشاركة مساحة عمل.
 
 ## 🧩 العائلات التقنية الـ23
 
@@ -130,7 +143,9 @@
 
 ```bash
 python3 scripts/generate_partituras.py     # → "Gerados 257 templates em 12 áreas"
+python3 scripts/generate_hub.py            # → roles/ + notas/ + instrucoes/
 python3 tests/validate_partituras.py        # → "Zero divergências" مقابل البارتيتورة الرسمية
+python3 tests/validate_hub.py               # → يتحقق من ملفات role.json وبنية المركز
 ```
 
 - `scripts/maestri_build.py` — الصنف `Partitura`، التسلسل، ropePoints، التخطيط.

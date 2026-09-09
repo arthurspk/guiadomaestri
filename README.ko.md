@@ -66,8 +66,9 @@
 - **07 · 영역과 사용 가능한 에이전트** ([docs/07](docs/07-areas-e-agentes.md)) — 영역 구분, agency-agents 매핑, 레이아웃 검증.
 - **08 · 층 + 악보(레시피)** ([docs/08](docs/08-andares-e-partituras.md)) — 층과 악보를 함께 쓰는 법, 상황별 레시피와 hooks.
 - **09 · 포털: 웹, 모바일, 에뮬레이터** ([docs/09](docs/09-portais-mobile-web-emulador.md)) — 악보에 브라우저·모바일웹·기기 포털(iOS 시뮬레이터 / Android 에뮬레이터)을 추가하는 법.
+- **10 · Maestri에서 가져오기와 내보내기** ([docs/10](docs/10-importar-e-exportar.md)) — 네이티브로 가져오기/내보내기 가능한 모든 것과 큐레이트 레시피, 그리고 각 항목이 허브의 어디에 있는지.
 - **🎭 · 에이전트** ([agentes/README.md](agentes/README.md)) — 책임 원형과 전문가 캐스트.
-- **📨 · 프롬프트: Maestri Discord 검증** ([prompts](prompts/validar-discord-maestri.md)) — Discord 접근 권한이 있는 Claude가 정보를 검증·수집하도록 준비된 프롬프트.
+- **📨 · 프롬프트** ([prompts](prompts/README.md)) — 준비된 프롬프트 라이브러리(스코어 생성, Maestri Discord 검증).
 
 ## 🗂️ 영역별 악보
 
@@ -85,6 +86,18 @@
 - [🛟 **지원 & 성공**](partituras/suporte/CATALOGO.md) — 4개 · 지식베이스, 분류, 온보딩, 이탈.
 - [🗂️ **프로젝트 관리**](partituras/gestao/CATALOGO.md) — 4개 · 스프린트, 다중 팀 조율, 회의록, 회고.
 - [🔬 **리서치 & 기술 콘텐츠**](partituras/pesquisa/CATALOGO.md) — 3개 · 최신 동향, 종합, 시장 분석.
+
+## 📦 가져오기/내보내기 추가 리소스
+
+> Maestri 허브는 스코어만이 아닙니다. 아래 리소스는 앱의 다른 이식 가능한 형식(역할, 테마, 지침, 노트)을 사용하거나 완성된 레시피를 모읍니다. 전체 개요는 [docs/10 · 가져오기와 내보내기](docs/10-importar-e-exportar.md).
+
+- [🎭 **책임(`role.json`)**](roles/CATALOGO.md) — 네이티브 형식의 재사용 가능한 역할 30개; 프로젝트의 `.maestri` 폴더에 넣고 "책임 검색"을 사용하세요.
+- [🎨 **터미널 테마(Ghostty)**](temas/README.md) — `~/.maestri/terminal/themes/`에 설치할 4개 테마.
+- [🧭 **`CLAUDE.md` / `AGENTS.md` 지침**](instrucoes/README.md) — 스택별 템플릿, 워크스페이스 시작 시 에이전트에게 전달됩니다.
+- [📝 **노트 템플릿**](notas/README.md) — 계약, workboard, playbook, 스택 체크리스트, 케이스 파일 등, 캔버스로 끌어다 놓기.
+- [🧑‍🍳 **큐레이트 레시피**](receitas/README.md) — 층 훅, 예약 루틴, Maestri Wire 클라이언트, 환경 레시피.
+- [📨 **프롬프트**](prompts/README.md) — 프롬프트 컴포저용 준비된 프롬프트.
+- [🗂️ **워크스페이스(`.maestri`)**](workspaces/README.md) — 워크스페이스 가져오기/공유 방법.
 
 ## 🧩 23개 기술 패밀리
 
@@ -130,7 +143,9 @@
 
 ```bash
 python3 scripts/generate_partituras.py     # → "Gerados 257 templates em 12 áreas"
+python3 scripts/generate_hub.py            # → roles/ + notas/ + instrucoes/
 python3 tests/validate_partituras.py        # → 공식 악보 대비 "Zero divergências"
+python3 tests/validate_hub.py               # → role.json과 허브 구조 검증
 ```
 
 - `scripts/maestri_build.py` — `Partitura` 클래스, 직렬화, ropePoints, 레이아웃.

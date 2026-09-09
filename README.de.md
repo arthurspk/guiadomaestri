@@ -66,8 +66,9 @@
 - **07 · Bereiche und verfügbare Agenten** ([docs/07](docs/07-areas-e-agentes.md)) — die Aufteilung nach Bereichen, die Zuordnung zu agency-agents, die Layout-Validierung.
 - **08 · Etagen + Partituren (Rezepte)** ([docs/08](docs/08-andares-e-partituras.md)) — wie man Etagen zusammen mit Partituren nutzt, mit Rezepten je Situation und Hooks.
 - **09 · Portale: Web, Mobile, Emulatoren** ([docs/09](docs/09-portais-mobile-web-emulador.md)) — wie man Browser-, Mobile-Web- und Geräteportale (iOS-Simulator / Android-Emulator) in Partituren einbaut.
+- **10 · Importieren und Exportieren in Maestri** ([docs/10](docs/10-importar-e-exportar.md)) — alles, was sich nativ importieren/exportieren lässt, plus die kuratierten Rezepte, und wo jedes im Hub liegt.
 - **🎭 · Agenten** ([agentes/README.md](agentes/README.md)) — Verantwortlichkeits-Archetypen und das Ensemble der Spezialisten.
-- **📨 · Prompt: Maestri-Discord validieren** ([prompts](prompts/validar-discord-maestri.md)) — ein fertiger Prompt für ein Claude mit Discord-Zugang, um Informationen zu prüfen und zu sammeln.
+- **📨 · Prompts** ([prompts](prompts/README.md)) — eine Bibliothek fertiger Prompts (eine Partitur erstellen, das Maestri-Discord validieren).
 
 ## 🗂️ Partituren nach Bereich
 
@@ -85,6 +86,18 @@
 - [🛟 **Support & Success**](partituras/suporte/CATALOGO.md) — 4 Partituren · Wissensdatenbank, Triage, Onboarding, Churn.
 - [🗂️ **Projektmanagement**](partituras/gestao/CATALOGO.md) — 4 Partituren · Sprint, Team-übergreifende Koordination, Protokoll, Retrospektive.
 - [🔬 **Recherche & Tech-Content**](partituras/pesquisa/CATALOGO.md) — 3 Partituren · Stand der Technik, Synthese, Marktanalyse.
+
+## 📦 Mehr Ressourcen zum Importieren/Exportieren
+
+> Ein Maestri-Hub ist mehr als Partituren. Diese Ressourcen nutzen die anderen portablen Formate der App (Rollen, Themes, Anweisungen, Notizen) oder bündeln fertige Rezepte. Vollständiger Überblick in [docs/10 · Importieren und Exportieren](docs/10-importar-e-exportar.md).
+
+- [🎭 **Verantwortlichkeiten (`role.json`)**](roles/CATALOGO.md) — 30 wiederverwendbare Rollen im nativen Format; leg sie in den `.maestri`-Ordner des Projekts und nutze „Verantwortlichkeiten entdecken“.
+- [🎨 **Terminal-Themes (Ghostty)**](temas/README.md) — 4 Themes zur Installation in `~/.maestri/terminal/themes/`.
+- [🧭 **`CLAUDE.md` / `AGENTS.md`-Anweisungen**](instrucoes/README.md) — Vorlagen je Stack, die den Agenten beim Start in einem Workspace übergeben werden.
+- [📝 **Notiz-Vorlagen**](notas/README.md) — Vertrag, Workboard, Playbook, 30-Schichten-Checkliste, Case-File und mehr, zum Ziehen auf die Leinwand.
+- [🧑‍🍳 **Kuratierte Rezepte**](receitas/README.md) — Etagen-Hooks, geplante Routinen, ein Maestri-Wire-Client und Umgebungsrezepte.
+- [📨 **Prompts**](prompts/README.md) — fertige Prompts für den Prompt-Composer.
+- [🗂️ **Workspaces (`.maestri`)**](workspaces/README.md) — wie man einen Workspace importiert/teilt.
 
 ## 🧩 Die 23 Technik-Familien
 
@@ -130,7 +143,9 @@
 
 ```bash
 python3 scripts/generate_partituras.py     # → "Gerados 257 templates em 12 áreas"
+python3 scripts/generate_hub.py            # → roles/ + notas/ + instrucoes/
 python3 tests/validate_partituras.py        # → "Zero divergências" gegen die offizielle Partitur
+python3 tests/validate_hub.py               # → validiert die role.json-Dateien und die Hub-Struktur
 ```
 
 - `scripts/maestri_build.py` — die Klasse `Partitura`, Serialisierung, ropePoints, Layout.
