@@ -64,17 +64,17 @@
 
 > Os documentos do guia, do conceito ao dia a dia. Comece pelo 01 se o Maestri é novo para você, ou pule direto para o 02 e o 06 se já conhece.
 
-- [01 · **Conceitos**](docs/01-conceitos.md) — canvas, terminais, notas, portais, conexões, Modo Maestro, Ombro, Batuta, Andares, Rotinas, Ambientes, Wire.
-- [02 · **Como usar os templates**](docs/02-como-usar-os-templates.md) — importar, reger na prática, escolher e adaptar uma partitura.
-- [03 · **Atalhos e comandos**](docs/03-atalhos.md) — atalhos de teclado do macOS e a CLI `maestri`.
-- [04 · **Formato `.maestripartitura`**](docs/04-formato-maestripartitura.md) — a especificação JSON, calibrada contra os arquivos oficiais.
-- [05 · **Modelos e segurança**](docs/05-modelos-e-seguranca.md) — Fable/Opus/Codex, skip-permissions, stack-checklist de 30 camadas, red team autorizado.
-- [06 · **O Maestri no dia a dia**](docs/06-maestri-no-dia-a-dia.md) — andares, portais, notas, rotinas e Ombro em situações reais de várias áreas.
-- [07 · **Áreas e agentes disponíveis**](docs/07-areas-e-agentes.md) — a divisão por áreas, o mapa para o agency-agents e a validação do layout.
-- [08 · **Andares + Partituras (receitas)**](docs/08-andares-e-partituras.md) — como usar os andares junto com as partituras, com receitas por situação e hooks.
-- [09 · **Portais: web, mobile e emuladores**](docs/09-portais-mobile-web-emulador.md) — como colocar portais de navegador, web-mobile e de dispositivo (simulador iOS / emulador Android) nas partituras.
-- [10 · **Importar e exportar no Maestri**](docs/10-importar-e-exportar.md) — tudo que dá para importar/exportar de forma nativa e as receitas curadas, e onde cada coisa vive no hub.
-- [11 · **Dicas**](docs/11-dicas.md) — dicas práticas do dia a dia para tirar mais do Maestri.
+- [🧭 01 · **Conceitos**](docs/01-conceitos.md) — canvas, terminais, notas, portais, conexões, Modo Maestro, Ombro, Batuta, Andares, Rotinas, Ambientes, Wire.
+- [🚀 02 · **Como usar os templates**](docs/02-como-usar-os-templates.md) — importar, reger na prática, escolher e adaptar uma partitura.
+- [⌨️ 03 · **Atalhos e comandos**](docs/03-atalhos.md) — atalhos de teclado do macOS e a CLI `maestri`.
+- [📐 04 · **Formato `.maestripartitura`**](docs/04-formato-maestripartitura.md) — a especificação JSON, calibrada contra o formato oficial.
+- [🛡️ 05 · **Modelos e segurança**](docs/05-modelos-e-seguranca.md) — Fable/Opus/Codex, skip-permissions, stack-checklist de 30 camadas, red team autorizado.
+- [☀️ 06 · **O Maestri no dia a dia**](docs/06-maestri-no-dia-a-dia.md) — andares, portais, notas, rotinas e Ombro em situações reais de várias áreas.
+- [🗺️ 07 · **Áreas e agentes disponíveis**](docs/07-areas-e-agentes.md) — a divisão por áreas, o mapa para o agency-agents e a validação do layout.
+- [🏢 08 · **Andares + Partituras (receitas)**](docs/08-andares-e-partituras.md) — como usar os andares junto com as partituras, com receitas por situação e hooks.
+- [🌐 09 · **Portais: web, mobile e emuladores**](docs/09-portais-mobile-web-emulador.md) — como colocar portais de navegador, web-mobile e de dispositivo (simulador iOS / emulador Android) nas partituras.
+- [📦 10 · **Importar e exportar no Maestri**](docs/10-importar-e-exportar.md) — tudo que dá para importar/exportar de forma nativa e as receitas curadas, e onde cada coisa vive no hub.
+- [💡 11 · **Dicas**](docs/11-dicas.md) — dicas práticas do dia a dia para tirar mais do Maestri.
 - [🎭 · **Agentes**](agentes/README.md) — arquétipos de responsabilidade e o elenco de especialistas.
 - [📨 · **Prompts**](prompts/README.md) — biblioteca de prompts prontos (prompt inicial, criar partitura).
 
