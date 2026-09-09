@@ -10,8 +10,6 @@
 
 > O **Maestri** é um app de **macOS e Windows** onde você **rege um time de agentes de código** — Claude Code, Codex, Gemini, OpenCode — num **canvas infinito**: terminais são agentes, notas markdown são a fonte de verdade compartilhada, portais são navegadores embutidos para verificação viva, e o **maestro** delega e coordena. Este repositório é ao mesmo tempo um **guia** e um **gerador em Python** que produz **257 partituras** (`.maestripartitura`) prontas para arrastar para o canvas e reger — cada uma é um time completo, com responsabilidades embutidas, notas, portais e conexões. A ênfase é **tecnologia**, e há mais 11 áreas de negócio (design, produto, marketing, vendas, dados, segurança, financeiro, jurídico, suporte, gestão, pesquisa).
 
-**🔗 Links oficiais**
-
 - 🌐 [Site oficial](https://www.themaestri.app/pt-br) — a página do Maestri: download do app, recursos e preços.
 - 📖 [Documentação oficial](https://www.themaestri.app/pt-br/docs) — o manual do app: canvas, terminais, notas, portais, andares, rotinas e Wire.
 
@@ -38,19 +36,19 @@
 
 ## 📚 Índice
 
-[⭐ Comece por aqui](#-comece-por-aqui) <br>
-[📖 Documentação](#-documentação) <br>
-[🗂️ Partituras por área](#️-partituras-por-área) <br>
-[📦 Mais recursos para importar/exportar](#-mais-recursos-para-importarexportar) <br>
-[🧩 As 23 famílias de tecnologia](#-as-23-famílias-de-tecnologia) <br>
-[⚡ O Maestri no dia a dia](#-o-maestri-no-dia-a-dia) <br>
-[🤖 Política de modelos](#-política-de-modelos) <br>
-[📜 Scripts disponíveis](#-scripts-disponíveis) <br>
-[🛠️ Regenerar e validar](#️-regenerar-e-validar) <br>
-[🎼 Crie a sua própria partitura](#-crie-a-sua-própria-partitura) <br>
-[⚠️ Segurança](#️-segurança) <br>
-[🤝 Contribuição](#-contribuição) <br>
-[⭐ Star History](#-star-history) <br>
+[⭐ Comece por aqui](#-comece-por-aqui) — os atalhos para pegar os templates e importar no Maestri. <br>
+[📖 Documentação](#-documentação) — os guias do hub, do conceito ao dia a dia. <br>
+[🗂️ Partituras por área](#️-partituras-por-área) — as 257 partituras divididas em 12 áreas. <br>
+[📦 Mais recursos para importar/exportar](#-mais-recursos-para-importarexportar) — roles, temas, instruções, notas, receitas e prompts. <br>
+[🧩 As 23 famílias de tecnologia](#-as-23-famílias-de-tecnologia) — os padrões de time por stack e domínio. <br>
+[⚡ O Maestri no dia a dia](#-o-maestri-no-dia-a-dia) — andares, portais, notas, rotinas e Ombro na prática. <br>
+[🤖 Política de modelos](#-política-de-modelos) — qual modelo rege, executa e contesta. <br>
+[📜 Scripts disponíveis](#-scripts-disponíveis) — os geradores e validadores em Python. <br>
+[🛠️ Regenerar e validar](#️-regenerar-e-validar) — como reconstruir e conferir tudo. <br>
+[🎼 Crie a sua própria partitura](#-crie-a-sua-própria-partitura) — como montar e salvar a sua. <br>
+[⚠️ Segurança](#️-segurança) — o que ler antes de importar; red team só em escopo autorizado. <br>
+[🤝 Contribuição](#-contribuição) — como abrir issues e pull requests. <br>
+[⭐ Star History](#-star-history) — o gráfico de estrelas do repositório. <br>
 
 ## ⭐ Comece por aqui
 
