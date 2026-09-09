@@ -7,20 +7,13 @@
 <h1 align="center">Guia do Maestri</h1>
 
 <p align="center">
-  <b>O guia em português para reger times de agentes de IA no <a href="https://www.themaestri.app/pt-br">Maestri</a> — com ênfase em tecnologia e um gerador de 257 partituras prontas, divididas por área.</b>
-</p>
-
-<p align="center">
-  <a href="partituras/CATALOGO.md"><img src="https://img.shields.io/badge/partituras-257-5856D6?style=for-the-badge" alt="257 partituras"></a>
-  <a href="partituras/CATALOGO.md"><img src="https://img.shields.io/badge/%C3%A1reas-12-007AFF?style=for-the-badge" alt="12 áreas"></a>
-  <a href="docs/04-formato-maestripartitura.md"><img src="https://img.shields.io/badge/formato-.maestripartitura%20v1-34C759?style=for-the-badge" alt="Formato"></a>
-  <a href="tests/validate_partituras.py"><img src="https://img.shields.io/badge/valida%C3%A7%C3%A3o-0%20diverg%C3%AAncias-FF9500?style=for-the-badge" alt="Validado"></a>
-  <a href="docs/05-modelos-e-seguranca.md"><img src="https://img.shields.io/badge/idioma-pt--BR-FFCC00?style=for-the-badge" alt="pt-BR"></a>
+  O <b>Maestri</b> está disponível para <b>macOS e Windows</b>.<br>
+  <a href="https://www.themaestri.app/pt-br">Site oficial</a> · <a href="https://www.themaestri.app/pt-br/docs">Documentação oficial</a>
 </p>
 
 ## :dart: A proposta
 
-> O **Maestri** é um app de macOS onde você **rege um time de agentes de código** — Claude Code, Codex, Gemini, OpenCode — num **canvas infinito**: terminais são agentes, notas markdown são a fonte de verdade compartilhada, portais são navegadores embutidos para verificação viva, e o **maestro** delega e coordena. Este repositório é ao mesmo tempo um **guia em pt-BR** e um **gerador em Python** que produz **257 partituras** (`.maestripartitura`) prontas para arrastar para o canvas e reger — cada uma é um time completo, com responsabilidades embutidas, notas, portais e conexões. A ênfase é **tecnologia**, e há mais 11 áreas de negócio (design, produto, marketing, vendas, dados, segurança, financeiro, jurídico, suporte, gestão, pesquisa).
+> O **Maestri** é um app de macOS e Windows onde você **rege um time de agentes de código** — Claude Code, Codex, Gemini, OpenCode — num **canvas infinito**: terminais são agentes, notas markdown são a fonte de verdade compartilhada, portais são navegadores embutidos para verificação viva, e o **maestro** delega e coordena. Este repositório é ao mesmo tempo um **guia em pt-BR** e um **gerador em Python** que produz **257 partituras** (`.maestripartitura`) prontas para arrastar para o canvas e reger — cada uma é um time completo, com responsabilidades embutidas, notas, portais e conexões. A ênfase é **tecnologia**, e há mais 11 áreas de negócio (design, produto, marketing, vendas, dados, segurança, financeiro, jurídico, suporte, gestão, pesquisa).
 
 ## 💡 Como este guia é organizado
 
@@ -54,8 +47,9 @@
 [🤖 Política de modelos](#-política-de-modelos) <br>
 [📜 Scripts disponíveis](#-scripts-disponíveis) <br>
 [🛠️ Regenerar e validar](#️-regenerar-e-validar) <br>
+[🎼 Crie a sua própria partitura](#-crie-a-sua-própria-partitura) <br>
 [⚠️ Segurança](#️-segurança) <br>
-[🔗 Referências](#-referências) <br>
+[🤝 Contribuição](#-contribuição) <br>
 
 ## ⭐ Comece por aqui
 
@@ -179,6 +173,23 @@ python3 tests/validate_hub.py               # → valida os role.json e a estrut
 - `scripts/generate_hub.py` — gera a biblioteca de `role.json`, as notas avulsas e as instruções.
 - `tests/validate_partituras.py` / `tests/validate_hub.py` — validam partituras e recursos do hub.
 
+## 🎼 Crie a sua própria partitura
+
+> Uma partitura é só um arranjo salvo do seu canvas — você monta o time do seu jeito e guarda para reusar. Três caminhos:
+
+**No app (o mais rápido):**
+1. Monte o canvas: crie os terminais (com os comandos/modelos), escreva as notas de contrato e workboard, adicione os portais e conecte tudo (`Ctrl+L`).
+2. Selecione os elementos (arraste uma seleção ou shift+clique).
+3. Botão direito → **Partituras → Criar nova…** (ou `Ctrl+P` → "Nova Partitura a partir da seleção").
+4. Dê nome, descrição, ícone e cor. As responsabilidades ficam embutidas, então a partitura funciona na hora em qualquer workspace.
+5. Exporte arrastando o card para o Finder, ou compartilhe o `.maestripartitura`.
+
+**Deixe o maestro montar por você:** cole o [prompt inicial](prompts/prompt-inicial.md) ou o [prompt "criar partitura"](prompts/criar-partitura.md) no maestro — ele monta o time e o contrato seguindo os princípios do guia, e você salva o resultado.
+
+**No gerador (para produzir muitas de uma vez):** adapte os catálogos em [`scripts/generate_partituras.py`](scripts/generate_partituras.py); o formato está em [docs/04](docs/04-formato-maestripartitura.md) e o passo a passo em [docs/02](docs/02-como-usar-os-templates.md).
+
+Reaproveite papéis prontos da [biblioteca de responsabilidades](roles/CATALOGO.md) e notas da [pasta de notas](notas/README.md).
+
 ## ⚠️ Segurança
 
 > Adicionar uma partitura ao canvas **inicia os terminais dela e executa comandos na sua máquina** (`claude`, `codex`, `gemini`).
@@ -187,11 +198,27 @@ python3 tests/validate_hub.py               # → valida os role.json e a estrut
 - As partituras de **Red Team** e qualquer engajamento ofensivo operam **exclusivamente em escopo autorizado**, nunca em produção e nunca com dados de pessoas reais.
 - Detalhes em [docs/05 · Modelos e segurança](docs/05-modelos-e-seguranca.md).
 
-## 🔗 Referências
+## 🤝 Contribuição
 
-- [Documentação oficial do Maestri](https://www.themaestri.app/pt-br/docs) — canvas, terminais, notas, portais, andares, rotinas, Wire.
-- [agency-agents](https://github.com/msitarzewski/agency-agents) — catálogo de 230+ agentes em 18 divisões (inspiração das áreas).
-- [guiadevbrasil](https://github.com/arthurspk/guiadevbrasil) — guia pt-BR de referência (inspiração do layout).
+> Este repositório é um hub público do Maestri. Contribuições são bem-vindas — partituras, papéis, temas, instruções, receitas, traduções e correções.
+
+- **Abra uma issue** para propor uma ideia, relatar um erro ou sugerir uma área/família nova.
+- **Abra um pull request** com a sua adição. Formas comuns:
+  - uma **partitura** nova (via catálogo em `scripts/generate_partituras.py`) ou um `.maestripartitura` exportado;
+  - um **papel** (`role.json`) na biblioteca [`roles/`](roles/CATALOGO.md);
+  - um **tema** (Ghostty) em [`temas/`](temas/README.md);
+  - uma **instrução** (`CLAUDE.md`/`AGENTS.md`) em [`instrucoes/`](instrucoes/README.md);
+  - uma **receita** (hook, rotina, ambiente, cliente Wire) em [`receitas/`](receitas/README.md);
+  - uma **tradução** ou correção de um dos `README.<idioma>.md`.
+- **Antes de enviar**, rode os geradores e as validações e garanta que tudo passa:
+  ```bash
+  python3 scripts/generate_partituras.py && python3 scripts/generate_hub.py
+  python3 tests/validate_partituras.py && python3 tests/validate_hub.py
+  ```
+- **Mantenha o determinismo:** não edite arquivos gerados à mão — mude o gerador e regenere.
+- Compartilhe partituras só com comandos que você confia; nunca embuta segredos.
+
+Não sabe por onde começar? Veja [docs/10 · Importar e exportar](docs/10-importar-e-exportar.md) e o [scripts/README.md](scripts/README.md).
 
 ---
 
