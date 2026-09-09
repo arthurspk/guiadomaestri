@@ -68,7 +68,7 @@
 - **09 · 포털: 웹, 모바일, 에뮬레이터** ([docs/09](docs/09-portais-mobile-web-emulador.md)) — 악보에 브라우저·모바일웹·기기 포털(iOS 시뮬레이터 / Android 에뮬레이터)을 추가하는 법.
 - **10 · Maestri에서 가져오기와 내보내기** ([docs/10](docs/10-importar-e-exportar.md)) — 네이티브로 가져오기/내보내기 가능한 모든 것과 큐레이트 레시피, 그리고 각 항목이 허브의 어디에 있는지.
 - **🎭 · 에이전트** ([agentes/README.md](agentes/README.md)) — 책임 원형과 전문가 캐스트.
-- **📨 · 프롬프트** ([prompts](prompts/README.md)) — 준비된 프롬프트 라이브러리(스코어 생성, Maestri Discord 검증).
+- **📨 · 프롬프트** ([prompts](prompts/README.md)) — 준비된 프롬프트 라이브러리(초기 프롬프트, 스코어 생성).
 
 ## 🗂️ 영역별 악보
 

@@ -68,7 +68,7 @@
 - **09 · ポータル：Web、モバイル、エミュレーター** ([docs/09](docs/09-portais-mobile-web-emulador.md)) — ブラウザ、モバイル Web、デバイスポータル（iOS シミュレーター / Android エミュレーター）をスコアに追加する方法。
 - **10 · Maestri でのインポートとエクスポート** ([docs/10](docs/10-importar-e-exportar.md)) — ネイティブにインポート/エクスポートできるすべてと、キュレートされたレシピ、そして各要素がハブのどこにあるか。
 - **🎭 · エージェント** ([agentes/README.md](agentes/README.md)) — 責務の原型と専門家の顔ぶれ。
-- **📨 · プロンプト** ([prompts](prompts/README.md)) — 既成プロンプトのライブラリ（スコア作成、Maestri の Discord 検証）。
+- **📨 · プロンプト** ([prompts](prompts/README.md)) — 既成プロンプトのライブラリ（初期プロンプト、スコア作成）。
 
 ## 🗂️ 領域別スコア
 

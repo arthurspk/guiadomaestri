@@ -76,8 +76,8 @@ Três coisas não estão 100% na doc pública e o hub trata com honestidade:
    `.maestri` às cegas.
 3. **JSON do portal de dispositivo** — coberto em [docs/09](09-portais-mobile-web-emulador.md).
 
-O [prompt de validação do Discord](../prompts/validar-discord-maestri.md) foi escrito
-justamente para fechar essas três lacunas contra a fonte oficial/comunidade.
+Feche essas três lacunas confirmando contra um **export real** do seu Maestri e a
+[documentação oficial](https://www.themaestri.app/pt-br/docs).
 
 ---
 

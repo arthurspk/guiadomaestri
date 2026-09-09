@@ -68,7 +68,7 @@
 - **09 · Portali: web, mobile, emulatori** ([docs/09](docs/09-portais-mobile-web-emulador.md)) — come aggiungere portali browser, web-mobile e dispositivo (simulatore iOS / emulatore Android) alle partiture.
 - **10 · Importare ed esportare in Maestri** ([docs/10](docs/10-importar-e-exportar.md)) — tutto ciò che si importa/esporta nativamente più le ricette curate, e dove vive ogni cosa nell'hub.
 - **🎭 · Agenti** ([agentes/README.md](agentes/README.md)) — archetipi di responsabilità e il cast di specialisti.
-- **📨 · Prompt** ([prompts](prompts/README.md)) — una libreria di prompt pronti (creare una partitura, validare il Discord di Maestri).
+- **📨 · Prompt** ([prompts](prompts/README.md)) — una libreria di prompt pronti (prompt iniziale, creare una partitura).
 
 ## 🗂️ Partiture per area
 

@@ -68,7 +68,7 @@
 - **09 · Portales: web, móvil, emuladores** ([docs/09](docs/09-portais-mobile-web-emulador.md)) — cómo añadir portales de navegador, web-móvil y de dispositivo (simulador iOS / emulador Android) a las partituras.
 - **10 · Importar y exportar en Maestri** ([docs/10](docs/10-importar-e-exportar.md)) — todo lo que puedes importar/exportar de forma nativa más las recetas curadas, y dónde vive cada cosa en el hub.
 - **🎭 · Agentes** ([agentes/README.md](agentes/README.md)) — arquetipos de responsabilidad y el elenco de especialistas.
-- **📨 · Prompts** ([prompts](prompts/README.md)) — una biblioteca de prompts listos (crear una partitura, validar el Discord de Maestri).
+- **📨 · Prompts** ([prompts](prompts/README.md)) — una biblioteca de prompts listos (prompt inicial, crear una partitura).
 
 ## 🗂️ Partituras por área
 

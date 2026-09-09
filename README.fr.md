@@ -68,7 +68,7 @@
 - **09 · Portails : web, mobile, émulateurs** ([docs/09](docs/09-portais-mobile-web-emulador.md)) — comment ajouter des portails navigateur, web-mobile et appareil (simulateur iOS / émulateur Android) aux partitions.
 - **10 · Importer et exporter dans Maestri** ([docs/10](docs/10-importar-e-exportar.md)) — tout ce qui s'importe/exporte nativement plus les recettes curées, et où chaque chose vit dans le hub.
 - **🎭 · Agents** ([agentes/README.md](agentes/README.md)) — archétypes de responsabilité et la troupe de spécialistes.
-- **📨 · Prompts** ([prompts](prompts/README.md)) — une bibliothèque de prompts prêts (créer une partition, valider le Discord de Maestri).
+- **📨 · Prompts** ([prompts](prompts/README.md)) — une bibliothèque de prompts prêts (prompt initial, créer une partition).
 
 ## 🗂️ Partitions par domaine
 

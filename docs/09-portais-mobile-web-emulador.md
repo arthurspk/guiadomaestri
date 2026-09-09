@@ -52,9 +52,8 @@ verbos de verificação viva (`snapshot`/`screenshot`/`tap`/`type`), agora no ap
 
 > A CLI `maestri portal` é a mesma superfície; os verbos exatos para dispositivo (tap,
 > swipe, button, launch/terminate app) aparecem quando um portal de dispositivo está
-> conectado. Onde a sintaxe exata importar, confirme na doc oficial — e veja o
-> [prompt de validação do Discord](../prompts/validar-discord-maestri.md), que inclui
-> "confirmar os verbos de `maestri portal` para dispositivo" como tarefa.
+> conectado. Onde a sintaxe exata importar, confirme na
+> [documentação oficial](https://www.themaestri.app/pt-br/docs/portals).
 
 ---
 
@@ -133,8 +132,8 @@ p.connect_portal(pid, qa)
 Ele produz uma estrutura **best-effort** seguindo o padrão de união etiquetada do formato
 (`surface: {"device": {}}`, `source: {"device": {"_0": {…}}}`). **Ainda não confirmada**
 contra um export oficial — por isso não é usada nas partituras geradas. Use o Caminho A
-quando puder; use o B como ponto de partida e **confirme com um export real** (ou pela
-[validação do Discord](../prompts/validar-discord-maestri.md)) antes de distribuir.
+quando puder; use o B como ponto de partida e **confirme com um export real** antes de
+distribuir.
 
 ---
 

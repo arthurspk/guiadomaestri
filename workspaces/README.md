@@ -27,6 +27,6 @@ exato para **exportá-lo**, nem o schema do arquivo. Por isso este hub **não ge
 
 ## O que confirmar
 
-O schema do `.maestri` e o comando de exportação são dois pontos que o
-[prompt de validação do Discord](../prompts/validar-discord-maestri.md) pede para confirmar.
+O schema do `.maestri` e o comando de exportação são dois pontos a confirmar contra um
+**export real** e a [documentação oficial](https://www.themaestri.app/pt-br/docs/workspaces).
 Assim que confirmados, dá para automatizar a geração de workspaces-modelo aqui.

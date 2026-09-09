@@ -10,9 +10,6 @@
   prepara notas e portal, e faz um plano antes de começar. Cole no maestro (fable).
 - **[Criar uma partitura nova](./criar-partitura.md)** — faz o maestro montar um time e um
   contrato para o seu objetivo, seguindo os princípios do guia. Cole no maestro (fable).
-- **[Validar o Discord do Maestri](./validar-discord-maestri.md)** — faz um Claude com
-  acesso ao Discord percorrer o servidor, validar as informações deste guia e coletar o que
-  falta. Somente leitura.
 
 ## Como contribuir um prompt
 

@@ -6,14 +6,11 @@
 
 <h1 align="center">Guia do Maestri</h1>
 
-<p align="center">
-  O <b>Maestri</b> está disponível para <b>macOS e Windows</b>.<br>
-  <a href="https://www.themaestri.app/pt-br">Site oficial</a> · <a href="https://www.themaestri.app/pt-br/docs">Documentação oficial</a>
-</p>
-
 ## :dart: A proposta
 
-> O **Maestri** é um app de macOS e Windows onde você **rege um time de agentes de código** — Claude Code, Codex, Gemini, OpenCode — num **canvas infinito**: terminais são agentes, notas markdown são a fonte de verdade compartilhada, portais são navegadores embutidos para verificação viva, e o **maestro** delega e coordena. Este repositório é ao mesmo tempo um **guia em pt-BR** e um **gerador em Python** que produz **257 partituras** (`.maestripartitura`) prontas para arrastar para o canvas e reger — cada uma é um time completo, com responsabilidades embutidas, notas, portais e conexões. A ênfase é **tecnologia**, e há mais 11 áreas de negócio (design, produto, marketing, vendas, dados, segurança, financeiro, jurídico, suporte, gestão, pesquisa).
+> O **Maestri** é um app de **macOS e Windows** onde você **rege um time de agentes de código** — Claude Code, Codex, Gemini, OpenCode — num **canvas infinito**: terminais são agentes, notas markdown são a fonte de verdade compartilhada, portais são navegadores embutidos para verificação viva, e o **maestro** delega e coordena. Este repositório é ao mesmo tempo um **guia em pt-BR** e um **gerador em Python** que produz **257 partituras** (`.maestripartitura`) prontas para arrastar para o canvas e reger — cada uma é um time completo, com responsabilidades embutidas, notas, portais e conexões. A ênfase é **tecnologia**, e há mais 11 áreas de negócio (design, produto, marketing, vendas, dados, segurança, financeiro, jurídico, suporte, gestão, pesquisa).
+
+**🔗 Oficial:** [Site oficial](https://www.themaestri.app/pt-br) · [Documentação oficial](https://www.themaestri.app/pt-br/docs)
 
 ## 💡 Como este guia é organizado
 
@@ -74,7 +71,7 @@
 - [09 · **Portais: web, mobile e emuladores**](docs/09-portais-mobile-web-emulador.md) — como colocar portais de navegador, web-mobile e de dispositivo (simulador iOS / emulador Android) nas partituras.
 - [10 · **Importar e exportar no Maestri**](docs/10-importar-e-exportar.md) — tudo que dá para importar/exportar de forma nativa e as receitas curadas, e onde cada coisa vive no hub.
 - [🎭 · **Agentes**](agentes/README.md) — arquétipos de responsabilidade e o elenco de especialistas.
-- [📨 · **Prompts**](prompts/README.md) — biblioteca de prompts prontos (criar partitura, validar o Discord do Maestri).
+- [📨 · **Prompts**](prompts/README.md) — biblioteca de prompts prontos (prompt inicial, criar partitura).
 
 ## 🗂️ Partituras por área
 

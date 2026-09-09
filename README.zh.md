@@ -68,7 +68,7 @@
 - **09 · 门户：网页、移动、模拟器** ([docs/09](docs/09-portais-mobile-web-emulador.md)) —— 如何为乐谱添加浏览器、移动网页与设备门户（iOS 模拟器 / Android 模拟器）。
 - **10 · 在 Maestri 中导入与导出** ([docs/10](docs/10-importar-e-exportar.md)) — 所有可原生导入/导出的内容以及精选配方，及其在中心中的位置。
 - **🎭 · 智能体** ([agentes/README.md](agentes/README.md)) —— 职责原型与专家阵容。
-- **📨 · 提示词** ([prompts](prompts/README.md)) — 现成提示词库（创建乐谱、验证 Maestri 的 Discord）。
+- **📨 · 提示词** ([prompts](prompts/README.md)) — 现成提示词库（初始提示词、创建乐谱）。
 
 ## 🗂️ 按领域的乐谱
 

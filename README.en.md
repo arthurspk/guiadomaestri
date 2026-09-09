@@ -68,7 +68,7 @@
 - **09 · Portals: web, mobile, emulators** ([docs/09](docs/09-portais-mobile-web-emulador.md)) — how to add browser, mobile-web, and device portals (iOS simulator / Android emulator) to scores.
 - **10 · Import and export in Maestri** ([docs/10](docs/10-importar-e-exportar.md)) — everything you can natively import/export plus the curated recipes, and where each one lives in the hub.
 - **🎭 · Agents** ([agentes/README.md](agentes/README.md)) — responsibility archetypes and the cast of specialists.
-- **📨 · Prompts** ([prompts](prompts/README.md)) — a library of ready prompts (create a score, validate the Maestri Discord).
+- **📨 · Prompts** ([prompts](prompts/README.md)) — a library of ready prompts (initial prompt, create a score).
 
 ## 🗂️ Scores by area
 
