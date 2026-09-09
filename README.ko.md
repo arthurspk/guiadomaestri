@@ -67,6 +67,7 @@
 - **08 · 층 + 악보(레시피)** ([docs/08](docs/08-andares-e-partituras.md)) — 층과 악보를 함께 쓰는 법, 상황별 레시피와 hooks.
 - **09 · 포털: 웹, 모바일, 에뮬레이터** ([docs/09](docs/09-portais-mobile-web-emulador.md)) — 악보에 브라우저·모바일웹·기기 포털(iOS 시뮬레이터 / Android 에뮬레이터)을 추가하는 법.
 - **10 · Maestri에서 가져오기와 내보내기** ([docs/10](docs/10-importar-e-exportar.md)) — 네이티브로 가져오기/내보내기 가능한 모든 것과 큐레이트 레시피, 그리고 각 항목이 허브의 어디에 있는지.
+- **11 · 팁** ([docs/11](docs/11-dicas.md)) — Maestri를 더 잘 활용하는 실용적인 일상 팁.
 - **🎭 · 에이전트** ([agentes/README.md](agentes/README.md)) — 책임 원형과 전문가 캐스트.
 - **📨 · 프롬프트** ([prompts](prompts/README.md)) — 준비된 프롬프트 라이브러리(초기 프롬프트, 스코어 생성).
 
@@ -180,8 +181,6 @@ python3 tests/validate_hub.py               # → role.json과 허브 구조 검
 - [agency-agents](https://github.com/msitarzewski/agency-agents) — 18개 부서에 230+ 에이전트 카탈로그(영역의 영감).
 - [guiadevbrasil](https://github.com/arthurspk/guiadevbrasil) — 참조용 pt-BR 가이드(레이아웃의 영감).
 
----
+## ⭐ Star History
 
-<p align="center">
-  <sub>에이전트를 지휘하기 위해 만들어졌습니다. Fable가 지휘하고, Opus가 실행하며, Codex와 Gemini가 반박합니다. 🎻</sub>
-</p>
+[![Star History Chart](https://api.star-history.com/svg?repos=arthurspk/guiadomaestri&type=Date)](https://star-history.com/#arthurspk/guiadomaestri&Date)

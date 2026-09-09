@@ -67,6 +67,7 @@
 - **08 · Floors + Scores (रेसिपी)** ([docs/08](docs/08-andares-e-partituras.md)) — floors को scores के साथ उपयोग करना, स्थिति-अनुसार रेसिपी और hooks।
 - **09 · पोर्टल: वेब, मोबाइल, एमुलेटर** ([docs/09](docs/09-portais-mobile-web-emulador.md)) — scores में ब्राउज़र, मोबाइल-वेब और डिवाइस पोर्टल (iOS सिम्युलेटर / Android एमुलेटर) कैसे जोड़ें।
 - **10 · Maestri में इम्पोर्ट और एक्सपोर्ट** ([docs/10](docs/10-importar-e-exportar.md)) — जो कुछ नेटिव रूप से इम्पोर्ट/एक्सपोर्ट हो सकता है, साथ में क्यूरेटेड रेसिपी, और हब में हर चीज़ कहाँ है।
+- **11 · सुझाव** ([docs/11](docs/11-dicas.md)) — Maestri से अधिक पाने के रोज़मर्रा के व्यावहारिक सुझाव।
 - **🎭 · एजेंट** ([agentes/README.md](agentes/README.md)) — जिम्मेदारी के आदर्श और विशेषज्ञों की टोली।
 - **📨 · प्रॉम्प्ट** ([prompts](prompts/README.md)) — तैयार प्रॉम्प्ट की लाइब्रेरी (प्रारंभिक प्रॉम्प्ट, स्कोर बनाएं)।
 
@@ -180,8 +181,6 @@ python3 tests/validate_hub.py               # → role.json और हब सं
 - [agency-agents](https://github.com/msitarzewski/agency-agents) — 18 विभागों में 230+ एजेंटों का कैटलॉग (क्षेत्रों की प्रेरणा)।
 - [guiadevbrasil](https://github.com/arthurspk/guiadevbrasil) — संदर्भ pt-BR गाइड (लेआउट की प्रेरणा)।
 
----
+## ⭐ Star History
 
-<p align="center">
-  <sub>एजेंटों के संचालन हेतु निर्मित। Fable संचालन करता है, Opus निष्पादन, Codex व Gemini चुनौती देते हैं। 🎻</sub>
-</p>
+[![Star History Chart](https://api.star-history.com/svg?repos=arthurspk/guiadomaestri&type=Date)](https://star-history.com/#arthurspk/guiadomaestri&Date)

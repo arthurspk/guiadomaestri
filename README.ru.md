@@ -67,6 +67,7 @@
 - **08 · Этажи + Партитуры (рецепты)** ([docs/08](docs/08-andares-e-partituras.md)) — как использовать этажи вместе с партитурами, рецепты по ситуациям и hooks.
 - **09 · Порталы: веб, мобайл, эмуляторы** ([docs/09](docs/09-portais-mobile-web-emulador.md)) — как добавлять браузерные, мобильно-веб и устройственные порталы (симулятор iOS / эмулятор Android) в партитуры.
 - **10 · Импорт и экспорт в Maestri** ([docs/10](docs/10-importar-e-exportar.md)) — всё, что импортируется/экспортируется нативно, плюс кураторские рецепты, и где каждое живёт в хабе.
+- **11 · Советы** ([docs/11](docs/11-dicas.md)) — практические повседневные советы, чтобы выжать больше из Maestri.
 - **🎭 · Агенты** ([agentes/README.md](agentes/README.md)) — архетипы ролей и состав специалистов.
 - **📨 · Промпты** ([prompts](prompts/README.md)) — библиотека готовых промптов (стартовый промпт, создать партитуру).
 
@@ -180,8 +181,6 @@ python3 tests/validate_hub.py               # → проверяет файлы 
 - [agency-agents](https://github.com/msitarzewski/agency-agents) — каталог из 230+ агентов в 18 отделах (вдохновение для областей).
 - [guiadevbrasil](https://github.com/arthurspk/guiadevbrasil) — эталонное pt-BR руководство (вдохновение для оформления).
 
----
+## ⭐ Star History
 
-<p align="center">
-  <sub>Создано, чтобы дирижировать агентами. Fable дирижирует, Opus исполняет, Codex и Gemini оспаривают. 🎻</sub>
-</p>
+[![Star History Chart](https://api.star-history.com/svg?repos=arthurspk/guiadomaestri&type=Date)](https://star-history.com/#arthurspk/guiadomaestri&Date)

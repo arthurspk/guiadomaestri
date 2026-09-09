@@ -50,6 +50,7 @@
 [🎼 Crie a sua própria partitura](#-crie-a-sua-própria-partitura) <br>
 [⚠️ Segurança](#️-segurança) <br>
 [🤝 Contribuição](#-contribuição) <br>
+[⭐ Star History](#-star-history) <br>
 
 ## ⭐ Comece por aqui
 
@@ -61,7 +62,7 @@
 
 ## 📖 Documentação
 
-> Sete documentos, do conceito ao dia a dia. Comece pelo 01 se o Maestri é novo para você, ou pule direto para o 02 e o 06 se já conhece.
+> Os documentos do guia, do conceito ao dia a dia. Comece pelo 01 se o Maestri é novo para você, ou pule direto para o 02 e o 06 se já conhece.
 
 - [01 · **Conceitos**](docs/01-conceitos.md) — canvas, terminais, notas, portais, conexões, Modo Maestro, Ombro, Batuta, Andares, Rotinas, Ambientes, Wire.
 - [02 · **Como usar os templates**](docs/02-como-usar-os-templates.md) — importar, reger na prática, escolher e adaptar uma partitura.
@@ -73,6 +74,7 @@
 - [08 · **Andares + Partituras (receitas)**](docs/08-andares-e-partituras.md) — como usar os andares junto com as partituras, com receitas por situação e hooks.
 - [09 · **Portais: web, mobile e emuladores**](docs/09-portais-mobile-web-emulador.md) — como colocar portais de navegador, web-mobile e de dispositivo (simulador iOS / emulador Android) nas partituras.
 - [10 · **Importar e exportar no Maestri**](docs/10-importar-e-exportar.md) — tudo que dá para importar/exportar de forma nativa e as receitas curadas, e onde cada coisa vive no hub.
+- [11 · **Dicas**](docs/11-dicas.md) — dicas práticas do dia a dia para tirar mais do Maestri.
 - [🎭 · **Agentes**](agentes/README.md) — arquétipos de responsabilidade e o elenco de especialistas.
 - [📨 · **Prompts**](prompts/README.md) — biblioteca de prompts prontos (prompt inicial, criar partitura).
 
@@ -220,8 +222,8 @@ Reaproveite papéis prontos da [biblioteca de responsabilidades](roles/CATALOGO.
 
 Não sabe por onde começar? Veja [docs/10 · Importar e exportar](docs/10-importar-e-exportar.md) e o [scripts/README.md](scripts/README.md).
 
----
+## ⭐ Star History
 
-<p align="center">
-  <sub>Feito para reger agentes. Fable rege, Opus executa, Codex e Gemini contestam. 🎻</sub>
-</p>
+Se este hub te ajudou, deixe uma estrela — ajuda outras pessoas a encontrarem o projeto.
+
+[![Star History Chart](https://api.star-history.com/svg?repos=arthurspk/guiadomaestri&type=Date)](https://star-history.com/#arthurspk/guiadomaestri&Date)

@@ -67,6 +67,7 @@
 - **08 · الطوابق + البارتيتورات (وصفات)** ([docs/08](docs/08-andares-e-partituras.md)) — كيفية استخدام الطوابق مع البارتيتورات، بوصفات حسب الموقف وhooks.
 - **09 · البوابات: ويب، موبايل، محاكيات** ([docs/09](docs/09-portais-mobile-web-emulador.md)) — كيفية إضافة بوابات المتصفح وويب-الموبايل والأجهزة (محاكي iOS / محاكي Android) إلى البارتيتورات.
 - **10 · الاستيراد والتصدير في Maestri** ([docs/10](docs/10-importar-e-exportar.md)) — كل ما يمكن استيراده/تصديره أصليًا إضافةً إلى الوصفات المختارة، وأين يوجد كل شيء في المركز.
+- **11 · نصائح** ([docs/11](docs/11-dicas.md)) — نصائح عملية يومية لتحقيق أقصى استفادة من Maestri.
 - **🎭 · الوكلاء** ([agentes/README.md](agentes/README.md)) — أنماط المسؤولية وطاقم المتخصصين.
 - **📨 · الموجّهات** ([prompts](prompts/README.md)) — مكتبة موجّهات جاهزة (الموجّه الأولي، إنشاء بارتيتورة).
 
@@ -180,8 +181,6 @@ python3 tests/validate_hub.py               # → يتحقق من ملفات rol
 - [agency-agents](https://github.com/msitarzewski/agency-agents) — كتالوج لأكثر من 230 وكيلًا في 18 قسمًا (مصدر إلهام المجالات).
 - [guiadevbrasil](https://github.com/arthurspk/guiadevbrasil) — دليل مرجعي بالبرتغالية (مصدر إلهام التخطيط).
 
----
+## ⭐ Star History
 
-<p align="center">
-  <sub>صُنع لقيادة الوكلاء. Fable يقود، Opus ينفّذ، Codex وGemini يتحدّيان. 🎻</sub>
-</p>
+[![Star History Chart](https://api.star-history.com/svg?repos=arthurspk/guiadomaestri&type=Date)](https://star-history.com/#arthurspk/guiadomaestri&Date)

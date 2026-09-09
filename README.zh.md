@@ -67,6 +67,7 @@
 - **08 · 楼层 + 乐谱（配方）** ([docs/08](docs/08-andares-e-partituras.md)) —— 如何将楼层与乐谱结合使用，含分场景配方与 hooks。
 - **09 · 门户：网页、移动、模拟器** ([docs/09](docs/09-portais-mobile-web-emulador.md)) —— 如何为乐谱添加浏览器、移动网页与设备门户（iOS 模拟器 / Android 模拟器）。
 - **10 · 在 Maestri 中导入与导出** ([docs/10](docs/10-importar-e-exportar.md)) — 所有可原生导入/导出的内容以及精选配方，及其在中心中的位置。
+- **11 · 技巧** ([docs/11](docs/11-dicas.md)) — 日常实用技巧，让你更好地使用 Maestri。
 - **🎭 · 智能体** ([agentes/README.md](agentes/README.md)) —— 职责原型与专家阵容。
 - **📨 · 提示词** ([prompts](prompts/README.md)) — 现成提示词库（初始提示词、创建乐谱）。
 
@@ -180,8 +181,6 @@ python3 tests/validate_hub.py               # → 校验 role.json 与中心结�
 - [agency-agents](https://github.com/msitarzewski/agency-agents) —— 18 个部门、230+ 智能体的目录（领域灵感来源）。
 - [guiadevbrasil](https://github.com/arthurspk/guiadevbrasil) —— 参考用 pt-BR 指南（版式灵感来源）。
 
----
+## ⭐ Star History
 
-<p align="center">
-  <sub>为指挥智能体而生。Fable 指挥，Opus 执行，Codex 与 Gemini 挑战。🎻</sub>
-</p>
+[![Star History Chart](https://api.star-history.com/svg?repos=arthurspk/guiadomaestri&type=Date)](https://star-history.com/#arthurspk/guiadomaestri&Date)

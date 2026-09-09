@@ -67,6 +67,7 @@
 - **08 · フロア + スコア（レシピ）** ([docs/08](docs/08-andares-e-partituras.md)) — フロアとスコアを併用する方法、場面別レシピと hooks。
 - **09 · ポータル：Web、モバイル、エミュレーター** ([docs/09](docs/09-portais-mobile-web-emulador.md)) — ブラウザ、モバイル Web、デバイスポータル（iOS シミュレーター / Android エミュレーター）をスコアに追加する方法。
 - **10 · Maestri でのインポートとエクスポート** ([docs/10](docs/10-importar-e-exportar.md)) — ネイティブにインポート/エクスポートできるすべてと、キュレートされたレシピ、そして各要素がハブのどこにあるか。
+- **11 · ヒント** ([docs/11](docs/11-dicas.md)) — Maestri をより活かすための日常の実用ヒント。
 - **🎭 · エージェント** ([agentes/README.md](agentes/README.md)) — 責務の原型と専門家の顔ぶれ。
 - **📨 · プロンプト** ([prompts](prompts/README.md)) — 既成プロンプトのライブラリ（初期プロンプト、スコア作成）。
 
@@ -180,8 +181,6 @@ python3 tests/validate_hub.py               # → role.json とハブ構造を�
 - [agency-agents](https://github.com/msitarzewski/agency-agents) — 18 部門・230+ エージェントのカタログ（領域の着想源）。
 - [guiadevbrasil](https://github.com/arthurspk/guiadevbrasil) — 参考の pt-BR ガイド（レイアウトの着想源）。
 
----
+## ⭐ Star History
 
-<p align="center">
-  <sub>エージェントを指揮するために作られました。Fable が指揮し、Opus が実行し、Codex と Gemini が異議を唱えます。🎻</sub>
-</p>
+[![Star History Chart](https://api.star-history.com/svg?repos=arthurspk/guiadomaestri&type=Date)](https://star-history.com/#arthurspk/guiadomaestri&Date)

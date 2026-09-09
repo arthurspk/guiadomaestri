@@ -67,6 +67,7 @@
 - **08 · Andares + Partituras (recetas)** ([docs/08](docs/08-andares-e-partituras.md)) — cómo usar los andares junto con las partituras, con recetas por situación y hooks.
 - **09 · Portales: web, móvil, emuladores** ([docs/09](docs/09-portais-mobile-web-emulador.md)) — cómo añadir portales de navegador, web-móvil y de dispositivo (simulador iOS / emulador Android) a las partituras.
 - **10 · Importar y exportar en Maestri** ([docs/10](docs/10-importar-e-exportar.md)) — todo lo que puedes importar/exportar de forma nativa más las recetas curadas, y dónde vive cada cosa en el hub.
+- **11 · Consejos** ([docs/11](docs/11-dicas.md)) — consejos prácticos del día a día para sacar más de Maestri.
 - **🎭 · Agentes** ([agentes/README.md](agentes/README.md)) — arquetipos de responsabilidad y el elenco de especialistas.
 - **📨 · Prompts** ([prompts](prompts/README.md)) — una biblioteca de prompts listos (prompt inicial, crear una partitura).
 
@@ -180,8 +181,6 @@ python3 tests/validate_hub.py               # → valida los role.json y la estr
 - [agency-agents](https://github.com/msitarzewski/agency-agents) — catálogo de 230+ agentes en 18 divisiones (inspiración de las áreas).
 - [guiadevbrasil](https://github.com/arthurspk/guiadevbrasil) — guía pt-BR de referencia (inspiración del diseño).
 
----
+## ⭐ Star History
 
-<p align="center">
-  <sub>Hecho para dirigir agentes. Fable dirige, Opus ejecuta, Codex y Gemini cuestionan. 🎻</sub>
-</p>
+[![Star History Chart](https://api.star-history.com/svg?repos=arthurspk/guiadomaestri&type=Date)](https://star-history.com/#arthurspk/guiadomaestri&Date)

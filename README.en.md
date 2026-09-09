@@ -67,6 +67,7 @@
 - **08 · Floors + Scores (recipes)** ([docs/08](docs/08-andares-e-partituras.md)) — how to use floors together with scores, with per-situation recipes and hooks.
 - **09 · Portals: web, mobile, emulators** ([docs/09](docs/09-portais-mobile-web-emulador.md)) — how to add browser, mobile-web, and device portals (iOS simulator / Android emulator) to scores.
 - **10 · Import and export in Maestri** ([docs/10](docs/10-importar-e-exportar.md)) — everything you can natively import/export plus the curated recipes, and where each one lives in the hub.
+- **11 · Tips** ([docs/11](docs/11-dicas.md)) — practical day-to-day tips to get more out of Maestri.
 - **🎭 · Agents** ([agentes/README.md](agentes/README.md)) — responsibility archetypes and the cast of specialists.
 - **📨 · Prompts** ([prompts](prompts/README.md)) — a library of ready prompts (initial prompt, create a score).
 
@@ -180,8 +181,6 @@ python3 tests/validate_hub.py               # → validates the role.json files 
 - [agency-agents](https://github.com/msitarzewski/agency-agents) — a catalog of 230+ agents across 18 divisions (inspiration for the areas).
 - [guiadevbrasil](https://github.com/arthurspk/guiadevbrasil) — a reference pt-BR guide (inspiration for the layout).
 
----
+## ⭐ Star History
 
-<p align="center">
-  <sub>Built to conduct agents. Fable conducts, Opus executes, Codex and Gemini challenge. 🎻</sub>
-</p>
+[![Star History Chart](https://api.star-history.com/svg?repos=arthurspk/guiadomaestri&type=Date)](https://star-history.com/#arthurspk/guiadomaestri&Date)
