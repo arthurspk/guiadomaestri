@@ -3,9 +3,8 @@
 Uma partitura é um documento **JSON** em texto claro. O Maestri guarda em
 `~/.maestri/partituras/`. Extensões: `.maestripartitura` (uma) e `.maestripartituras`
 (pacote com várias). Esta página descreve o `formatVersion` 1 (appVersion ~0.45.x),
-calibrado byte a byte contra as partituras oficiais em
-[`referencia/partituras-oficiais/`](../referencia/partituras-oficiais/) — em especial
-`Money_Send_Pipeline.maestripartitura`, que é a referência da nossa validação.
+calibrado byte a byte contra o formato que o próprio Maestri exporta. O schema esperado
+está embutido no validador [`tests/validate_partituras.py`](../tests/validate_partituras.py).
 
 > Este documento é a especificação que o gerador em [`scripts/`](../scripts/) implementa.
 > Se algo aqui divergir de um arquivo oficial, o arquivo oficial vence.
@@ -21,9 +20,9 @@ calibrado byte a byte contra as partituras oficiais em
   "createdAt": "2026-09-08T12:00:00Z",
   "description": "…",
   "formatVersion": 1,
-  "icon": "paperplane",
+  "icon": "globe",
   "id": "D99C07A3-CED4-4E8E-BC7D-86BCE5A1F79C",
-  "name": "Money Send — Full Pipeline",
+  "name": "Ship Feature · React + Node",
   "workspaceId": "C9B7A5CD-…",
   "payload": { … },
   "roles": [ … ]
@@ -211,7 +210,7 @@ sem referência quebrada.
 - **UUIDs determinísticos**: `sha1(seed)` em maiúsculas. Regerar produz os mesmos arquivos.
 - **Validação obrigatória**: [`tests/validate_partituras.py`](../tests/validate_partituras.py)
   carrega cada arquivo e compara chaves de topo, de payload, de cada `_0` e de cada role
-  **exatamente** contra `Money_Send_Pipeline.maestripartitura`, além de checar integridade
+  **exatamente** contra o schema embutido do formato, além de checar integridade
   referencial das conexões e os 21 `ropePoints`. Zero divergências.
 
 ---

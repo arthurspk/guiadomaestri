@@ -13,9 +13,8 @@ estrutura dos arquivos exportados pelo próprio app:
   * nós: terminal / stickyNote / portal, cada um embrulhado em `_0`
   * roles: id, name, prompt, color, icon, schemaVersion
 
-Calibrado contra as partituras oficiais em `referencia/partituras-oficiais/`
-(KYC BFF Validation, Money Send Pipeline, Ship Goats, Slop Haters,
-The Bug is on the Canvas). Regras extraídas delas:
+Calibrado a partir do formato `.maestripartitura` (formatVersion 1) do Maestri.
+Regras do formato:
 
   * `connections` referenciam o id INTERNO do terminal (content.terminal._0.id),
     que é diferente do id do nó.

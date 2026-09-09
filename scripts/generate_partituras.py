@@ -201,14 +201,14 @@ MIGRATIONS = [
 ]
 
 BFF_DOMAINS = [
-    ("KYC", "core-kyc (SPA) × core-kyc-api (BFF): paridade de schema, fronteira HTTP, cookie credenciado", "indigo", "magnifyingglass"),
-    ("Checkout", "checkout-web (SPA) × checkout-bff: idempotência de pagamento, paridade de contrato", "green", "cart"),
-    ("Onboarding", "onboarding-app × onboarding-bff: validação em várias etapas, upload de documentos", "blue", "person.badge.plus"),
-    ("Dashboard", "admin-dashboard × admin-bff: RBAC, paginação, filtros, exportação", "orange", "chart.bar"),
-    ("Open Finance", "of-consent-web × of-bff: consentimento, redirect, escopos OAuth", "teal", "building.columns"),
-    ("Wallet", "wallet-app × wallet-bff: saldo, extrato, limites, WebSocket de saldo ao vivo", "green", "creditcard"),
-    ("Seguros", "quote-web × quote-bff: cotação multi-etapa, upload de apólice, assinatura", "purple", "shield"),
-    ("Investimentos", "invest-web × invest-bff: carteira, ordens, cotações em streaming, suitability", "orange", "chart.pie"),
+    ("KYC", "SPA × BFF de KYC (Know Your Customer): paridade de schema, fronteira HTTP, cookie credenciado", "indigo", "magnifyingglass"),
+    ("Checkout", "SPA × BFF de checkout: idempotência de pagamento, paridade de contrato", "green", "cart"),
+    ("Onboarding", "SPA × BFF de onboarding: validação em várias etapas, upload de documentos", "blue", "person.badge.plus"),
+    ("Dashboard", "SPA × BFF de dashboard admin: RBAC, paginação, filtros, exportação", "orange", "chart.bar"),
+    ("Open Finance", "SPA × BFF de Open Finance: consentimento, redirect, escopos OAuth", "teal", "building.columns"),
+    ("Wallet", "SPA × BFF de carteira: saldo, extrato, limites, WebSocket de saldo ao vivo", "green", "creditcard"),
+    ("Seguros", "SPA × BFF de seguros: cotação multi-etapa, upload de apólice, assinatura", "purple", "shield"),
+    ("Investimentos", "SPA × BFF de investimentos: carteira, ordens, cotações em streaming, suitability", "orange", "chart.pie"),
 ]
 
 FULL_PRODUCTS = [
@@ -303,7 +303,7 @@ def _proving(url):
 
 
 # ===========================================================================
-# FAMÍLIA 1 — Ship Feature (padrão Ship Goats, por stack)
+# FAMÍLIA 1 — Ship Feature (entrega de feature, por stack)
 # ===========================================================================
 
 def fam_ship_feature(stack):
@@ -343,7 +343,7 @@ def fam_ship_feature(stack):
 
 
 # ===========================================================================
-# FAMÍLIA 2 — Depuração (padrão The Bug is on the Canvas, por stack)
+# FAMÍLIA 2 — Depuração (método científico, por stack)
 # ===========================================================================
 
 def fam_debug(stack):
@@ -379,7 +379,7 @@ def fam_debug(stack):
 
 
 # ===========================================================================
-# FAMÍLIA 3 — Portão de Release (padrão Slop Haters, por stack)
+# FAMÍLIA 3 — Portão de Release (revisão adversarial, por stack)
 # ===========================================================================
 
 def fam_release_gate(stack):
@@ -493,7 +493,7 @@ def fam_bff_validation(domain):
            color=COLORS["pink"])
     p.role("Contract Architect", R.architect(
         f"validação de {name_short}: paridade de schema e fronteira HTTP",
-        contract_note="kyc-contract", board_note="kyc-workboard",
+        contract_note="contract", board_note="workboard",
         extra="\nÉ um contrato de VALIDAÇÃO, não um spec de feature: para cada endpoint que o "
               "front consome, escreva request, resposta de sucesso, resposta de erro, o schema do "
               "lado da API que o define e a cópia do lado do front que o espelha; e qual fluxo de "
@@ -501,13 +501,13 @@ def fam_bff_validation(domain):
         color=COLORS["purple"])
     p.role("Surface Validator", R.warden(
         f"a superfície de {name_short} (front e BFF)",
-        board_note="kyc-workboard", contract_note="kyc-contract",
+        board_note="workboard", contract_note="contract",
         extra="\nVocê valida uma superfície por vez: o front consome o contrato como escrito? o "
               "BFF responde como o contrato diz? Divergências viram achados por severidade."),
         color=COLORS["orange"])
     p.role("Boundary Warden", R.warden(
         f"a fronteira de {name_short}: CORS, cookie credenciado, base URL, paridade",
-        board_note="kyc-workboard", contract_note="kyc-contract",
+        board_note="workboard", contract_note="contract",
         extra="\nVocê recusa passar: um cookie cross-origin que o browser não armazena de fato; um "
               "CORS com wildcard sob credentials; uma base URL que não resolve; um mirror de schema "
               "entre repos sem nada guardando contra drift."),
@@ -520,7 +520,7 @@ def fam_bff_validation(domain):
     v2 = p.terminal("Wren · bff", role="Surface Validator", command=CMD_OPUS, x=pos[2][0], y=pos[2][1])
     wd = p.terminal("Argus · fronteira", role="Boundary Warden", command=CMD_OPUS, x=pos[3][0], y=pos[3][1])
 
-    contract = p.note("kyc-contract.md",
+    contract = p.note("contract.md",
                       f"# contract — validação de {name_short}\n\n{desc}\n\n"
                       "## Status\nNão escrito ainda. O Arquiteto preenche antes de qualquer validador começar.\n\n"
                       "## Endpoint contracts\n(um bloco por endpoint: request, sucesso, erro, schema da API, schema do front)\n\n"
@@ -529,7 +529,7 @@ def fam_bff_validation(domain):
                       "## Pass criteria\n(por fatia, para o revisor dizer passa/não passa sem interpretar)\n\n"
                       "## Perguntas em aberto\n(qual ambiente, como o hostname resolve localmente)",
                       x=1300, y=-380, color="blue")
-    board = p.note("kyc-workboard.md",
+    board = p.note("workboard.md",
                    "# workboard\n\n## Slices\n- [ ] Superfície front — dono: não atribuído — não iniciado\n"
                    "- [ ] Superfície BFF — dono: não atribuído — não iniciado\n"
                    "As superfícies de fronteira (paridade, CORS, cookie, base URL) NÃO são fatia: "
@@ -546,7 +546,7 @@ def fam_bff_validation(domain):
 
 
 # ===========================================================================
-# FAMÍLIA 6 — Pipeline Completo 30 camadas (padrão Money Send, por produto)
+# FAMÍLIA 6 — Pipeline Completo 30 camadas (por produto)
 # ===========================================================================
 
 def fam_full_pipeline(product):

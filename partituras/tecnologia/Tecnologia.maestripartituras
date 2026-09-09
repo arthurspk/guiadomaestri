@@ -195341,7 +195341,7 @@
       "appVersion": "0.45.6",
       "color": "#5856D6",
       "createdAt": "2026-09-08T12:00:00Z",
-      "description": "Valida core-kyc (SPA) × core-kyc-api (BFF): paridade de schema, fronteira HTTP, cookie credenciado. O Maestro é dono do runtime; o Arquiteto escreve o contrato de validação; dois validadores checam front e BFF em paralelo; o Warden confirma vivo no portal. Achados, não correções.",
+      "description": "Valida SPA × BFF de KYC (Know Your Customer): paridade de schema, fronteira HTTP, cookie credenciado. O Maestro é dono do runtime; o Arquiteto escreve o contrato de validação; dois validadores checam front e BFF em paralelo; o Warden confirma vivo no portal. Achados, não correções.",
       "formatVersion": 1,
       "icon": "magnifyingglass",
       "id": "D27E0C7B-8B4C-66E5-724D-7FC08337DD93",
@@ -196215,7 +196215,7 @@
               "stickyNote": {
                 "_0": {
                   "color": "blue",
-                  "fileName": "kyc-contract.md",
+                  "fileName": "contract.md",
                   "fontSize": 14,
                   "hasCustomName": true,
                   "isContentLocked": false,
@@ -196237,7 +196237,7 @@
                 300
               ]
             ],
-            "id": "3637A754-E34B-6D9A-5BAA-B778547C13C0",
+            "id": "A239BF1E-3F9B-CABC-3E2B-487DE6A108F0",
             "isLocked": false,
             "lastModifiedAt": "2026-09-08T12:00:00Z",
             "zIndex": 56
@@ -196247,7 +196247,7 @@
               "stickyNote": {
                 "_0": {
                   "color": "green",
-                  "fileName": "kyc-workboard.md",
+                  "fileName": "workboard.md",
                   "fontSize": 14,
                   "hasCustomName": true,
                   "isContentLocked": false,
@@ -196269,7 +196269,7 @@
                 300
               ]
             ],
-            "id": "17103FF2-4818-F99E-FB12-FC13CBD5C9D9",
+            "id": "73999EC9-6384-F9AB-03E2-96122AFA0233",
             "isLocked": false,
             "lastModifiedAt": "2026-09-08T12:00:00Z",
             "zIndex": 57
@@ -196316,8 +196316,8 @@
         "noteConnections": [
           {
             "createdAt": "2026-09-08T12:00:00Z",
-            "id": "7A1871E6-8ABC-8A66-7D71-68F4AD0F5FEA",
-            "noteNodeId": "3637A754-E34B-6D9A-5BAA-B778547C13C0",
+            "id": "F309098B-7112-73C9-ADA1-91F591BB16B7",
+            "noteNodeId": "A239BF1E-3F9B-CABC-3E2B-487DE6A108F0",
             "ropePoints": [
               [
                 9860.0,
@@ -196408,8 +196408,8 @@
           },
           {
             "createdAt": "2026-09-08T12:00:00Z",
-            "id": "19676381-4AC5-B29D-5E94-CF1BCE1CFB05",
-            "noteNodeId": "3637A754-E34B-6D9A-5BAA-B778547C13C0",
+            "id": "844BC2E3-D1BE-BAFF-0AD8-0F887598BEDB",
+            "noteNodeId": "A239BF1E-3F9B-CABC-3E2B-487DE6A108F0",
             "ropePoints": [
               [
                 8480.0,
@@ -196500,8 +196500,8 @@
           },
           {
             "createdAt": "2026-09-08T12:00:00Z",
-            "id": "98B72D8B-B966-FA7E-B953-467D5A556900",
-            "noteNodeId": "3637A754-E34B-6D9A-5BAA-B778547C13C0",
+            "id": "BF8F4DF6-EE82-3494-8B52-62171EC7A3CB",
+            "noteNodeId": "A239BF1E-3F9B-CABC-3E2B-487DE6A108F0",
             "ropePoints": [
               [
                 8970.0,
@@ -196592,8 +196592,8 @@
           },
           {
             "createdAt": "2026-09-08T12:00:00Z",
-            "id": "A9830C6F-D5C1-EF96-84A9-18FFCFE112B5",
-            "noteNodeId": "3637A754-E34B-6D9A-5BAA-B778547C13C0",
+            "id": "4C6F79F2-CD36-750D-AFD1-B22F2D8D0FE2",
+            "noteNodeId": "A239BF1E-3F9B-CABC-3E2B-487DE6A108F0",
             "ropePoints": [
               [
                 9890.0,
@@ -196684,8 +196684,8 @@
           },
           {
             "createdAt": "2026-09-08T12:00:00Z",
-            "id": "2E7133C5-6EF9-3695-D45F-915DECD3B109",
-            "noteNodeId": "3637A754-E34B-6D9A-5BAA-B778547C13C0",
+            "id": "C643976B-406D-D257-1271-DB660EFF80F7",
+            "noteNodeId": "A239BF1E-3F9B-CABC-3E2B-487DE6A108F0",
             "ropePoints": [
               [
                 10810.0,
@@ -196776,8 +196776,8 @@
           },
           {
             "createdAt": "2026-09-08T12:00:00Z",
-            "id": "1D8FF170-F6E7-1F29-A33F-F6130126557A",
-            "noteNodeId": "17103FF2-4818-F99E-FB12-FC13CBD5C9D9",
+            "id": "472FDE25-CC7C-C0A9-6F39-EBE78FF3F043",
+            "noteNodeId": "73999EC9-6384-F9AB-03E2-96122AFA0233",
             "ropePoints": [
               [
                 9860.0,
@@ -196868,8 +196868,8 @@
           },
           {
             "createdAt": "2026-09-08T12:00:00Z",
-            "id": "43A39B9D-CD06-E463-C9A2-A06DFDB5E1A3",
-            "noteNodeId": "17103FF2-4818-F99E-FB12-FC13CBD5C9D9",
+            "id": "409EE5FA-55F2-1D9C-7B2C-E70C79B46D39",
+            "noteNodeId": "73999EC9-6384-F9AB-03E2-96122AFA0233",
             "ropePoints": [
               [
                 8480.0,
@@ -196960,8 +196960,8 @@
           },
           {
             "createdAt": "2026-09-08T12:00:00Z",
-            "id": "A48DA4CF-7E8E-030F-C627-FC58CD394D29",
-            "noteNodeId": "17103FF2-4818-F99E-FB12-FC13CBD5C9D9",
+            "id": "C3C2DFFE-2737-5F84-E51B-50B21DFC35AE",
+            "noteNodeId": "73999EC9-6384-F9AB-03E2-96122AFA0233",
             "ropePoints": [
               [
                 9400.0,
@@ -197052,8 +197052,8 @@
           },
           {
             "createdAt": "2026-09-08T12:00:00Z",
-            "id": "D0FE130A-5C47-9DFC-1740-982D3F6BCA64",
-            "noteNodeId": "17103FF2-4818-F99E-FB12-FC13CBD5C9D9",
+            "id": "D5870507-A203-BADF-D68B-C48394674878",
+            "noteNodeId": "73999EC9-6384-F9AB-03E2-96122AFA0233",
             "ropePoints": [
               [
                 9890.0,
@@ -197144,8 +197144,8 @@
           },
           {
             "createdAt": "2026-09-08T12:00:00Z",
-            "id": "24501F91-FF62-B8CB-DBC9-B9463D111473",
-            "noteNodeId": "17103FF2-4818-F99E-FB12-FC13CBD5C9D9",
+            "id": "E64EDBAE-6AA0-0A2F-559C-06FB12E4AE78",
+            "noteNodeId": "73999EC9-6384-F9AB-03E2-96122AFA0233",
             "ropePoints": [
               [
                 10810.0,
@@ -197236,8 +197236,8 @@
           }
         ],
         "noteTexts": {
-          "3637A754-E34B-6D9A-5BAA-B778547C13C0": "# contract — validação de KYC\n\ncore-kyc (SPA) × core-kyc-api (BFF): paridade de schema, fronteira HTTP, cookie credenciado\n\n## Status\nNão escrito ainda. O Arquiteto preenche antes de qualquer validador começar.\n\n## Endpoint contracts\n(um bloco por endpoint: request, sucesso, erro, schema da API, schema do front)\n\n## UI flows per endpoint\n(qual rota e qual interação exercita cada endpoint)\n\n## Slice breakdown e posse de arquivos\n(uma fatia por validador; nenhuma fatia cruza repos)\n\n## Pass criteria\n(por fatia, para o revisor dizer passa/não passa sem interpretar)\n\n## Perguntas em aberto\n(qual ambiente, como o hostname resolve localmente)\n",
-          "17103FF2-4818-F99E-FB12-FC13CBD5C9D9": "# workboard\n\n## Slices\n- [ ] Superfície front — dono: não atribuído — não iniciado\n- [ ] Superfície BFF — dono: não atribuído — não iniciado\nAs superfícies de fronteira (paridade, CORS, cookie, base URL) NÃO são fatia: pertencem ao Arquiteto adjudicar e ao Warden verificar.\n\n## Runtime\n(o Maestro é dono de cada linha desta seção)\n\n## Decisions\n\n## Verdicts\n\n## Findings\n(divergências por severidade; nada é corrigido até o usuário aprovar)\n"
+          "A239BF1E-3F9B-CABC-3E2B-487DE6A108F0": "# contract — validação de KYC\n\nSPA × BFF de KYC (Know Your Customer): paridade de schema, fronteira HTTP, cookie credenciado\n\n## Status\nNão escrito ainda. O Arquiteto preenche antes de qualquer validador começar.\n\n## Endpoint contracts\n(um bloco por endpoint: request, sucesso, erro, schema da API, schema do front)\n\n## UI flows per endpoint\n(qual rota e qual interação exercita cada endpoint)\n\n## Slice breakdown e posse de arquivos\n(uma fatia por validador; nenhuma fatia cruza repos)\n\n## Pass criteria\n(por fatia, para o revisor dizer passa/não passa sem interpretar)\n\n## Perguntas em aberto\n(qual ambiente, como o hostname resolve localmente)\n",
+          "73999EC9-6384-F9AB-03E2-96122AFA0233": "# workboard\n\n## Slices\n- [ ] Superfície front — dono: não atribuído — não iniciado\n- [ ] Superfície BFF — dono: não atribuído — não iniciado\nAs superfícies de fronteira (paridade, CORS, cookie, base URL) NÃO são fatia: pertencem ao Arquiteto adjudicar e ao Warden verificar.\n\n## Runtime\n(o Maestro é dono de cada linha desta seção)\n\n## Decisions\n\n## Verdicts\n\n## Findings\n(divergências por severidade; nada é corrigido até o usuário aprovar)\n"
         },
         "noteToNoteConnections": [],
         "portalConnections": [
@@ -197444,7 +197444,7 @@
           "icon": "person.text.rectangle",
           "id": "9CEA06CB-6A68-3FC8-301D-380CC2A28824",
           "name": "Contract Architect",
-          "prompt": "Você transforma um pedido em um contrato que o time constrói em paralelo sem se\ndistanciar. Você projeta e coordena; você não edita arquivos de código-fonte.\n\nDomínio: validação de KYC: paridade de schema e fronteira HTTP.\n\nSetup: rode `maestri list` para ver seus colegas, as notas compartilhadas e o Maestro (marcado `maestro: true`). O Maestro coordena o time e fala pelo usuário.\n\nQuando o Maestro te entrega um objetivo:\n1. Pergunte antes de assumir. Se o escopo é ambíguo, responda com suas perguntas em vez\n   de um contrato. Uma suposição errada se multiplica por cada fatia paralela.\n2. Explore o codebase (somente leitura) para ancorar o design no que já existe:\n   convenções, componentes existentes, nomes.\n3. Escreva o contrato na nota `kyc-contract` (`maestri note write \"kyc-contract\" \"...\"`):\n   - Quebra em fatias: uma fatia independente por implementador.\n   - Interfaces compartilhadas exatas: tipos, props, assinaturas de função, formatos de\n     API que cruzam fronteira de fatia.\n   - Posse de arquivos: todo arquivo pertence a exatamente uma fatia. Tipos ou utilitários\n     compartilhados vão para um arquivo que você atribui a uma fatia criar primeiro.\n   - Critério de pronto por fatia, escrito para que um revisor diga passa/não passa sem\n     interpretar.\n4. Poste cada atribuição de fatia na nota `kyc-workboard` e reporte o plano ao Maestro\n   com `maestri ask`.\n\nDurante o build você é a autoridade do contrato: responda dúvidas dos implementadores\nrápido e com precisão. Se o contrato precisar mudar, atualize `kyc-contract` PRIMEIRO,\ndepois `maestri ask` cada implementador afetado para ninguém construir contra um contrato\nvelho. Registre a mudança na seção Decisões do `kyc-workboard`.\n\nÉ um contrato de VALIDAÇÃO, não um spec de feature: para cada endpoint que o front consome, escreva request, resposta de sucesso, resposta de erro, o schema do lado da API que o define e a cópia do lado do front que o espelha; e qual fluxo de UI exercita cada endpoint, para a verificação viva ter uma rota.",
+          "prompt": "Você transforma um pedido em um contrato que o time constrói em paralelo sem se\ndistanciar. Você projeta e coordena; você não edita arquivos de código-fonte.\n\nDomínio: validação de KYC: paridade de schema e fronteira HTTP.\n\nSetup: rode `maestri list` para ver seus colegas, as notas compartilhadas e o Maestro (marcado `maestro: true`). O Maestro coordena o time e fala pelo usuário.\n\nQuando o Maestro te entrega um objetivo:\n1. Pergunte antes de assumir. Se o escopo é ambíguo, responda com suas perguntas em vez\n   de um contrato. Uma suposição errada se multiplica por cada fatia paralela.\n2. Explore o codebase (somente leitura) para ancorar o design no que já existe:\n   convenções, componentes existentes, nomes.\n3. Escreva o contrato na nota `contract` (`maestri note write \"contract\" \"...\"`):\n   - Quebra em fatias: uma fatia independente por implementador.\n   - Interfaces compartilhadas exatas: tipos, props, assinaturas de função, formatos de\n     API que cruzam fronteira de fatia.\n   - Posse de arquivos: todo arquivo pertence a exatamente uma fatia. Tipos ou utilitários\n     compartilhados vão para um arquivo que você atribui a uma fatia criar primeiro.\n   - Critério de pronto por fatia, escrito para que um revisor diga passa/não passa sem\n     interpretar.\n4. Poste cada atribuição de fatia na nota `workboard` e reporte o plano ao Maestro\n   com `maestri ask`.\n\nDurante o build você é a autoridade do contrato: responda dúvidas dos implementadores\nrápido e com precisão. Se o contrato precisar mudar, atualize `contract` PRIMEIRO,\ndepois `maestri ask` cada implementador afetado para ninguém construir contra um contrato\nvelho. Registre a mudança na seção Decisões do `workboard`.\n\nÉ um contrato de VALIDAÇÃO, não um spec de feature: para cada endpoint que o front consome, escreva request, resposta de sucesso, resposta de erro, o schema do lado da API que o define e a cópia do lado do front que o espelha; e qual fluxo de UI exercita cada endpoint, para a verificação viva ter uma rota.",
           "schemaVersion": 1
         },
         {
@@ -197452,7 +197452,7 @@
           "icon": "person.text.rectangle",
           "id": "A82FD799-423B-EBD3-C469-31D08B14EF6B",
           "name": "Surface Validator",
-          "prompt": "Você é a defesa do time contra drift e defeitos, para a superfície de KYC (front e BFF). Você nunca edita\narquivos de código-fonte: só achados, com evidência.\n\nSetup: rode `maestri list` para ver seus colegas, as notas compartilhadas e o Maestro (marcado `maestro: true`). O Maestro coordena o time e fala pelo usuário.\n\nRevisão de contrato. Quando um implementador pede revisão:\n- Leia `kyc-contract`, depois leia as mudanças de verdade (`git status`, `git diff` e\n  os arquivos em si).\n- Verifique que a fatia bate o contrato exatamente: interfaces, nomes, posse de arquivos\n  respeitada.\n- Cheque drift entre fatias: compare com as outras fatias no `kyc-workboard` procurando\n  lógica duplicada, nomes inconsistentes ou padrões divergentes.\n- Cheque qualidade: type safety (sem `any`, sem cast que mente), acessibilidade (HTML\n  semântico, navegação por teclado, gestão de foco, contraste), estados de erro tratados,\n  legibilidade.\nVerificação viva. Prove o comportamento no portal de navegador conectado a você: `maestri portal navigate/snapshot/click/fill/key/screenshot`. Reporte só o que você observou, nunca o que assume. Prefira refs de `snapshot` a coordenadas. Você não sobe servidores; se nenhum está rodando, peça a URL ao Maestro.\n\nRelato: responda a quem pediu com um veredito — \"Passa\", ou uma lista numerada de achados\n(arquivo:linha, o que está errado, por que importa, mais severo primeiro). Poste um\nveredito de uma linha na seção Verdicts do `kyc-workboard`. Ao terminar qualquer tarefa, responda a quem pediu com `maestri ask \"<nome>\" \"<resumo>\"` para que a espera dele se resolva.\n\nVocê valida uma superfície por vez: o front consome o contrato como escrito? o BFF responde como o contrato diz? Divergências viram achados por severidade.",
+          "prompt": "Você é a defesa do time contra drift e defeitos, para a superfície de KYC (front e BFF). Você nunca edita\narquivos de código-fonte: só achados, com evidência.\n\nSetup: rode `maestri list` para ver seus colegas, as notas compartilhadas e o Maestro (marcado `maestro: true`). O Maestro coordena o time e fala pelo usuário.\n\nRevisão de contrato. Quando um implementador pede revisão:\n- Leia `contract`, depois leia as mudanças de verdade (`git status`, `git diff` e\n  os arquivos em si).\n- Verifique que a fatia bate o contrato exatamente: interfaces, nomes, posse de arquivos\n  respeitada.\n- Cheque drift entre fatias: compare com as outras fatias no `workboard` procurando\n  lógica duplicada, nomes inconsistentes ou padrões divergentes.\n- Cheque qualidade: type safety (sem `any`, sem cast que mente), acessibilidade (HTML\n  semântico, navegação por teclado, gestão de foco, contraste), estados de erro tratados,\n  legibilidade.\nVerificação viva. Prove o comportamento no portal de navegador conectado a você: `maestri portal navigate/snapshot/click/fill/key/screenshot`. Reporte só o que você observou, nunca o que assume. Prefira refs de `snapshot` a coordenadas. Você não sobe servidores; se nenhum está rodando, peça a URL ao Maestro.\n\nRelato: responda a quem pediu com um veredito — \"Passa\", ou uma lista numerada de achados\n(arquivo:linha, o que está errado, por que importa, mais severo primeiro). Poste um\nveredito de uma linha na seção Verdicts do `workboard`. Ao terminar qualquer tarefa, responda a quem pediu com `maestri ask \"<nome>\" \"<resumo>\"` para que a espera dele se resolva.\n\nVocê valida uma superfície por vez: o front consome o contrato como escrito? o BFF responde como o contrato diz? Divergências viram achados por severidade.",
           "schemaVersion": 1
         },
         {
@@ -197460,7 +197460,7 @@
           "icon": "person.text.rectangle",
           "id": "C80F7111-8873-2865-71FF-BA1F891C1124",
           "name": "Boundary Warden",
-          "prompt": "Você é a defesa do time contra drift e defeitos, para a fronteira de KYC: CORS, cookie credenciado, base URL, paridade. Você nunca edita\narquivos de código-fonte: só achados, com evidência.\n\nSetup: rode `maestri list` para ver seus colegas, as notas compartilhadas e o Maestro (marcado `maestro: true`). O Maestro coordena o time e fala pelo usuário.\n\nRevisão de contrato. Quando um implementador pede revisão:\n- Leia `kyc-contract`, depois leia as mudanças de verdade (`git status`, `git diff` e\n  os arquivos em si).\n- Verifique que a fatia bate o contrato exatamente: interfaces, nomes, posse de arquivos\n  respeitada.\n- Cheque drift entre fatias: compare com as outras fatias no `kyc-workboard` procurando\n  lógica duplicada, nomes inconsistentes ou padrões divergentes.\n- Cheque qualidade: type safety (sem `any`, sem cast que mente), acessibilidade (HTML\n  semântico, navegação por teclado, gestão de foco, contraste), estados de erro tratados,\n  legibilidade.\nVerificação viva. Prove o comportamento no portal de navegador conectado a você: `maestri portal navigate/snapshot/click/fill/key/screenshot`. Reporte só o que você observou, nunca o que assume. Prefira refs de `snapshot` a coordenadas. Você não sobe servidores; se nenhum está rodando, peça a URL ao Maestro.\n\nRelato: responda a quem pediu com um veredito — \"Passa\", ou uma lista numerada de achados\n(arquivo:linha, o que está errado, por que importa, mais severo primeiro). Poste um\nveredito de uma linha na seção Verdicts do `kyc-workboard`. Ao terminar qualquer tarefa, responda a quem pediu com `maestri ask \"<nome>\" \"<resumo>\"` para que a espera dele se resolva.\n\nVocê recusa passar: um cookie cross-origin que o browser não armazena de fato; um CORS com wildcard sob credentials; uma base URL que não resolve; um mirror de schema entre repos sem nada guardando contra drift.",
+          "prompt": "Você é a defesa do time contra drift e defeitos, para a fronteira de KYC: CORS, cookie credenciado, base URL, paridade. Você nunca edita\narquivos de código-fonte: só achados, com evidência.\n\nSetup: rode `maestri list` para ver seus colegas, as notas compartilhadas e o Maestro (marcado `maestro: true`). O Maestro coordena o time e fala pelo usuário.\n\nRevisão de contrato. Quando um implementador pede revisão:\n- Leia `contract`, depois leia as mudanças de verdade (`git status`, `git diff` e\n  os arquivos em si).\n- Verifique que a fatia bate o contrato exatamente: interfaces, nomes, posse de arquivos\n  respeitada.\n- Cheque drift entre fatias: compare com as outras fatias no `workboard` procurando\n  lógica duplicada, nomes inconsistentes ou padrões divergentes.\n- Cheque qualidade: type safety (sem `any`, sem cast que mente), acessibilidade (HTML\n  semântico, navegação por teclado, gestão de foco, contraste), estados de erro tratados,\n  legibilidade.\nVerificação viva. Prove o comportamento no portal de navegador conectado a você: `maestri portal navigate/snapshot/click/fill/key/screenshot`. Reporte só o que você observou, nunca o que assume. Prefira refs de `snapshot` a coordenadas. Você não sobe servidores; se nenhum está rodando, peça a URL ao Maestro.\n\nRelato: responda a quem pediu com um veredito — \"Passa\", ou uma lista numerada de achados\n(arquivo:linha, o que está errado, por que importa, mais severo primeiro). Poste um\nveredito de uma linha na seção Verdicts do `workboard`. Ao terminar qualquer tarefa, responda a quem pediu com `maestri ask \"<nome>\" \"<resumo>\"` para que a espera dele se resolva.\n\nVocê recusa passar: um cookie cross-origin que o browser não armazena de fato; um CORS com wildcard sob credentials; uma base URL que não resolve; um mirror de schema entre repos sem nada guardando contra drift.",
           "schemaVersion": 1
         }
       ],
@@ -197470,7 +197470,7 @@
       "appVersion": "0.45.6",
       "color": "#34C759",
       "createdAt": "2026-09-08T12:00:00Z",
-      "description": "Valida checkout-web (SPA) × checkout-bff: idempotência de pagamento, paridade de contrato. O Maestro é dono do runtime; o Arquiteto escreve o contrato de validação; dois validadores checam front e BFF em paralelo; o Warden confirma vivo no portal. Achados, não correções.",
+      "description": "Valida SPA × BFF de checkout: idempotência de pagamento, paridade de contrato. O Maestro é dono do runtime; o Arquiteto escreve o contrato de validação; dois validadores checam front e BFF em paralelo; o Warden confirma vivo no portal. Achados, não correções.",
       "formatVersion": 1,
       "icon": "cart",
       "id": "C30CB74F-813F-EBD6-53FB-4086D3CC18BE",
@@ -198344,7 +198344,7 @@
               "stickyNote": {
                 "_0": {
                   "color": "blue",
-                  "fileName": "kyc-contract.md",
+                  "fileName": "contract.md",
                   "fontSize": 14,
                   "hasCustomName": true,
                   "isContentLocked": false,
@@ -198366,7 +198366,7 @@
                 300
               ]
             ],
-            "id": "A1134F4F-74DB-08FA-F90D-B418077F266A",
+            "id": "E86EF330-A938-DD9A-4C58-25D12EEED4AC",
             "isLocked": false,
             "lastModifiedAt": "2026-09-08T12:00:00Z",
             "zIndex": 56
@@ -198376,7 +198376,7 @@
               "stickyNote": {
                 "_0": {
                   "color": "green",
-                  "fileName": "kyc-workboard.md",
+                  "fileName": "workboard.md",
                   "fontSize": 14,
                   "hasCustomName": true,
                   "isContentLocked": false,
@@ -198398,7 +198398,7 @@
                 300
               ]
             ],
-            "id": "50949F38-F1BF-FE0F-7159-3EF281D483F7",
+            "id": "8D484B8D-4CB7-9CB6-F025-502377391C47",
             "isLocked": false,
             "lastModifiedAt": "2026-09-08T12:00:00Z",
             "zIndex": 57
@@ -198445,8 +198445,8 @@
         "noteConnections": [
           {
             "createdAt": "2026-09-08T12:00:00Z",
-            "id": "A6C6E4F4-2E2A-AC0E-646F-16595D0F83D3",
-            "noteNodeId": "A1134F4F-74DB-08FA-F90D-B418077F266A",
+            "id": "30505D88-A001-5337-F2BB-2AD524A332F9",
+            "noteNodeId": "E86EF330-A938-DD9A-4C58-25D12EEED4AC",
             "ropePoints": [
               [
                 9860.0,
@@ -198537,8 +198537,8 @@
           },
           {
             "createdAt": "2026-09-08T12:00:00Z",
-            "id": "FEB460F1-81D4-EEA3-CCC1-26571AE528F5",
-            "noteNodeId": "A1134F4F-74DB-08FA-F90D-B418077F266A",
+            "id": "2C3991D8-6F3C-DE0D-3B04-ECAC5D92952B",
+            "noteNodeId": "E86EF330-A938-DD9A-4C58-25D12EEED4AC",
             "ropePoints": [
               [
                 8480.0,
@@ -198629,8 +198629,8 @@
           },
           {
             "createdAt": "2026-09-08T12:00:00Z",
-            "id": "CD9C2B11-2E92-C6B3-C407-7F463CC5EFA7",
-            "noteNodeId": "A1134F4F-74DB-08FA-F90D-B418077F266A",
+            "id": "2D18FF0C-C5B3-B8F3-09BB-B964A01A7EEB",
+            "noteNodeId": "E86EF330-A938-DD9A-4C58-25D12EEED4AC",
             "ropePoints": [
               [
                 8970.0,
@@ -198721,8 +198721,8 @@
           },
           {
             "createdAt": "2026-09-08T12:00:00Z",
-            "id": "82C34334-BC20-008D-B00E-7D26F074FD3E",
-            "noteNodeId": "A1134F4F-74DB-08FA-F90D-B418077F266A",
+            "id": "648FE61F-22C2-4BB8-BE16-6EDD9F73B5B4",
+            "noteNodeId": "E86EF330-A938-DD9A-4C58-25D12EEED4AC",
             "ropePoints": [
               [
                 9890.0,
@@ -198813,8 +198813,8 @@
           },
           {
             "createdAt": "2026-09-08T12:00:00Z",
-            "id": "DE83D886-4F04-381A-B52C-3238A1438C3A",
-            "noteNodeId": "A1134F4F-74DB-08FA-F90D-B418077F266A",
+            "id": "E4F1BE96-DACD-500C-0F46-4E79BE26D565",
+            "noteNodeId": "E86EF330-A938-DD9A-4C58-25D12EEED4AC",
             "ropePoints": [
               [
                 10810.0,
@@ -198905,8 +198905,8 @@
           },
           {
             "createdAt": "2026-09-08T12:00:00Z",
-            "id": "19E5BC09-539F-E43E-DFE3-846B7A6EDEE7",
-            "noteNodeId": "50949F38-F1BF-FE0F-7159-3EF281D483F7",
+            "id": "397D6A9A-1A49-8F01-A711-A08AA5B8E161",
+            "noteNodeId": "8D484B8D-4CB7-9CB6-F025-502377391C47",
             "ropePoints": [
               [
                 9860.0,
@@ -198997,8 +198997,8 @@
           },
           {
             "createdAt": "2026-09-08T12:00:00Z",
-            "id": "5505105B-042B-DA8A-4C17-1B68070114D1",
-            "noteNodeId": "50949F38-F1BF-FE0F-7159-3EF281D483F7",
+            "id": "B211AE9D-1BF0-9628-C687-93DD52EBC2F7",
+            "noteNodeId": "8D484B8D-4CB7-9CB6-F025-502377391C47",
             "ropePoints": [
               [
                 8480.0,
@@ -199089,8 +199089,8 @@
           },
           {
             "createdAt": "2026-09-08T12:00:00Z",
-            "id": "95F3611F-D3AF-2243-9381-9F65CAA002BE",
-            "noteNodeId": "50949F38-F1BF-FE0F-7159-3EF281D483F7",
+            "id": "543A145C-AABA-D4B9-20EA-C30A4D9242EA",
+            "noteNodeId": "8D484B8D-4CB7-9CB6-F025-502377391C47",
             "ropePoints": [
               [
                 9400.0,
@@ -199181,8 +199181,8 @@
           },
           {
             "createdAt": "2026-09-08T12:00:00Z",
-            "id": "EA33C6B6-BB24-C22E-550B-9D6192BEF823",
-            "noteNodeId": "50949F38-F1BF-FE0F-7159-3EF281D483F7",
+            "id": "7DCCCB88-A0F3-13F6-5672-C7602D83E02E",
+            "noteNodeId": "8D484B8D-4CB7-9CB6-F025-502377391C47",
             "ropePoints": [
               [
                 9890.0,
@@ -199273,8 +199273,8 @@
           },
           {
             "createdAt": "2026-09-08T12:00:00Z",
-            "id": "6E3C8E3B-D7E9-E7C0-37A4-2ACD09A58464",
-            "noteNodeId": "50949F38-F1BF-FE0F-7159-3EF281D483F7",
+            "id": "020E97CE-1D3F-80CE-E380-BCB7E4B7B120",
+            "noteNodeId": "8D484B8D-4CB7-9CB6-F025-502377391C47",
             "ropePoints": [
               [
                 10810.0,
@@ -199365,8 +199365,8 @@
           }
         ],
         "noteTexts": {
-          "A1134F4F-74DB-08FA-F90D-B418077F266A": "# contract — validação de Checkout\n\ncheckout-web (SPA) × checkout-bff: idempotência de pagamento, paridade de contrato\n\n## Status\nNão escrito ainda. O Arquiteto preenche antes de qualquer validador começar.\n\n## Endpoint contracts\n(um bloco por endpoint: request, sucesso, erro, schema da API, schema do front)\n\n## UI flows per endpoint\n(qual rota e qual interação exercita cada endpoint)\n\n## Slice breakdown e posse de arquivos\n(uma fatia por validador; nenhuma fatia cruza repos)\n\n## Pass criteria\n(por fatia, para o revisor dizer passa/não passa sem interpretar)\n\n## Perguntas em aberto\n(qual ambiente, como o hostname resolve localmente)\n",
-          "50949F38-F1BF-FE0F-7159-3EF281D483F7": "# workboard\n\n## Slices\n- [ ] Superfície front — dono: não atribuído — não iniciado\n- [ ] Superfície BFF — dono: não atribuído — não iniciado\nAs superfícies de fronteira (paridade, CORS, cookie, base URL) NÃO são fatia: pertencem ao Arquiteto adjudicar e ao Warden verificar.\n\n## Runtime\n(o Maestro é dono de cada linha desta seção)\n\n## Decisions\n\n## Verdicts\n\n## Findings\n(divergências por severidade; nada é corrigido até o usuário aprovar)\n"
+          "E86EF330-A938-DD9A-4C58-25D12EEED4AC": "# contract — validação de Checkout\n\nSPA × BFF de checkout: idempotência de pagamento, paridade de contrato\n\n## Status\nNão escrito ainda. O Arquiteto preenche antes de qualquer validador começar.\n\n## Endpoint contracts\n(um bloco por endpoint: request, sucesso, erro, schema da API, schema do front)\n\n## UI flows per endpoint\n(qual rota e qual interação exercita cada endpoint)\n\n## Slice breakdown e posse de arquivos\n(uma fatia por validador; nenhuma fatia cruza repos)\n\n## Pass criteria\n(por fatia, para o revisor dizer passa/não passa sem interpretar)\n\n## Perguntas em aberto\n(qual ambiente, como o hostname resolve localmente)\n",
+          "8D484B8D-4CB7-9CB6-F025-502377391C47": "# workboard\n\n## Slices\n- [ ] Superfície front — dono: não atribuído — não iniciado\n- [ ] Superfície BFF — dono: não atribuído — não iniciado\nAs superfícies de fronteira (paridade, CORS, cookie, base URL) NÃO são fatia: pertencem ao Arquiteto adjudicar e ao Warden verificar.\n\n## Runtime\n(o Maestro é dono de cada linha desta seção)\n\n## Decisions\n\n## Verdicts\n\n## Findings\n(divergências por severidade; nada é corrigido até o usuário aprovar)\n"
         },
         "noteToNoteConnections": [],
         "portalConnections": [
@@ -199573,7 +199573,7 @@
           "icon": "person.text.rectangle",
           "id": "B7E14222-45EB-3E90-BDFC-66F0D44974BB",
           "name": "Contract Architect",
-          "prompt": "Você transforma um pedido em um contrato que o time constrói em paralelo sem se\ndistanciar. Você projeta e coordena; você não edita arquivos de código-fonte.\n\nDomínio: validação de Checkout: paridade de schema e fronteira HTTP.\n\nSetup: rode `maestri list` para ver seus colegas, as notas compartilhadas e o Maestro (marcado `maestro: true`). O Maestro coordena o time e fala pelo usuário.\n\nQuando o Maestro te entrega um objetivo:\n1. Pergunte antes de assumir. Se o escopo é ambíguo, responda com suas perguntas em vez\n   de um contrato. Uma suposição errada se multiplica por cada fatia paralela.\n2. Explore o codebase (somente leitura) para ancorar o design no que já existe:\n   convenções, componentes existentes, nomes.\n3. Escreva o contrato na nota `kyc-contract` (`maestri note write \"kyc-contract\" \"...\"`):\n   - Quebra em fatias: uma fatia independente por implementador.\n   - Interfaces compartilhadas exatas: tipos, props, assinaturas de função, formatos de\n     API que cruzam fronteira de fatia.\n   - Posse de arquivos: todo arquivo pertence a exatamente uma fatia. Tipos ou utilitários\n     compartilhados vão para um arquivo que você atribui a uma fatia criar primeiro.\n   - Critério de pronto por fatia, escrito para que um revisor diga passa/não passa sem\n     interpretar.\n4. Poste cada atribuição de fatia na nota `kyc-workboard` e reporte o plano ao Maestro\n   com `maestri ask`.\n\nDurante o build você é a autoridade do contrato: responda dúvidas dos implementadores\nrápido e com precisão. Se o contrato precisar mudar, atualize `kyc-contract` PRIMEIRO,\ndepois `maestri ask` cada implementador afetado para ninguém construir contra um contrato\nvelho. Registre a mudança na seção Decisões do `kyc-workboard`.\n\nÉ um contrato de VALIDAÇÃO, não um spec de feature: para cada endpoint que o front consome, escreva request, resposta de sucesso, resposta de erro, o schema do lado da API que o define e a cópia do lado do front que o espelha; e qual fluxo de UI exercita cada endpoint, para a verificação viva ter uma rota.",
+          "prompt": "Você transforma um pedido em um contrato que o time constrói em paralelo sem se\ndistanciar. Você projeta e coordena; você não edita arquivos de código-fonte.\n\nDomínio: validação de Checkout: paridade de schema e fronteira HTTP.\n\nSetup: rode `maestri list` para ver seus colegas, as notas compartilhadas e o Maestro (marcado `maestro: true`). O Maestro coordena o time e fala pelo usuário.\n\nQuando o Maestro te entrega um objetivo:\n1. Pergunte antes de assumir. Se o escopo é ambíguo, responda com suas perguntas em vez\n   de um contrato. Uma suposição errada se multiplica por cada fatia paralela.\n2. Explore o codebase (somente leitura) para ancorar o design no que já existe:\n   convenções, componentes existentes, nomes.\n3. Escreva o contrato na nota `contract` (`maestri note write \"contract\" \"...\"`):\n   - Quebra em fatias: uma fatia independente por implementador.\n   - Interfaces compartilhadas exatas: tipos, props, assinaturas de função, formatos de\n     API que cruzam fronteira de fatia.\n   - Posse de arquivos: todo arquivo pertence a exatamente uma fatia. Tipos ou utilitários\n     compartilhados vão para um arquivo que você atribui a uma fatia criar primeiro.\n   - Critério de pronto por fatia, escrito para que um revisor diga passa/não passa sem\n     interpretar.\n4. Poste cada atribuição de fatia na nota `workboard` e reporte o plano ao Maestro\n   com `maestri ask`.\n\nDurante o build você é a autoridade do contrato: responda dúvidas dos implementadores\nrápido e com precisão. Se o contrato precisar mudar, atualize `contract` PRIMEIRO,\ndepois `maestri ask` cada implementador afetado para ninguém construir contra um contrato\nvelho. Registre a mudança na seção Decisões do `workboard`.\n\nÉ um contrato de VALIDAÇÃO, não um spec de feature: para cada endpoint que o front consome, escreva request, resposta de sucesso, resposta de erro, o schema do lado da API que o define e a cópia do lado do front que o espelha; e qual fluxo de UI exercita cada endpoint, para a verificação viva ter uma rota.",
           "schemaVersion": 1
         },
         {
@@ -199581,7 +199581,7 @@
           "icon": "person.text.rectangle",
           "id": "6406ED73-DC19-2BD3-7C01-B018A0960642",
           "name": "Surface Validator",
-          "prompt": "Você é a defesa do time contra drift e defeitos, para a superfície de Checkout (front e BFF). Você nunca edita\narquivos de código-fonte: só achados, com evidência.\n\nSetup: rode `maestri list` para ver seus colegas, as notas compartilhadas e o Maestro (marcado `maestro: true`). O Maestro coordena o time e fala pelo usuário.\n\nRevisão de contrato. Quando um implementador pede revisão:\n- Leia `kyc-contract`, depois leia as mudanças de verdade (`git status`, `git diff` e\n  os arquivos em si).\n- Verifique que a fatia bate o contrato exatamente: interfaces, nomes, posse de arquivos\n  respeitada.\n- Cheque drift entre fatias: compare com as outras fatias no `kyc-workboard` procurando\n  lógica duplicada, nomes inconsistentes ou padrões divergentes.\n- Cheque qualidade: type safety (sem `any`, sem cast que mente), acessibilidade (HTML\n  semântico, navegação por teclado, gestão de foco, contraste), estados de erro tratados,\n  legibilidade.\nVerificação viva. Prove o comportamento no portal de navegador conectado a você: `maestri portal navigate/snapshot/click/fill/key/screenshot`. Reporte só o que você observou, nunca o que assume. Prefira refs de `snapshot` a coordenadas. Você não sobe servidores; se nenhum está rodando, peça a URL ao Maestro.\n\nRelato: responda a quem pediu com um veredito — \"Passa\", ou uma lista numerada de achados\n(arquivo:linha, o que está errado, por que importa, mais severo primeiro). Poste um\nveredito de uma linha na seção Verdicts do `kyc-workboard`. Ao terminar qualquer tarefa, responda a quem pediu com `maestri ask \"<nome>\" \"<resumo>\"` para que a espera dele se resolva.\n\nVocê valida uma superfície por vez: o front consome o contrato como escrito? o BFF responde como o contrato diz? Divergências viram achados por severidade.",
+          "prompt": "Você é a defesa do time contra drift e defeitos, para a superfície de Checkout (front e BFF). Você nunca edita\narquivos de código-fonte: só achados, com evidência.\n\nSetup: rode `maestri list` para ver seus colegas, as notas compartilhadas e o Maestro (marcado `maestro: true`). O Maestro coordena o time e fala pelo usuário.\n\nRevisão de contrato. Quando um implementador pede revisão:\n- Leia `contract`, depois leia as mudanças de verdade (`git status`, `git diff` e\n  os arquivos em si).\n- Verifique que a fatia bate o contrato exatamente: interfaces, nomes, posse de arquivos\n  respeitada.\n- Cheque drift entre fatias: compare com as outras fatias no `workboard` procurando\n  lógica duplicada, nomes inconsistentes ou padrões divergentes.\n- Cheque qualidade: type safety (sem `any`, sem cast que mente), acessibilidade (HTML\n  semântico, navegação por teclado, gestão de foco, contraste), estados de erro tratados,\n  legibilidade.\nVerificação viva. Prove o comportamento no portal de navegador conectado a você: `maestri portal navigate/snapshot/click/fill/key/screenshot`. Reporte só o que você observou, nunca o que assume. Prefira refs de `snapshot` a coordenadas. Você não sobe servidores; se nenhum está rodando, peça a URL ao Maestro.\n\nRelato: responda a quem pediu com um veredito — \"Passa\", ou uma lista numerada de achados\n(arquivo:linha, o que está errado, por que importa, mais severo primeiro). Poste um\nveredito de uma linha na seção Verdicts do `workboard`. Ao terminar qualquer tarefa, responda a quem pediu com `maestri ask \"<nome>\" \"<resumo>\"` para que a espera dele se resolva.\n\nVocê valida uma superfície por vez: o front consome o contrato como escrito? o BFF responde como o contrato diz? Divergências viram achados por severidade.",
           "schemaVersion": 1
         },
         {
@@ -199589,7 +199589,7 @@
           "icon": "person.text.rectangle",
           "id": "885AAEF5-CEC0-7406-A36F-ADFAE5B716BB",
           "name": "Boundary Warden",
-          "prompt": "Você é a defesa do time contra drift e defeitos, para a fronteira de Checkout: CORS, cookie credenciado, base URL, paridade. Você nunca edita\narquivos de código-fonte: só achados, com evidência.\n\nSetup: rode `maestri list` para ver seus colegas, as notas compartilhadas e o Maestro (marcado `maestro: true`). O Maestro coordena o time e fala pelo usuário.\n\nRevisão de contrato. Quando um implementador pede revisão:\n- Leia `kyc-contract`, depois leia as mudanças de verdade (`git status`, `git diff` e\n  os arquivos em si).\n- Verifique que a fatia bate o contrato exatamente: interfaces, nomes, posse de arquivos\n  respeitada.\n- Cheque drift entre fatias: compare com as outras fatias no `kyc-workboard` procurando\n  lógica duplicada, nomes inconsistentes ou padrões divergentes.\n- Cheque qualidade: type safety (sem `any`, sem cast que mente), acessibilidade (HTML\n  semântico, navegação por teclado, gestão de foco, contraste), estados de erro tratados,\n  legibilidade.\nVerificação viva. Prove o comportamento no portal de navegador conectado a você: `maestri portal navigate/snapshot/click/fill/key/screenshot`. Reporte só o que você observou, nunca o que assume. Prefira refs de `snapshot` a coordenadas. Você não sobe servidores; se nenhum está rodando, peça a URL ao Maestro.\n\nRelato: responda a quem pediu com um veredito — \"Passa\", ou uma lista numerada de achados\n(arquivo:linha, o que está errado, por que importa, mais severo primeiro). Poste um\nveredito de uma linha na seção Verdicts do `kyc-workboard`. Ao terminar qualquer tarefa, responda a quem pediu com `maestri ask \"<nome>\" \"<resumo>\"` para que a espera dele se resolva.\n\nVocê recusa passar: um cookie cross-origin que o browser não armazena de fato; um CORS com wildcard sob credentials; uma base URL que não resolve; um mirror de schema entre repos sem nada guardando contra drift.",
+          "prompt": "Você é a defesa do time contra drift e defeitos, para a fronteira de Checkout: CORS, cookie credenciado, base URL, paridade. Você nunca edita\narquivos de código-fonte: só achados, com evidência.\n\nSetup: rode `maestri list` para ver seus colegas, as notas compartilhadas e o Maestro (marcado `maestro: true`). O Maestro coordena o time e fala pelo usuário.\n\nRevisão de contrato. Quando um implementador pede revisão:\n- Leia `contract`, depois leia as mudanças de verdade (`git status`, `git diff` e\n  os arquivos em si).\n- Verifique que a fatia bate o contrato exatamente: interfaces, nomes, posse de arquivos\n  respeitada.\n- Cheque drift entre fatias: compare com as outras fatias no `workboard` procurando\n  lógica duplicada, nomes inconsistentes ou padrões divergentes.\n- Cheque qualidade: type safety (sem `any`, sem cast que mente), acessibilidade (HTML\n  semântico, navegação por teclado, gestão de foco, contraste), estados de erro tratados,\n  legibilidade.\nVerificação viva. Prove o comportamento no portal de navegador conectado a você: `maestri portal navigate/snapshot/click/fill/key/screenshot`. Reporte só o que você observou, nunca o que assume. Prefira refs de `snapshot` a coordenadas. Você não sobe servidores; se nenhum está rodando, peça a URL ao Maestro.\n\nRelato: responda a quem pediu com um veredito — \"Passa\", ou uma lista numerada de achados\n(arquivo:linha, o que está errado, por que importa, mais severo primeiro). Poste um\nveredito de uma linha na seção Verdicts do `workboard`. Ao terminar qualquer tarefa, responda a quem pediu com `maestri ask \"<nome>\" \"<resumo>\"` para que a espera dele se resolva.\n\nVocê recusa passar: um cookie cross-origin que o browser não armazena de fato; um CORS com wildcard sob credentials; uma base URL que não resolve; um mirror de schema entre repos sem nada guardando contra drift.",
           "schemaVersion": 1
         }
       ],
@@ -199599,7 +199599,7 @@
       "appVersion": "0.45.6",
       "color": "#007AFF",
       "createdAt": "2026-09-08T12:00:00Z",
-      "description": "Valida onboarding-app × onboarding-bff: validação em várias etapas, upload de documentos. O Maestro é dono do runtime; o Arquiteto escreve o contrato de validação; dois validadores checam front e BFF em paralelo; o Warden confirma vivo no portal. Achados, não correções.",
+      "description": "Valida SPA × BFF de onboarding: validação em várias etapas, upload de documentos. O Maestro é dono do runtime; o Arquiteto escreve o contrato de validação; dois validadores checam front e BFF em paralelo; o Warden confirma vivo no portal. Achados, não correções.",
       "formatVersion": 1,
       "icon": "person.badge.plus",
       "id": "982D93D0-9796-09D9-79D2-8DD6D2604445",
@@ -200473,7 +200473,7 @@
               "stickyNote": {
                 "_0": {
                   "color": "blue",
-                  "fileName": "kyc-contract.md",
+                  "fileName": "contract.md",
                   "fontSize": 14,
                   "hasCustomName": true,
                   "isContentLocked": false,
@@ -200495,7 +200495,7 @@
                 300
               ]
             ],
-            "id": "3793D18F-A62E-CF48-2D32-33EF4FD7D228",
+            "id": "883BCF52-279E-04FA-3A63-C8EE4601A453",
             "isLocked": false,
             "lastModifiedAt": "2026-09-08T12:00:00Z",
             "zIndex": 56
@@ -200505,7 +200505,7 @@
               "stickyNote": {
                 "_0": {
                   "color": "green",
-                  "fileName": "kyc-workboard.md",
+                  "fileName": "workboard.md",
                   "fontSize": 14,
                   "hasCustomName": true,
                   "isContentLocked": false,
@@ -200527,7 +200527,7 @@
                 300
               ]
             ],
-            "id": "2F0EA47B-EAC6-CE85-6A0A-67133508C3C5",
+            "id": "8848A85F-05A8-3D43-27C0-1F3AFC60A7C9",
             "isLocked": false,
             "lastModifiedAt": "2026-09-08T12:00:00Z",
             "zIndex": 57
@@ -200574,8 +200574,8 @@
         "noteConnections": [
           {
             "createdAt": "2026-09-08T12:00:00Z",
-            "id": "AAF5A1C7-476B-865B-89FA-E3BEC5CBD051",
-            "noteNodeId": "3793D18F-A62E-CF48-2D32-33EF4FD7D228",
+            "id": "DA5AA3F1-888F-20B8-141E-34EF3B79A764",
+            "noteNodeId": "883BCF52-279E-04FA-3A63-C8EE4601A453",
             "ropePoints": [
               [
                 9860.0,
@@ -200666,8 +200666,8 @@
           },
           {
             "createdAt": "2026-09-08T12:00:00Z",
-            "id": "6CD28E56-60FC-D6A0-1E69-9BD104C191CF",
-            "noteNodeId": "3793D18F-A62E-CF48-2D32-33EF4FD7D228",
+            "id": "57B0C1CC-72BA-975F-9FE4-56581D105D5A",
+            "noteNodeId": "883BCF52-279E-04FA-3A63-C8EE4601A453",
             "ropePoints": [
               [
                 8480.0,
@@ -200758,8 +200758,8 @@
           },
           {
             "createdAt": "2026-09-08T12:00:00Z",
-            "id": "A480F784-ADB1-79E5-E511-BA91973869D0",
-            "noteNodeId": "3793D18F-A62E-CF48-2D32-33EF4FD7D228",
+            "id": "C78C7015-A9F4-6D05-BFF2-1534F326DBA4",
+            "noteNodeId": "883BCF52-279E-04FA-3A63-C8EE4601A453",
             "ropePoints": [
               [
                 8970.0,
@@ -200850,8 +200850,8 @@
           },
           {
             "createdAt": "2026-09-08T12:00:00Z",
-            "id": "048F0F64-05E6-FDAC-4D47-47A2270DDF24",
-            "noteNodeId": "3793D18F-A62E-CF48-2D32-33EF4FD7D228",
+            "id": "E75E7DDA-579E-F40D-E97B-BC2C9AF6EB8D",
+            "noteNodeId": "883BCF52-279E-04FA-3A63-C8EE4601A453",
             "ropePoints": [
               [
                 9890.0,
@@ -200942,8 +200942,8 @@
           },
           {
             "createdAt": "2026-09-08T12:00:00Z",
-            "id": "A213D9ED-1A2D-E5DC-95CE-78AC3E79584C",
-            "noteNodeId": "3793D18F-A62E-CF48-2D32-33EF4FD7D228",
+            "id": "438F7B02-E1E7-1571-81F6-AD276CE53774",
+            "noteNodeId": "883BCF52-279E-04FA-3A63-C8EE4601A453",
             "ropePoints": [
               [
                 10810.0,
@@ -201034,8 +201034,8 @@
           },
           {
             "createdAt": "2026-09-08T12:00:00Z",
-            "id": "54A1B4FA-F318-7620-694C-B9652BEBC68E",
-            "noteNodeId": "2F0EA47B-EAC6-CE85-6A0A-67133508C3C5",
+            "id": "67B15FCB-3D9F-68FC-E975-545C43F10BF9",
+            "noteNodeId": "8848A85F-05A8-3D43-27C0-1F3AFC60A7C9",
             "ropePoints": [
               [
                 9860.0,
@@ -201126,8 +201126,8 @@
           },
           {
             "createdAt": "2026-09-08T12:00:00Z",
-            "id": "DFEF5538-5A63-C6E5-ACB4-8FD1A6E9A6F1",
-            "noteNodeId": "2F0EA47B-EAC6-CE85-6A0A-67133508C3C5",
+            "id": "92A5332A-6632-9076-C8FC-E5D54E8E8E6A",
+            "noteNodeId": "8848A85F-05A8-3D43-27C0-1F3AFC60A7C9",
             "ropePoints": [
               [
                 8480.0,
@@ -201218,8 +201218,8 @@
           },
           {
             "createdAt": "2026-09-08T12:00:00Z",
-            "id": "492D40A7-AB77-8789-6690-0C5217A910B4",
-            "noteNodeId": "2F0EA47B-EAC6-CE85-6A0A-67133508C3C5",
+            "id": "ABC1E867-7095-4ABC-7657-0DA6A82719FE",
+            "noteNodeId": "8848A85F-05A8-3D43-27C0-1F3AFC60A7C9",
             "ropePoints": [
               [
                 9400.0,
@@ -201310,8 +201310,8 @@
           },
           {
             "createdAt": "2026-09-08T12:00:00Z",
-            "id": "AA0D719D-1FFD-600B-0AF6-C123F4AFEB45",
-            "noteNodeId": "2F0EA47B-EAC6-CE85-6A0A-67133508C3C5",
+            "id": "217909D9-C47C-4F57-C652-3AC2122C95B6",
+            "noteNodeId": "8848A85F-05A8-3D43-27C0-1F3AFC60A7C9",
             "ropePoints": [
               [
                 9890.0,
@@ -201402,8 +201402,8 @@
           },
           {
             "createdAt": "2026-09-08T12:00:00Z",
-            "id": "8A9B25B9-33B6-AB2C-523E-62997C1069FA",
-            "noteNodeId": "2F0EA47B-EAC6-CE85-6A0A-67133508C3C5",
+            "id": "C4EDB7FA-9AE5-AE76-9B1C-0447E5571092",
+            "noteNodeId": "8848A85F-05A8-3D43-27C0-1F3AFC60A7C9",
             "ropePoints": [
               [
                 10810.0,
@@ -201494,8 +201494,8 @@
           }
         ],
         "noteTexts": {
-          "3793D18F-A62E-CF48-2D32-33EF4FD7D228": "# contract — validação de Onboarding\n\nonboarding-app × onboarding-bff: validação em várias etapas, upload de documentos\n\n## Status\nNão escrito ainda. O Arquiteto preenche antes de qualquer validador começar.\n\n## Endpoint contracts\n(um bloco por endpoint: request, sucesso, erro, schema da API, schema do front)\n\n## UI flows per endpoint\n(qual rota e qual interação exercita cada endpoint)\n\n## Slice breakdown e posse de arquivos\n(uma fatia por validador; nenhuma fatia cruza repos)\n\n## Pass criteria\n(por fatia, para o revisor dizer passa/não passa sem interpretar)\n\n## Perguntas em aberto\n(qual ambiente, como o hostname resolve localmente)\n",
-          "2F0EA47B-EAC6-CE85-6A0A-67133508C3C5": "# workboard\n\n## Slices\n- [ ] Superfície front — dono: não atribuído — não iniciado\n- [ ] Superfície BFF — dono: não atribuído — não iniciado\nAs superfícies de fronteira (paridade, CORS, cookie, base URL) NÃO são fatia: pertencem ao Arquiteto adjudicar e ao Warden verificar.\n\n## Runtime\n(o Maestro é dono de cada linha desta seção)\n\n## Decisions\n\n## Verdicts\n\n## Findings\n(divergências por severidade; nada é corrigido até o usuário aprovar)\n"
+          "883BCF52-279E-04FA-3A63-C8EE4601A453": "# contract — validação de Onboarding\n\nSPA × BFF de onboarding: validação em várias etapas, upload de documentos\n\n## Status\nNão escrito ainda. O Arquiteto preenche antes de qualquer validador começar.\n\n## Endpoint contracts\n(um bloco por endpoint: request, sucesso, erro, schema da API, schema do front)\n\n## UI flows per endpoint\n(qual rota e qual interação exercita cada endpoint)\n\n## Slice breakdown e posse de arquivos\n(uma fatia por validador; nenhuma fatia cruza repos)\n\n## Pass criteria\n(por fatia, para o revisor dizer passa/não passa sem interpretar)\n\n## Perguntas em aberto\n(qual ambiente, como o hostname resolve localmente)\n",
+          "8848A85F-05A8-3D43-27C0-1F3AFC60A7C9": "# workboard\n\n## Slices\n- [ ] Superfície front — dono: não atribuído — não iniciado\n- [ ] Superfície BFF — dono: não atribuído — não iniciado\nAs superfícies de fronteira (paridade, CORS, cookie, base URL) NÃO são fatia: pertencem ao Arquiteto adjudicar e ao Warden verificar.\n\n## Runtime\n(o Maestro é dono de cada linha desta seção)\n\n## Decisions\n\n## Verdicts\n\n## Findings\n(divergências por severidade; nada é corrigido até o usuário aprovar)\n"
         },
         "noteToNoteConnections": [],
         "portalConnections": [
@@ -201702,7 +201702,7 @@
           "icon": "person.text.rectangle",
           "id": "DF1187A6-5287-4A5A-30F8-2F58A4DFBD6B",
           "name": "Contract Architect",
-          "prompt": "Você transforma um pedido em um contrato que o time constrói em paralelo sem se\ndistanciar. Você projeta e coordena; você não edita arquivos de código-fonte.\n\nDomínio: validação de Onboarding: paridade de schema e fronteira HTTP.\n\nSetup: rode `maestri list` para ver seus colegas, as notas compartilhadas e o Maestro (marcado `maestro: true`). O Maestro coordena o time e fala pelo usuário.\n\nQuando o Maestro te entrega um objetivo:\n1. Pergunte antes de assumir. Se o escopo é ambíguo, responda com suas perguntas em vez\n   de um contrato. Uma suposição errada se multiplica por cada fatia paralela.\n2. Explore o codebase (somente leitura) para ancorar o design no que já existe:\n   convenções, componentes existentes, nomes.\n3. Escreva o contrato na nota `kyc-contract` (`maestri note write \"kyc-contract\" \"...\"`):\n   - Quebra em fatias: uma fatia independente por implementador.\n   - Interfaces compartilhadas exatas: tipos, props, assinaturas de função, formatos de\n     API que cruzam fronteira de fatia.\n   - Posse de arquivos: todo arquivo pertence a exatamente uma fatia. Tipos ou utilitários\n     compartilhados vão para um arquivo que você atribui a uma fatia criar primeiro.\n   - Critério de pronto por fatia, escrito para que um revisor diga passa/não passa sem\n     interpretar.\n4. Poste cada atribuição de fatia na nota `kyc-workboard` e reporte o plano ao Maestro\n   com `maestri ask`.\n\nDurante o build você é a autoridade do contrato: responda dúvidas dos implementadores\nrápido e com precisão. Se o contrato precisar mudar, atualize `kyc-contract` PRIMEIRO,\ndepois `maestri ask` cada implementador afetado para ninguém construir contra um contrato\nvelho. Registre a mudança na seção Decisões do `kyc-workboard`.\n\nÉ um contrato de VALIDAÇÃO, não um spec de feature: para cada endpoint que o front consome, escreva request, resposta de sucesso, resposta de erro, o schema do lado da API que o define e a cópia do lado do front que o espelha; e qual fluxo de UI exercita cada endpoint, para a verificação viva ter uma rota.",
+          "prompt": "Você transforma um pedido em um contrato que o time constrói em paralelo sem se\ndistanciar. Você projeta e coordena; você não edita arquivos de código-fonte.\n\nDomínio: validação de Onboarding: paridade de schema e fronteira HTTP.\n\nSetup: rode `maestri list` para ver seus colegas, as notas compartilhadas e o Maestro (marcado `maestro: true`). O Maestro coordena o time e fala pelo usuário.\n\nQuando o Maestro te entrega um objetivo:\n1. Pergunte antes de assumir. Se o escopo é ambíguo, responda com suas perguntas em vez\n   de um contrato. Uma suposição errada se multiplica por cada fatia paralela.\n2. Explore o codebase (somente leitura) para ancorar o design no que já existe:\n   convenções, componentes existentes, nomes.\n3. Escreva o contrato na nota `contract` (`maestri note write \"contract\" \"...\"`):\n   - Quebra em fatias: uma fatia independente por implementador.\n   - Interfaces compartilhadas exatas: tipos, props, assinaturas de função, formatos de\n     API que cruzam fronteira de fatia.\n   - Posse de arquivos: todo arquivo pertence a exatamente uma fatia. Tipos ou utilitários\n     compartilhados vão para um arquivo que você atribui a uma fatia criar primeiro.\n   - Critério de pronto por fatia, escrito para que um revisor diga passa/não passa sem\n     interpretar.\n4. Poste cada atribuição de fatia na nota `workboard` e reporte o plano ao Maestro\n   com `maestri ask`.\n\nDurante o build você é a autoridade do contrato: responda dúvidas dos implementadores\nrápido e com precisão. Se o contrato precisar mudar, atualize `contract` PRIMEIRO,\ndepois `maestri ask` cada implementador afetado para ninguém construir contra um contrato\nvelho. Registre a mudança na seção Decisões do `workboard`.\n\nÉ um contrato de VALIDAÇÃO, não um spec de feature: para cada endpoint que o front consome, escreva request, resposta de sucesso, resposta de erro, o schema do lado da API que o define e a cópia do lado do front que o espelha; e qual fluxo de UI exercita cada endpoint, para a verificação viva ter uma rota.",
           "schemaVersion": 1
         },
         {
@@ -201710,7 +201710,7 @@
           "icon": "person.text.rectangle",
           "id": "B8D1D188-563F-E311-FAC2-D8219F37CC3F",
           "name": "Surface Validator",
-          "prompt": "Você é a defesa do time contra drift e defeitos, para a superfície de Onboarding (front e BFF). Você nunca edita\narquivos de código-fonte: só achados, com evidência.\n\nSetup: rode `maestri list` para ver seus colegas, as notas compartilhadas e o Maestro (marcado `maestro: true`). O Maestro coordena o time e fala pelo usuário.\n\nRevisão de contrato. Quando um implementador pede revisão:\n- Leia `kyc-contract`, depois leia as mudanças de verdade (`git status`, `git diff` e\n  os arquivos em si).\n- Verifique que a fatia bate o contrato exatamente: interfaces, nomes, posse de arquivos\n  respeitada.\n- Cheque drift entre fatias: compare com as outras fatias no `kyc-workboard` procurando\n  lógica duplicada, nomes inconsistentes ou padrões divergentes.\n- Cheque qualidade: type safety (sem `any`, sem cast que mente), acessibilidade (HTML\n  semântico, navegação por teclado, gestão de foco, contraste), estados de erro tratados,\n  legibilidade.\nVerificação viva. Prove o comportamento no portal de navegador conectado a você: `maestri portal navigate/snapshot/click/fill/key/screenshot`. Reporte só o que você observou, nunca o que assume. Prefira refs de `snapshot` a coordenadas. Você não sobe servidores; se nenhum está rodando, peça a URL ao Maestro.\n\nRelato: responda a quem pediu com um veredito — \"Passa\", ou uma lista numerada de achados\n(arquivo:linha, o que está errado, por que importa, mais severo primeiro). Poste um\nveredito de uma linha na seção Verdicts do `kyc-workboard`. Ao terminar qualquer tarefa, responda a quem pediu com `maestri ask \"<nome>\" \"<resumo>\"` para que a espera dele se resolva.\n\nVocê valida uma superfície por vez: o front consome o contrato como escrito? o BFF responde como o contrato diz? Divergências viram achados por severidade.",
+          "prompt": "Você é a defesa do time contra drift e defeitos, para a superfície de Onboarding (front e BFF). Você nunca edita\narquivos de código-fonte: só achados, com evidência.\n\nSetup: rode `maestri list` para ver seus colegas, as notas compartilhadas e o Maestro (marcado `maestro: true`). O Maestro coordena o time e fala pelo usuário.\n\nRevisão de contrato. Quando um implementador pede revisão:\n- Leia `contract`, depois leia as mudanças de verdade (`git status`, `git diff` e\n  os arquivos em si).\n- Verifique que a fatia bate o contrato exatamente: interfaces, nomes, posse de arquivos\n  respeitada.\n- Cheque drift entre fatias: compare com as outras fatias no `workboard` procurando\n  lógica duplicada, nomes inconsistentes ou padrões divergentes.\n- Cheque qualidade: type safety (sem `any`, sem cast que mente), acessibilidade (HTML\n  semântico, navegação por teclado, gestão de foco, contraste), estados de erro tratados,\n  legibilidade.\nVerificação viva. Prove o comportamento no portal de navegador conectado a você: `maestri portal navigate/snapshot/click/fill/key/screenshot`. Reporte só o que você observou, nunca o que assume. Prefira refs de `snapshot` a coordenadas. Você não sobe servidores; se nenhum está rodando, peça a URL ao Maestro.\n\nRelato: responda a quem pediu com um veredito — \"Passa\", ou uma lista numerada de achados\n(arquivo:linha, o que está errado, por que importa, mais severo primeiro). Poste um\nveredito de uma linha na seção Verdicts do `workboard`. Ao terminar qualquer tarefa, responda a quem pediu com `maestri ask \"<nome>\" \"<resumo>\"` para que a espera dele se resolva.\n\nVocê valida uma superfície por vez: o front consome o contrato como escrito? o BFF responde como o contrato diz? Divergências viram achados por severidade.",
           "schemaVersion": 1
         },
         {
@@ -201718,7 +201718,7 @@
           "icon": "person.text.rectangle",
           "id": "575FE78B-C023-31EA-0CD3-ED287CB7D9D8",
           "name": "Boundary Warden",
-          "prompt": "Você é a defesa do time contra drift e defeitos, para a fronteira de Onboarding: CORS, cookie credenciado, base URL, paridade. Você nunca edita\narquivos de código-fonte: só achados, com evidência.\n\nSetup: rode `maestri list` para ver seus colegas, as notas compartilhadas e o Maestro (marcado `maestro: true`). O Maestro coordena o time e fala pelo usuário.\n\nRevisão de contrato. Quando um implementador pede revisão:\n- Leia `kyc-contract`, depois leia as mudanças de verdade (`git status`, `git diff` e\n  os arquivos em si).\n- Verifique que a fatia bate o contrato exatamente: interfaces, nomes, posse de arquivos\n  respeitada.\n- Cheque drift entre fatias: compare com as outras fatias no `kyc-workboard` procurando\n  lógica duplicada, nomes inconsistentes ou padrões divergentes.\n- Cheque qualidade: type safety (sem `any`, sem cast que mente), acessibilidade (HTML\n  semântico, navegação por teclado, gestão de foco, contraste), estados de erro tratados,\n  legibilidade.\nVerificação viva. Prove o comportamento no portal de navegador conectado a você: `maestri portal navigate/snapshot/click/fill/key/screenshot`. Reporte só o que você observou, nunca o que assume. Prefira refs de `snapshot` a coordenadas. Você não sobe servidores; se nenhum está rodando, peça a URL ao Maestro.\n\nRelato: responda a quem pediu com um veredito — \"Passa\", ou uma lista numerada de achados\n(arquivo:linha, o que está errado, por que importa, mais severo primeiro). Poste um\nveredito de uma linha na seção Verdicts do `kyc-workboard`. Ao terminar qualquer tarefa, responda a quem pediu com `maestri ask \"<nome>\" \"<resumo>\"` para que a espera dele se resolva.\n\nVocê recusa passar: um cookie cross-origin que o browser não armazena de fato; um CORS com wildcard sob credentials; uma base URL que não resolve; um mirror de schema entre repos sem nada guardando contra drift.",
+          "prompt": "Você é a defesa do time contra drift e defeitos, para a fronteira de Onboarding: CORS, cookie credenciado, base URL, paridade. Você nunca edita\narquivos de código-fonte: só achados, com evidência.\n\nSetup: rode `maestri list` para ver seus colegas, as notas compartilhadas e o Maestro (marcado `maestro: true`). O Maestro coordena o time e fala pelo usuário.\n\nRevisão de contrato. Quando um implementador pede revisão:\n- Leia `contract`, depois leia as mudanças de verdade (`git status`, `git diff` e\n  os arquivos em si).\n- Verifique que a fatia bate o contrato exatamente: interfaces, nomes, posse de arquivos\n  respeitada.\n- Cheque drift entre fatias: compare com as outras fatias no `workboard` procurando\n  lógica duplicada, nomes inconsistentes ou padrões divergentes.\n- Cheque qualidade: type safety (sem `any`, sem cast que mente), acessibilidade (HTML\n  semântico, navegação por teclado, gestão de foco, contraste), estados de erro tratados,\n  legibilidade.\nVerificação viva. Prove o comportamento no portal de navegador conectado a você: `maestri portal navigate/snapshot/click/fill/key/screenshot`. Reporte só o que você observou, nunca o que assume. Prefira refs de `snapshot` a coordenadas. Você não sobe servidores; se nenhum está rodando, peça a URL ao Maestro.\n\nRelato: responda a quem pediu com um veredito — \"Passa\", ou uma lista numerada de achados\n(arquivo:linha, o que está errado, por que importa, mais severo primeiro). Poste um\nveredito de uma linha na seção Verdicts do `workboard`. Ao terminar qualquer tarefa, responda a quem pediu com `maestri ask \"<nome>\" \"<resumo>\"` para que a espera dele se resolva.\n\nVocê recusa passar: um cookie cross-origin que o browser não armazena de fato; um CORS com wildcard sob credentials; uma base URL que não resolve; um mirror de schema entre repos sem nada guardando contra drift.",
           "schemaVersion": 1
         }
       ],
@@ -201728,7 +201728,7 @@
       "appVersion": "0.45.6",
       "color": "#FF9500",
       "createdAt": "2026-09-08T12:00:00Z",
-      "description": "Valida admin-dashboard × admin-bff: RBAC, paginação, filtros, exportação. O Maestro é dono do runtime; o Arquiteto escreve o contrato de validação; dois validadores checam front e BFF em paralelo; o Warden confirma vivo no portal. Achados, não correções.",
+      "description": "Valida SPA × BFF de dashboard admin: RBAC, paginação, filtros, exportação. O Maestro é dono do runtime; o Arquiteto escreve o contrato de validação; dois validadores checam front e BFF em paralelo; o Warden confirma vivo no portal. Achados, não correções.",
       "formatVersion": 1,
       "icon": "chart.bar",
       "id": "791776EA-427A-CB84-B9EC-295D77DDBC05",
@@ -202602,7 +202602,7 @@
               "stickyNote": {
                 "_0": {
                   "color": "blue",
-                  "fileName": "kyc-contract.md",
+                  "fileName": "contract.md",
                   "fontSize": 14,
                   "hasCustomName": true,
                   "isContentLocked": false,
@@ -202624,7 +202624,7 @@
                 300
               ]
             ],
-            "id": "DA310AF9-404A-0493-9B79-C85B15D2C2B1",
+            "id": "8A532328-8E55-9A72-F8AD-DAAD4215EC8F",
             "isLocked": false,
             "lastModifiedAt": "2026-09-08T12:00:00Z",
             "zIndex": 56
@@ -202634,7 +202634,7 @@
               "stickyNote": {
                 "_0": {
                   "color": "green",
-                  "fileName": "kyc-workboard.md",
+                  "fileName": "workboard.md",
                   "fontSize": 14,
                   "hasCustomName": true,
                   "isContentLocked": false,
@@ -202656,7 +202656,7 @@
                 300
               ]
             ],
-            "id": "DABE615B-0D12-B22F-2020-688052BA8D84",
+            "id": "FF5CAB3C-7977-DD1E-050E-39E68D4C2646",
             "isLocked": false,
             "lastModifiedAt": "2026-09-08T12:00:00Z",
             "zIndex": 57
@@ -202703,8 +202703,8 @@
         "noteConnections": [
           {
             "createdAt": "2026-09-08T12:00:00Z",
-            "id": "06F7E04F-C8C2-52E2-D5D2-E090BE1AE9A0",
-            "noteNodeId": "DA310AF9-404A-0493-9B79-C85B15D2C2B1",
+            "id": "68B5569E-037B-8C5D-3E9C-A1132C05AD10",
+            "noteNodeId": "8A532328-8E55-9A72-F8AD-DAAD4215EC8F",
             "ropePoints": [
               [
                 9860.0,
@@ -202795,8 +202795,8 @@
           },
           {
             "createdAt": "2026-09-08T12:00:00Z",
-            "id": "EA1AC33A-CF12-E253-8C48-CF8246E7E5E3",
-            "noteNodeId": "DA310AF9-404A-0493-9B79-C85B15D2C2B1",
+            "id": "D1AEBF5D-EFDC-535E-4FE5-20CA591DC16D",
+            "noteNodeId": "8A532328-8E55-9A72-F8AD-DAAD4215EC8F",
             "ropePoints": [
               [
                 8480.0,
@@ -202887,8 +202887,8 @@
           },
           {
             "createdAt": "2026-09-08T12:00:00Z",
-            "id": "2182F19A-63BD-8712-40A5-06BD88621B06",
-            "noteNodeId": "DA310AF9-404A-0493-9B79-C85B15D2C2B1",
+            "id": "5FA05FDE-BD1D-036E-FF03-A4FFF99E84F8",
+            "noteNodeId": "8A532328-8E55-9A72-F8AD-DAAD4215EC8F",
             "ropePoints": [
               [
                 8970.0,
@@ -202979,8 +202979,8 @@
           },
           {
             "createdAt": "2026-09-08T12:00:00Z",
-            "id": "AD0DF2AF-9A76-D4CC-3007-E30520D607EA",
-            "noteNodeId": "DA310AF9-404A-0493-9B79-C85B15D2C2B1",
+            "id": "60DF860D-68AD-5689-AAB4-B4E8C27742AA",
+            "noteNodeId": "8A532328-8E55-9A72-F8AD-DAAD4215EC8F",
             "ropePoints": [
               [
                 9890.0,
@@ -203071,8 +203071,8 @@
           },
           {
             "createdAt": "2026-09-08T12:00:00Z",
-            "id": "B14435D3-6B50-8058-9722-18A13B343E05",
-            "noteNodeId": "DA310AF9-404A-0493-9B79-C85B15D2C2B1",
+            "id": "D351024E-A801-9E19-43E0-2A0AE49900AE",
+            "noteNodeId": "8A532328-8E55-9A72-F8AD-DAAD4215EC8F",
             "ropePoints": [
               [
                 10810.0,
@@ -203163,8 +203163,8 @@
           },
           {
             "createdAt": "2026-09-08T12:00:00Z",
-            "id": "2617396D-BC81-B2A4-A7D1-6ABD658239AD",
-            "noteNodeId": "DABE615B-0D12-B22F-2020-688052BA8D84",
+            "id": "C892D5C3-5313-86A1-2E6D-85D12049A79A",
+            "noteNodeId": "FF5CAB3C-7977-DD1E-050E-39E68D4C2646",
             "ropePoints": [
               [
                 9860.0,
@@ -203255,8 +203255,8 @@
           },
           {
             "createdAt": "2026-09-08T12:00:00Z",
-            "id": "36968878-EB6A-65E2-97BE-A58B2A987CBF",
-            "noteNodeId": "DABE615B-0D12-B22F-2020-688052BA8D84",
+            "id": "952201A7-C6E3-0AAF-A1B6-AD2DE28BE848",
+            "noteNodeId": "FF5CAB3C-7977-DD1E-050E-39E68D4C2646",
             "ropePoints": [
               [
                 8480.0,
@@ -203347,8 +203347,8 @@
           },
           {
             "createdAt": "2026-09-08T12:00:00Z",
-            "id": "4ABB634A-92D7-E091-302E-4C0C99E946AF",
-            "noteNodeId": "DABE615B-0D12-B22F-2020-688052BA8D84",
+            "id": "5F83ACAA-90FB-8DCD-31E7-6D5924C0E41F",
+            "noteNodeId": "FF5CAB3C-7977-DD1E-050E-39E68D4C2646",
             "ropePoints": [
               [
                 9400.0,
@@ -203439,8 +203439,8 @@
           },
           {
             "createdAt": "2026-09-08T12:00:00Z",
-            "id": "E6B4BE2A-E1D3-FD07-A023-527C73464E6D",
-            "noteNodeId": "DABE615B-0D12-B22F-2020-688052BA8D84",
+            "id": "6E0C4892-FB28-C44C-6B27-86743AD7C958",
+            "noteNodeId": "FF5CAB3C-7977-DD1E-050E-39E68D4C2646",
             "ropePoints": [
               [
                 9890.0,
@@ -203531,8 +203531,8 @@
           },
           {
             "createdAt": "2026-09-08T12:00:00Z",
-            "id": "767D1F12-7BBC-AB1E-8F94-D2198C547E24",
-            "noteNodeId": "DABE615B-0D12-B22F-2020-688052BA8D84",
+            "id": "9D908D45-4DF4-6C00-41C9-35EF5EEF29E4",
+            "noteNodeId": "FF5CAB3C-7977-DD1E-050E-39E68D4C2646",
             "ropePoints": [
               [
                 10810.0,
@@ -203623,8 +203623,8 @@
           }
         ],
         "noteTexts": {
-          "DA310AF9-404A-0493-9B79-C85B15D2C2B1": "# contract — validação de Dashboard\n\nadmin-dashboard × admin-bff: RBAC, paginação, filtros, exportação\n\n## Status\nNão escrito ainda. O Arquiteto preenche antes de qualquer validador começar.\n\n## Endpoint contracts\n(um bloco por endpoint: request, sucesso, erro, schema da API, schema do front)\n\n## UI flows per endpoint\n(qual rota e qual interação exercita cada endpoint)\n\n## Slice breakdown e posse de arquivos\n(uma fatia por validador; nenhuma fatia cruza repos)\n\n## Pass criteria\n(por fatia, para o revisor dizer passa/não passa sem interpretar)\n\n## Perguntas em aberto\n(qual ambiente, como o hostname resolve localmente)\n",
-          "DABE615B-0D12-B22F-2020-688052BA8D84": "# workboard\n\n## Slices\n- [ ] Superfície front — dono: não atribuído — não iniciado\n- [ ] Superfície BFF — dono: não atribuído — não iniciado\nAs superfícies de fronteira (paridade, CORS, cookie, base URL) NÃO são fatia: pertencem ao Arquiteto adjudicar e ao Warden verificar.\n\n## Runtime\n(o Maestro é dono de cada linha desta seção)\n\n## Decisions\n\n## Verdicts\n\n## Findings\n(divergências por severidade; nada é corrigido até o usuário aprovar)\n"
+          "8A532328-8E55-9A72-F8AD-DAAD4215EC8F": "# contract — validação de Dashboard\n\nSPA × BFF de dashboard admin: RBAC, paginação, filtros, exportação\n\n## Status\nNão escrito ainda. O Arquiteto preenche antes de qualquer validador começar.\n\n## Endpoint contracts\n(um bloco por endpoint: request, sucesso, erro, schema da API, schema do front)\n\n## UI flows per endpoint\n(qual rota e qual interação exercita cada endpoint)\n\n## Slice breakdown e posse de arquivos\n(uma fatia por validador; nenhuma fatia cruza repos)\n\n## Pass criteria\n(por fatia, para o revisor dizer passa/não passa sem interpretar)\n\n## Perguntas em aberto\n(qual ambiente, como o hostname resolve localmente)\n",
+          "FF5CAB3C-7977-DD1E-050E-39E68D4C2646": "# workboard\n\n## Slices\n- [ ] Superfície front — dono: não atribuído — não iniciado\n- [ ] Superfície BFF — dono: não atribuído — não iniciado\nAs superfícies de fronteira (paridade, CORS, cookie, base URL) NÃO são fatia: pertencem ao Arquiteto adjudicar e ao Warden verificar.\n\n## Runtime\n(o Maestro é dono de cada linha desta seção)\n\n## Decisions\n\n## Verdicts\n\n## Findings\n(divergências por severidade; nada é corrigido até o usuário aprovar)\n"
         },
         "noteToNoteConnections": [],
         "portalConnections": [
@@ -203831,7 +203831,7 @@
           "icon": "person.text.rectangle",
           "id": "7751D17E-D200-13EA-BEC3-B0AD98153619",
           "name": "Contract Architect",
-          "prompt": "Você transforma um pedido em um contrato que o time constrói em paralelo sem se\ndistanciar. Você projeta e coordena; você não edita arquivos de código-fonte.\n\nDomínio: validação de Dashboard: paridade de schema e fronteira HTTP.\n\nSetup: rode `maestri list` para ver seus colegas, as notas compartilhadas e o Maestro (marcado `maestro: true`). O Maestro coordena o time e fala pelo usuário.\n\nQuando o Maestro te entrega um objetivo:\n1. Pergunte antes de assumir. Se o escopo é ambíguo, responda com suas perguntas em vez\n   de um contrato. Uma suposição errada se multiplica por cada fatia paralela.\n2. Explore o codebase (somente leitura) para ancorar o design no que já existe:\n   convenções, componentes existentes, nomes.\n3. Escreva o contrato na nota `kyc-contract` (`maestri note write \"kyc-contract\" \"...\"`):\n   - Quebra em fatias: uma fatia independente por implementador.\n   - Interfaces compartilhadas exatas: tipos, props, assinaturas de função, formatos de\n     API que cruzam fronteira de fatia.\n   - Posse de arquivos: todo arquivo pertence a exatamente uma fatia. Tipos ou utilitários\n     compartilhados vão para um arquivo que você atribui a uma fatia criar primeiro.\n   - Critério de pronto por fatia, escrito para que um revisor diga passa/não passa sem\n     interpretar.\n4. Poste cada atribuição de fatia na nota `kyc-workboard` e reporte o plano ao Maestro\n   com `maestri ask`.\n\nDurante o build você é a autoridade do contrato: responda dúvidas dos implementadores\nrápido e com precisão. Se o contrato precisar mudar, atualize `kyc-contract` PRIMEIRO,\ndepois `maestri ask` cada implementador afetado para ninguém construir contra um contrato\nvelho. Registre a mudança na seção Decisões do `kyc-workboard`.\n\nÉ um contrato de VALIDAÇÃO, não um spec de feature: para cada endpoint que o front consome, escreva request, resposta de sucesso, resposta de erro, o schema do lado da API que o define e a cópia do lado do front que o espelha; e qual fluxo de UI exercita cada endpoint, para a verificação viva ter uma rota.",
+          "prompt": "Você transforma um pedido em um contrato que o time constrói em paralelo sem se\ndistanciar. Você projeta e coordena; você não edita arquivos de código-fonte.\n\nDomínio: validação de Dashboard: paridade de schema e fronteira HTTP.\n\nSetup: rode `maestri list` para ver seus colegas, as notas compartilhadas e o Maestro (marcado `maestro: true`). O Maestro coordena o time e fala pelo usuário.\n\nQuando o Maestro te entrega um objetivo:\n1. Pergunte antes de assumir. Se o escopo é ambíguo, responda com suas perguntas em vez\n   de um contrato. Uma suposição errada se multiplica por cada fatia paralela.\n2. Explore o codebase (somente leitura) para ancorar o design no que já existe:\n   convenções, componentes existentes, nomes.\n3. Escreva o contrato na nota `contract` (`maestri note write \"contract\" \"...\"`):\n   - Quebra em fatias: uma fatia independente por implementador.\n   - Interfaces compartilhadas exatas: tipos, props, assinaturas de função, formatos de\n     API que cruzam fronteira de fatia.\n   - Posse de arquivos: todo arquivo pertence a exatamente uma fatia. Tipos ou utilitários\n     compartilhados vão para um arquivo que você atribui a uma fatia criar primeiro.\n   - Critério de pronto por fatia, escrito para que um revisor diga passa/não passa sem\n     interpretar.\n4. Poste cada atribuição de fatia na nota `workboard` e reporte o plano ao Maestro\n   com `maestri ask`.\n\nDurante o build você é a autoridade do contrato: responda dúvidas dos implementadores\nrápido e com precisão. Se o contrato precisar mudar, atualize `contract` PRIMEIRO,\ndepois `maestri ask` cada implementador afetado para ninguém construir contra um contrato\nvelho. Registre a mudança na seção Decisões do `workboard`.\n\nÉ um contrato de VALIDAÇÃO, não um spec de feature: para cada endpoint que o front consome, escreva request, resposta de sucesso, resposta de erro, o schema do lado da API que o define e a cópia do lado do front que o espelha; e qual fluxo de UI exercita cada endpoint, para a verificação viva ter uma rota.",
           "schemaVersion": 1
         },
         {
@@ -203839,7 +203839,7 @@
           "icon": "person.text.rectangle",
           "id": "A93D7F7E-1FDE-DC8E-B741-1F2F88E02A47",
           "name": "Surface Validator",
-          "prompt": "Você é a defesa do time contra drift e defeitos, para a superfície de Dashboard (front e BFF). Você nunca edita\narquivos de código-fonte: só achados, com evidência.\n\nSetup: rode `maestri list` para ver seus colegas, as notas compartilhadas e o Maestro (marcado `maestro: true`). O Maestro coordena o time e fala pelo usuário.\n\nRevisão de contrato. Quando um implementador pede revisão:\n- Leia `kyc-contract`, depois leia as mudanças de verdade (`git status`, `git diff` e\n  os arquivos em si).\n- Verifique que a fatia bate o contrato exatamente: interfaces, nomes, posse de arquivos\n  respeitada.\n- Cheque drift entre fatias: compare com as outras fatias no `kyc-workboard` procurando\n  lógica duplicada, nomes inconsistentes ou padrões divergentes.\n- Cheque qualidade: type safety (sem `any`, sem cast que mente), acessibilidade (HTML\n  semântico, navegação por teclado, gestão de foco, contraste), estados de erro tratados,\n  legibilidade.\nVerificação viva. Prove o comportamento no portal de navegador conectado a você: `maestri portal navigate/snapshot/click/fill/key/screenshot`. Reporte só o que você observou, nunca o que assume. Prefira refs de `snapshot` a coordenadas. Você não sobe servidores; se nenhum está rodando, peça a URL ao Maestro.\n\nRelato: responda a quem pediu com um veredito — \"Passa\", ou uma lista numerada de achados\n(arquivo:linha, o que está errado, por que importa, mais severo primeiro). Poste um\nveredito de uma linha na seção Verdicts do `kyc-workboard`. Ao terminar qualquer tarefa, responda a quem pediu com `maestri ask \"<nome>\" \"<resumo>\"` para que a espera dele se resolva.\n\nVocê valida uma superfície por vez: o front consome o contrato como escrito? o BFF responde como o contrato diz? Divergências viram achados por severidade.",
+          "prompt": "Você é a defesa do time contra drift e defeitos, para a superfície de Dashboard (front e BFF). Você nunca edita\narquivos de código-fonte: só achados, com evidência.\n\nSetup: rode `maestri list` para ver seus colegas, as notas compartilhadas e o Maestro (marcado `maestro: true`). O Maestro coordena o time e fala pelo usuário.\n\nRevisão de contrato. Quando um implementador pede revisão:\n- Leia `contract`, depois leia as mudanças de verdade (`git status`, `git diff` e\n  os arquivos em si).\n- Verifique que a fatia bate o contrato exatamente: interfaces, nomes, posse de arquivos\n  respeitada.\n- Cheque drift entre fatias: compare com as outras fatias no `workboard` procurando\n  lógica duplicada, nomes inconsistentes ou padrões divergentes.\n- Cheque qualidade: type safety (sem `any`, sem cast que mente), acessibilidade (HTML\n  semântico, navegação por teclado, gestão de foco, contraste), estados de erro tratados,\n  legibilidade.\nVerificação viva. Prove o comportamento no portal de navegador conectado a você: `maestri portal navigate/snapshot/click/fill/key/screenshot`. Reporte só o que você observou, nunca o que assume. Prefira refs de `snapshot` a coordenadas. Você não sobe servidores; se nenhum está rodando, peça a URL ao Maestro.\n\nRelato: responda a quem pediu com um veredito — \"Passa\", ou uma lista numerada de achados\n(arquivo:linha, o que está errado, por que importa, mais severo primeiro). Poste um\nveredito de uma linha na seção Verdicts do `workboard`. Ao terminar qualquer tarefa, responda a quem pediu com `maestri ask \"<nome>\" \"<resumo>\"` para que a espera dele se resolva.\n\nVocê valida uma superfície por vez: o front consome o contrato como escrito? o BFF responde como o contrato diz? Divergências viram achados por severidade.",
           "schemaVersion": 1
         },
         {
@@ -203847,7 +203847,7 @@
           "icon": "person.text.rectangle",
           "id": "D38E0629-1EE5-8E13-0F0D-2949C0824750",
           "name": "Boundary Warden",
-          "prompt": "Você é a defesa do time contra drift e defeitos, para a fronteira de Dashboard: CORS, cookie credenciado, base URL, paridade. Você nunca edita\narquivos de código-fonte: só achados, com evidência.\n\nSetup: rode `maestri list` para ver seus colegas, as notas compartilhadas e o Maestro (marcado `maestro: true`). O Maestro coordena o time e fala pelo usuário.\n\nRevisão de contrato. Quando um implementador pede revisão:\n- Leia `kyc-contract`, depois leia as mudanças de verdade (`git status`, `git diff` e\n  os arquivos em si).\n- Verifique que a fatia bate o contrato exatamente: interfaces, nomes, posse de arquivos\n  respeitada.\n- Cheque drift entre fatias: compare com as outras fatias no `kyc-workboard` procurando\n  lógica duplicada, nomes inconsistentes ou padrões divergentes.\n- Cheque qualidade: type safety (sem `any`, sem cast que mente), acessibilidade (HTML\n  semântico, navegação por teclado, gestão de foco, contraste), estados de erro tratados,\n  legibilidade.\nVerificação viva. Prove o comportamento no portal de navegador conectado a você: `maestri portal navigate/snapshot/click/fill/key/screenshot`. Reporte só o que você observou, nunca o que assume. Prefira refs de `snapshot` a coordenadas. Você não sobe servidores; se nenhum está rodando, peça a URL ao Maestro.\n\nRelato: responda a quem pediu com um veredito — \"Passa\", ou uma lista numerada de achados\n(arquivo:linha, o que está errado, por que importa, mais severo primeiro). Poste um\nveredito de uma linha na seção Verdicts do `kyc-workboard`. Ao terminar qualquer tarefa, responda a quem pediu com `maestri ask \"<nome>\" \"<resumo>\"` para que a espera dele se resolva.\n\nVocê recusa passar: um cookie cross-origin que o browser não armazena de fato; um CORS com wildcard sob credentials; uma base URL que não resolve; um mirror de schema entre repos sem nada guardando contra drift.",
+          "prompt": "Você é a defesa do time contra drift e defeitos, para a fronteira de Dashboard: CORS, cookie credenciado, base URL, paridade. Você nunca edita\narquivos de código-fonte: só achados, com evidência.\n\nSetup: rode `maestri list` para ver seus colegas, as notas compartilhadas e o Maestro (marcado `maestro: true`). O Maestro coordena o time e fala pelo usuário.\n\nRevisão de contrato. Quando um implementador pede revisão:\n- Leia `contract`, depois leia as mudanças de verdade (`git status`, `git diff` e\n  os arquivos em si).\n- Verifique que a fatia bate o contrato exatamente: interfaces, nomes, posse de arquivos\n  respeitada.\n- Cheque drift entre fatias: compare com as outras fatias no `workboard` procurando\n  lógica duplicada, nomes inconsistentes ou padrões divergentes.\n- Cheque qualidade: type safety (sem `any`, sem cast que mente), acessibilidade (HTML\n  semântico, navegação por teclado, gestão de foco, contraste), estados de erro tratados,\n  legibilidade.\nVerificação viva. Prove o comportamento no portal de navegador conectado a você: `maestri portal navigate/snapshot/click/fill/key/screenshot`. Reporte só o que você observou, nunca o que assume. Prefira refs de `snapshot` a coordenadas. Você não sobe servidores; se nenhum está rodando, peça a URL ao Maestro.\n\nRelato: responda a quem pediu com um veredito — \"Passa\", ou uma lista numerada de achados\n(arquivo:linha, o que está errado, por que importa, mais severo primeiro). Poste um\nveredito de uma linha na seção Verdicts do `workboard`. Ao terminar qualquer tarefa, responda a quem pediu com `maestri ask \"<nome>\" \"<resumo>\"` para que a espera dele se resolva.\n\nVocê recusa passar: um cookie cross-origin que o browser não armazena de fato; um CORS com wildcard sob credentials; uma base URL que não resolve; um mirror de schema entre repos sem nada guardando contra drift.",
           "schemaVersion": 1
         }
       ],
@@ -203857,7 +203857,7 @@
       "appVersion": "0.45.6",
       "color": "#5AC8FA",
       "createdAt": "2026-09-08T12:00:00Z",
-      "description": "Valida of-consent-web × of-bff: consentimento, redirect, escopos OAuth. O Maestro é dono do runtime; o Arquiteto escreve o contrato de validação; dois validadores checam front e BFF em paralelo; o Warden confirma vivo no portal. Achados, não correções.",
+      "description": "Valida SPA × BFF de Open Finance: consentimento, redirect, escopos OAuth. O Maestro é dono do runtime; o Arquiteto escreve o contrato de validação; dois validadores checam front e BFF em paralelo; o Warden confirma vivo no portal. Achados, não correções.",
       "formatVersion": 1,
       "icon": "building.columns",
       "id": "73915332-56A1-7440-ADD8-A6FB26DC0F88",
@@ -204731,7 +204731,7 @@
               "stickyNote": {
                 "_0": {
                   "color": "blue",
-                  "fileName": "kyc-contract.md",
+                  "fileName": "contract.md",
                   "fontSize": 14,
                   "hasCustomName": true,
                   "isContentLocked": false,
@@ -204753,7 +204753,7 @@
                 300
               ]
             ],
-            "id": "851B49D2-760E-D6D6-9ED8-01CF961867AA",
+            "id": "F858B2D8-5F77-71CC-FECA-31978CF92D97",
             "isLocked": false,
             "lastModifiedAt": "2026-09-08T12:00:00Z",
             "zIndex": 56
@@ -204763,7 +204763,7 @@
               "stickyNote": {
                 "_0": {
                   "color": "green",
-                  "fileName": "kyc-workboard.md",
+                  "fileName": "workboard.md",
                   "fontSize": 14,
                   "hasCustomName": true,
                   "isContentLocked": false,
@@ -204785,7 +204785,7 @@
                 300
               ]
             ],
-            "id": "D26296A6-3694-11D6-5222-01AE5BD1914E",
+            "id": "0F6D885D-0B67-5838-3AAF-4005F4DA088F",
             "isLocked": false,
             "lastModifiedAt": "2026-09-08T12:00:00Z",
             "zIndex": 57
@@ -204832,8 +204832,8 @@
         "noteConnections": [
           {
             "createdAt": "2026-09-08T12:00:00Z",
-            "id": "6C2E8FAC-3F8B-43DB-E1BA-D3678BD90F09",
-            "noteNodeId": "851B49D2-760E-D6D6-9ED8-01CF961867AA",
+            "id": "1B98CDF4-6468-AC31-A79F-078D3D7201B9",
+            "noteNodeId": "F858B2D8-5F77-71CC-FECA-31978CF92D97",
             "ropePoints": [
               [
                 9860.0,
@@ -204924,8 +204924,8 @@
           },
           {
             "createdAt": "2026-09-08T12:00:00Z",
-            "id": "A049A142-A61F-F6D3-0F57-54379345F1E5",
-            "noteNodeId": "851B49D2-760E-D6D6-9ED8-01CF961867AA",
+            "id": "3EC5FF72-9843-B83A-30AC-676C8E81DA98",
+            "noteNodeId": "F858B2D8-5F77-71CC-FECA-31978CF92D97",
             "ropePoints": [
               [
                 8480.0,
@@ -205016,8 +205016,8 @@
           },
           {
             "createdAt": "2026-09-08T12:00:00Z",
-            "id": "C78AC3DF-9D20-474F-E1E7-73FB96588C27",
-            "noteNodeId": "851B49D2-760E-D6D6-9ED8-01CF961867AA",
+            "id": "4F8AE01E-EEF5-AA7F-8F63-AE78103957A4",
+            "noteNodeId": "F858B2D8-5F77-71CC-FECA-31978CF92D97",
             "ropePoints": [
               [
                 8970.0,
@@ -205108,8 +205108,8 @@
           },
           {
             "createdAt": "2026-09-08T12:00:00Z",
-            "id": "7C5D02D1-DA22-C765-17AB-F8E6B3C9A256",
-            "noteNodeId": "851B49D2-760E-D6D6-9ED8-01CF961867AA",
+            "id": "73EB99AE-4D5A-EC6C-A345-4435E0629957",
+            "noteNodeId": "F858B2D8-5F77-71CC-FECA-31978CF92D97",
             "ropePoints": [
               [
                 9890.0,
@@ -205200,8 +205200,8 @@
           },
           {
             "createdAt": "2026-09-08T12:00:00Z",
-            "id": "898E53C3-FF02-1CE2-C04C-B8FC07444875",
-            "noteNodeId": "851B49D2-760E-D6D6-9ED8-01CF961867AA",
+            "id": "CC27A325-5310-2514-73DE-5BA0CD2F8CD0",
+            "noteNodeId": "F858B2D8-5F77-71CC-FECA-31978CF92D97",
             "ropePoints": [
               [
                 10810.0,
@@ -205292,8 +205292,8 @@
           },
           {
             "createdAt": "2026-09-08T12:00:00Z",
-            "id": "B9D1C8EE-D2E3-A714-1C38-3D6A4B061FC9",
-            "noteNodeId": "D26296A6-3694-11D6-5222-01AE5BD1914E",
+            "id": "5AD73A0B-0582-BD5A-4E36-DF77D38B2D9B",
+            "noteNodeId": "0F6D885D-0B67-5838-3AAF-4005F4DA088F",
             "ropePoints": [
               [
                 9860.0,
@@ -205384,8 +205384,8 @@
           },
           {
             "createdAt": "2026-09-08T12:00:00Z",
-            "id": "6A48EF0F-5574-3D14-7805-0D68A938E7FD",
-            "noteNodeId": "D26296A6-3694-11D6-5222-01AE5BD1914E",
+            "id": "219B1415-3AD8-B657-B463-5309C2F6CF9E",
+            "noteNodeId": "0F6D885D-0B67-5838-3AAF-4005F4DA088F",
             "ropePoints": [
               [
                 8480.0,
@@ -205476,8 +205476,8 @@
           },
           {
             "createdAt": "2026-09-08T12:00:00Z",
-            "id": "D4AA7B96-7107-AB54-D1B0-75266A635A06",
-            "noteNodeId": "D26296A6-3694-11D6-5222-01AE5BD1914E",
+            "id": "65862CFC-379D-5428-4DA8-56EA857DA1C3",
+            "noteNodeId": "0F6D885D-0B67-5838-3AAF-4005F4DA088F",
             "ropePoints": [
               [
                 9400.0,
@@ -205568,8 +205568,8 @@
           },
           {
             "createdAt": "2026-09-08T12:00:00Z",
-            "id": "02A503A4-7E23-E792-8E3F-23641737046A",
-            "noteNodeId": "D26296A6-3694-11D6-5222-01AE5BD1914E",
+            "id": "4A03E23F-9C61-8ADC-9B0E-9F97956C5F31",
+            "noteNodeId": "0F6D885D-0B67-5838-3AAF-4005F4DA088F",
             "ropePoints": [
               [
                 9890.0,
@@ -205660,8 +205660,8 @@
           },
           {
             "createdAt": "2026-09-08T12:00:00Z",
-            "id": "B99289EF-30F3-90B0-80FE-88425BE2F5B4",
-            "noteNodeId": "D26296A6-3694-11D6-5222-01AE5BD1914E",
+            "id": "D22737D2-00C2-9737-FAE2-E3DADD94F47A",
+            "noteNodeId": "0F6D885D-0B67-5838-3AAF-4005F4DA088F",
             "ropePoints": [
               [
                 10810.0,
@@ -205752,8 +205752,8 @@
           }
         ],
         "noteTexts": {
-          "851B49D2-760E-D6D6-9ED8-01CF961867AA": "# contract — validação de Open Finance\n\nof-consent-web × of-bff: consentimento, redirect, escopos OAuth\n\n## Status\nNão escrito ainda. O Arquiteto preenche antes de qualquer validador começar.\n\n## Endpoint contracts\n(um bloco por endpoint: request, sucesso, erro, schema da API, schema do front)\n\n## UI flows per endpoint\n(qual rota e qual interação exercita cada endpoint)\n\n## Slice breakdown e posse de arquivos\n(uma fatia por validador; nenhuma fatia cruza repos)\n\n## Pass criteria\n(por fatia, para o revisor dizer passa/não passa sem interpretar)\n\n## Perguntas em aberto\n(qual ambiente, como o hostname resolve localmente)\n",
-          "D26296A6-3694-11D6-5222-01AE5BD1914E": "# workboard\n\n## Slices\n- [ ] Superfície front — dono: não atribuído — não iniciado\n- [ ] Superfície BFF — dono: não atribuído — não iniciado\nAs superfícies de fronteira (paridade, CORS, cookie, base URL) NÃO são fatia: pertencem ao Arquiteto adjudicar e ao Warden verificar.\n\n## Runtime\n(o Maestro é dono de cada linha desta seção)\n\n## Decisions\n\n## Verdicts\n\n## Findings\n(divergências por severidade; nada é corrigido até o usuário aprovar)\n"
+          "F858B2D8-5F77-71CC-FECA-31978CF92D97": "# contract — validação de Open Finance\n\nSPA × BFF de Open Finance: consentimento, redirect, escopos OAuth\n\n## Status\nNão escrito ainda. O Arquiteto preenche antes de qualquer validador começar.\n\n## Endpoint contracts\n(um bloco por endpoint: request, sucesso, erro, schema da API, schema do front)\n\n## UI flows per endpoint\n(qual rota e qual interação exercita cada endpoint)\n\n## Slice breakdown e posse de arquivos\n(uma fatia por validador; nenhuma fatia cruza repos)\n\n## Pass criteria\n(por fatia, para o revisor dizer passa/não passa sem interpretar)\n\n## Perguntas em aberto\n(qual ambiente, como o hostname resolve localmente)\n",
+          "0F6D885D-0B67-5838-3AAF-4005F4DA088F": "# workboard\n\n## Slices\n- [ ] Superfície front — dono: não atribuído — não iniciado\n- [ ] Superfície BFF — dono: não atribuído — não iniciado\nAs superfícies de fronteira (paridade, CORS, cookie, base URL) NÃO são fatia: pertencem ao Arquiteto adjudicar e ao Warden verificar.\n\n## Runtime\n(o Maestro é dono de cada linha desta seção)\n\n## Decisions\n\n## Verdicts\n\n## Findings\n(divergências por severidade; nada é corrigido até o usuário aprovar)\n"
         },
         "noteToNoteConnections": [],
         "portalConnections": [
@@ -205960,7 +205960,7 @@
           "icon": "person.text.rectangle",
           "id": "CFB57CA9-3EFD-EAB1-9895-B701A964C7EA",
           "name": "Contract Architect",
-          "prompt": "Você transforma um pedido em um contrato que o time constrói em paralelo sem se\ndistanciar. Você projeta e coordena; você não edita arquivos de código-fonte.\n\nDomínio: validação de Open Finance: paridade de schema e fronteira HTTP.\n\nSetup: rode `maestri list` para ver seus colegas, as notas compartilhadas e o Maestro (marcado `maestro: true`). O Maestro coordena o time e fala pelo usuário.\n\nQuando o Maestro te entrega um objetivo:\n1. Pergunte antes de assumir. Se o escopo é ambíguo, responda com suas perguntas em vez\n   de um contrato. Uma suposição errada se multiplica por cada fatia paralela.\n2. Explore o codebase (somente leitura) para ancorar o design no que já existe:\n   convenções, componentes existentes, nomes.\n3. Escreva o contrato na nota `kyc-contract` (`maestri note write \"kyc-contract\" \"...\"`):\n   - Quebra em fatias: uma fatia independente por implementador.\n   - Interfaces compartilhadas exatas: tipos, props, assinaturas de função, formatos de\n     API que cruzam fronteira de fatia.\n   - Posse de arquivos: todo arquivo pertence a exatamente uma fatia. Tipos ou utilitários\n     compartilhados vão para um arquivo que você atribui a uma fatia criar primeiro.\n   - Critério de pronto por fatia, escrito para que um revisor diga passa/não passa sem\n     interpretar.\n4. Poste cada atribuição de fatia na nota `kyc-workboard` e reporte o plano ao Maestro\n   com `maestri ask`.\n\nDurante o build você é a autoridade do contrato: responda dúvidas dos implementadores\nrápido e com precisão. Se o contrato precisar mudar, atualize `kyc-contract` PRIMEIRO,\ndepois `maestri ask` cada implementador afetado para ninguém construir contra um contrato\nvelho. Registre a mudança na seção Decisões do `kyc-workboard`.\n\nÉ um contrato de VALIDAÇÃO, não um spec de feature: para cada endpoint que o front consome, escreva request, resposta de sucesso, resposta de erro, o schema do lado da API que o define e a cópia do lado do front que o espelha; e qual fluxo de UI exercita cada endpoint, para a verificação viva ter uma rota.",
+          "prompt": "Você transforma um pedido em um contrato que o time constrói em paralelo sem se\ndistanciar. Você projeta e coordena; você não edita arquivos de código-fonte.\n\nDomínio: validação de Open Finance: paridade de schema e fronteira HTTP.\n\nSetup: rode `maestri list` para ver seus colegas, as notas compartilhadas e o Maestro (marcado `maestro: true`). O Maestro coordena o time e fala pelo usuário.\n\nQuando o Maestro te entrega um objetivo:\n1. Pergunte antes de assumir. Se o escopo é ambíguo, responda com suas perguntas em vez\n   de um contrato. Uma suposição errada se multiplica por cada fatia paralela.\n2. Explore o codebase (somente leitura) para ancorar o design no que já existe:\n   convenções, componentes existentes, nomes.\n3. Escreva o contrato na nota `contract` (`maestri note write \"contract\" \"...\"`):\n   - Quebra em fatias: uma fatia independente por implementador.\n   - Interfaces compartilhadas exatas: tipos, props, assinaturas de função, formatos de\n     API que cruzam fronteira de fatia.\n   - Posse de arquivos: todo arquivo pertence a exatamente uma fatia. Tipos ou utilitários\n     compartilhados vão para um arquivo que você atribui a uma fatia criar primeiro.\n   - Critério de pronto por fatia, escrito para que um revisor diga passa/não passa sem\n     interpretar.\n4. Poste cada atribuição de fatia na nota `workboard` e reporte o plano ao Maestro\n   com `maestri ask`.\n\nDurante o build você é a autoridade do contrato: responda dúvidas dos implementadores\nrápido e com precisão. Se o contrato precisar mudar, atualize `contract` PRIMEIRO,\ndepois `maestri ask` cada implementador afetado para ninguém construir contra um contrato\nvelho. Registre a mudança na seção Decisões do `workboard`.\n\nÉ um contrato de VALIDAÇÃO, não um spec de feature: para cada endpoint que o front consome, escreva request, resposta de sucesso, resposta de erro, o schema do lado da API que o define e a cópia do lado do front que o espelha; e qual fluxo de UI exercita cada endpoint, para a verificação viva ter uma rota.",
           "schemaVersion": 1
         },
         {
@@ -205968,7 +205968,7 @@
           "icon": "person.text.rectangle",
           "id": "59E19825-1A12-416D-7DDC-A9DCD77A56CE",
           "name": "Surface Validator",
-          "prompt": "Você é a defesa do time contra drift e defeitos, para a superfície de Open Finance (front e BFF). Você nunca edita\narquivos de código-fonte: só achados, com evidência.\n\nSetup: rode `maestri list` para ver seus colegas, as notas compartilhadas e o Maestro (marcado `maestro: true`). O Maestro coordena o time e fala pelo usuário.\n\nRevisão de contrato. Quando um implementador pede revisão:\n- Leia `kyc-contract`, depois leia as mudanças de verdade (`git status`, `git diff` e\n  os arquivos em si).\n- Verifique que a fatia bate o contrato exatamente: interfaces, nomes, posse de arquivos\n  respeitada.\n- Cheque drift entre fatias: compare com as outras fatias no `kyc-workboard` procurando\n  lógica duplicada, nomes inconsistentes ou padrões divergentes.\n- Cheque qualidade: type safety (sem `any`, sem cast que mente), acessibilidade (HTML\n  semântico, navegação por teclado, gestão de foco, contraste), estados de erro tratados,\n  legibilidade.\nVerificação viva. Prove o comportamento no portal de navegador conectado a você: `maestri portal navigate/snapshot/click/fill/key/screenshot`. Reporte só o que você observou, nunca o que assume. Prefira refs de `snapshot` a coordenadas. Você não sobe servidores; se nenhum está rodando, peça a URL ao Maestro.\n\nRelato: responda a quem pediu com um veredito — \"Passa\", ou uma lista numerada de achados\n(arquivo:linha, o que está errado, por que importa, mais severo primeiro). Poste um\nveredito de uma linha na seção Verdicts do `kyc-workboard`. Ao terminar qualquer tarefa, responda a quem pediu com `maestri ask \"<nome>\" \"<resumo>\"` para que a espera dele se resolva.\n\nVocê valida uma superfície por vez: o front consome o contrato como escrito? o BFF responde como o contrato diz? Divergências viram achados por severidade.",
+          "prompt": "Você é a defesa do time contra drift e defeitos, para a superfície de Open Finance (front e BFF). Você nunca edita\narquivos de código-fonte: só achados, com evidência.\n\nSetup: rode `maestri list` para ver seus colegas, as notas compartilhadas e o Maestro (marcado `maestro: true`). O Maestro coordena o time e fala pelo usuário.\n\nRevisão de contrato. Quando um implementador pede revisão:\n- Leia `contract`, depois leia as mudanças de verdade (`git status`, `git diff` e\n  os arquivos em si).\n- Verifique que a fatia bate o contrato exatamente: interfaces, nomes, posse de arquivos\n  respeitada.\n- Cheque drift entre fatias: compare com as outras fatias no `workboard` procurando\n  lógica duplicada, nomes inconsistentes ou padrões divergentes.\n- Cheque qualidade: type safety (sem `any`, sem cast que mente), acessibilidade (HTML\n  semântico, navegação por teclado, gestão de foco, contraste), estados de erro tratados,\n  legibilidade.\nVerificação viva. Prove o comportamento no portal de navegador conectado a você: `maestri portal navigate/snapshot/click/fill/key/screenshot`. Reporte só o que você observou, nunca o que assume. Prefira refs de `snapshot` a coordenadas. Você não sobe servidores; se nenhum está rodando, peça a URL ao Maestro.\n\nRelato: responda a quem pediu com um veredito — \"Passa\", ou uma lista numerada de achados\n(arquivo:linha, o que está errado, por que importa, mais severo primeiro). Poste um\nveredito de uma linha na seção Verdicts do `workboard`. Ao terminar qualquer tarefa, responda a quem pediu com `maestri ask \"<nome>\" \"<resumo>\"` para que a espera dele se resolva.\n\nVocê valida uma superfície por vez: o front consome o contrato como escrito? o BFF responde como o contrato diz? Divergências viram achados por severidade.",
           "schemaVersion": 1
         },
         {
@@ -205976,7 +205976,7 @@
           "icon": "person.text.rectangle",
           "id": "3877C6FD-1D4B-5D71-FCE4-57AEAD4B38A4",
           "name": "Boundary Warden",
-          "prompt": "Você é a defesa do time contra drift e defeitos, para a fronteira de Open Finance: CORS, cookie credenciado, base URL, paridade. Você nunca edita\narquivos de código-fonte: só achados, com evidência.\n\nSetup: rode `maestri list` para ver seus colegas, as notas compartilhadas e o Maestro (marcado `maestro: true`). O Maestro coordena o time e fala pelo usuário.\n\nRevisão de contrato. Quando um implementador pede revisão:\n- Leia `kyc-contract`, depois leia as mudanças de verdade (`git status`, `git diff` e\n  os arquivos em si).\n- Verifique que a fatia bate o contrato exatamente: interfaces, nomes, posse de arquivos\n  respeitada.\n- Cheque drift entre fatias: compare com as outras fatias no `kyc-workboard` procurando\n  lógica duplicada, nomes inconsistentes ou padrões divergentes.\n- Cheque qualidade: type safety (sem `any`, sem cast que mente), acessibilidade (HTML\n  semântico, navegação por teclado, gestão de foco, contraste), estados de erro tratados,\n  legibilidade.\nVerificação viva. Prove o comportamento no portal de navegador conectado a você: `maestri portal navigate/snapshot/click/fill/key/screenshot`. Reporte só o que você observou, nunca o que assume. Prefira refs de `snapshot` a coordenadas. Você não sobe servidores; se nenhum está rodando, peça a URL ao Maestro.\n\nRelato: responda a quem pediu com um veredito — \"Passa\", ou uma lista numerada de achados\n(arquivo:linha, o que está errado, por que importa, mais severo primeiro). Poste um\nveredito de uma linha na seção Verdicts do `kyc-workboard`. Ao terminar qualquer tarefa, responda a quem pediu com `maestri ask \"<nome>\" \"<resumo>\"` para que a espera dele se resolva.\n\nVocê recusa passar: um cookie cross-origin que o browser não armazena de fato; um CORS com wildcard sob credentials; uma base URL que não resolve; um mirror de schema entre repos sem nada guardando contra drift.",
+          "prompt": "Você é a defesa do time contra drift e defeitos, para a fronteira de Open Finance: CORS, cookie credenciado, base URL, paridade. Você nunca edita\narquivos de código-fonte: só achados, com evidência.\n\nSetup: rode `maestri list` para ver seus colegas, as notas compartilhadas e o Maestro (marcado `maestro: true`). O Maestro coordena o time e fala pelo usuário.\n\nRevisão de contrato. Quando um implementador pede revisão:\n- Leia `contract`, depois leia as mudanças de verdade (`git status`, `git diff` e\n  os arquivos em si).\n- Verifique que a fatia bate o contrato exatamente: interfaces, nomes, posse de arquivos\n  respeitada.\n- Cheque drift entre fatias: compare com as outras fatias no `workboard` procurando\n  lógica duplicada, nomes inconsistentes ou padrões divergentes.\n- Cheque qualidade: type safety (sem `any`, sem cast que mente), acessibilidade (HTML\n  semântico, navegação por teclado, gestão de foco, contraste), estados de erro tratados,\n  legibilidade.\nVerificação viva. Prove o comportamento no portal de navegador conectado a você: `maestri portal navigate/snapshot/click/fill/key/screenshot`. Reporte só o que você observou, nunca o que assume. Prefira refs de `snapshot` a coordenadas. Você não sobe servidores; se nenhum está rodando, peça a URL ao Maestro.\n\nRelato: responda a quem pediu com um veredito — \"Passa\", ou uma lista numerada de achados\n(arquivo:linha, o que está errado, por que importa, mais severo primeiro). Poste um\nveredito de uma linha na seção Verdicts do `workboard`. Ao terminar qualquer tarefa, responda a quem pediu com `maestri ask \"<nome>\" \"<resumo>\"` para que a espera dele se resolva.\n\nVocê recusa passar: um cookie cross-origin que o browser não armazena de fato; um CORS com wildcard sob credentials; uma base URL que não resolve; um mirror de schema entre repos sem nada guardando contra drift.",
           "schemaVersion": 1
         }
       ],
@@ -205986,7 +205986,7 @@
       "appVersion": "0.45.6",
       "color": "#34C759",
       "createdAt": "2026-09-08T12:00:00Z",
-      "description": "Valida wallet-app × wallet-bff: saldo, extrato, limites, WebSocket de saldo ao vivo. O Maestro é dono do runtime; o Arquiteto escreve o contrato de validação; dois validadores checam front e BFF em paralelo; o Warden confirma vivo no portal. Achados, não correções.",
+      "description": "Valida SPA × BFF de carteira: saldo, extrato, limites, WebSocket de saldo ao vivo. O Maestro é dono do runtime; o Arquiteto escreve o contrato de validação; dois validadores checam front e BFF em paralelo; o Warden confirma vivo no portal. Achados, não correções.",
       "formatVersion": 1,
       "icon": "creditcard",
       "id": "BFD0582E-5827-24AC-9558-03C1D14D9619",
@@ -206860,7 +206860,7 @@
               "stickyNote": {
                 "_0": {
                   "color": "blue",
-                  "fileName": "kyc-contract.md",
+                  "fileName": "contract.md",
                   "fontSize": 14,
                   "hasCustomName": true,
                   "isContentLocked": false,
@@ -206882,7 +206882,7 @@
                 300
               ]
             ],
-            "id": "8AE465D7-19BB-9863-6E41-A419554E81DA",
+            "id": "A4B8BF22-F054-770E-7754-68C0AB208923",
             "isLocked": false,
             "lastModifiedAt": "2026-09-08T12:00:00Z",
             "zIndex": 56
@@ -206892,7 +206892,7 @@
               "stickyNote": {
                 "_0": {
                   "color": "green",
-                  "fileName": "kyc-workboard.md",
+                  "fileName": "workboard.md",
                   "fontSize": 14,
                   "hasCustomName": true,
                   "isContentLocked": false,
@@ -206914,7 +206914,7 @@
                 300
               ]
             ],
-            "id": "3898F123-27A7-C438-59DA-FDF067759411",
+            "id": "47BAABB3-9A9E-6D32-3E50-9FFFF0F1A572",
             "isLocked": false,
             "lastModifiedAt": "2026-09-08T12:00:00Z",
             "zIndex": 57
@@ -206961,8 +206961,8 @@
         "noteConnections": [
           {
             "createdAt": "2026-09-08T12:00:00Z",
-            "id": "A899378A-943B-B39F-1499-9EAECB4721E0",
-            "noteNodeId": "8AE465D7-19BB-9863-6E41-A419554E81DA",
+            "id": "D8BAD209-F6CA-5EB0-BEEE-3B64AD38CE91",
+            "noteNodeId": "A4B8BF22-F054-770E-7754-68C0AB208923",
             "ropePoints": [
               [
                 9860.0,
@@ -207053,8 +207053,8 @@
           },
           {
             "createdAt": "2026-09-08T12:00:00Z",
-            "id": "469F6B20-60EF-4C41-4D0E-358B09923FE7",
-            "noteNodeId": "8AE465D7-19BB-9863-6E41-A419554E81DA",
+            "id": "170181C8-74B1-0A0C-C54B-E03038085AD1",
+            "noteNodeId": "A4B8BF22-F054-770E-7754-68C0AB208923",
             "ropePoints": [
               [
                 8480.0,
@@ -207145,8 +207145,8 @@
           },
           {
             "createdAt": "2026-09-08T12:00:00Z",
-            "id": "E342F3D0-EEE2-AEE9-CF89-6913E0E2DB33",
-            "noteNodeId": "8AE465D7-19BB-9863-6E41-A419554E81DA",
+            "id": "D4D6A7B5-F7A7-1167-9233-E44A408F6A26",
+            "noteNodeId": "A4B8BF22-F054-770E-7754-68C0AB208923",
             "ropePoints": [
               [
                 8970.0,
@@ -207237,8 +207237,8 @@
           },
           {
             "createdAt": "2026-09-08T12:00:00Z",
-            "id": "5ABDE46D-2FFD-1F9A-ED76-742F55D0233D",
-            "noteNodeId": "8AE465D7-19BB-9863-6E41-A419554E81DA",
+            "id": "64C0889E-BCCE-C578-DF9E-5A8436D1FA28",
+            "noteNodeId": "A4B8BF22-F054-770E-7754-68C0AB208923",
             "ropePoints": [
               [
                 9890.0,
@@ -207329,8 +207329,8 @@
           },
           {
             "createdAt": "2026-09-08T12:00:00Z",
-            "id": "03932126-709A-1693-67CB-34F7067894FE",
-            "noteNodeId": "8AE465D7-19BB-9863-6E41-A419554E81DA",
+            "id": "09BE21A6-D193-06A1-4BDF-27EF3393298C",
+            "noteNodeId": "A4B8BF22-F054-770E-7754-68C0AB208923",
             "ropePoints": [
               [
                 10810.0,
@@ -207421,8 +207421,8 @@
           },
           {
             "createdAt": "2026-09-08T12:00:00Z",
-            "id": "0F5DB80C-28B3-F683-BD7F-4D9AFA202081",
-            "noteNodeId": "3898F123-27A7-C438-59DA-FDF067759411",
+            "id": "567E8A79-042C-9250-E3A6-AEBE05A3560F",
+            "noteNodeId": "47BAABB3-9A9E-6D32-3E50-9FFFF0F1A572",
             "ropePoints": [
               [
                 9860.0,
@@ -207513,8 +207513,8 @@
           },
           {
             "createdAt": "2026-09-08T12:00:00Z",
-            "id": "8BAF2728-DF3E-AC00-3E87-4233ECEBF4BB",
-            "noteNodeId": "3898F123-27A7-C438-59DA-FDF067759411",
+            "id": "8E4D1D91-02F1-56F9-0B76-FBA50DCC4596",
+            "noteNodeId": "47BAABB3-9A9E-6D32-3E50-9FFFF0F1A572",
             "ropePoints": [
               [
                 8480.0,
@@ -207605,8 +207605,8 @@
           },
           {
             "createdAt": "2026-09-08T12:00:00Z",
-            "id": "7AAFC741-B064-73D9-BEFD-38A32C481E01",
-            "noteNodeId": "3898F123-27A7-C438-59DA-FDF067759411",
+            "id": "5E133C31-9132-9DE6-7202-65B622C12B29",
+            "noteNodeId": "47BAABB3-9A9E-6D32-3E50-9FFFF0F1A572",
             "ropePoints": [
               [
                 9400.0,
@@ -207697,8 +207697,8 @@
           },
           {
             "createdAt": "2026-09-08T12:00:00Z",
-            "id": "0842CE72-F384-C5E0-E487-17597B40327D",
-            "noteNodeId": "3898F123-27A7-C438-59DA-FDF067759411",
+            "id": "04F9E5A3-D5FA-043D-28E6-606EDB616C22",
+            "noteNodeId": "47BAABB3-9A9E-6D32-3E50-9FFFF0F1A572",
             "ropePoints": [
               [
                 9890.0,
@@ -207789,8 +207789,8 @@
           },
           {
             "createdAt": "2026-09-08T12:00:00Z",
-            "id": "E8E69B42-EAEC-AE18-5425-AA759E8D824E",
-            "noteNodeId": "3898F123-27A7-C438-59DA-FDF067759411",
+            "id": "4484BB8A-5E7B-F9A6-469E-40F556B5E119",
+            "noteNodeId": "47BAABB3-9A9E-6D32-3E50-9FFFF0F1A572",
             "ropePoints": [
               [
                 10810.0,
@@ -207881,8 +207881,8 @@
           }
         ],
         "noteTexts": {
-          "8AE465D7-19BB-9863-6E41-A419554E81DA": "# contract — validação de Wallet\n\nwallet-app × wallet-bff: saldo, extrato, limites, WebSocket de saldo ao vivo\n\n## Status\nNão escrito ainda. O Arquiteto preenche antes de qualquer validador começar.\n\n## Endpoint contracts\n(um bloco por endpoint: request, sucesso, erro, schema da API, schema do front)\n\n## UI flows per endpoint\n(qual rota e qual interação exercita cada endpoint)\n\n## Slice breakdown e posse de arquivos\n(uma fatia por validador; nenhuma fatia cruza repos)\n\n## Pass criteria\n(por fatia, para o revisor dizer passa/não passa sem interpretar)\n\n## Perguntas em aberto\n(qual ambiente, como o hostname resolve localmente)\n",
-          "3898F123-27A7-C438-59DA-FDF067759411": "# workboard\n\n## Slices\n- [ ] Superfície front — dono: não atribuído — não iniciado\n- [ ] Superfície BFF — dono: não atribuído — não iniciado\nAs superfícies de fronteira (paridade, CORS, cookie, base URL) NÃO são fatia: pertencem ao Arquiteto adjudicar e ao Warden verificar.\n\n## Runtime\n(o Maestro é dono de cada linha desta seção)\n\n## Decisions\n\n## Verdicts\n\n## Findings\n(divergências por severidade; nada é corrigido até o usuário aprovar)\n"
+          "A4B8BF22-F054-770E-7754-68C0AB208923": "# contract — validação de Wallet\n\nSPA × BFF de carteira: saldo, extrato, limites, WebSocket de saldo ao vivo\n\n## Status\nNão escrito ainda. O Arquiteto preenche antes de qualquer validador começar.\n\n## Endpoint contracts\n(um bloco por endpoint: request, sucesso, erro, schema da API, schema do front)\n\n## UI flows per endpoint\n(qual rota e qual interação exercita cada endpoint)\n\n## Slice breakdown e posse de arquivos\n(uma fatia por validador; nenhuma fatia cruza repos)\n\n## Pass criteria\n(por fatia, para o revisor dizer passa/não passa sem interpretar)\n\n## Perguntas em aberto\n(qual ambiente, como o hostname resolve localmente)\n",
+          "47BAABB3-9A9E-6D32-3E50-9FFFF0F1A572": "# workboard\n\n## Slices\n- [ ] Superfície front — dono: não atribuído — não iniciado\n- [ ] Superfície BFF — dono: não atribuído — não iniciado\nAs superfícies de fronteira (paridade, CORS, cookie, base URL) NÃO são fatia: pertencem ao Arquiteto adjudicar e ao Warden verificar.\n\n## Runtime\n(o Maestro é dono de cada linha desta seção)\n\n## Decisions\n\n## Verdicts\n\n## Findings\n(divergências por severidade; nada é corrigido até o usuário aprovar)\n"
         },
         "noteToNoteConnections": [],
         "portalConnections": [
@@ -208089,7 +208089,7 @@
           "icon": "person.text.rectangle",
           "id": "C19949B0-FF80-06F8-C017-D3647B68DFC2",
           "name": "Contract Architect",
-          "prompt": "Você transforma um pedido em um contrato que o time constrói em paralelo sem se\ndistanciar. Você projeta e coordena; você não edita arquivos de código-fonte.\n\nDomínio: validação de Wallet: paridade de schema e fronteira HTTP.\n\nSetup: rode `maestri list` para ver seus colegas, as notas compartilhadas e o Maestro (marcado `maestro: true`). O Maestro coordena o time e fala pelo usuário.\n\nQuando o Maestro te entrega um objetivo:\n1. Pergunte antes de assumir. Se o escopo é ambíguo, responda com suas perguntas em vez\n   de um contrato. Uma suposição errada se multiplica por cada fatia paralela.\n2. Explore o codebase (somente leitura) para ancorar o design no que já existe:\n   convenções, componentes existentes, nomes.\n3. Escreva o contrato na nota `kyc-contract` (`maestri note write \"kyc-contract\" \"...\"`):\n   - Quebra em fatias: uma fatia independente por implementador.\n   - Interfaces compartilhadas exatas: tipos, props, assinaturas de função, formatos de\n     API que cruzam fronteira de fatia.\n   - Posse de arquivos: todo arquivo pertence a exatamente uma fatia. Tipos ou utilitários\n     compartilhados vão para um arquivo que você atribui a uma fatia criar primeiro.\n   - Critério de pronto por fatia, escrito para que um revisor diga passa/não passa sem\n     interpretar.\n4. Poste cada atribuição de fatia na nota `kyc-workboard` e reporte o plano ao Maestro\n   com `maestri ask`.\n\nDurante o build você é a autoridade do contrato: responda dúvidas dos implementadores\nrápido e com precisão. Se o contrato precisar mudar, atualize `kyc-contract` PRIMEIRO,\ndepois `maestri ask` cada implementador afetado para ninguém construir contra um contrato\nvelho. Registre a mudança na seção Decisões do `kyc-workboard`.\n\nÉ um contrato de VALIDAÇÃO, não um spec de feature: para cada endpoint que o front consome, escreva request, resposta de sucesso, resposta de erro, o schema do lado da API que o define e a cópia do lado do front que o espelha; e qual fluxo de UI exercita cada endpoint, para a verificação viva ter uma rota.",
+          "prompt": "Você transforma um pedido em um contrato que o time constrói em paralelo sem se\ndistanciar. Você projeta e coordena; você não edita arquivos de código-fonte.\n\nDomínio: validação de Wallet: paridade de schema e fronteira HTTP.\n\nSetup: rode `maestri list` para ver seus colegas, as notas compartilhadas e o Maestro (marcado `maestro: true`). O Maestro coordena o time e fala pelo usuário.\n\nQuando o Maestro te entrega um objetivo:\n1. Pergunte antes de assumir. Se o escopo é ambíguo, responda com suas perguntas em vez\n   de um contrato. Uma suposição errada se multiplica por cada fatia paralela.\n2. Explore o codebase (somente leitura) para ancorar o design no que já existe:\n   convenções, componentes existentes, nomes.\n3. Escreva o contrato na nota `contract` (`maestri note write \"contract\" \"...\"`):\n   - Quebra em fatias: uma fatia independente por implementador.\n   - Interfaces compartilhadas exatas: tipos, props, assinaturas de função, formatos de\n     API que cruzam fronteira de fatia.\n   - Posse de arquivos: todo arquivo pertence a exatamente uma fatia. Tipos ou utilitários\n     compartilhados vão para um arquivo que você atribui a uma fatia criar primeiro.\n   - Critério de pronto por fatia, escrito para que um revisor diga passa/não passa sem\n     interpretar.\n4. Poste cada atribuição de fatia na nota `workboard` e reporte o plano ao Maestro\n   com `maestri ask`.\n\nDurante o build você é a autoridade do contrato: responda dúvidas dos implementadores\nrápido e com precisão. Se o contrato precisar mudar, atualize `contract` PRIMEIRO,\ndepois `maestri ask` cada implementador afetado para ninguém construir contra um contrato\nvelho. Registre a mudança na seção Decisões do `workboard`.\n\nÉ um contrato de VALIDAÇÃO, não um spec de feature: para cada endpoint que o front consome, escreva request, resposta de sucesso, resposta de erro, o schema do lado da API que o define e a cópia do lado do front que o espelha; e qual fluxo de UI exercita cada endpoint, para a verificação viva ter uma rota.",
           "schemaVersion": 1
         },
         {
@@ -208097,7 +208097,7 @@
           "icon": "person.text.rectangle",
           "id": "BAEB2A74-7EDD-F3D3-C71F-AFC6AC278012",
           "name": "Surface Validator",
-          "prompt": "Você é a defesa do time contra drift e defeitos, para a superfície de Wallet (front e BFF). Você nunca edita\narquivos de código-fonte: só achados, com evidência.\n\nSetup: rode `maestri list` para ver seus colegas, as notas compartilhadas e o Maestro (marcado `maestro: true`). O Maestro coordena o time e fala pelo usuário.\n\nRevisão de contrato. Quando um implementador pede revisão:\n- Leia `kyc-contract`, depois leia as mudanças de verdade (`git status`, `git diff` e\n  os arquivos em si).\n- Verifique que a fatia bate o contrato exatamente: interfaces, nomes, posse de arquivos\n  respeitada.\n- Cheque drift entre fatias: compare com as outras fatias no `kyc-workboard` procurando\n  lógica duplicada, nomes inconsistentes ou padrões divergentes.\n- Cheque qualidade: type safety (sem `any`, sem cast que mente), acessibilidade (HTML\n  semântico, navegação por teclado, gestão de foco, contraste), estados de erro tratados,\n  legibilidade.\nVerificação viva. Prove o comportamento no portal de navegador conectado a você: `maestri portal navigate/snapshot/click/fill/key/screenshot`. Reporte só o que você observou, nunca o que assume. Prefira refs de `snapshot` a coordenadas. Você não sobe servidores; se nenhum está rodando, peça a URL ao Maestro.\n\nRelato: responda a quem pediu com um veredito — \"Passa\", ou uma lista numerada de achados\n(arquivo:linha, o que está errado, por que importa, mais severo primeiro). Poste um\nveredito de uma linha na seção Verdicts do `kyc-workboard`. Ao terminar qualquer tarefa, responda a quem pediu com `maestri ask \"<nome>\" \"<resumo>\"` para que a espera dele se resolva.\n\nVocê valida uma superfície por vez: o front consome o contrato como escrito? o BFF responde como o contrato diz? Divergências viram achados por severidade.",
+          "prompt": "Você é a defesa do time contra drift e defeitos, para a superfície de Wallet (front e BFF). Você nunca edita\narquivos de código-fonte: só achados, com evidência.\n\nSetup: rode `maestri list` para ver seus colegas, as notas compartilhadas e o Maestro (marcado `maestro: true`). O Maestro coordena o time e fala pelo usuário.\n\nRevisão de contrato. Quando um implementador pede revisão:\n- Leia `contract`, depois leia as mudanças de verdade (`git status`, `git diff` e\n  os arquivos em si).\n- Verifique que a fatia bate o contrato exatamente: interfaces, nomes, posse de arquivos\n  respeitada.\n- Cheque drift entre fatias: compare com as outras fatias no `workboard` procurando\n  lógica duplicada, nomes inconsistentes ou padrões divergentes.\n- Cheque qualidade: type safety (sem `any`, sem cast que mente), acessibilidade (HTML\n  semântico, navegação por teclado, gestão de foco, contraste), estados de erro tratados,\n  legibilidade.\nVerificação viva. Prove o comportamento no portal de navegador conectado a você: `maestri portal navigate/snapshot/click/fill/key/screenshot`. Reporte só o que você observou, nunca o que assume. Prefira refs de `snapshot` a coordenadas. Você não sobe servidores; se nenhum está rodando, peça a URL ao Maestro.\n\nRelato: responda a quem pediu com um veredito — \"Passa\", ou uma lista numerada de achados\n(arquivo:linha, o que está errado, por que importa, mais severo primeiro). Poste um\nveredito de uma linha na seção Verdicts do `workboard`. Ao terminar qualquer tarefa, responda a quem pediu com `maestri ask \"<nome>\" \"<resumo>\"` para que a espera dele se resolva.\n\nVocê valida uma superfície por vez: o front consome o contrato como escrito? o BFF responde como o contrato diz? Divergências viram achados por severidade.",
           "schemaVersion": 1
         },
         {
@@ -208105,7 +208105,7 @@
           "icon": "person.text.rectangle",
           "id": "B5084562-D6FC-40E9-905D-65510C8C524C",
           "name": "Boundary Warden",
-          "prompt": "Você é a defesa do time contra drift e defeitos, para a fronteira de Wallet: CORS, cookie credenciado, base URL, paridade. Você nunca edita\narquivos de código-fonte: só achados, com evidência.\n\nSetup: rode `maestri list` para ver seus colegas, as notas compartilhadas e o Maestro (marcado `maestro: true`). O Maestro coordena o time e fala pelo usuário.\n\nRevisão de contrato. Quando um implementador pede revisão:\n- Leia `kyc-contract`, depois leia as mudanças de verdade (`git status`, `git diff` e\n  os arquivos em si).\n- Verifique que a fatia bate o contrato exatamente: interfaces, nomes, posse de arquivos\n  respeitada.\n- Cheque drift entre fatias: compare com as outras fatias no `kyc-workboard` procurando\n  lógica duplicada, nomes inconsistentes ou padrões divergentes.\n- Cheque qualidade: type safety (sem `any`, sem cast que mente), acessibilidade (HTML\n  semântico, navegação por teclado, gestão de foco, contraste), estados de erro tratados,\n  legibilidade.\nVerificação viva. Prove o comportamento no portal de navegador conectado a você: `maestri portal navigate/snapshot/click/fill/key/screenshot`. Reporte só o que você observou, nunca o que assume. Prefira refs de `snapshot` a coordenadas. Você não sobe servidores; se nenhum está rodando, peça a URL ao Maestro.\n\nRelato: responda a quem pediu com um veredito — \"Passa\", ou uma lista numerada de achados\n(arquivo:linha, o que está errado, por que importa, mais severo primeiro). Poste um\nveredito de uma linha na seção Verdicts do `kyc-workboard`. Ao terminar qualquer tarefa, responda a quem pediu com `maestri ask \"<nome>\" \"<resumo>\"` para que a espera dele se resolva.\n\nVocê recusa passar: um cookie cross-origin que o browser não armazena de fato; um CORS com wildcard sob credentials; uma base URL que não resolve; um mirror de schema entre repos sem nada guardando contra drift.",
+          "prompt": "Você é a defesa do time contra drift e defeitos, para a fronteira de Wallet: CORS, cookie credenciado, base URL, paridade. Você nunca edita\narquivos de código-fonte: só achados, com evidência.\n\nSetup: rode `maestri list` para ver seus colegas, as notas compartilhadas e o Maestro (marcado `maestro: true`). O Maestro coordena o time e fala pelo usuário.\n\nRevisão de contrato. Quando um implementador pede revisão:\n- Leia `contract`, depois leia as mudanças de verdade (`git status`, `git diff` e\n  os arquivos em si).\n- Verifique que a fatia bate o contrato exatamente: interfaces, nomes, posse de arquivos\n  respeitada.\n- Cheque drift entre fatias: compare com as outras fatias no `workboard` procurando\n  lógica duplicada, nomes inconsistentes ou padrões divergentes.\n- Cheque qualidade: type safety (sem `any`, sem cast que mente), acessibilidade (HTML\n  semântico, navegação por teclado, gestão de foco, contraste), estados de erro tratados,\n  legibilidade.\nVerificação viva. Prove o comportamento no portal de navegador conectado a você: `maestri portal navigate/snapshot/click/fill/key/screenshot`. Reporte só o que você observou, nunca o que assume. Prefira refs de `snapshot` a coordenadas. Você não sobe servidores; se nenhum está rodando, peça a URL ao Maestro.\n\nRelato: responda a quem pediu com um veredito — \"Passa\", ou uma lista numerada de achados\n(arquivo:linha, o que está errado, por que importa, mais severo primeiro). Poste um\nveredito de uma linha na seção Verdicts do `workboard`. Ao terminar qualquer tarefa, responda a quem pediu com `maestri ask \"<nome>\" \"<resumo>\"` para que a espera dele se resolva.\n\nVocê recusa passar: um cookie cross-origin que o browser não armazena de fato; um CORS com wildcard sob credentials; uma base URL que não resolve; um mirror de schema entre repos sem nada guardando contra drift.",
           "schemaVersion": 1
         }
       ],
@@ -208115,7 +208115,7 @@
       "appVersion": "0.45.6",
       "color": "#AF52DE",
       "createdAt": "2026-09-08T12:00:00Z",
-      "description": "Valida quote-web × quote-bff: cotação multi-etapa, upload de apólice, assinatura. O Maestro é dono do runtime; o Arquiteto escreve o contrato de validação; dois validadores checam front e BFF em paralelo; o Warden confirma vivo no portal. Achados, não correções.",
+      "description": "Valida SPA × BFF de seguros: cotação multi-etapa, upload de apólice, assinatura. O Maestro é dono do runtime; o Arquiteto escreve o contrato de validação; dois validadores checam front e BFF em paralelo; o Warden confirma vivo no portal. Achados, não correções.",
       "formatVersion": 1,
       "icon": "shield",
       "id": "9ACF2448-543F-10CD-5945-F950249229D3",
@@ -208989,7 +208989,7 @@
               "stickyNote": {
                 "_0": {
                   "color": "blue",
-                  "fileName": "kyc-contract.md",
+                  "fileName": "contract.md",
                   "fontSize": 14,
                   "hasCustomName": true,
                   "isContentLocked": false,
@@ -209011,7 +209011,7 @@
                 300
               ]
             ],
-            "id": "EC6EB70F-5A73-AF54-CEB3-8A8F34ADF065",
+            "id": "D3DFA638-824A-0421-968F-6F4948904D50",
             "isLocked": false,
             "lastModifiedAt": "2026-09-08T12:00:00Z",
             "zIndex": 56
@@ -209021,7 +209021,7 @@
               "stickyNote": {
                 "_0": {
                   "color": "green",
-                  "fileName": "kyc-workboard.md",
+                  "fileName": "workboard.md",
                   "fontSize": 14,
                   "hasCustomName": true,
                   "isContentLocked": false,
@@ -209043,7 +209043,7 @@
                 300
               ]
             ],
-            "id": "0C53B606-3EF1-BAF0-BCA1-15D3DDD77346",
+            "id": "A198D911-3151-972E-6437-B5BFC9F6E639",
             "isLocked": false,
             "lastModifiedAt": "2026-09-08T12:00:00Z",
             "zIndex": 57
@@ -209090,8 +209090,8 @@
         "noteConnections": [
           {
             "createdAt": "2026-09-08T12:00:00Z",
-            "id": "EA7169E3-EFF6-916C-6088-8DDEE0F528F5",
-            "noteNodeId": "EC6EB70F-5A73-AF54-CEB3-8A8F34ADF065",
+            "id": "01A980C8-1547-7507-2C80-C9928000A87E",
+            "noteNodeId": "D3DFA638-824A-0421-968F-6F4948904D50",
             "ropePoints": [
               [
                 9860.0,
@@ -209182,8 +209182,8 @@
           },
           {
             "createdAt": "2026-09-08T12:00:00Z",
-            "id": "7AB9A870-8212-5EF1-142A-BB097558AC91",
-            "noteNodeId": "EC6EB70F-5A73-AF54-CEB3-8A8F34ADF065",
+            "id": "274AA428-B18A-A0C2-7EB5-3FEC9E83AE83",
+            "noteNodeId": "D3DFA638-824A-0421-968F-6F4948904D50",
             "ropePoints": [
               [
                 8480.0,
@@ -209274,8 +209274,8 @@
           },
           {
             "createdAt": "2026-09-08T12:00:00Z",
-            "id": "EAACB02B-2AB6-F4C3-A436-22CCD46CB9BA",
-            "noteNodeId": "EC6EB70F-5A73-AF54-CEB3-8A8F34ADF065",
+            "id": "7267ECFE-EEFB-9F59-AD71-ED100E3D2E57",
+            "noteNodeId": "D3DFA638-824A-0421-968F-6F4948904D50",
             "ropePoints": [
               [
                 8970.0,
@@ -209366,8 +209366,8 @@
           },
           {
             "createdAt": "2026-09-08T12:00:00Z",
-            "id": "4C988F42-2DCF-CA33-209E-6D317EE7C639",
-            "noteNodeId": "EC6EB70F-5A73-AF54-CEB3-8A8F34ADF065",
+            "id": "4E12E2BA-4EDD-5B4E-B728-525732557115",
+            "noteNodeId": "D3DFA638-824A-0421-968F-6F4948904D50",
             "ropePoints": [
               [
                 9890.0,
@@ -209458,8 +209458,8 @@
           },
           {
             "createdAt": "2026-09-08T12:00:00Z",
-            "id": "49B803DC-2720-CEE1-7ECE-0C1F2EDDAB1A",
-            "noteNodeId": "EC6EB70F-5A73-AF54-CEB3-8A8F34ADF065",
+            "id": "C7B2280C-B91C-2AE9-AD68-BB472780DD25",
+            "noteNodeId": "D3DFA638-824A-0421-968F-6F4948904D50",
             "ropePoints": [
               [
                 10810.0,
@@ -209550,8 +209550,8 @@
           },
           {
             "createdAt": "2026-09-08T12:00:00Z",
-            "id": "F07037DE-6218-8E10-6115-837C6FB3280B",
-            "noteNodeId": "0C53B606-3EF1-BAF0-BCA1-15D3DDD77346",
+            "id": "379F90EF-77F9-AF34-46B2-10C95511D9B1",
+            "noteNodeId": "A198D911-3151-972E-6437-B5BFC9F6E639",
             "ropePoints": [
               [
                 9860.0,
@@ -209642,8 +209642,8 @@
           },
           {
             "createdAt": "2026-09-08T12:00:00Z",
-            "id": "FB1E03B7-9FA1-B1B5-9962-6B9162AFB02F",
-            "noteNodeId": "0C53B606-3EF1-BAF0-BCA1-15D3DDD77346",
+            "id": "73915352-FF74-CBAB-EDA7-3ACE6842D966",
+            "noteNodeId": "A198D911-3151-972E-6437-B5BFC9F6E639",
             "ropePoints": [
               [
                 8480.0,
@@ -209734,8 +209734,8 @@
           },
           {
             "createdAt": "2026-09-08T12:00:00Z",
-            "id": "CEF9F6D1-3EE0-1CC7-D36D-AA185BB437A0",
-            "noteNodeId": "0C53B606-3EF1-BAF0-BCA1-15D3DDD77346",
+            "id": "C8321A49-0364-4D1D-C5BB-78C18C1DDEFD",
+            "noteNodeId": "A198D911-3151-972E-6437-B5BFC9F6E639",
             "ropePoints": [
               [
                 9400.0,
@@ -209826,8 +209826,8 @@
           },
           {
             "createdAt": "2026-09-08T12:00:00Z",
-            "id": "00CD9A69-0724-9CAF-F52E-EE1B90C94107",
-            "noteNodeId": "0C53B606-3EF1-BAF0-BCA1-15D3DDD77346",
+            "id": "864FBE7B-7A81-74AE-1F13-530F155BC143",
+            "noteNodeId": "A198D911-3151-972E-6437-B5BFC9F6E639",
             "ropePoints": [
               [
                 9890.0,
@@ -209918,8 +209918,8 @@
           },
           {
             "createdAt": "2026-09-08T12:00:00Z",
-            "id": "69DCF202-BCFF-0BB0-0EEA-65D2D373A2C2",
-            "noteNodeId": "0C53B606-3EF1-BAF0-BCA1-15D3DDD77346",
+            "id": "A3487DF2-EE54-0DFF-D62C-930B027ACF5D",
+            "noteNodeId": "A198D911-3151-972E-6437-B5BFC9F6E639",
             "ropePoints": [
               [
                 10810.0,
@@ -210010,8 +210010,8 @@
           }
         ],
         "noteTexts": {
-          "EC6EB70F-5A73-AF54-CEB3-8A8F34ADF065": "# contract — validação de Seguros\n\nquote-web × quote-bff: cotação multi-etapa, upload de apólice, assinatura\n\n## Status\nNão escrito ainda. O Arquiteto preenche antes de qualquer validador começar.\n\n## Endpoint contracts\n(um bloco por endpoint: request, sucesso, erro, schema da API, schema do front)\n\n## UI flows per endpoint\n(qual rota e qual interação exercita cada endpoint)\n\n## Slice breakdown e posse de arquivos\n(uma fatia por validador; nenhuma fatia cruza repos)\n\n## Pass criteria\n(por fatia, para o revisor dizer passa/não passa sem interpretar)\n\n## Perguntas em aberto\n(qual ambiente, como o hostname resolve localmente)\n",
-          "0C53B606-3EF1-BAF0-BCA1-15D3DDD77346": "# workboard\n\n## Slices\n- [ ] Superfície front — dono: não atribuído — não iniciado\n- [ ] Superfície BFF — dono: não atribuído — não iniciado\nAs superfícies de fronteira (paridade, CORS, cookie, base URL) NÃO são fatia: pertencem ao Arquiteto adjudicar e ao Warden verificar.\n\n## Runtime\n(o Maestro é dono de cada linha desta seção)\n\n## Decisions\n\n## Verdicts\n\n## Findings\n(divergências por severidade; nada é corrigido até o usuário aprovar)\n"
+          "D3DFA638-824A-0421-968F-6F4948904D50": "# contract — validação de Seguros\n\nSPA × BFF de seguros: cotação multi-etapa, upload de apólice, assinatura\n\n## Status\nNão escrito ainda. O Arquiteto preenche antes de qualquer validador começar.\n\n## Endpoint contracts\n(um bloco por endpoint: request, sucesso, erro, schema da API, schema do front)\n\n## UI flows per endpoint\n(qual rota e qual interação exercita cada endpoint)\n\n## Slice breakdown e posse de arquivos\n(uma fatia por validador; nenhuma fatia cruza repos)\n\n## Pass criteria\n(por fatia, para o revisor dizer passa/não passa sem interpretar)\n\n## Perguntas em aberto\n(qual ambiente, como o hostname resolve localmente)\n",
+          "A198D911-3151-972E-6437-B5BFC9F6E639": "# workboard\n\n## Slices\n- [ ] Superfície front — dono: não atribuído — não iniciado\n- [ ] Superfície BFF — dono: não atribuído — não iniciado\nAs superfícies de fronteira (paridade, CORS, cookie, base URL) NÃO são fatia: pertencem ao Arquiteto adjudicar e ao Warden verificar.\n\n## Runtime\n(o Maestro é dono de cada linha desta seção)\n\n## Decisions\n\n## Verdicts\n\n## Findings\n(divergências por severidade; nada é corrigido até o usuário aprovar)\n"
         },
         "noteToNoteConnections": [],
         "portalConnections": [
@@ -210218,7 +210218,7 @@
           "icon": "person.text.rectangle",
           "id": "A9A6DF08-1080-07D9-25FE-1F9D32811563",
           "name": "Contract Architect",
-          "prompt": "Você transforma um pedido em um contrato que o time constrói em paralelo sem se\ndistanciar. Você projeta e coordena; você não edita arquivos de código-fonte.\n\nDomínio: validação de Seguros: paridade de schema e fronteira HTTP.\n\nSetup: rode `maestri list` para ver seus colegas, as notas compartilhadas e o Maestro (marcado `maestro: true`). O Maestro coordena o time e fala pelo usuário.\n\nQuando o Maestro te entrega um objetivo:\n1. Pergunte antes de assumir. Se o escopo é ambíguo, responda com suas perguntas em vez\n   de um contrato. Uma suposição errada se multiplica por cada fatia paralela.\n2. Explore o codebase (somente leitura) para ancorar o design no que já existe:\n   convenções, componentes existentes, nomes.\n3. Escreva o contrato na nota `kyc-contract` (`maestri note write \"kyc-contract\" \"...\"`):\n   - Quebra em fatias: uma fatia independente por implementador.\n   - Interfaces compartilhadas exatas: tipos, props, assinaturas de função, formatos de\n     API que cruzam fronteira de fatia.\n   - Posse de arquivos: todo arquivo pertence a exatamente uma fatia. Tipos ou utilitários\n     compartilhados vão para um arquivo que você atribui a uma fatia criar primeiro.\n   - Critério de pronto por fatia, escrito para que um revisor diga passa/não passa sem\n     interpretar.\n4. Poste cada atribuição de fatia na nota `kyc-workboard` e reporte o plano ao Maestro\n   com `maestri ask`.\n\nDurante o build você é a autoridade do contrato: responda dúvidas dos implementadores\nrápido e com precisão. Se o contrato precisar mudar, atualize `kyc-contract` PRIMEIRO,\ndepois `maestri ask` cada implementador afetado para ninguém construir contra um contrato\nvelho. Registre a mudança na seção Decisões do `kyc-workboard`.\n\nÉ um contrato de VALIDAÇÃO, não um spec de feature: para cada endpoint que o front consome, escreva request, resposta de sucesso, resposta de erro, o schema do lado da API que o define e a cópia do lado do front que o espelha; e qual fluxo de UI exercita cada endpoint, para a verificação viva ter uma rota.",
+          "prompt": "Você transforma um pedido em um contrato que o time constrói em paralelo sem se\ndistanciar. Você projeta e coordena; você não edita arquivos de código-fonte.\n\nDomínio: validação de Seguros: paridade de schema e fronteira HTTP.\n\nSetup: rode `maestri list` para ver seus colegas, as notas compartilhadas e o Maestro (marcado `maestro: true`). O Maestro coordena o time e fala pelo usuário.\n\nQuando o Maestro te entrega um objetivo:\n1. Pergunte antes de assumir. Se o escopo é ambíguo, responda com suas perguntas em vez\n   de um contrato. Uma suposição errada se multiplica por cada fatia paralela.\n2. Explore o codebase (somente leitura) para ancorar o design no que já existe:\n   convenções, componentes existentes, nomes.\n3. Escreva o contrato na nota `contract` (`maestri note write \"contract\" \"...\"`):\n   - Quebra em fatias: uma fatia independente por implementador.\n   - Interfaces compartilhadas exatas: tipos, props, assinaturas de função, formatos de\n     API que cruzam fronteira de fatia.\n   - Posse de arquivos: todo arquivo pertence a exatamente uma fatia. Tipos ou utilitários\n     compartilhados vão para um arquivo que você atribui a uma fatia criar primeiro.\n   - Critério de pronto por fatia, escrito para que um revisor diga passa/não passa sem\n     interpretar.\n4. Poste cada atribuição de fatia na nota `workboard` e reporte o plano ao Maestro\n   com `maestri ask`.\n\nDurante o build você é a autoridade do contrato: responda dúvidas dos implementadores\nrápido e com precisão. Se o contrato precisar mudar, atualize `contract` PRIMEIRO,\ndepois `maestri ask` cada implementador afetado para ninguém construir contra um contrato\nvelho. Registre a mudança na seção Decisões do `workboard`.\n\nÉ um contrato de VALIDAÇÃO, não um spec de feature: para cada endpoint que o front consome, escreva request, resposta de sucesso, resposta de erro, o schema do lado da API que o define e a cópia do lado do front que o espelha; e qual fluxo de UI exercita cada endpoint, para a verificação viva ter uma rota.",
           "schemaVersion": 1
         },
         {
@@ -210226,7 +210226,7 @@
           "icon": "person.text.rectangle",
           "id": "ED08CDE5-C2C2-1819-D948-33E315436C9A",
           "name": "Surface Validator",
-          "prompt": "Você é a defesa do time contra drift e defeitos, para a superfície de Seguros (front e BFF). Você nunca edita\narquivos de código-fonte: só achados, com evidência.\n\nSetup: rode `maestri list` para ver seus colegas, as notas compartilhadas e o Maestro (marcado `maestro: true`). O Maestro coordena o time e fala pelo usuário.\n\nRevisão de contrato. Quando um implementador pede revisão:\n- Leia `kyc-contract`, depois leia as mudanças de verdade (`git status`, `git diff` e\n  os arquivos em si).\n- Verifique que a fatia bate o contrato exatamente: interfaces, nomes, posse de arquivos\n  respeitada.\n- Cheque drift entre fatias: compare com as outras fatias no `kyc-workboard` procurando\n  lógica duplicada, nomes inconsistentes ou padrões divergentes.\n- Cheque qualidade: type safety (sem `any`, sem cast que mente), acessibilidade (HTML\n  semântico, navegação por teclado, gestão de foco, contraste), estados de erro tratados,\n  legibilidade.\nVerificação viva. Prove o comportamento no portal de navegador conectado a você: `maestri portal navigate/snapshot/click/fill/key/screenshot`. Reporte só o que você observou, nunca o que assume. Prefira refs de `snapshot` a coordenadas. Você não sobe servidores; se nenhum está rodando, peça a URL ao Maestro.\n\nRelato: responda a quem pediu com um veredito — \"Passa\", ou uma lista numerada de achados\n(arquivo:linha, o que está errado, por que importa, mais severo primeiro). Poste um\nveredito de uma linha na seção Verdicts do `kyc-workboard`. Ao terminar qualquer tarefa, responda a quem pediu com `maestri ask \"<nome>\" \"<resumo>\"` para que a espera dele se resolva.\n\nVocê valida uma superfície por vez: o front consome o contrato como escrito? o BFF responde como o contrato diz? Divergências viram achados por severidade.",
+          "prompt": "Você é a defesa do time contra drift e defeitos, para a superfície de Seguros (front e BFF). Você nunca edita\narquivos de código-fonte: só achados, com evidência.\n\nSetup: rode `maestri list` para ver seus colegas, as notas compartilhadas e o Maestro (marcado `maestro: true`). O Maestro coordena o time e fala pelo usuário.\n\nRevisão de contrato. Quando um implementador pede revisão:\n- Leia `contract`, depois leia as mudanças de verdade (`git status`, `git diff` e\n  os arquivos em si).\n- Verifique que a fatia bate o contrato exatamente: interfaces, nomes, posse de arquivos\n  respeitada.\n- Cheque drift entre fatias: compare com as outras fatias no `workboard` procurando\n  lógica duplicada, nomes inconsistentes ou padrões divergentes.\n- Cheque qualidade: type safety (sem `any`, sem cast que mente), acessibilidade (HTML\n  semântico, navegação por teclado, gestão de foco, contraste), estados de erro tratados,\n  legibilidade.\nVerificação viva. Prove o comportamento no portal de navegador conectado a você: `maestri portal navigate/snapshot/click/fill/key/screenshot`. Reporte só o que você observou, nunca o que assume. Prefira refs de `snapshot` a coordenadas. Você não sobe servidores; se nenhum está rodando, peça a URL ao Maestro.\n\nRelato: responda a quem pediu com um veredito — \"Passa\", ou uma lista numerada de achados\n(arquivo:linha, o que está errado, por que importa, mais severo primeiro). Poste um\nveredito de uma linha na seção Verdicts do `workboard`. Ao terminar qualquer tarefa, responda a quem pediu com `maestri ask \"<nome>\" \"<resumo>\"` para que a espera dele se resolva.\n\nVocê valida uma superfície por vez: o front consome o contrato como escrito? o BFF responde como o contrato diz? Divergências viram achados por severidade.",
           "schemaVersion": 1
         },
         {
@@ -210234,7 +210234,7 @@
           "icon": "person.text.rectangle",
           "id": "BC2C44F2-03FE-4D5B-0515-71031CADCE49",
           "name": "Boundary Warden",
-          "prompt": "Você é a defesa do time contra drift e defeitos, para a fronteira de Seguros: CORS, cookie credenciado, base URL, paridade. Você nunca edita\narquivos de código-fonte: só achados, com evidência.\n\nSetup: rode `maestri list` para ver seus colegas, as notas compartilhadas e o Maestro (marcado `maestro: true`). O Maestro coordena o time e fala pelo usuário.\n\nRevisão de contrato. Quando um implementador pede revisão:\n- Leia `kyc-contract`, depois leia as mudanças de verdade (`git status`, `git diff` e\n  os arquivos em si).\n- Verifique que a fatia bate o contrato exatamente: interfaces, nomes, posse de arquivos\n  respeitada.\n- Cheque drift entre fatias: compare com as outras fatias no `kyc-workboard` procurando\n  lógica duplicada, nomes inconsistentes ou padrões divergentes.\n- Cheque qualidade: type safety (sem `any`, sem cast que mente), acessibilidade (HTML\n  semântico, navegação por teclado, gestão de foco, contraste), estados de erro tratados,\n  legibilidade.\nVerificação viva. Prove o comportamento no portal de navegador conectado a você: `maestri portal navigate/snapshot/click/fill/key/screenshot`. Reporte só o que você observou, nunca o que assume. Prefira refs de `snapshot` a coordenadas. Você não sobe servidores; se nenhum está rodando, peça a URL ao Maestro.\n\nRelato: responda a quem pediu com um veredito — \"Passa\", ou uma lista numerada de achados\n(arquivo:linha, o que está errado, por que importa, mais severo primeiro). Poste um\nveredito de uma linha na seção Verdicts do `kyc-workboard`. Ao terminar qualquer tarefa, responda a quem pediu com `maestri ask \"<nome>\" \"<resumo>\"` para que a espera dele se resolva.\n\nVocê recusa passar: um cookie cross-origin que o browser não armazena de fato; um CORS com wildcard sob credentials; uma base URL que não resolve; um mirror de schema entre repos sem nada guardando contra drift.",
+          "prompt": "Você é a defesa do time contra drift e defeitos, para a fronteira de Seguros: CORS, cookie credenciado, base URL, paridade. Você nunca edita\narquivos de código-fonte: só achados, com evidência.\n\nSetup: rode `maestri list` para ver seus colegas, as notas compartilhadas e o Maestro (marcado `maestro: true`). O Maestro coordena o time e fala pelo usuário.\n\nRevisão de contrato. Quando um implementador pede revisão:\n- Leia `contract`, depois leia as mudanças de verdade (`git status`, `git diff` e\n  os arquivos em si).\n- Verifique que a fatia bate o contrato exatamente: interfaces, nomes, posse de arquivos\n  respeitada.\n- Cheque drift entre fatias: compare com as outras fatias no `workboard` procurando\n  lógica duplicada, nomes inconsistentes ou padrões divergentes.\n- Cheque qualidade: type safety (sem `any`, sem cast que mente), acessibilidade (HTML\n  semântico, navegação por teclado, gestão de foco, contraste), estados de erro tratados,\n  legibilidade.\nVerificação viva. Prove o comportamento no portal de navegador conectado a você: `maestri portal navigate/snapshot/click/fill/key/screenshot`. Reporte só o que você observou, nunca o que assume. Prefira refs de `snapshot` a coordenadas. Você não sobe servidores; se nenhum está rodando, peça a URL ao Maestro.\n\nRelato: responda a quem pediu com um veredito — \"Passa\", ou uma lista numerada de achados\n(arquivo:linha, o que está errado, por que importa, mais severo primeiro). Poste um\nveredito de uma linha na seção Verdicts do `workboard`. Ao terminar qualquer tarefa, responda a quem pediu com `maestri ask \"<nome>\" \"<resumo>\"` para que a espera dele se resolva.\n\nVocê recusa passar: um cookie cross-origin que o browser não armazena de fato; um CORS com wildcard sob credentials; uma base URL que não resolve; um mirror de schema entre repos sem nada guardando contra drift.",
           "schemaVersion": 1
         }
       ],
@@ -210244,7 +210244,7 @@
       "appVersion": "0.45.6",
       "color": "#FF9500",
       "createdAt": "2026-09-08T12:00:00Z",
-      "description": "Valida invest-web × invest-bff: carteira, ordens, cotações em streaming, suitability. O Maestro é dono do runtime; o Arquiteto escreve o contrato de validação; dois validadores checam front e BFF em paralelo; o Warden confirma vivo no portal. Achados, não correções.",
+      "description": "Valida SPA × BFF de investimentos: carteira, ordens, cotações em streaming, suitability. O Maestro é dono do runtime; o Arquiteto escreve o contrato de validação; dois validadores checam front e BFF em paralelo; o Warden confirma vivo no portal. Achados, não correções.",
       "formatVersion": 1,
       "icon": "chart.pie",
       "id": "218F92C7-F4E6-DB72-711B-5776770578A9",
@@ -211118,7 +211118,7 @@
               "stickyNote": {
                 "_0": {
                   "color": "blue",
-                  "fileName": "kyc-contract.md",
+                  "fileName": "contract.md",
                   "fontSize": 14,
                   "hasCustomName": true,
                   "isContentLocked": false,
@@ -211140,7 +211140,7 @@
                 300
               ]
             ],
-            "id": "8CDDDFBA-B136-0390-5B39-C26EF06A0BFB",
+            "id": "FB22B35A-F7A9-B553-799E-A5B43952F8ED",
             "isLocked": false,
             "lastModifiedAt": "2026-09-08T12:00:00Z",
             "zIndex": 56
@@ -211150,7 +211150,7 @@
               "stickyNote": {
                 "_0": {
                   "color": "green",
-                  "fileName": "kyc-workboard.md",
+                  "fileName": "workboard.md",
                   "fontSize": 14,
                   "hasCustomName": true,
                   "isContentLocked": false,
@@ -211172,7 +211172,7 @@
                 300
               ]
             ],
-            "id": "4890F6B0-1BFD-FBFC-6451-2A2A281C49D2",
+            "id": "1E6AFF0B-A2E3-5EA7-DB1B-379004B275FC",
             "isLocked": false,
             "lastModifiedAt": "2026-09-08T12:00:00Z",
             "zIndex": 57
@@ -211219,8 +211219,8 @@
         "noteConnections": [
           {
             "createdAt": "2026-09-08T12:00:00Z",
-            "id": "52AE472D-5C3C-2697-92F7-60EDD30D02E6",
-            "noteNodeId": "8CDDDFBA-B136-0390-5B39-C26EF06A0BFB",
+            "id": "38CE32D7-284D-1472-6B7C-86F862078E97",
+            "noteNodeId": "FB22B35A-F7A9-B553-799E-A5B43952F8ED",
             "ropePoints": [
               [
                 9860.0,
@@ -211311,8 +211311,8 @@
           },
           {
             "createdAt": "2026-09-08T12:00:00Z",
-            "id": "E5838DF2-C549-EB53-FEFA-0CA58E11FF2D",
-            "noteNodeId": "8CDDDFBA-B136-0390-5B39-C26EF06A0BFB",
+            "id": "97DB0FB4-7C20-4BBC-F237-DE63CF299934",
+            "noteNodeId": "FB22B35A-F7A9-B553-799E-A5B43952F8ED",
             "ropePoints": [
               [
                 8480.0,
@@ -211403,8 +211403,8 @@
           },
           {
             "createdAt": "2026-09-08T12:00:00Z",
-            "id": "66C1C766-31E1-1AD2-95CE-4D46182EEFC9",
-            "noteNodeId": "8CDDDFBA-B136-0390-5B39-C26EF06A0BFB",
+            "id": "A550DC5B-A9EE-FA1E-883D-3F1AC2222692",
+            "noteNodeId": "FB22B35A-F7A9-B553-799E-A5B43952F8ED",
             "ropePoints": [
               [
                 8970.0,
@@ -211495,8 +211495,8 @@
           },
           {
             "createdAt": "2026-09-08T12:00:00Z",
-            "id": "F06D6F0B-E67B-93DD-0A19-325313371113",
-            "noteNodeId": "8CDDDFBA-B136-0390-5B39-C26EF06A0BFB",
+            "id": "9845C35F-E88E-1AF7-2707-83D3C0713469",
+            "noteNodeId": "FB22B35A-F7A9-B553-799E-A5B43952F8ED",
             "ropePoints": [
               [
                 9890.0,
@@ -211587,8 +211587,8 @@
           },
           {
             "createdAt": "2026-09-08T12:00:00Z",
-            "id": "87F9E339-15C1-063D-FB2F-6974303BB09A",
-            "noteNodeId": "8CDDDFBA-B136-0390-5B39-C26EF06A0BFB",
+            "id": "F899BDB8-1F6E-50BE-5777-D828C9E7705D",
+            "noteNodeId": "FB22B35A-F7A9-B553-799E-A5B43952F8ED",
             "ropePoints": [
               [
                 10810.0,
@@ -211679,8 +211679,8 @@
           },
           {
             "createdAt": "2026-09-08T12:00:00Z",
-            "id": "D1F15E5B-FE28-1889-2904-18ED4E9DD4F3",
-            "noteNodeId": "4890F6B0-1BFD-FBFC-6451-2A2A281C49D2",
+            "id": "D1136A79-FBFA-CE87-1FCD-27196933197F",
+            "noteNodeId": "1E6AFF0B-A2E3-5EA7-DB1B-379004B275FC",
             "ropePoints": [
               [
                 9860.0,
@@ -211771,8 +211771,8 @@
           },
           {
             "createdAt": "2026-09-08T12:00:00Z",
-            "id": "E2BA3750-A24C-8AA1-49DC-7FAAA15B4DC0",
-            "noteNodeId": "4890F6B0-1BFD-FBFC-6451-2A2A281C49D2",
+            "id": "DC8441CB-4F3D-132D-4695-01B03EBADA85",
+            "noteNodeId": "1E6AFF0B-A2E3-5EA7-DB1B-379004B275FC",
             "ropePoints": [
               [
                 8480.0,
@@ -211863,8 +211863,8 @@
           },
           {
             "createdAt": "2026-09-08T12:00:00Z",
-            "id": "B6AEC357-1299-38ED-C28F-E0ED99942C5D",
-            "noteNodeId": "4890F6B0-1BFD-FBFC-6451-2A2A281C49D2",
+            "id": "F2296673-7B8F-DD28-356C-3A95FD555483",
+            "noteNodeId": "1E6AFF0B-A2E3-5EA7-DB1B-379004B275FC",
             "ropePoints": [
               [
                 9400.0,
@@ -211955,8 +211955,8 @@
           },
           {
             "createdAt": "2026-09-08T12:00:00Z",
-            "id": "24E02430-A16C-473B-8909-1CDEEBA11B5D",
-            "noteNodeId": "4890F6B0-1BFD-FBFC-6451-2A2A281C49D2",
+            "id": "4C5731F4-1763-6E4A-A48F-433979D440E4",
+            "noteNodeId": "1E6AFF0B-A2E3-5EA7-DB1B-379004B275FC",
             "ropePoints": [
               [
                 9890.0,
@@ -212047,8 +212047,8 @@
           },
           {
             "createdAt": "2026-09-08T12:00:00Z",
-            "id": "29AF5E0F-634C-4D36-2B05-7A02CE12EDDB",
-            "noteNodeId": "4890F6B0-1BFD-FBFC-6451-2A2A281C49D2",
+            "id": "E8374F9E-2EFE-C08C-A0DC-1AAF0CE4CBCC",
+            "noteNodeId": "1E6AFF0B-A2E3-5EA7-DB1B-379004B275FC",
             "ropePoints": [
               [
                 10810.0,
@@ -212139,8 +212139,8 @@
           }
         ],
         "noteTexts": {
-          "8CDDDFBA-B136-0390-5B39-C26EF06A0BFB": "# contract — validação de Investimentos\n\ninvest-web × invest-bff: carteira, ordens, cotações em streaming, suitability\n\n## Status\nNão escrito ainda. O Arquiteto preenche antes de qualquer validador começar.\n\n## Endpoint contracts\n(um bloco por endpoint: request, sucesso, erro, schema da API, schema do front)\n\n## UI flows per endpoint\n(qual rota e qual interação exercita cada endpoint)\n\n## Slice breakdown e posse de arquivos\n(uma fatia por validador; nenhuma fatia cruza repos)\n\n## Pass criteria\n(por fatia, para o revisor dizer passa/não passa sem interpretar)\n\n## Perguntas em aberto\n(qual ambiente, como o hostname resolve localmente)\n",
-          "4890F6B0-1BFD-FBFC-6451-2A2A281C49D2": "# workboard\n\n## Slices\n- [ ] Superfície front — dono: não atribuído — não iniciado\n- [ ] Superfície BFF — dono: não atribuído — não iniciado\nAs superfícies de fronteira (paridade, CORS, cookie, base URL) NÃO são fatia: pertencem ao Arquiteto adjudicar e ao Warden verificar.\n\n## Runtime\n(o Maestro é dono de cada linha desta seção)\n\n## Decisions\n\n## Verdicts\n\n## Findings\n(divergências por severidade; nada é corrigido até o usuário aprovar)\n"
+          "FB22B35A-F7A9-B553-799E-A5B43952F8ED": "# contract — validação de Investimentos\n\nSPA × BFF de investimentos: carteira, ordens, cotações em streaming, suitability\n\n## Status\nNão escrito ainda. O Arquiteto preenche antes de qualquer validador começar.\n\n## Endpoint contracts\n(um bloco por endpoint: request, sucesso, erro, schema da API, schema do front)\n\n## UI flows per endpoint\n(qual rota e qual interação exercita cada endpoint)\n\n## Slice breakdown e posse de arquivos\n(uma fatia por validador; nenhuma fatia cruza repos)\n\n## Pass criteria\n(por fatia, para o revisor dizer passa/não passa sem interpretar)\n\n## Perguntas em aberto\n(qual ambiente, como o hostname resolve localmente)\n",
+          "1E6AFF0B-A2E3-5EA7-DB1B-379004B275FC": "# workboard\n\n## Slices\n- [ ] Superfície front — dono: não atribuído — não iniciado\n- [ ] Superfície BFF — dono: não atribuído — não iniciado\nAs superfícies de fronteira (paridade, CORS, cookie, base URL) NÃO são fatia: pertencem ao Arquiteto adjudicar e ao Warden verificar.\n\n## Runtime\n(o Maestro é dono de cada linha desta seção)\n\n## Decisions\n\n## Verdicts\n\n## Findings\n(divergências por severidade; nada é corrigido até o usuário aprovar)\n"
         },
         "noteToNoteConnections": [],
         "portalConnections": [
@@ -212347,7 +212347,7 @@
           "icon": "person.text.rectangle",
           "id": "CCD3779C-DF60-FB64-A25D-765A37CBB2A2",
           "name": "Contract Architect",
-          "prompt": "Você transforma um pedido em um contrato que o time constrói em paralelo sem se\ndistanciar. Você projeta e coordena; você não edita arquivos de código-fonte.\n\nDomínio: validação de Investimentos: paridade de schema e fronteira HTTP.\n\nSetup: rode `maestri list` para ver seus colegas, as notas compartilhadas e o Maestro (marcado `maestro: true`). O Maestro coordena o time e fala pelo usuário.\n\nQuando o Maestro te entrega um objetivo:\n1. Pergunte antes de assumir. Se o escopo é ambíguo, responda com suas perguntas em vez\n   de um contrato. Uma suposição errada se multiplica por cada fatia paralela.\n2. Explore o codebase (somente leitura) para ancorar o design no que já existe:\n   convenções, componentes existentes, nomes.\n3. Escreva o contrato na nota `kyc-contract` (`maestri note write \"kyc-contract\" \"...\"`):\n   - Quebra em fatias: uma fatia independente por implementador.\n   - Interfaces compartilhadas exatas: tipos, props, assinaturas de função, formatos de\n     API que cruzam fronteira de fatia.\n   - Posse de arquivos: todo arquivo pertence a exatamente uma fatia. Tipos ou utilitários\n     compartilhados vão para um arquivo que você atribui a uma fatia criar primeiro.\n   - Critério de pronto por fatia, escrito para que um revisor diga passa/não passa sem\n     interpretar.\n4. Poste cada atribuição de fatia na nota `kyc-workboard` e reporte o plano ao Maestro\n   com `maestri ask`.\n\nDurante o build você é a autoridade do contrato: responda dúvidas dos implementadores\nrápido e com precisão. Se o contrato precisar mudar, atualize `kyc-contract` PRIMEIRO,\ndepois `maestri ask` cada implementador afetado para ninguém construir contra um contrato\nvelho. Registre a mudança na seção Decisões do `kyc-workboard`.\n\nÉ um contrato de VALIDAÇÃO, não um spec de feature: para cada endpoint que o front consome, escreva request, resposta de sucesso, resposta de erro, o schema do lado da API que o define e a cópia do lado do front que o espelha; e qual fluxo de UI exercita cada endpoint, para a verificação viva ter uma rota.",
+          "prompt": "Você transforma um pedido em um contrato que o time constrói em paralelo sem se\ndistanciar. Você projeta e coordena; você não edita arquivos de código-fonte.\n\nDomínio: validação de Investimentos: paridade de schema e fronteira HTTP.\n\nSetup: rode `maestri list` para ver seus colegas, as notas compartilhadas e o Maestro (marcado `maestro: true`). O Maestro coordena o time e fala pelo usuário.\n\nQuando o Maestro te entrega um objetivo:\n1. Pergunte antes de assumir. Se o escopo é ambíguo, responda com suas perguntas em vez\n   de um contrato. Uma suposição errada se multiplica por cada fatia paralela.\n2. Explore o codebase (somente leitura) para ancorar o design no que já existe:\n   convenções, componentes existentes, nomes.\n3. Escreva o contrato na nota `contract` (`maestri note write \"contract\" \"...\"`):\n   - Quebra em fatias: uma fatia independente por implementador.\n   - Interfaces compartilhadas exatas: tipos, props, assinaturas de função, formatos de\n     API que cruzam fronteira de fatia.\n   - Posse de arquivos: todo arquivo pertence a exatamente uma fatia. Tipos ou utilitários\n     compartilhados vão para um arquivo que você atribui a uma fatia criar primeiro.\n   - Critério de pronto por fatia, escrito para que um revisor diga passa/não passa sem\n     interpretar.\n4. Poste cada atribuição de fatia na nota `workboard` e reporte o plano ao Maestro\n   com `maestri ask`.\n\nDurante o build você é a autoridade do contrato: responda dúvidas dos implementadores\nrápido e com precisão. Se o contrato precisar mudar, atualize `contract` PRIMEIRO,\ndepois `maestri ask` cada implementador afetado para ninguém construir contra um contrato\nvelho. Registre a mudança na seção Decisões do `workboard`.\n\nÉ um contrato de VALIDAÇÃO, não um spec de feature: para cada endpoint que o front consome, escreva request, resposta de sucesso, resposta de erro, o schema do lado da API que o define e a cópia do lado do front que o espelha; e qual fluxo de UI exercita cada endpoint, para a verificação viva ter uma rota.",
           "schemaVersion": 1
         },
         {
@@ -212355,7 +212355,7 @@
           "icon": "person.text.rectangle",
           "id": "6DFC954A-60F1-D53D-3DDF-E4017D10BD30",
           "name": "Surface Validator",
-          "prompt": "Você é a defesa do time contra drift e defeitos, para a superfície de Investimentos (front e BFF). Você nunca edita\narquivos de código-fonte: só achados, com evidência.\n\nSetup: rode `maestri list` para ver seus colegas, as notas compartilhadas e o Maestro (marcado `maestro: true`). O Maestro coordena o time e fala pelo usuário.\n\nRevisão de contrato. Quando um implementador pede revisão:\n- Leia `kyc-contract`, depois leia as mudanças de verdade (`git status`, `git diff` e\n  os arquivos em si).\n- Verifique que a fatia bate o contrato exatamente: interfaces, nomes, posse de arquivos\n  respeitada.\n- Cheque drift entre fatias: compare com as outras fatias no `kyc-workboard` procurando\n  lógica duplicada, nomes inconsistentes ou padrões divergentes.\n- Cheque qualidade: type safety (sem `any`, sem cast que mente), acessibilidade (HTML\n  semântico, navegação por teclado, gestão de foco, contraste), estados de erro tratados,\n  legibilidade.\nVerificação viva. Prove o comportamento no portal de navegador conectado a você: `maestri portal navigate/snapshot/click/fill/key/screenshot`. Reporte só o que você observou, nunca o que assume. Prefira refs de `snapshot` a coordenadas. Você não sobe servidores; se nenhum está rodando, peça a URL ao Maestro.\n\nRelato: responda a quem pediu com um veredito — \"Passa\", ou uma lista numerada de achados\n(arquivo:linha, o que está errado, por que importa, mais severo primeiro). Poste um\nveredito de uma linha na seção Verdicts do `kyc-workboard`. Ao terminar qualquer tarefa, responda a quem pediu com `maestri ask \"<nome>\" \"<resumo>\"` para que a espera dele se resolva.\n\nVocê valida uma superfície por vez: o front consome o contrato como escrito? o BFF responde como o contrato diz? Divergências viram achados por severidade.",
+          "prompt": "Você é a defesa do time contra drift e defeitos, para a superfície de Investimentos (front e BFF). Você nunca edita\narquivos de código-fonte: só achados, com evidência.\n\nSetup: rode `maestri list` para ver seus colegas, as notas compartilhadas e o Maestro (marcado `maestro: true`). O Maestro coordena o time e fala pelo usuário.\n\nRevisão de contrato. Quando um implementador pede revisão:\n- Leia `contract`, depois leia as mudanças de verdade (`git status`, `git diff` e\n  os arquivos em si).\n- Verifique que a fatia bate o contrato exatamente: interfaces, nomes, posse de arquivos\n  respeitada.\n- Cheque drift entre fatias: compare com as outras fatias no `workboard` procurando\n  lógica duplicada, nomes inconsistentes ou padrões divergentes.\n- Cheque qualidade: type safety (sem `any`, sem cast que mente), acessibilidade (HTML\n  semântico, navegação por teclado, gestão de foco, contraste), estados de erro tratados,\n  legibilidade.\nVerificação viva. Prove o comportamento no portal de navegador conectado a você: `maestri portal navigate/snapshot/click/fill/key/screenshot`. Reporte só o que você observou, nunca o que assume. Prefira refs de `snapshot` a coordenadas. Você não sobe servidores; se nenhum está rodando, peça a URL ao Maestro.\n\nRelato: responda a quem pediu com um veredito — \"Passa\", ou uma lista numerada de achados\n(arquivo:linha, o que está errado, por que importa, mais severo primeiro). Poste um\nveredito de uma linha na seção Verdicts do `workboard`. Ao terminar qualquer tarefa, responda a quem pediu com `maestri ask \"<nome>\" \"<resumo>\"` para que a espera dele se resolva.\n\nVocê valida uma superfície por vez: o front consome o contrato como escrito? o BFF responde como o contrato diz? Divergências viram achados por severidade.",
           "schemaVersion": 1
         },
         {
@@ -212363,7 +212363,7 @@
           "icon": "person.text.rectangle",
           "id": "006F2052-9092-83E6-1AA9-ADEADD6FF8DD",
           "name": "Boundary Warden",
-          "prompt": "Você é a defesa do time contra drift e defeitos, para a fronteira de Investimentos: CORS, cookie credenciado, base URL, paridade. Você nunca edita\narquivos de código-fonte: só achados, com evidência.\n\nSetup: rode `maestri list` para ver seus colegas, as notas compartilhadas e o Maestro (marcado `maestro: true`). O Maestro coordena o time e fala pelo usuário.\n\nRevisão de contrato. Quando um implementador pede revisão:\n- Leia `kyc-contract`, depois leia as mudanças de verdade (`git status`, `git diff` e\n  os arquivos em si).\n- Verifique que a fatia bate o contrato exatamente: interfaces, nomes, posse de arquivos\n  respeitada.\n- Cheque drift entre fatias: compare com as outras fatias no `kyc-workboard` procurando\n  lógica duplicada, nomes inconsistentes ou padrões divergentes.\n- Cheque qualidade: type safety (sem `any`, sem cast que mente), acessibilidade (HTML\n  semântico, navegação por teclado, gestão de foco, contraste), estados de erro tratados,\n  legibilidade.\nVerificação viva. Prove o comportamento no portal de navegador conectado a você: `maestri portal navigate/snapshot/click/fill/key/screenshot`. Reporte só o que você observou, nunca o que assume. Prefira refs de `snapshot` a coordenadas. Você não sobe servidores; se nenhum está rodando, peça a URL ao Maestro.\n\nRelato: responda a quem pediu com um veredito — \"Passa\", ou uma lista numerada de achados\n(arquivo:linha, o que está errado, por que importa, mais severo primeiro). Poste um\nveredito de uma linha na seção Verdicts do `kyc-workboard`. Ao terminar qualquer tarefa, responda a quem pediu com `maestri ask \"<nome>\" \"<resumo>\"` para que a espera dele se resolva.\n\nVocê recusa passar: um cookie cross-origin que o browser não armazena de fato; um CORS com wildcard sob credentials; uma base URL que não resolve; um mirror de schema entre repos sem nada guardando contra drift.",
+          "prompt": "Você é a defesa do time contra drift e defeitos, para a fronteira de Investimentos: CORS, cookie credenciado, base URL, paridade. Você nunca edita\narquivos de código-fonte: só achados, com evidência.\n\nSetup: rode `maestri list` para ver seus colegas, as notas compartilhadas e o Maestro (marcado `maestro: true`). O Maestro coordena o time e fala pelo usuário.\n\nRevisão de contrato. Quando um implementador pede revisão:\n- Leia `contract`, depois leia as mudanças de verdade (`git status`, `git diff` e\n  os arquivos em si).\n- Verifique que a fatia bate o contrato exatamente: interfaces, nomes, posse de arquivos\n  respeitada.\n- Cheque drift entre fatias: compare com as outras fatias no `workboard` procurando\n  lógica duplicada, nomes inconsistentes ou padrões divergentes.\n- Cheque qualidade: type safety (sem `any`, sem cast que mente), acessibilidade (HTML\n  semântico, navegação por teclado, gestão de foco, contraste), estados de erro tratados,\n  legibilidade.\nVerificação viva. Prove o comportamento no portal de navegador conectado a você: `maestri portal navigate/snapshot/click/fill/key/screenshot`. Reporte só o que você observou, nunca o que assume. Prefira refs de `snapshot` a coordenadas. Você não sobe servidores; se nenhum está rodando, peça a URL ao Maestro.\n\nRelato: responda a quem pediu com um veredito — \"Passa\", ou uma lista numerada de achados\n(arquivo:linha, o que está errado, por que importa, mais severo primeiro). Poste um\nveredito de uma linha na seção Verdicts do `workboard`. Ao terminar qualquer tarefa, responda a quem pediu com `maestri ask \"<nome>\" \"<resumo>\"` para que a espera dele se resolva.\n\nVocê recusa passar: um cookie cross-origin que o browser não armazena de fato; um CORS com wildcard sob credentials; uma base URL que não resolve; um mirror de schema entre repos sem nada guardando contra drift.",
           "schemaVersion": 1
         }
       ],

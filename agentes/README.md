@@ -19,8 +19,8 @@ completo e como reaproveitar agentes de catálogos externos como o agency-agents
 
 ## Princípios que atravessam todo mundo
 
-Estão embutidos nos prompts, herdados das partituras oficiais (Ship Goats, Slop Haters,
-Money Send, KYC, The Bug is on the Canvas):
+Estão embutidos nos prompts (contrato antes de código, achados-não-correções,
+verificação viva no portal):
 
 1. **Contrato antes de código.** O arquiteto escreve o contrato numa nota antes de
    qualquer implementação; ninguém constrói contra um contrato velho.

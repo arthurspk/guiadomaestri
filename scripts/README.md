@@ -12,7 +12,7 @@ byte a byte, então o repositório fica estável no git.
 | [`roles_lib.py`](./roles_lib.py) | biblioteca | Prompts de responsabilidade (roles) em pt-BR e templates de nota (contrato, workboard, stack-checklist, etc.). Não roda sozinho. |
 | [`generate_partituras.py`](./generate_partituras.py) | gerador | Monta as **257 partituras** por área, o pacote coletivo por área, o `Guia-do-Maestri.maestripartituras` e os `CATALOGO.md`. |
 | [`generate_hub.py`](./generate_hub.py) | gerador | Gera a biblioteca de **`role.json`** (`roles/`), as **notas avulsas** (`notas/`) e os **templates de instrução** (`instrucoes/`). |
-| [`../tests/validate_partituras.py`](../tests/validate_partituras.py) | validação | Compara chaves de topo/payload/nós/roles de cada partitura com a oficial `Money_Send_Pipeline.maestripartitura`. Zero divergências. |
+| [`../tests/validate_partituras.py`](../tests/validate_partituras.py) | validação | Compara chaves de topo/payload/nós/roles de cada partitura com o schema esperado do formato `.maestripartitura`. Zero divergências. |
 | [`../tests/validate_hub.py`](../tests/validate_hub.py) | validação | Valida cada `role.json`, as notas e os pares `CLAUDE.md`/`AGENTS.md`. |
 
 ## Como rodar

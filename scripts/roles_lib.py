@@ -2,8 +2,7 @@
 """
 roles_lib.py — Biblioteca de prompts de responsabilidade (roles) reutilizáveis, em pt-BR.
 
-Os prompts seguem o estilo das partituras oficiais do Maestri (KYC, Money Send,
-Ship Goats, Slop Haters, The Bug is on the Canvas): segunda pessoa, orientados a
+Os prompts seguem o estilo de orquestração do Maestri: segunda pessoa, orientados a
 `maestri list` / `maestri ask` / `maestri check` / `maestri note` / `maestri portal`,
 com a disciplina de "contrato antes de código", "achados, não correções" e "nunca
 alegue verificação que você não viu".
@@ -350,7 +349,7 @@ Como você rege:
 
 
 # ---------------------------------------------------------------------------
-# Debugging (The Bug is on the Canvas)
+# Debugging
 # ---------------------------------------------------------------------------
 
 def debug_maestro() -> str:

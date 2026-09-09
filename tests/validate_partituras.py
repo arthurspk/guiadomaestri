@@ -2,18 +2,20 @@
 """
 validate_partituras.py — Valida cada .maestripartitura gerado contra o formato oficial.
 
-Referência: referencia/partituras-oficiais/Money_Send_Pipeline.maestripartitura.
+Referência: o **schema embutido** do formato `.maestripartitura` (formatVersion 1) do
+Maestri, definido nas constantes abaixo. Não depende de nenhum arquivo de exemplo.
 
 Checagens (zero divergências permitidas):
   1. json.load carrega todo arquivo.
-  2. Chaves de TOPO batem EXATAMENTE com a referência.
-  3. Chaves de PAYLOAD batem EXATAMENTE com a referência.
+  2. Chaves de TOPO batem EXATAMENTE com o schema.
+  3. Chaves de PAYLOAD batem EXATAMENTE com o schema.
   4. Cada nó tem content/frame/id/zIndex (e createdAt/isLocked/lastModifiedAt).
-     As chaves de _0 de cada tipo (terminal/stickyNote/portal) batem com a referência.
-  5. Cada role tem id/name/prompt/color/icon (e schemaVersion).
+     As chaves de _0 de cada tipo (terminal/stickyNote/portal) batem com o schema
+     (com as chaves opcionais conhecidas: terminal.assignedRoleId, portal.currentURL).
+  5. Cada role tem id/name/prompt/color/icon + schemaVersion.
   6. Integridade referencial: connections/noteConnections/portalConnections/noteToNote
      apontam para ids que existem; toda conexão tem 21 ropePoints.
-  7. O pacote coletivo Tecnologia.maestripartituras tem formatVersion + partituras.
+  7. Os pacotes coletivos (por área + o mestre) somam corretamente.
 
 Uso: python3 tests/validate_partituras.py  (sai com código != 0 se algo falhar).
 """
@@ -25,7 +27,34 @@ import sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PART = os.path.join(ROOT, "partituras")
-REF = os.path.join(ROOT, "referencia", "partituras-oficiais", "Money_Send_Pipeline.maestripartitura")
+
+# --- Schema embutido do formato .maestripartitura (formatVersion 1) ---
+TOP = {"appVersion", "color", "createdAt", "description", "formatVersion", "icon",
+       "id", "name", "payload", "roles", "workspaceId"}
+PAYLOAD = {"connections", "drawings", "nodes", "noteConnections", "noteTexts",
+           "noteToNoteConnections", "portalConnections", "portalToPortalConnections",
+           "sourceWorkingDirectory", "sourceWorkspaceId"}
+NODE = {"content", "createdAt", "frame", "id", "isLocked", "lastModifiedAt", "zIndex"}
+ROLE = {"color", "icon", "id", "name", "prompt", "schemaVersion"}
+# kind -> (chaves obrigatórias, chaves opcionais) de content.<kind>._0
+INNER = {
+    "terminal": (
+        {"agentType", "autoScrollLocked", "color", "command", "icon", "id", "isManager",
+         "isUnloaded", "lastActiveAt", "monitorWithOmbro", "name", "scrollbackFile",
+         "scrollbackLineCount", "shellPath", "shortcutMode", "status", "workingDirectory"},
+        {"assignedRoleId"},
+    ),
+    "stickyNote": (
+        {"color", "fileName", "fontSize", "hasCustomName", "isContentLocked",
+         "isPreviewing", "storageMode"},
+        set(),
+    ),
+    "portal": (
+        {"chromeHidden", "id", "isUnloaded", "name", "source", "status",
+         "storageScope", "surface"},
+        {"currentURL"},
+    ),
+}
 
 
 def _node_kind(node):
@@ -33,15 +62,6 @@ def _node_kind(node):
 
 
 def main():
-    ref = json.load(open(REF, encoding="utf-8"))
-    ref_top = set(ref)
-    ref_payload = set(ref["payload"])
-    ref_role = set(ref["roles"][0])
-    ref_node = set(next(iter(ref["payload"]["nodes"])).keys())
-    ref_inner = {}  # kind -> set de chaves do _0
-    for n in ref["payload"]["nodes"]:
-        ref_inner.setdefault(_node_kind(n), set(n["content"][_node_kind(n)]["_0"].keys()))
-
     files = sorted(glob.glob(os.path.join(PART, "*", "*.maestripartitura")))
     if not files:
         print("FALHA: nenhum .maestripartitura encontrado — rode o gerador primeiro.")
@@ -57,13 +77,13 @@ def main():
             errors.append(f"{name}: json.load falhou: {e}")
             continue
 
-        if set(d) != ref_top:
+        if set(d) != TOP:
             errors.append(f"{name}: chaves de topo divergem: "
-                          f"faltam {ref_top - set(d)}, sobram {set(d) - ref_top}")
+                          f"faltam {TOP - set(d)}, sobram {set(d) - TOP}")
         p = d.get("payload", {})
-        if set(p) != ref_payload:
+        if set(p) != PAYLOAD:
             errors.append(f"{name}: chaves de payload divergem: "
-                          f"faltam {ref_payload - set(p)}, sobram {set(p) - ref_payload}")
+                          f"faltam {PAYLOAD - set(p)}, sobram {set(p) - PAYLOAD}")
 
         # Nós
         node_ids = set()
@@ -71,28 +91,26 @@ def main():
         portal_node_ids = set()
         for n in p.get("nodes", []):
             total_nodes += 1
-            if set(n) != ref_node:
-                errors.append(f"{name}: nó com chaves divergentes: {set(n) ^ ref_node}")
-            for req in ("content", "frame", "id", "zIndex"):
-                if req not in n:
-                    errors.append(f"{name}: nó sem '{req}'")
+            if set(n) != NODE:
+                errors.append(f"{name}: nó com chaves divergentes: {set(n) ^ NODE}")
             node_ids.add(n["id"])
             kind = _node_kind(n)
-            inner = n["content"][kind]["_0"]
-            if kind in ref_inner and set(inner) != ref_inner[kind]:
-                errors.append(f"{name}: {kind}._0 chaves divergem: {set(inner) ^ ref_inner[kind]}")
+            inner = set(n["content"][kind]["_0"].keys())
+            if kind in INNER:
+                req, opt = INNER[kind]
+                if not (req <= inner <= (req | opt)):
+                    errors.append(f"{name}: {kind}._0 chaves divergem: "
+                                  f"faltam {req - inner}, sobram {inner - (req | opt)}")
             if kind == "terminal":
-                term_ids.add(inner["id"])
+                term_ids.add(n["content"][kind]["_0"]["id"])
             elif kind == "portal":
                 portal_node_ids.add(n["id"])
 
         # Roles
         for r in d.get("roles", []):
-            if not {"id", "name", "prompt", "color", "icon"} <= set(r):
-                errors.append(f"{name}: role sem chave obrigatória: {r.get('name')}")
-            if set(r) != ref_role:
-                errors.append(f"{name}: role com chaves divergentes: {set(r) ^ ref_role}")
-            if not r.get("prompt", "").strip():
+            if set(r) != ROLE:
+                errors.append(f"{name}: role com chaves divergentes: {set(r) ^ ROLE}")
+            if not str(r.get("prompt", "")).strip():
                 errors.append(f"{name}: role '{r.get('name')}' com prompt vazio")
 
         # Integridade referencial + ropePoints
@@ -145,7 +163,7 @@ def main():
             print("  -", e)
         return 1
 
-    print(f"OK: {len(files)} partituras validadas contra {os.path.basename(REF)} "
+    print(f"OK: {len(files)} partituras validadas contra o schema do formato "
           f"({total_nodes} nós no total). Zero divergências.")
     return 0
 
