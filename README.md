@@ -8,9 +8,12 @@
 
 ## :dart: A proposta
 
-> O **Maestri** é um app de **macOS e Windows** onde você **rege um time de agentes de código** — Claude Code, Codex, Gemini, OpenCode — num **canvas infinito**: terminais são agentes, notas markdown são a fonte de verdade compartilhada, portais são navegadores embutidos para verificação viva, e o **maestro** delega e coordena. Este repositório é ao mesmo tempo um **guia em pt-BR** e um **gerador em Python** que produz **257 partituras** (`.maestripartitura`) prontas para arrastar para o canvas e reger — cada uma é um time completo, com responsabilidades embutidas, notas, portais e conexões. A ênfase é **tecnologia**, e há mais 11 áreas de negócio (design, produto, marketing, vendas, dados, segurança, financeiro, jurídico, suporte, gestão, pesquisa).
+> O **Maestri** é um app de **macOS e Windows** onde você **rege um time de agentes de código** — Claude Code, Codex, Gemini, OpenCode — num **canvas infinito**: terminais são agentes, notas markdown são a fonte de verdade compartilhada, portais são navegadores embutidos para verificação viva, e o **maestro** delega e coordena. Este repositório é ao mesmo tempo um **guia** e um **gerador em Python** que produz **257 partituras** (`.maestripartitura`) prontas para arrastar para o canvas e reger — cada uma é um time completo, com responsabilidades embutidas, notas, portais e conexões. A ênfase é **tecnologia**, e há mais 11 áreas de negócio (design, produto, marketing, vendas, dados, segurança, financeiro, jurídico, suporte, gestão, pesquisa).
 
-**🔗 Oficial:** [Site oficial](https://www.themaestri.app/pt-br) · [Documentação oficial](https://www.themaestri.app/pt-br/docs)
+**🔗 Links oficiais**
+
+- 🌐 [Site oficial](https://www.themaestri.app/pt-br) — a página do Maestri: download do app, recursos e preços.
+- 📖 [Documentação oficial](https://www.themaestri.app/pt-br/docs) — o manual do app: canvas, terminais, notas, portais, andares, rotinas e Wire.
 
 ## 💡 Como este guia é organizado
 
