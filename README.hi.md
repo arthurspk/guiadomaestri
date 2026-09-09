@@ -6,23 +6,14 @@
 
 <h1 align="center">Maestri गाइड</h1>
 
-<p align="center">
-  <b><a href="https://www.themaestri.app">Maestri</a> में AI एजेंट टीमों का संचालन करने की गाइड — तकनीक पर ज़ोर, और क्षेत्र के अनुसार व्यवस्थित 257 तैयार स्कोर बनाने वाला जनरेटर।</b>
-</p>
-
-<p align="center">
-  <a href="partituras/CATALOGO.md"><img src="https://img.shields.io/badge/scores-257-5856D6?style=for-the-badge" alt="257 scores"></a>
-  <a href="partituras/CATALOGO.md"><img src="https://img.shields.io/badge/areas-12-007AFF?style=for-the-badge" alt="12 areas"></a>
-  <a href="docs/04-formato-maestripartitura.md"><img src="https://img.shields.io/badge/format-.maestripartitura%20v1-34C759?style=for-the-badge" alt="Format"></a>
-  <a href="tests/validate_partituras.py"><img src="https://img.shields.io/badge/validation-0-FF9500?style=for-the-badge" alt="Validated"></a>
-  <a href="docs/05-modelos-e-seguranca.md"><img src="https://img.shields.io/badge/language-pt--BR-FFCC00?style=for-the-badge" alt="pt-BR"></a>
-</p>
-
 > **नोट:** यह एक अनुवाद है। मूल गाइड और `docs/` के विस्तृत दस्तावेज़ ब्राज़ीली पुर्तगाली में हैं।
 
 ## 🎯 यह क्या है
 
 > **Maestri** एक macOS ऐप है जहाँ आप एक **अनंत कैनवास** पर **कोड एजेंटों की टीम का संचालन** करते हैं — Claude Code, Codex, Gemini, OpenCode: टर्मिनल एजेंट हैं, markdown नोट्स साझा सत्य-स्रोत हैं, पोर्टल लाइव सत्यापन के लिए एम्बेडेड ब्राउज़र हैं, और **maestro** कार्य सौंपता व समन्वय करता है। यह रिपॉज़िटरी एक **गाइड** भी है और एक **Python जनरेटर** भी, जो **257 स्कोर** (`.maestripartitura`) बनाता है — कैनवास पर खींचिए और संचालन शुरू कीजिए। हर स्कोर एक पूरी टीम है, जिसमें जिम्मेदारियाँ, नोट्स, पोर्टल और कनेक्शन अंतर्निहित हैं। ज़ोर **तकनीक** पर है, साथ ही 11 और व्यावसायिक क्षेत्र (डिज़ाइन, उत्पाद, मार्केटिंग, बिक्री, डेटा, सुरक्षा, वित्त, क़ानूनी, सपोर्ट, प्रोजेक्ट प्रबंधन, अनुसंधान)।
+
+- 🌐 [आधिकारिक साइट](https://www.themaestri.app) — Maestri पेज: ऐप डाउनलोड, फ़ीचर और मूल्य।
+- 📖 [आधिकारिक दस्तावेज़](https://www.themaestri.app/docs) — ऐप का मैनुअल: कैनवास, टर्मिनल, नोट्स, पोर्टल, फ़्लोर, routines और Wire।
 
 ## 💡 यह गाइड कैसे व्यवस्थित है
 
@@ -57,17 +48,17 @@
 
 > नौ दस्तावेज़ और एजेंट गाइड, पुर्तगाली में। यदि Maestri नया है तो 01 से शुरू करें, वरना 02 और 06 पर जाएँ।
 
-- **01 · अवधारणाएँ** ([docs/01](docs/01-conceitos.md)) — कैनवास, टर्मिनल, नोट्स, पोर्टल, कनेक्शन, Maestro मोड, Ombro, Batuta, Floors, Routines, Environments, Wire।
-- **02 · टेम्पलेट का उपयोग** ([docs/02](docs/02-como-usar-os-templates.md)) — आयात, व्यावहारिक संचालन, स्कोर चुनना व अनुकूलित करना।
-- **03 · शॉर्टकट और कमांड** ([docs/03](docs/03-atalhos.md)) — macOS कीबोर्ड शॉर्टकट और `maestri` CLI।
-- **04 · `.maestripartitura` प्रारूप** ([docs/04](docs/04-formato-maestripartitura.md)) — आधिकारिक फ़ाइलों के विरुद्ध कैलिब्रेटेड JSON विनिर्देश।
-- **05 · मॉडल और सुरक्षा** ([docs/05](docs/05-modelos-e-seguranca.md)) — Fable/Opus/Codex, skip-permissions, 30-परत स्टैक चेकलिस्ट, अधिकृत रेड टीम।
-- **06 · रोज़मर्रा का Maestri** ([docs/06](docs/06-maestri-no-dia-a-dia.md)) — floors, पोर्टल, नोट्स, routines और Ombro वास्तविक स्थितियों में।
-- **07 · क्षेत्र और उपलब्ध एजेंट** ([docs/07](docs/07-areas-e-agentes.md)) — क्षेत्र-विभाजन, agency-agents से मानचित्रण, लेआउट सत्यापन।
-- **08 · Floors + Scores (रेसिपी)** ([docs/08](docs/08-andares-e-partituras.md)) — floors को scores के साथ उपयोग करना, स्थिति-अनुसार रेसिपी और hooks।
-- **09 · पोर्टल: वेब, मोबाइल, एमुलेटर** ([docs/09](docs/09-portais-mobile-web-emulador.md)) — scores में ब्राउज़र, मोबाइल-वेब और डिवाइस पोर्टल (iOS सिम्युलेटर / Android एमुलेटर) कैसे जोड़ें।
-- **10 · Maestri में इम्पोर्ट और एक्सपोर्ट** ([docs/10](docs/10-importar-e-exportar.md)) — जो कुछ नेटिव रूप से इम्पोर्ट/एक्सपोर्ट हो सकता है, साथ में क्यूरेटेड रेसिपी, और हब में हर चीज़ कहाँ है।
-- **11 · सुझाव** ([docs/11](docs/11-dicas.md)) — Maestri से अधिक पाने के रोज़मर्रा के व्यावहारिक सुझाव।
+- 🧭 **01 · अवधारणाएँ** ([docs/01](docs/01-conceitos.md)) — कैनवास, टर्मिनल, नोट्स, पोर्टल, कनेक्शन, Maestro मोड, Ombro, Batuta, Floors, Routines, Environments, Wire।
+- 🚀 **02 · टेम्पलेट का उपयोग** ([docs/02](docs/02-como-usar-os-templates.md)) — आयात, व्यावहारिक संचालन, स्कोर चुनना व अनुकूलित करना।
+- ⌨️ **03 · शॉर्टकट और कमांड** ([docs/03](docs/03-atalhos.md)) — macOS कीबोर्ड शॉर्टकट और `maestri` CLI।
+- 📐 **04 · `.maestripartitura` प्रारूप** ([docs/04](docs/04-formato-maestripartitura.md)) — आधिकारिक फ़ाइलों के विरुद्ध कैलिब्रेटेड JSON विनिर्देश।
+- 🛡️ **05 · मॉडल और सुरक्षा** ([docs/05](docs/05-modelos-e-seguranca.md)) — Fable/Opus/Codex, skip-permissions, 30-परत स्टैक चेकलिस्ट, अधिकृत रेड टीम।
+- ☀️ **06 · रोज़मर्रा का Maestri** ([docs/06](docs/06-maestri-no-dia-a-dia.md)) — floors, पोर्टल, नोट्स, routines और Ombro वास्तविक स्थितियों में।
+- 🗺️ **07 · क्षेत्र और उपलब्ध एजेंट** ([docs/07](docs/07-areas-e-agentes.md)) — क्षेत्र-विभाजन, agency-agents से मानचित्रण, लेआउट सत्यापन।
+- 🏢 **08 · Floors + Scores (रेसिपी)** ([docs/08](docs/08-andares-e-partituras.md)) — floors को scores के साथ उपयोग करना, स्थिति-अनुसार रेसिपी और hooks।
+- 🌐 **09 · पोर्टल: वेब, मोबाइल, एमुलेटर** ([docs/09](docs/09-portais-mobile-web-emulador.md)) — scores में ब्राउज़र, मोबाइल-वेब और डिवाइस पोर्टल (iOS सिम्युलेटर / Android एमुलेटर) कैसे जोड़ें।
+- 📦 **10 · Maestri में इम्पोर्ट और एक्सपोर्ट** ([docs/10](docs/10-importar-e-exportar.md)) — जो कुछ नेटिव रूप से इम्पोर्ट/एक्सपोर्ट हो सकता है, साथ में क्यूरेटेड रेसिपी, और हब में हर चीज़ कहाँ है।
+- 💡 **11 · सुझाव** ([docs/11](docs/11-dicas.md)) — Maestri से अधिक पाने के रोज़मर्रा के व्यावहारिक सुझाव।
 - **🎭 · एजेंट** ([agentes/README.md](agentes/README.md)) — जिम्मेदारी के आदर्श और विशेषज्ञों की टोली।
 - **📨 · प्रॉम्प्ट** ([prompts](prompts/README.md)) — तैयार प्रॉम्प्ट की लाइब्रेरी (प्रारंभिक प्रॉम्प्ट, स्कोर बनाएं)।
 
@@ -174,12 +165,6 @@ python3 tests/validate_hub.py               # → role.json और हब सं
 - आयात से पहले समीक्षा स्क्रीन पर **कमांड पढ़ें**, और केवल विश्वसनीय स्रोतों से स्कोर स्वीकारें।
 - **रेड टीम** स्कोर और कोई भी आक्रामक गतिविधि **केवल अधिकृत दायरे में** चलती है, कभी उत्पादन में नहीं और कभी वास्तविक लोगों के डेटा के साथ नहीं।
 - विवरण [docs/05](docs/05-modelos-e-seguranca.md) में।
-
-## 🔗 संदर्भ
-
-- [आधिकारिक Maestri दस्तावेज़](https://www.themaestri.app/pt-br/docs) — कैनवास, टर्मिनल, नोट्स, पोर्टल, floors, routines, Wire।
-- [agency-agents](https://github.com/msitarzewski/agency-agents) — 18 विभागों में 230+ एजेंटों का कैटलॉग (क्षेत्रों की प्रेरणा)।
-- [guiadevbrasil](https://github.com/arthurspk/guiadevbrasil) — संदर्भ pt-BR गाइड (लेआउट की प्रेरणा)।
 
 ## ⭐ Star History
 

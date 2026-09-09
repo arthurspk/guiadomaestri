@@ -6,23 +6,14 @@
 
 <h1 align="center">Maestri Guide</h1>
 
-<p align="center">
-  <b>The guide to conducting teams of AI agents in <a href="https://www.themaestri.app">Maestri</a> — with a focus on technology and a generator of 257 ready-made scores, organized by area.</b>
-</p>
-
-<p align="center">
-  <a href="partituras/CATALOGO.md"><img src="https://img.shields.io/badge/scores-257-5856D6?style=for-the-badge" alt="257 scores"></a>
-  <a href="partituras/CATALOGO.md"><img src="https://img.shields.io/badge/areas-12-007AFF?style=for-the-badge" alt="12 areas"></a>
-  <a href="docs/04-formato-maestripartitura.md"><img src="https://img.shields.io/badge/format-.maestripartitura%20v1-34C759?style=for-the-badge" alt="Format"></a>
-  <a href="tests/validate_partituras.py"><img src="https://img.shields.io/badge/validation-0%20mismatches-FF9500?style=for-the-badge" alt="Validated"></a>
-  <a href="docs/05-modelos-e-seguranca.md"><img src="https://img.shields.io/badge/language-pt--BR-FFCC00?style=for-the-badge" alt="pt-BR"></a>
-</p>
-
 > **Note:** This is a translation. The base guide and the detailed documents under `docs/` are written in Brazilian Portuguese.
 
 ## 🎯 What this is
 
 > **Maestri** is a macOS app where you **conduct a team of coding agents** — Claude Code, Codex, Gemini, OpenCode — on an **infinite canvas**: terminals are agents, markdown notes are the shared source of truth, portals are embedded browsers for live verification, and the **maestro** delegates and coordinates. This repository is both a **guide** and a **Python generator** that produces **257 scores** (`.maestripartitura`) ready to drag onto the canvas and conduct — each one a full team, with embedded responsibilities, notes, portals, and connections. The focus is **technology**, plus 11 more business areas (design, product, marketing, sales, data, security, finance, legal, support, project management, research).
+
+- 🌐 [Official site](https://www.themaestri.app) — the Maestri page: app download, features, and pricing.
+- 📖 [Official docs](https://www.themaestri.app/docs) — the app manual: canvas, terminals, notes, portals, floors, routines, and Wire.
 
 ## 💡 How this guide is organized
 
@@ -57,17 +48,17 @@
 
 > Nine documents plus the agents guide, in Portuguese. Start at 01 if Maestri is new to you, or jump to 02 and 06 if you already know it.
 
-- **01 · Concepts** ([docs/01](docs/01-conceitos.md)) — canvas, terminals, notes, portals, connections, Maestro Mode, Ombro, Batuta, Floors, Routines, Environments, Wire.
-- **02 · Using the templates** ([docs/02](docs/02-como-usar-os-templates.md)) — import, conduct in practice, choose and adapt a score.
-- **03 · Shortcuts and commands** ([docs/03](docs/03-atalhos.md)) — macOS keyboard shortcuts and the `maestri` CLI.
-- **04 · The `.maestripartitura` format** ([docs/04](docs/04-formato-maestripartitura.md)) — the JSON spec, calibrated against the official files.
-- **05 · Models and security** ([docs/05](docs/05-modelos-e-seguranca.md)) — Fable/Opus/Codex, skip-permissions, the 30-layer stack checklist, authorized red team.
-- **06 · Maestri day to day** ([docs/06](docs/06-maestri-no-dia-a-dia.md)) — floors, portals, notes, routines, and Ombro in real situations across areas.
-- **07 · Areas and available agents** ([docs/07](docs/07-areas-e-agentes.md)) — the division by areas, the map to agency-agents, and the layout validation.
-- **08 · Floors + Scores (recipes)** ([docs/08](docs/08-andares-e-partituras.md)) — how to use floors together with scores, with per-situation recipes and hooks.
-- **09 · Portals: web, mobile, emulators** ([docs/09](docs/09-portais-mobile-web-emulador.md)) — how to add browser, mobile-web, and device portals (iOS simulator / Android emulator) to scores.
-- **10 · Import and export in Maestri** ([docs/10](docs/10-importar-e-exportar.md)) — everything you can natively import/export plus the curated recipes, and where each one lives in the hub.
-- **11 · Tips** ([docs/11](docs/11-dicas.md)) — practical day-to-day tips to get more out of Maestri.
+- 🧭 **01 · Concepts** ([docs/01](docs/01-conceitos.md)) — canvas, terminals, notes, portals, connections, Maestro Mode, Ombro, Batuta, Floors, Routines, Environments, Wire.
+- 🚀 **02 · Using the templates** ([docs/02](docs/02-como-usar-os-templates.md)) — import, conduct in practice, choose and adapt a score.
+- ⌨️ **03 · Shortcuts and commands** ([docs/03](docs/03-atalhos.md)) — macOS keyboard shortcuts and the `maestri` CLI.
+- 📐 **04 · The `.maestripartitura` format** ([docs/04](docs/04-formato-maestripartitura.md)) — the JSON spec, calibrated against the official files.
+- 🛡️ **05 · Models and security** ([docs/05](docs/05-modelos-e-seguranca.md)) — Fable/Opus/Codex, skip-permissions, the 30-layer stack checklist, authorized red team.
+- ☀️ **06 · Maestri day to day** ([docs/06](docs/06-maestri-no-dia-a-dia.md)) — floors, portals, notes, routines, and Ombro in real situations across areas.
+- 🗺️ **07 · Areas and available agents** ([docs/07](docs/07-areas-e-agentes.md)) — the division by areas, the map to agency-agents, and the layout validation.
+- 🏢 **08 · Floors + Scores (recipes)** ([docs/08](docs/08-andares-e-partituras.md)) — how to use floors together with scores, with per-situation recipes and hooks.
+- 🌐 **09 · Portals: web, mobile, emulators** ([docs/09](docs/09-portais-mobile-web-emulador.md)) — how to add browser, mobile-web, and device portals (iOS simulator / Android emulator) to scores.
+- 📦 **10 · Import and export in Maestri** ([docs/10](docs/10-importar-e-exportar.md)) — everything you can natively import/export plus the curated recipes, and where each one lives in the hub.
+- 💡 **11 · Tips** ([docs/11](docs/11-dicas.md)) — practical day-to-day tips to get more out of Maestri.
 - **🎭 · Agents** ([agentes/README.md](agentes/README.md)) — responsibility archetypes and the cast of specialists.
 - **📨 · Prompts** ([prompts](prompts/README.md)) — a library of ready prompts (initial prompt, create a score).
 
@@ -174,12 +165,6 @@ python3 tests/validate_hub.py               # → validates the role.json files 
 - **Read the commands** on the review screen before importing, and only accept scores from trusted sources.
 - **Red Team** scores and any offensive engagement operate **strictly within authorized scope**, never in production and never with real people's data.
 - Details in [docs/05](docs/05-modelos-e-seguranca.md).
-
-## 🔗 References
-
-- [Official Maestri documentation](https://www.themaestri.app/pt-br/docs) — canvas, terminals, notes, portals, floors, routines, Wire.
-- [agency-agents](https://github.com/msitarzewski/agency-agents) — a catalog of 230+ agents across 18 divisions (inspiration for the areas).
-- [guiadevbrasil](https://github.com/arthurspk/guiadevbrasil) — a reference pt-BR guide (inspiration for the layout).
 
 ## ⭐ Star History
 

@@ -6,23 +6,14 @@
 
 <h1 align="center">Maestri ガイド</h1>
 
-<p align="center">
-  <b><a href="https://www.themaestri.app">Maestri</a> で AI エージェントのチームを指揮するためのガイド — 技術に重点を置き、領域ごとに整理された 257 の既製スコアを生成するジェネレーター付き。</b>
-</p>
-
-<p align="center">
-  <a href="partituras/CATALOGO.md"><img src="https://img.shields.io/badge/scores-257-5856D6?style=for-the-badge" alt="257"></a>
-  <a href="partituras/CATALOGO.md"><img src="https://img.shields.io/badge/areas-12-007AFF?style=for-the-badge" alt="12"></a>
-  <a href="docs/04-formato-maestripartitura.md"><img src="https://img.shields.io/badge/format-.maestripartitura%20v1-34C759?style=for-the-badge" alt="format"></a>
-  <a href="tests/validate_partituras.py"><img src="https://img.shields.io/badge/validation-0-FF9500?style=for-the-badge" alt="validated"></a>
-  <a href="docs/05-modelos-e-seguranca.md"><img src="https://img.shields.io/badge/language-pt--BR-FFCC00?style=for-the-badge" alt="pt-BR"></a>
-</p>
-
 > **注記:** これは翻訳です。基となるガイドおよび `docs/` 配下の詳細ドキュメントはブラジルポルトガル語で書かれています。
 
 ## 🎯 これは何か
 
 > **Maestri** は、**無限のキャンバス**上で**コードエージェントのチームを指揮する** macOS アプリです — Claude Code、Codex、Gemini、OpenCode。ターミナルはエージェント、Markdown ノートは共有された真実の源、ポータルはライブ検証のための埋め込みブラウザ、そして**マエストロ**が委任し調整します。このリポジトリは**ガイド**であり、同時に **Python ジェネレーター**でもあり、キャンバスにドラッグしてすぐ指揮できる **257 のスコア**（`.maestripartitura`）を生成します。各スコアは、責務・ノート・ポータル・接続を内蔵した完全なチームです。重点は**技術**で、さらに 11 のビジネス領域（デザイン、プロダクト、マーケティング、営業、データ、セキュリティ、財務、法務、サポート、プロジェクト管理、リサーチ）があります。
+
+- 🌐 [公式サイト](https://www.themaestri.app) — Maestri のページ：アプリのダウンロード、機能、価格。
+- 📖 [公式ドキュメント](https://www.themaestri.app/docs) — アプリのマニュアル：キャンバス、ターミナル、ノート、ポータル、フロア、ルーティン、Wire。
 
 ## 💡 本ガイドの構成
 
@@ -57,17 +48,17 @@
 
 > 9 つのドキュメントとエージェントガイド、いずれもポルトガル語。Maestri が初めてなら 01 から、既に知っているなら 02 と 06 へ。
 
-- **01 · コンセプト** ([docs/01](docs/01-conceitos.md)) — キャンバス、ターミナル、ノート、ポータル、接続、マエストロモード、Ombro、Batuta、フロア（Floors）、ルーティン、環境、Wire。
-- **02 · テンプレートの使い方** ([docs/02](docs/02-como-usar-os-templates.md)) — インポート、実践的な指揮、スコアの選択と調整。
-- **03 · ショートカットとコマンド** ([docs/03](docs/03-atalhos.md)) — macOS キーボードショートカットと `maestri` CLI。
-- **04 · `.maestripartitura` 形式** ([docs/04](docs/04-formato-maestripartitura.md)) — 公式ファイルに合わせて較正した JSON 仕様。
-- **05 · モデルとセキュリティ** ([docs/05](docs/05-modelos-e-seguranca.md)) — Fable/Opus/Codex、skip-permissions、30 層スタックチェックリスト、認可済みレッドチーム。
-- **06 · 日常の Maestri** ([docs/06](docs/06-maestri-no-dia-a-dia.md)) — フロア、ポータル、ノート、ルーティン、Ombro を実際の場面で。
-- **07 · 領域と利用可能なエージェント** ([docs/07](docs/07-areas-e-agentes.md)) — 領域分割、agency-agents への対応表、レイアウト検証。
-- **08 · フロア + スコア（レシピ）** ([docs/08](docs/08-andares-e-partituras.md)) — フロアとスコアを併用する方法、場面別レシピと hooks。
-- **09 · ポータル：Web、モバイル、エミュレーター** ([docs/09](docs/09-portais-mobile-web-emulador.md)) — ブラウザ、モバイル Web、デバイスポータル（iOS シミュレーター / Android エミュレーター）をスコアに追加する方法。
-- **10 · Maestri でのインポートとエクスポート** ([docs/10](docs/10-importar-e-exportar.md)) — ネイティブにインポート/エクスポートできるすべてと、キュレートされたレシピ、そして各要素がハブのどこにあるか。
-- **11 · ヒント** ([docs/11](docs/11-dicas.md)) — Maestri をより活かすための日常の実用ヒント。
+- 🧭 **01 · コンセプト** ([docs/01](docs/01-conceitos.md)) — キャンバス、ターミナル、ノート、ポータル、接続、マエストロモード、Ombro、Batuta、フロア（Floors）、ルーティン、環境、Wire。
+- 🚀 **02 · テンプレートの使い方** ([docs/02](docs/02-como-usar-os-templates.md)) — インポート、実践的な指揮、スコアの選択と調整。
+- ⌨️ **03 · ショートカットとコマンド** ([docs/03](docs/03-atalhos.md)) — macOS キーボードショートカットと `maestri` CLI。
+- 📐 **04 · `.maestripartitura` 形式** ([docs/04](docs/04-formato-maestripartitura.md)) — 公式ファイルに合わせて較正した JSON 仕様。
+- 🛡️ **05 · モデルとセキュリティ** ([docs/05](docs/05-modelos-e-seguranca.md)) — Fable/Opus/Codex、skip-permissions、30 層スタックチェックリスト、認可済みレッドチーム。
+- ☀️ **06 · 日常の Maestri** ([docs/06](docs/06-maestri-no-dia-a-dia.md)) — フロア、ポータル、ノート、ルーティン、Ombro を実際の場面で。
+- 🗺️ **07 · 領域と利用可能なエージェント** ([docs/07](docs/07-areas-e-agentes.md)) — 領域分割、agency-agents への対応表、レイアウト検証。
+- 🏢 **08 · フロア + スコア（レシピ）** ([docs/08](docs/08-andares-e-partituras.md)) — フロアとスコアを併用する方法、場面別レシピと hooks。
+- 🌐 **09 · ポータル：Web、モバイル、エミュレーター** ([docs/09](docs/09-portais-mobile-web-emulador.md)) — ブラウザ、モバイル Web、デバイスポータル（iOS シミュレーター / Android エミュレーター）をスコアに追加する方法。
+- 📦 **10 · Maestri でのインポートとエクスポート** ([docs/10](docs/10-importar-e-exportar.md)) — ネイティブにインポート/エクスポートできるすべてと、キュレートされたレシピ、そして各要素がハブのどこにあるか。
+- 💡 **11 · ヒント** ([docs/11](docs/11-dicas.md)) — Maestri をより活かすための日常の実用ヒント。
 - **🎭 · エージェント** ([agentes/README.md](agentes/README.md)) — 責務の原型と専門家の顔ぶれ。
 - **📨 · プロンプト** ([prompts](prompts/README.md)) — 既成プロンプトのライブラリ（初期プロンプト、スコア作成）。
 
@@ -174,12 +165,6 @@ python3 tests/validate_hub.py               # → role.json とハブ構造を�
 - インポート前にレビュー画面で**コマンドを読み**、信頼できる出所のスコアだけを受け入れてください。
 - **レッドチーム**スコアおよびあらゆる攻撃的活動は、**認可された範囲でのみ**動作し、決して本番環境で、決して実在の人物のデータでは行いません。
 - 詳細は [docs/05](docs/05-modelos-e-seguranca.md)。
-
-## 🔗 参考
-
-- [Maestri 公式ドキュメント](https://www.themaestri.app/pt-br/docs) — キャンバス、ターミナル、ノート、ポータル、フロア、ルーティン、Wire。
-- [agency-agents](https://github.com/msitarzewski/agency-agents) — 18 部門・230+ エージェントのカタログ（領域の着想源）。
-- [guiadevbrasil](https://github.com/arthurspk/guiadevbrasil) — 参考の pt-BR ガイド（レイアウトの着想源）。
 
 ## ⭐ Star History
 

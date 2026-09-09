@@ -6,23 +6,14 @@
 
 <h1 align="center">Guide Maestri</h1>
 
-<p align="center">
-  <b>Le guide pour diriger des équipes d'agents IA dans <a href="https://www.themaestri.app">Maestri</a> — axé sur la technologie, avec un générateur de 257 partitions prêtes à l'emploi, organisées par domaine.</b>
-</p>
-
-<p align="center">
-  <a href="partituras/CATALOGO.md"><img src="https://img.shields.io/badge/partitions-257-5856D6?style=for-the-badge" alt="257 partitions"></a>
-  <a href="partituras/CATALOGO.md"><img src="https://img.shields.io/badge/domaines-12-007AFF?style=for-the-badge" alt="12 domaines"></a>
-  <a href="docs/04-formato-maestripartitura.md"><img src="https://img.shields.io/badge/format-.maestripartitura%20v1-34C759?style=for-the-badge" alt="Format"></a>
-  <a href="tests/validate_partituras.py"><img src="https://img.shields.io/badge/validation-0%20%C3%A9cart-FF9500?style=for-the-badge" alt="Validé"></a>
-  <a href="docs/05-modelos-e-seguranca.md"><img src="https://img.shields.io/badge/langue-pt--BR-FFCC00?style=for-the-badge" alt="pt-BR"></a>
-</p>
-
 > **Note :** Ceci est une traduction. Le guide de base et les documents détaillés sous `docs/` sont en portugais brésilien.
 
 ## 🎯 De quoi s'agit-il
 
 > **Maestri** est une app macOS où vous **dirigez une équipe d'agents de code** — Claude Code, Codex, Gemini, OpenCode — sur un **canevas infini** : les terminaux sont des agents, les notes markdown sont la source de vérité partagée, les portails sont des navigateurs intégrés pour la vérification en direct, et le **maestro** délègue et coordonne. Ce dépôt est à la fois un **guide** et un **générateur Python** qui produit **257 partitions** (`.maestripartitura`) prêtes à glisser sur le canevas et à diriger — chacune est une équipe complète, avec responsabilités, notes, portails et connexions intégrés. L'accent est mis sur la **technologie**, plus 11 domaines métier (design, produit, marketing, ventes, données, sécurité, finance, juridique, support, gestion de projet, recherche).
+
+- 🌐 [Site officiel](https://www.themaestri.app) — la page de Maestri : téléchargement de l'app, fonctionnalités et tarifs.
+- 📖 [Documentation officielle](https://www.themaestri.app/docs) — le manuel de l'app : canevas, terminaux, notes, portails, étages, routines et Wire.
 
 ## 💡 Comment ce guide est organisé
 
@@ -57,17 +48,17 @@
 
 > Neuf documents plus le guide des agents, en portugais. Commencez par le 01 si Maestri est nouveau pour vous, ou passez au 02 et au 06 si vous le connaissez déjà.
 
-- **01 · Concepts** ([docs/01](docs/01-conceitos.md)) — canevas, terminaux, notes, portails, connexions, Mode Maestro, Ombro, Batuta, Étages (Floors), Routines, Environnements, Wire.
-- **02 · Utiliser les modèles** ([docs/02](docs/02-como-usar-os-templates.md)) — importer, diriger en pratique, choisir et adapter une partition.
-- **03 · Raccourcis et commandes** ([docs/03](docs/03-atalhos.md)) — raccourcis clavier macOS et la CLI `maestri`.
-- **04 · Le format `.maestripartitura`** ([docs/04](docs/04-formato-maestripartitura.md)) — la spécification JSON, calibrée sur les fichiers officiels.
-- **05 · Modèles et sécurité** ([docs/05](docs/05-modelos-e-seguranca.md)) — Fable/Opus/Codex, skip-permissions, checklist de 30 couches, red team autorisée.
-- **06 · Maestri au quotidien** ([docs/06](docs/06-maestri-no-dia-a-dia.md)) — étages, portails, notes, routines et Ombro en situations réelles.
-- **07 · Domaines et agents disponibles** ([docs/07](docs/07-areas-e-agentes.md)) — la division par domaines, la carte vers agency-agents, la validation de la mise en page.
-- **08 · Étages + Partitions (recettes)** ([docs/08](docs/08-andares-e-partituras.md)) — comment utiliser les étages avec les partitions, avec des recettes par situation et des hooks.
-- **09 · Portails : web, mobile, émulateurs** ([docs/09](docs/09-portais-mobile-web-emulador.md)) — comment ajouter des portails navigateur, web-mobile et appareil (simulateur iOS / émulateur Android) aux partitions.
-- **10 · Importer et exporter dans Maestri** ([docs/10](docs/10-importar-e-exportar.md)) — tout ce qui s'importe/exporte nativement plus les recettes curées, et où chaque chose vit dans le hub.
-- **11 · Astuces** ([docs/11](docs/11-dicas.md)) — des astuces pratiques au quotidien pour tirer le meilleur de Maestri.
+- 🧭 **01 · Concepts** ([docs/01](docs/01-conceitos.md)) — canevas, terminaux, notes, portails, connexions, Mode Maestro, Ombro, Batuta, Étages (Floors), Routines, Environnements, Wire.
+- 🚀 **02 · Utiliser les modèles** ([docs/02](docs/02-como-usar-os-templates.md)) — importer, diriger en pratique, choisir et adapter une partition.
+- ⌨️ **03 · Raccourcis et commandes** ([docs/03](docs/03-atalhos.md)) — raccourcis clavier macOS et la CLI `maestri`.
+- 📐 **04 · Le format `.maestripartitura`** ([docs/04](docs/04-formato-maestripartitura.md)) — la spécification JSON, calibrée sur les fichiers officiels.
+- 🛡️ **05 · Modèles et sécurité** ([docs/05](docs/05-modelos-e-seguranca.md)) — Fable/Opus/Codex, skip-permissions, checklist de 30 couches, red team autorisée.
+- ☀️ **06 · Maestri au quotidien** ([docs/06](docs/06-maestri-no-dia-a-dia.md)) — étages, portails, notes, routines et Ombro en situations réelles.
+- 🗺️ **07 · Domaines et agents disponibles** ([docs/07](docs/07-areas-e-agentes.md)) — la division par domaines, la carte vers agency-agents, la validation de la mise en page.
+- 🏢 **08 · Étages + Partitions (recettes)** ([docs/08](docs/08-andares-e-partituras.md)) — comment utiliser les étages avec les partitions, avec des recettes par situation et des hooks.
+- 🌐 **09 · Portails : web, mobile, émulateurs** ([docs/09](docs/09-portais-mobile-web-emulador.md)) — comment ajouter des portails navigateur, web-mobile et appareil (simulateur iOS / émulateur Android) aux partitions.
+- 📦 **10 · Importer et exporter dans Maestri** ([docs/10](docs/10-importar-e-exportar.md)) — tout ce qui s'importe/exporte nativement plus les recettes curées, et où chaque chose vit dans le hub.
+- 💡 **11 · Astuces** ([docs/11](docs/11-dicas.md)) — des astuces pratiques au quotidien pour tirer le meilleur de Maestri.
 - **🎭 · Agents** ([agentes/README.md](agentes/README.md)) — archétypes de responsabilité et la troupe de spécialistes.
 - **📨 · Prompts** ([prompts](prompts/README.md)) — une bibliothèque de prompts prêts (prompt initial, créer une partition).
 
@@ -174,12 +165,6 @@ python3 tests/validate_hub.py               # → valide les role.json et la str
 - **Lisez les commandes** sur l'écran de revue avant d'importer, et n'acceptez de partitions que de sources fiables.
 - Les partitions **Red Team** et tout engagement offensif opèrent **strictement dans un périmètre autorisé**, jamais en production et jamais avec des données de personnes réelles.
 - Détails dans [docs/05](docs/05-modelos-e-seguranca.md).
-
-## 🔗 Références
-
-- [Documentation officielle de Maestri](https://www.themaestri.app/pt-br/docs) — canevas, terminaux, notes, portails, étages, routines, Wire.
-- [agency-agents](https://github.com/msitarzewski/agency-agents) — catalogue de 230+ agents en 18 divisions (inspiration des domaines).
-- [guiadevbrasil](https://github.com/arthurspk/guiadevbrasil) — guide pt-BR de référence (inspiration de la mise en page).
 
 ## ⭐ Star History
 

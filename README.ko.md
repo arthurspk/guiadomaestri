@@ -6,23 +6,14 @@
 
 <h1 align="center">Maestri 가이드</h1>
 
-<p align="center">
-  <b><a href="https://www.themaestri.app">Maestri</a>에서 AI 에이전트 팀을 지휘하기 위한 가이드 — 기술 중심이며, 영역별로 정리된 257개의 완성 악보(스코어)를 만드는 생성기를 포함합니다.</b>
-</p>
-
-<p align="center">
-  <a href="partituras/CATALOGO.md"><img src="https://img.shields.io/badge/scores-257-5856D6?style=for-the-badge" alt="257"></a>
-  <a href="partituras/CATALOGO.md"><img src="https://img.shields.io/badge/areas-12-007AFF?style=for-the-badge" alt="12"></a>
-  <a href="docs/04-formato-maestripartitura.md"><img src="https://img.shields.io/badge/format-.maestripartitura%20v1-34C759?style=for-the-badge" alt="format"></a>
-  <a href="tests/validate_partituras.py"><img src="https://img.shields.io/badge/validation-0-FF9500?style=for-the-badge" alt="validated"></a>
-  <a href="docs/05-modelos-e-seguranca.md"><img src="https://img.shields.io/badge/language-pt--BR-FFCC00?style=for-the-badge" alt="pt-BR"></a>
-</p>
-
 > **참고:** 이 문서는 번역본입니다. 원본 가이드와 `docs/`의 상세 문서는 브라질 포르투갈어로 작성되어 있습니다.
 
 ## 🎯 이것은 무엇인가
 
 > **Maestri**는 **무한 캔버스**에서 **코드 에이전트 팀을 지휘**하는 macOS 앱입니다 — Claude Code, Codex, Gemini, OpenCode. 터미널은 에이전트, 마크다운 노트는 공유된 진실의 원천, 포털은 실시간 검증을 위한 내장 브라우저이며, **마에스트로**가 위임하고 조율합니다. 이 저장소는 **가이드**이자 **Python 생성기**로, 캔버스에 끌어다 놓고 바로 지휘할 수 있는 **257개의 악보**(`.maestripartitura`)를 만듭니다. 각 악보는 책임·노트·포털·연결이 내장된 완결된 팀입니다. 중심은 **기술**이며, 11개의 비즈니스 영역(디자인, 제품, 마케팅, 영업, 데이터, 보안, 재무, 법무, 지원, 프로젝트 관리, 리서치)이 더해집니다.
+
+- 🌐 [공식 사이트](https://www.themaestri.app) — Maestri 페이지: 앱 다운로드, 기능, 가격.
+- 📖 [공식 문서](https://www.themaestri.app/docs) — 앱 매뉴얼: 캔버스, 터미널, 노트, 포털, 층, 루틴, Wire.
 
 ## 💡 이 가이드의 구성
 
@@ -57,17 +48,17 @@
 
 > 9개의 문서와 에이전트 가이드, 모두 포르투갈어. Maestri가 처음이라면 01부터, 이미 안다면 02와 06으로.
 
-- **01 · 개념** ([docs/01](docs/01-conceitos.md)) — 캔버스, 터미널, 노트, 포털, 연결, 마에스트로 모드, Ombro, Batuta, 층(Floors), 루틴, 환경, Wire.
-- **02 · 템플릿 사용** ([docs/02](docs/02-como-usar-os-templates.md)) — 가져오기, 실전 지휘, 악보 선택과 조정.
-- **03 · 단축키와 명령** ([docs/03](docs/03-atalhos.md)) — macOS 키보드 단축키와 `maestri` CLI.
-- **04 · `.maestripartitura` 형식** ([docs/04](docs/04-formato-maestripartitura.md)) — 공식 파일 대비 보정된 JSON 사양.
-- **05 · 모델과 보안** ([docs/05](docs/05-modelos-e-seguranca.md)) — Fable/Opus/Codex, skip-permissions, 30계층 스택 체크리스트, 승인된 레드팀.
-- **06 · 일상 속 Maestri** ([docs/06](docs/06-maestri-no-dia-a-dia.md)) — 층, 포털, 노트, 루틴, Ombro의 실제 상황.
-- **07 · 영역과 사용 가능한 에이전트** ([docs/07](docs/07-areas-e-agentes.md)) — 영역 구분, agency-agents 매핑, 레이아웃 검증.
-- **08 · 층 + 악보(레시피)** ([docs/08](docs/08-andares-e-partituras.md)) — 층과 악보를 함께 쓰는 법, 상황별 레시피와 hooks.
-- **09 · 포털: 웹, 모바일, 에뮬레이터** ([docs/09](docs/09-portais-mobile-web-emulador.md)) — 악보에 브라우저·모바일웹·기기 포털(iOS 시뮬레이터 / Android 에뮬레이터)을 추가하는 법.
-- **10 · Maestri에서 가져오기와 내보내기** ([docs/10](docs/10-importar-e-exportar.md)) — 네이티브로 가져오기/내보내기 가능한 모든 것과 큐레이트 레시피, 그리고 각 항목이 허브의 어디에 있는지.
-- **11 · 팁** ([docs/11](docs/11-dicas.md)) — Maestri를 더 잘 활용하는 실용적인 일상 팁.
+- 🧭 **01 · 개념** ([docs/01](docs/01-conceitos.md)) — 캔버스, 터미널, 노트, 포털, 연결, 마에스트로 모드, Ombro, Batuta, 층(Floors), 루틴, 환경, Wire.
+- 🚀 **02 · 템플릿 사용** ([docs/02](docs/02-como-usar-os-templates.md)) — 가져오기, 실전 지휘, 악보 선택과 조정.
+- ⌨️ **03 · 단축키와 명령** ([docs/03](docs/03-atalhos.md)) — macOS 키보드 단축키와 `maestri` CLI.
+- 📐 **04 · `.maestripartitura` 형식** ([docs/04](docs/04-formato-maestripartitura.md)) — 공식 파일 대비 보정된 JSON 사양.
+- 🛡️ **05 · 모델과 보안** ([docs/05](docs/05-modelos-e-seguranca.md)) — Fable/Opus/Codex, skip-permissions, 30계층 스택 체크리스트, 승인된 레드팀.
+- ☀️ **06 · 일상 속 Maestri** ([docs/06](docs/06-maestri-no-dia-a-dia.md)) — 층, 포털, 노트, 루틴, Ombro의 실제 상황.
+- 🗺️ **07 · 영역과 사용 가능한 에이전트** ([docs/07](docs/07-areas-e-agentes.md)) — 영역 구분, agency-agents 매핑, 레이아웃 검증.
+- 🏢 **08 · 층 + 악보(레시피)** ([docs/08](docs/08-andares-e-partituras.md)) — 층과 악보를 함께 쓰는 법, 상황별 레시피와 hooks.
+- 🌐 **09 · 포털: 웹, 모바일, 에뮬레이터** ([docs/09](docs/09-portais-mobile-web-emulador.md)) — 악보에 브라우저·모바일웹·기기 포털(iOS 시뮬레이터 / Android 에뮬레이터)을 추가하는 법.
+- 📦 **10 · Maestri에서 가져오기와 내보내기** ([docs/10](docs/10-importar-e-exportar.md)) — 네이티브로 가져오기/내보내기 가능한 모든 것과 큐레이트 레시피, 그리고 각 항목이 허브의 어디에 있는지.
+- 💡 **11 · 팁** ([docs/11](docs/11-dicas.md)) — Maestri를 더 잘 활용하는 실용적인 일상 팁.
 - **🎭 · 에이전트** ([agentes/README.md](agentes/README.md)) — 책임 원형과 전문가 캐스트.
 - **📨 · 프롬프트** ([prompts](prompts/README.md)) — 준비된 프롬프트 라이브러리(초기 프롬프트, 스코어 생성).
 
@@ -174,12 +165,6 @@ python3 tests/validate_hub.py               # → role.json과 허브 구조 검
 - 가져오기 전에 검토 화면에서 **명령을 읽고**, 신뢰할 수 있는 출처의 악보만 받아들이세요.
 - **레드팀** 악보와 모든 공격적 활동은 **승인된 범위에서만** 작동하며, 절대 프로덕션에서, 절대 실제 사람의 데이터로 하지 않습니다.
 - 세부 사항은 [docs/05](docs/05-modelos-e-seguranca.md).
-
-## 🔗 참고
-
-- [Maestri 공식 문서](https://www.themaestri.app/pt-br/docs) — 캔버스, 터미널, 노트, 포털, 층, 루틴, Wire.
-- [agency-agents](https://github.com/msitarzewski/agency-agents) — 18개 부서에 230+ 에이전트 카탈로그(영역의 영감).
-- [guiadevbrasil](https://github.com/arthurspk/guiadevbrasil) — 참조용 pt-BR 가이드(레이아웃의 영감).
 
 ## ⭐ Star History
 

@@ -6,23 +6,14 @@
 
 <h1 align="center">دليل Maestri</h1>
 
-<p align="center">
-  <b>دليل قيادة فرق وكلاء الذكاء الاصطناعي في <a href="https://www.themaestri.app">Maestri</a> — مع التركيز على التقنية، ومولّد ينتج 257 «بارتيتورة» جاهزة، منظّمة حسب المجال.</b>
-</p>
-
-<p align="center">
-  <a href="partituras/CATALOGO.md"><img src="https://img.shields.io/badge/scores-257-5856D6?style=for-the-badge" alt="257"></a>
-  <a href="partituras/CATALOGO.md"><img src="https://img.shields.io/badge/areas-12-007AFF?style=for-the-badge" alt="12"></a>
-  <a href="docs/04-formato-maestripartitura.md"><img src="https://img.shields.io/badge/format-.maestripartitura%20v1-34C759?style=for-the-badge" alt="format"></a>
-  <a href="tests/validate_partituras.py"><img src="https://img.shields.io/badge/validation-0-FF9500?style=for-the-badge" alt="validated"></a>
-  <a href="docs/05-modelos-e-seguranca.md"><img src="https://img.shields.io/badge/language-pt--BR-FFCC00?style=for-the-badge" alt="pt-BR"></a>
-</p>
-
 > **ملاحظة:** هذه ترجمة. الدليل الأساسي والمستندات التفصيلية في `docs/` مكتوبة بالبرتغالية البرازيلية.
 
 ## 🎯 ما هذا
 
 > **Maestri** تطبيق macOS تقود فيه **فريقًا من وكلاء البرمجة** — Claude Code وCodex وGemini وOpenCode — على **لوحة لا نهائية**: الطرفيات (terminals) هي الوكلاء، وملاحظات markdown هي مصدر الحقيقة المشترك، والبوابات (portals) متصفحات مدمجة للتحقق الحيّ، بينما يفوّض **المايسترو** وينسّق. هذا المستودع دليل ومولّد بلغة Python في آن واحد، ينتج **257 بارتيتورة** (`.maestripartitura`) جاهزة للسحب إلى اللوحة والقيادة — كلٌّ منها فريق كامل بمسؤوليات وملاحظات وبوابات وروابط مضمّنة. التركيز على **التقنية**، إضافة إلى 11 مجالًا تجاريًا (التصميم، المنتج، التسويق، المبيعات، البيانات، الأمن، المالية، القانون، الدعم، إدارة المشاريع، البحث).
+
+- 🌐 [الموقع الرسمي](https://www.themaestri.app) — صفحة Maestri: تنزيل التطبيق والميزات والأسعار.
+- 📖 [التوثيق الرسمي](https://www.themaestri.app/docs) — دليل التطبيق: اللوحة، الطرفيات، الملاحظات، البوابات، الطوابق، الروتينات وWire.
 
 ## 💡 كيف نُظّم هذا الدليل
 
@@ -57,17 +48,17 @@
 
 > تسعة مستندات إضافةً إلى دليل الوكلاء، بالبرتغالية. ابدأ من 01 إن كان Maestri جديدًا عليك، أو انتقل إلى 02 و06 إن كنت تعرفه.
 
-- **01 · المفاهيم** ([docs/01](docs/01-conceitos.md)) — اللوحة، الطرفيات، الملاحظات، البوابات، الروابط، وضع المايسترو، Ombro، Batuta، الطوابق (Floors)، الروتينات، البيئات، Wire.
-- **02 · استخدام القوالب** ([docs/02](docs/02-como-usar-os-templates.md)) — الاستيراد، القيادة عمليًا، اختيار بارتيتورة وتكييفها.
-- **03 · الاختصارات والأوامر** ([docs/03](docs/03-atalhos.md)) — اختصارات لوحة مفاتيح macOS وواجهة `maestri`.
-- **04 · صيغة `.maestripartitura`** ([docs/04](docs/04-formato-maestripartitura.md)) — مواصفة JSON المعايَرة مقابل الملفات الرسمية.
-- **05 · النماذج والأمن** ([docs/05](docs/05-modelos-e-seguranca.md)) — Fable/Opus/Codex، skip-permissions، قائمة الطبقات الثلاثين، الفريق الأحمر المُصرّح.
-- **06 · Maestri يوميًا** ([docs/06](docs/06-maestri-no-dia-a-dia.md)) — الطوابق، البوابات، الملاحظات، الروتينات وOmbro في مواقف حقيقية.
-- **07 · المجالات والوكلاء المتاحون** ([docs/07](docs/07-areas-e-agentes.md)) — التقسيم حسب المجالات، الخريطة إلى agency-agents، والتحقق من التخطيط.
-- **08 · الطوابق + البارتيتورات (وصفات)** ([docs/08](docs/08-andares-e-partituras.md)) — كيفية استخدام الطوابق مع البارتيتورات، بوصفات حسب الموقف وhooks.
-- **09 · البوابات: ويب، موبايل، محاكيات** ([docs/09](docs/09-portais-mobile-web-emulador.md)) — كيفية إضافة بوابات المتصفح وويب-الموبايل والأجهزة (محاكي iOS / محاكي Android) إلى البارتيتورات.
-- **10 · الاستيراد والتصدير في Maestri** ([docs/10](docs/10-importar-e-exportar.md)) — كل ما يمكن استيراده/تصديره أصليًا إضافةً إلى الوصفات المختارة، وأين يوجد كل شيء في المركز.
-- **11 · نصائح** ([docs/11](docs/11-dicas.md)) — نصائح عملية يومية لتحقيق أقصى استفادة من Maestri.
+- 🧭 **01 · المفاهيم** ([docs/01](docs/01-conceitos.md)) — اللوحة، الطرفيات، الملاحظات، البوابات، الروابط، وضع المايسترو، Ombro، Batuta، الطوابق (Floors)، الروتينات، البيئات، Wire.
+- 🚀 **02 · استخدام القوالب** ([docs/02](docs/02-como-usar-os-templates.md)) — الاستيراد، القيادة عمليًا، اختيار بارتيتورة وتكييفها.
+- ⌨️ **03 · الاختصارات والأوامر** ([docs/03](docs/03-atalhos.md)) — اختصارات لوحة مفاتيح macOS وواجهة `maestri`.
+- 📐 **04 · صيغة `.maestripartitura`** ([docs/04](docs/04-formato-maestripartitura.md)) — مواصفة JSON المعايَرة مقابل الملفات الرسمية.
+- 🛡️ **05 · النماذج والأمن** ([docs/05](docs/05-modelos-e-seguranca.md)) — Fable/Opus/Codex، skip-permissions، قائمة الطبقات الثلاثين، الفريق الأحمر المُصرّح.
+- ☀️ **06 · Maestri يوميًا** ([docs/06](docs/06-maestri-no-dia-a-dia.md)) — الطوابق، البوابات، الملاحظات، الروتينات وOmbro في مواقف حقيقية.
+- 🗺️ **07 · المجالات والوكلاء المتاحون** ([docs/07](docs/07-areas-e-agentes.md)) — التقسيم حسب المجالات، الخريطة إلى agency-agents، والتحقق من التخطيط.
+- 🏢 **08 · الطوابق + البارتيتورات (وصفات)** ([docs/08](docs/08-andares-e-partituras.md)) — كيفية استخدام الطوابق مع البارتيتورات، بوصفات حسب الموقف وhooks.
+- 🌐 **09 · البوابات: ويب، موبايل، محاكيات** ([docs/09](docs/09-portais-mobile-web-emulador.md)) — كيفية إضافة بوابات المتصفح وويب-الموبايل والأجهزة (محاكي iOS / محاكي Android) إلى البارتيتورات.
+- 📦 **10 · الاستيراد والتصدير في Maestri** ([docs/10](docs/10-importar-e-exportar.md)) — كل ما يمكن استيراده/تصديره أصليًا إضافةً إلى الوصفات المختارة، وأين يوجد كل شيء في المركز.
+- 💡 **11 · نصائح** ([docs/11](docs/11-dicas.md)) — نصائح عملية يومية لتحقيق أقصى استفادة من Maestri.
 - **🎭 · الوكلاء** ([agentes/README.md](agentes/README.md)) — أنماط المسؤولية وطاقم المتخصصين.
 - **📨 · الموجّهات** ([prompts](prompts/README.md)) — مكتبة موجّهات جاهزة (الموجّه الأولي، إنشاء بارتيتورة).
 
@@ -174,12 +165,6 @@ python3 tests/validate_hub.py               # → يتحقق من ملفات rol
 - **اقرأ الأوامر** في شاشة المراجعة قبل الاستيراد، ولا تقبل بارتيتورات إلا من مصادر موثوقة.
 - بارتيتورات **الفريق الأحمر** وأي عمل هجومي تعمل **ضمن النطاق المُصرّح حصريًا**، لا في الإنتاج ولا ببيانات أشخاص حقيقيين.
 - التفاصيل في [docs/05](docs/05-modelos-e-seguranca.md).
-
-## 🔗 مراجع
-
-- [توثيق Maestri الرسمي](https://www.themaestri.app/pt-br/docs) — اللوحة، الطرفيات، الملاحظات، البوابات، الطوابق، الروتينات، Wire.
-- [agency-agents](https://github.com/msitarzewski/agency-agents) — كتالوج لأكثر من 230 وكيلًا في 18 قسمًا (مصدر إلهام المجالات).
-- [guiadevbrasil](https://github.com/arthurspk/guiadevbrasil) — دليل مرجعي بالبرتغالية (مصدر إلهام التخطيط).
 
 ## ⭐ Star History
 

@@ -6,23 +6,14 @@
 
 <h1 align="center">Guida Maestri</h1>
 
-<p align="center">
-  <b>La guida per dirigere team di agenti IA in <a href="https://www.themaestri.app">Maestri</a> — con focus sulla tecnologia e un generatore di 257 partiture pronte, organizzate per area.</b>
-</p>
-
-<p align="center">
-  <a href="partituras/CATALOGO.md"><img src="https://img.shields.io/badge/partiture-257-5856D6?style=for-the-badge" alt="257 partiture"></a>
-  <a href="partituras/CATALOGO.md"><img src="https://img.shields.io/badge/aree-12-007AFF?style=for-the-badge" alt="12 aree"></a>
-  <a href="docs/04-formato-maestripartitura.md"><img src="https://img.shields.io/badge/formato-.maestripartitura%20v1-34C759?style=for-the-badge" alt="Formato"></a>
-  <a href="tests/validate_partituras.py"><img src="https://img.shields.io/badge/validazione-0%20scarti-FF9500?style=for-the-badge" alt="Validato"></a>
-  <a href="docs/05-modelos-e-seguranca.md"><img src="https://img.shields.io/badge/lingua-pt--BR-FFCC00?style=for-the-badge" alt="pt-BR"></a>
-</p>
-
 > **Nota:** questa è una traduzione. La guida di base e i documenti dettagliati in `docs/` sono in portoghese brasiliano.
 
 ## 🎯 Di cosa si tratta
 
 > **Maestri** è un'app macOS in cui **dirigi un team di agenti di codice** — Claude Code, Codex, Gemini, OpenCode — su una **tela infinita**: i terminali sono agenti, le note markdown sono la fonte di verità condivisa, i portali sono browser incorporati per la verifica dal vivo, e il **maestro** delega e coordina. Questo repository è insieme una **guida** e un **generatore Python** che produce **257 partiture** (`.maestripartitura`) pronte da trascinare sulla tela e dirigere — ognuna è un team completo, con responsabilità, note, portali e connessioni integrati. Il focus è la **tecnologia**, più 11 aree di business (design, prodotto, marketing, vendite, dati, sicurezza, finanza, legale, supporto, project management, ricerca).
+
+- 🌐 [Sito ufficiale](https://www.themaestri.app) — la pagina di Maestri: download dell'app, funzionalità e prezzi.
+- 📖 [Documentazione ufficiale](https://www.themaestri.app/docs) — il manuale dell'app: tela, terminali, note, portali, piani, routine e Wire.
 
 ## 💡 Come è organizzata questa guida
 
@@ -57,17 +48,17 @@
 
 > Nove documenti più la guida agli agenti, in portoghese. Inizia dal 01 se Maestri è nuovo per te, o salta al 02 e al 06 se lo conosci già.
 
-- **01 · Concetti** ([docs/01](docs/01-conceitos.md)) — tela, terminali, note, portali, connessioni, Modalità Maestro, Ombro, Batuta, Piani (Floors), Routine, Ambienti, Wire.
-- **02 · Usare i template** ([docs/02](docs/02-como-usar-os-templates.md)) — importare, dirigere in pratica, scegliere e adattare una partitura.
-- **03 · Scorciatoie e comandi** ([docs/03](docs/03-atalhos.md)) — scorciatoie da tastiera macOS e la CLI `maestri`.
-- **04 · Il formato `.maestripartitura`** ([docs/04](docs/04-formato-maestripartitura.md)) — la specifica JSON, calibrata sui file ufficiali.
-- **05 · Modelli e sicurezza** ([docs/05](docs/05-modelos-e-seguranca.md)) — Fable/Opus/Codex, skip-permissions, checklist a 30 livelli, red team autorizzato.
-- **06 · Maestri nel quotidiano** ([docs/06](docs/06-maestri-no-dia-a-dia.md)) — piani, portali, note, routine e Ombro in situazioni reali.
-- **07 · Aree e agenti disponibili** ([docs/07](docs/07-areas-e-agentes.md)) — la divisione per aree, la mappa verso agency-agents, la validazione del layout.
-- **08 · Piani + Partiture (ricette)** ([docs/08](docs/08-andares-e-partituras.md)) — come usare i piani insieme alle partiture, con ricette per situazione e hook.
-- **09 · Portali: web, mobile, emulatori** ([docs/09](docs/09-portais-mobile-web-emulador.md)) — come aggiungere portali browser, web-mobile e dispositivo (simulatore iOS / emulatore Android) alle partiture.
-- **10 · Importare ed esportare in Maestri** ([docs/10](docs/10-importar-e-exportar.md)) — tutto ciò che si importa/esporta nativamente più le ricette curate, e dove vive ogni cosa nell'hub.
-- **11 · Consigli** ([docs/11](docs/11-dicas.md)) — consigli pratici quotidiani per sfruttare al meglio Maestri.
+- 🧭 **01 · Concetti** ([docs/01](docs/01-conceitos.md)) — tela, terminali, note, portali, connessioni, Modalità Maestro, Ombro, Batuta, Piani (Floors), Routine, Ambienti, Wire.
+- 🚀 **02 · Usare i template** ([docs/02](docs/02-como-usar-os-templates.md)) — importare, dirigere in pratica, scegliere e adattare una partitura.
+- ⌨️ **03 · Scorciatoie e comandi** ([docs/03](docs/03-atalhos.md)) — scorciatoie da tastiera macOS e la CLI `maestri`.
+- 📐 **04 · Il formato `.maestripartitura`** ([docs/04](docs/04-formato-maestripartitura.md)) — la specifica JSON, calibrata sui file ufficiali.
+- 🛡️ **05 · Modelli e sicurezza** ([docs/05](docs/05-modelos-e-seguranca.md)) — Fable/Opus/Codex, skip-permissions, checklist a 30 livelli, red team autorizzato.
+- ☀️ **06 · Maestri nel quotidiano** ([docs/06](docs/06-maestri-no-dia-a-dia.md)) — piani, portali, note, routine e Ombro in situazioni reali.
+- 🗺️ **07 · Aree e agenti disponibili** ([docs/07](docs/07-areas-e-agentes.md)) — la divisione per aree, la mappa verso agency-agents, la validazione del layout.
+- 🏢 **08 · Piani + Partiture (ricette)** ([docs/08](docs/08-andares-e-partituras.md)) — come usare i piani insieme alle partiture, con ricette per situazione e hook.
+- 🌐 **09 · Portali: web, mobile, emulatori** ([docs/09](docs/09-portais-mobile-web-emulador.md)) — come aggiungere portali browser, web-mobile e dispositivo (simulatore iOS / emulatore Android) alle partiture.
+- 📦 **10 · Importare ed esportare in Maestri** ([docs/10](docs/10-importar-e-exportar.md)) — tutto ciò che si importa/esporta nativamente più le ricette curate, e dove vive ogni cosa nell'hub.
+- 💡 **11 · Consigli** ([docs/11](docs/11-dicas.md)) — consigli pratici quotidiani per sfruttare al meglio Maestri.
 - **🎭 · Agenti** ([agentes/README.md](agentes/README.md)) — archetipi di responsabilità e il cast di specialisti.
 - **📨 · Prompt** ([prompts](prompts/README.md)) — una libreria di prompt pronti (prompt iniziale, creare una partitura).
 
@@ -174,12 +165,6 @@ python3 tests/validate_hub.py               # → valida i role.json e la strutt
 - **Leggi i comandi** nella schermata di revisione prima di importare, e accetta partiture solo da fonti affidabili.
 - Le partiture **Red Team** e qualsiasi ingaggio offensivo operano **esclusivamente in ambito autorizzato**, mai in produzione e mai con dati di persone reali.
 - Dettagli in [docs/05](docs/05-modelos-e-seguranca.md).
-
-## 🔗 Riferimenti
-
-- [Documentazione ufficiale di Maestri](https://www.themaestri.app/pt-br/docs) — tela, terminali, note, portali, piani, routine, Wire.
-- [agency-agents](https://github.com/msitarzewski/agency-agents) — catalogo di 230+ agenti in 18 divisioni (ispirazione delle aree).
-- [guiadevbrasil](https://github.com/arthurspk/guiadevbrasil) — guida pt-BR di riferimento (ispirazione del layout).
 
 ## ⭐ Star History
 

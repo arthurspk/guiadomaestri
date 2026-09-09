@@ -6,23 +6,14 @@
 
 <h1 align="center">Maestri 指南</h1>
 
-<p align="center">
-  <b>在 <a href="https://www.themaestri.app">Maestri</a> 中指挥 AI 智能体团队的指南 —— 侧重技术，并提供一个生成 257 份现成乐谱（按领域组织）的生成器。</b>
-</p>
-
-<p align="center">
-  <a href="partituras/CATALOGO.md"><img src="https://img.shields.io/badge/%E4%B9%90%E8%B0%B1-257-5856D6?style=for-the-badge" alt="257 乐谱"></a>
-  <a href="partituras/CATALOGO.md"><img src="https://img.shields.io/badge/%E9%A2%86%E5%9F%9F-12-007AFF?style=for-the-badge" alt="12 领域"></a>
-  <a href="docs/04-formato-maestripartitura.md"><img src="https://img.shields.io/badge/format-.maestripartitura%20v1-34C759?style=for-the-badge" alt="格式"></a>
-  <a href="tests/validate_partituras.py"><img src="https://img.shields.io/badge/validation-0-FF9500?style=for-the-badge" alt="已验证"></a>
-  <a href="docs/05-modelos-e-seguranca.md"><img src="https://img.shields.io/badge/language-pt--BR-FFCC00?style=for-the-badge" alt="pt-BR"></a>
-</p>
-
 > **注意：** 这是译文。基础指南与 `docs/` 下的详细文档使用巴西葡萄牙语撰写。
 
 ## 🎯 这是什么
 
 > **Maestri** 是一款 macOS 应用，你在**无限画布**上**指挥一支代码智能体团队** —— Claude Code、Codex、Gemini、OpenCode：终端是智能体，Markdown 笔记是共享的事实来源，门户（portal）是用于实时验证的内嵌浏览器，而**指挥者（maestro）**负责委派与协调。本仓库既是一份**指南**，也是一个 **Python 生成器**，可生成 **257 份乐谱**（`.maestripartitura`），拖到画布上即可指挥 —— 每份都是一个完整团队，内置职责、笔记、门户与连接。重点是**技术**，另有 11 个业务领域（设计、产品、市场、销售、数据、安全、财务、法务、支持、项目管理、研究）。
+
+- 🌐 [官方网站](https://www.themaestri.app) — Maestri 页面：应用下载、功能与价格。
+- 📖 [官方文档](https://www.themaestri.app/docs) — 应用手册：画布、终端、笔记、门户、楼层、例程与 Wire。
 
 ## 💡 本指南如何组织
 
@@ -57,17 +48,17 @@
 
 > 九份文档外加智能体指南，均为葡萄牙语。若你初次接触 Maestri 请从 01 开始；若已熟悉可直接看 02 和 06。
 
-- **01 · 概念** ([docs/01](docs/01-conceitos.md)) —— 画布、终端、笔记、门户、连接、指挥模式、Ombro、Batuta、楼层（Floors）、例程、环境、Wire。
-- **02 · 使用模板** ([docs/02](docs/02-como-usar-os-templates.md)) —— 导入、实战指挥、挑选与改编一份乐谱。
-- **03 · 快捷键与命令** ([docs/03](docs/03-atalhos.md)) —— macOS 快捷键与 `maestri` 命令行。
-- **04 · `.maestripartitura` 格式** ([docs/04](docs/04-formato-maestripartitura.md)) —— 对照官方文件校准的 JSON 规范。
-- **05 · 模型与安全** ([docs/05](docs/05-modelos-e-seguranca.md)) —— Fable/Opus/Codex、skip-permissions、30 层技术清单、授权红队。
-- **06 · Maestri 日常** ([docs/06](docs/06-maestri-no-dia-a-dia.md)) —— 楼层、门户、笔记、例程与 Ombro 的真实场景。
-- **07 · 领域与可用智能体** ([docs/07](docs/07-areas-e-agentes.md)) —— 按领域划分、与 agency-agents 的映射、版式验证。
-- **08 · 楼层 + 乐谱（配方）** ([docs/08](docs/08-andares-e-partituras.md)) —— 如何将楼层与乐谱结合使用，含分场景配方与 hooks。
-- **09 · 门户：网页、移动、模拟器** ([docs/09](docs/09-portais-mobile-web-emulador.md)) —— 如何为乐谱添加浏览器、移动网页与设备门户（iOS 模拟器 / Android 模拟器）。
-- **10 · 在 Maestri 中导入与导出** ([docs/10](docs/10-importar-e-exportar.md)) — 所有可原生导入/导出的内容以及精选配方，及其在中心中的位置。
-- **11 · 技巧** ([docs/11](docs/11-dicas.md)) — 日常实用技巧，让你更好地使用 Maestri。
+- 🧭 **01 · 概念** ([docs/01](docs/01-conceitos.md)) —— 画布、终端、笔记、门户、连接、指挥模式、Ombro、Batuta、楼层（Floors）、例程、环境、Wire。
+- 🚀 **02 · 使用模板** ([docs/02](docs/02-como-usar-os-templates.md)) —— 导入、实战指挥、挑选与改编一份乐谱。
+- ⌨️ **03 · 快捷键与命令** ([docs/03](docs/03-atalhos.md)) —— macOS 快捷键与 `maestri` 命令行。
+- 📐 **04 · `.maestripartitura` 格式** ([docs/04](docs/04-formato-maestripartitura.md)) —— 对照官方文件校准的 JSON 规范。
+- 🛡️ **05 · 模型与安全** ([docs/05](docs/05-modelos-e-seguranca.md)) —— Fable/Opus/Codex、skip-permissions、30 层技术清单、授权红队。
+- ☀️ **06 · Maestri 日常** ([docs/06](docs/06-maestri-no-dia-a-dia.md)) —— 楼层、门户、笔记、例程与 Ombro 的真实场景。
+- 🗺️ **07 · 领域与可用智能体** ([docs/07](docs/07-areas-e-agentes.md)) —— 按领域划分、与 agency-agents 的映射、版式验证。
+- 🏢 **08 · 楼层 + 乐谱（配方）** ([docs/08](docs/08-andares-e-partituras.md)) —— 如何将楼层与乐谱结合使用，含分场景配方与 hooks。
+- 🌐 **09 · 门户：网页、移动、模拟器** ([docs/09](docs/09-portais-mobile-web-emulador.md)) —— 如何为乐谱添加浏览器、移动网页与设备门户（iOS 模拟器 / Android 模拟器）。
+- 📦 **10 · 在 Maestri 中导入与导出** ([docs/10](docs/10-importar-e-exportar.md)) — 所有可原生导入/导出的内容以及精选配方，及其在中心中的位置。
+- 💡 **11 · 技巧** ([docs/11](docs/11-dicas.md)) — 日常实用技巧，让你更好地使用 Maestri。
 - **🎭 · 智能体** ([agentes/README.md](agentes/README.md)) —— 职责原型与专家阵容。
 - **📨 · 提示词** ([prompts](prompts/README.md)) — 现成提示词库（初始提示词、创建乐谱）。
 
@@ -174,12 +165,6 @@ python3 tests/validate_hub.py               # → 校验 role.json 与中心结�
 - 导入前请在审阅界面**阅读命令**，且仅接受来自可信来源的乐谱。
 - **红队**乐谱及任何进攻性活动**仅在授权范围内**运作，绝不用于生产环境，绝不使用真实个人数据。
 - 细节见 [docs/05](docs/05-modelos-e-seguranca.md)。
-
-## 🔗 参考
-
-- [Maestri 官方文档](https://www.themaestri.app/pt-br/docs) —— 画布、终端、笔记、门户、楼层、例程、Wire。
-- [agency-agents](https://github.com/msitarzewski/agency-agents) —— 18 个部门、230+ 智能体的目录（领域灵感来源）。
-- [guiadevbrasil](https://github.com/arthurspk/guiadevbrasil) —— 参考用 pt-BR 指南（版式灵感来源）。
 
 ## ⭐ Star History
 
