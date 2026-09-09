@@ -137,6 +137,19 @@
 - **🛡️ Adversariales Review** (Release, Wardens, Duell) — `codex` / `gemini`, mit Absicht: ein anderes Modell fängt, was das andere übersehen hat.
 - Details und Schutzmaßnahmen in [docs/05](docs/05-modelos-e-seguranca.md).
 
+## 📜 Verfügbare Skripte
+
+> Der gesamte Hub wird von Python (nur stdlib) generiert. Nutzung und Erweiterung in [`scripts/README.md`](scripts/README.md).
+
+| Skript | Typ | Was es tut |
+|---|---|---|
+| [`scripts/maestri_build.py`](scripts/maestri_build.py) | Bibliothek | Klasse `Partitura`, `.maestripartitura`-Serialisierung, ropePoints, Layout, Portale. |
+| [`scripts/roles_lib.py`](scripts/roles_lib.py) | Bibliothek | Verantwortlichkeits-Prompts (pt-BR) und Notiz-Vorlagen. |
+| [`scripts/generate_partituras.py`](scripts/generate_partituras.py) | Generator | Baut die 257 Partituren je Bereich, die Bundles und die Kataloge. |
+| [`scripts/generate_hub.py`](scripts/generate_hub.py) | Generator | Erzeugt `roles/` (role.json), `notas/` und `instrucoes/`. |
+| [`tests/validate_partituras.py`](tests/validate_partituras.py) | Validierung | Vergleicht jede Partitur mit der offiziellen Referenz (null Abweichungen). |
+| [`tests/validate_hub.py`](tests/validate_hub.py) | Validierung | Validiert die role.json-Dateien, Notizen und CLAUDE.md/AGENTS.md-Paare. |
+
 ## 🛠️ Neu generieren und validieren
 
 > Der Generator braucht nichts außer der Standardbibliothek von Python 3. Deterministische UUIDs: Neugenerieren erzeugt Byte-für-Byte identische Dateien.

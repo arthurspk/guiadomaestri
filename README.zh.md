@@ -137,6 +137,19 @@
 - **🛡️ 对抗式评审**（发布、warden、对决）—— `codex` / `gemini`，刻意为之：换一个模型抓出另一个漏掉的问题。
 - 细节与防护见 [docs/05](docs/05-modelos-e-seguranca.md)。
 
+## 📜 可用脚本
+
+> 整个中心由 Python 生成（仅标准库）。用法与扩展见 [`scripts/README.md`](scripts/README.md)。
+
+| 脚本 | 类型 | 作用 |
+|---|---|---|
+| [`scripts/maestri_build.py`](scripts/maestri_build.py) | 库 | `Partitura` 类、`.maestripartitura` 序列化、ropePoints、布局、门户。 |
+| [`scripts/roles_lib.py`](scripts/roles_lib.py) | 库 | 职责提示词（pt-BR）与笔记模板。 |
+| [`scripts/generate_partituras.py`](scripts/generate_partituras.py) | 生成器 | 按领域生成 257 份乐谱、合集包与目录。 |
+| [`scripts/generate_hub.py`](scripts/generate_hub.py) | 生成器 | 生成 `roles/`（role.json）、`notas/` 与 `instrucoes/`。 |
+| [`tests/validate_partituras.py`](tests/validate_partituras.py) | 校验 | 将每份乐谱与官方参考对比（零差异）。 |
+| [`tests/validate_hub.py`](tests/validate_hub.py) | 校验 | 校验 role.json、笔记与 CLAUDE.md/AGENTS.md 配对。 |
+
 ## 🛠️ 重新生成并验证
 
 > 生成器只依赖 Python 3 标准库。确定性 UUID：重新生成会产生逐字节一致的文件。

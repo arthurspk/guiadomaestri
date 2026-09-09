@@ -137,6 +137,19 @@
 - **🛡️ 적대적 리뷰** (릴리스, warden, 대결) — `codex` / `gemini`, 의도적으로: 다른 모델이 놓친 것을 잡습니다.
 - 세부 사항과 안전장치는 [docs/05](docs/05-modelos-e-seguranca.md).
 
+## 📜 사용 가능한 스크립트
+
+> 허브 전체가 Python(표준 라이브러리만)으로 생성됩니다. 사용법과 확장은 [`scripts/README.md`](scripts/README.md).
+
+| 스크립트 | 유형 | 하는 일 |
+|---|---|---|
+| [`scripts/maestri_build.py`](scripts/maestri_build.py) | 라이브러리 | `Partitura` 클래스, `.maestripartitura` 직렬화, ropePoints, 레이아웃, 포털. |
+| [`scripts/roles_lib.py`](scripts/roles_lib.py) | 라이브러리 | 책임 프롬프트(pt-BR)와 노트 템플릿. |
+| [`scripts/generate_partituras.py`](scripts/generate_partituras.py) | 생성기 | 영역별 257개 스코어, 번들, 카탈로그 생성. |
+| [`scripts/generate_hub.py`](scripts/generate_hub.py) | 생성기 | `roles/`(role.json), `notas/`, `instrucoes/` 생성. |
+| [`tests/validate_partituras.py`](tests/validate_partituras.py) | 검증 | 각 스코어를 공식 레퍼런스와 비교(차이 0). |
+| [`tests/validate_hub.py`](tests/validate_hub.py) | 검증 | role.json, 노트, CLAUDE.md/AGENTS.md 쌍 검증. |
+
 ## 🛠️ 재생성과 검증
 
 > 생성기는 Python 3 표준 라이브러리 외에 아무것도 필요로 하지 않습니다. 결정적 UUID: 재생성하면 바이트 단위로 동일한 파일이 나옵니다.

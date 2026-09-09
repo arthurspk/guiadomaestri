@@ -137,6 +137,19 @@
 - **🛡️ प्रतिकूल समीक्षा** (release, wardens, द्वंद्व) — `codex` / `gemini`, जानबूझकर: भिन्न मॉडल वही पकड़ता है जो दूसरा चूक गया।
 - विवरण व सुरक्षा-उपाय [docs/05](docs/05-modelos-e-seguranca.md) में।
 
+## 📜 उपलब्ध स्क्रिप्ट
+
+> पूरा हब Python से जनरेट होता है (केवल stdlib)। उपयोग और विस्तार [`scripts/README.md`](scripts/README.md) में।
+
+| स्क्रिप्ट | प्रकार | क्या करता है |
+|---|---|---|
+| [`scripts/maestri_build.py`](scripts/maestri_build.py) | लाइब्रेरी | `Partitura` क्लास, `.maestripartitura` सिरियलाइज़ेशन, ropePoints, लेआउट, पोर्टल। |
+| [`scripts/roles_lib.py`](scripts/roles_lib.py) | लाइब्रेरी | जिम्मेदारी प्रॉम्प्ट (pt-BR) और नोट टेम्पलेट। |
+| [`scripts/generate_partituras.py`](scripts/generate_partituras.py) | जनरेटर | क्षेत्रवार 257 स्कोर, पैकेज और कैटलॉग बनाता है। |
+| [`scripts/generate_hub.py`](scripts/generate_hub.py) | जनरेटर | `roles/` (role.json), `notas/` और `instrucoes/` बनाता है। |
+| [`tests/validate_partituras.py`](tests/validate_partituras.py) | सत्यापन | हर स्कोर की आधिकारिक संदर्भ से तुलना (शून्य विचलन)। |
+| [`tests/validate_hub.py`](tests/validate_hub.py) | सत्यापन | role.json, नोट्स और CLAUDE.md/AGENTS.md जोड़ों की जाँच। |
+
 ## 🛠️ पुनः जनरेट और सत्यापित करें
 
 > जनरेटर को Python 3 मानक लाइब्रेरी के अलावा कुछ नहीं चाहिए। नियतात्मक UUID: पुनः जनरेट करने पर बाइट-दर-बाइट समान फ़ाइलें।

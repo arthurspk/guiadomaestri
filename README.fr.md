@@ -137,6 +137,19 @@
 - **🛡️ Revue adversariale** (release, wardens, duel) — `codex` / `gemini`, volontairement : un modèle différent attrape ce que l'autre a laissé passer.
 - Détails et garde-fous dans [docs/05](docs/05-modelos-e-seguranca.md).
 
+## 📜 Scripts disponibles
+
+> Tout le hub est généré par Python (stdlib uniquement). Usage et extension dans [`scripts/README.md`](scripts/README.md).
+
+| Script | Type | Ce qu'il fait |
+|---|---|---|
+| [`scripts/maestri_build.py`](scripts/maestri_build.py) | bibliothèque | Classe `Partitura`, sérialisation `.maestripartitura`, ropePoints, layout, portails. |
+| [`scripts/roles_lib.py`](scripts/roles_lib.py) | bibliothèque | Prompts de responsabilité (pt-BR) et modèles de note. |
+| [`scripts/generate_partituras.py`](scripts/generate_partituras.py) | générateur | Construit les 257 partitions par domaine, les bundles et les catalogues. |
+| [`scripts/generate_hub.py`](scripts/generate_hub.py) | générateur | Génère `roles/` (role.json), `notas/` et `instrucoes/`. |
+| [`tests/validate_partituras.py`](tests/validate_partituras.py) | validation | Compare chaque partition à la référence officielle (zéro écart). |
+| [`tests/validate_hub.py`](tests/validate_hub.py) | validation | Valide les role.json, les notes et les paires CLAUDE.md/AGENTS.md. |
+
 ## 🛠️ Régénérer et valider
 
 > Le générateur ne dépend que de la bibliothèque standard de Python 3. UUID déterministes : régénérer produit des fichiers identiques octet par octet.

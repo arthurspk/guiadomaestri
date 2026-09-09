@@ -137,6 +137,19 @@
 - **🛡️ المراجعة الخصمية** (الإصدار، wardens، المبارزة) — `codex` / `gemini`، عن قصد: نموذج مختلف يلتقط ما فات الآخر.
 - التفاصيل والضمانات في [docs/05](docs/05-modelos-e-seguranca.md).
 
+## 📜 السكربتات المتاحة
+
+> المركز بأكمله يُولَّد ببايثون (المكتبة القياسية فقط). الاستخدام وكيفية التوسيع في [`scripts/README.md`](scripts/README.md).
+
+| السكربت | النوع | ماذا يفعل |
+|---|---|---|
+| [`scripts/maestri_build.py`](scripts/maestri_build.py) | مكتبة | الصنف `Partitura`، تسلسل `.maestripartitura`، ropePoints، التخطيط، البوابات. |
+| [`scripts/roles_lib.py`](scripts/roles_lib.py) | مكتبة | موجّهات المسؤولية (pt-BR) وقوالب الملاحظات. |
+| [`scripts/generate_partituras.py`](scripts/generate_partituras.py) | مولّد | يبني الـ257 بارتيتورة حسب المجال والحزم والفهارس. |
+| [`scripts/generate_hub.py`](scripts/generate_hub.py) | مولّد | يولّد `roles/` (role.json) و`notas/` و`instrucoes/`. |
+| [`tests/validate_partituras.py`](tests/validate_partituras.py) | تحقق | يقارن كل بارتيتورة بالمرجع الرسمي (صفر اختلافات). |
+| [`tests/validate_hub.py`](tests/validate_hub.py) | تحقق | يتحقق من ملفات role.json والملاحظات وأزواج CLAUDE.md/AGENTS.md. |
+
 ## 🛠️ إعادة التوليد والتحقق
 
 > لا يحتاج المولّد إلى شيء سوى مكتبة Python 3 القياسية. مُعرّفات UUID حتمية: تُنتج إعادة التوليد ملفات متطابقة بايتًا ببايت.

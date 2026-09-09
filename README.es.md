@@ -137,6 +137,19 @@
 - **🛡️ Revisión adversarial** (release, wardens, duelo) — `codex` / `gemini`, a propósito: un modelo distinto pilla lo que el otro dejó pasar.
 - Detalles y salvaguardas en [docs/05](docs/05-modelos-e-seguranca.md).
 
+## 📜 Scripts disponibles
+
+> Todo el hub se genera con Python (solo stdlib). Uso y cómo extender en [`scripts/README.md`](scripts/README.md).
+
+| Script | Tipo | Qué hace |
+|---|---|---|
+| [`scripts/maestri_build.py`](scripts/maestri_build.py) | biblioteca | Clase `Partitura`, serialización `.maestripartitura`, ropePoints, layout, portales. |
+| [`scripts/roles_lib.py`](scripts/roles_lib.py) | biblioteca | Prompts de responsabilidad (pt-BR) y plantillas de nota. |
+| [`scripts/generate_partituras.py`](scripts/generate_partituras.py) | generador | Crea las 257 partituras por área, los paquetes y los catálogos. |
+| [`scripts/generate_hub.py`](scripts/generate_hub.py) | generador | Genera `roles/` (role.json), `notas/` e `instrucoes/`. |
+| [`tests/validate_partituras.py`](tests/validate_partituras.py) | validación | Compara cada partitura con la oficial de referencia (0 divergencias). |
+| [`tests/validate_hub.py`](tests/validate_hub.py) | validación | Valida los role.json, las notas y los pares CLAUDE.md/AGENTS.md. |
+
 ## 🛠️ Regenerar y validar
 
 > El generador no necesita nada más que la biblioteca estándar de Python 3. UUIDs deterministas: regenerar produce archivos idénticos byte a byte.

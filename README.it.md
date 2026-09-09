@@ -137,6 +137,19 @@
 - **🛡️ Revisione avversariale** (release, warden, duello) — `codex` / `gemini`, di proposito: un modello diverso coglie ciò che l'altro ha lasciato passare.
 - Dettagli e salvaguardie in [docs/05](docs/05-modelos-e-seguranca.md).
 
+## 📜 Script disponibili
+
+> Tutto l'hub è generato da Python (solo stdlib). Uso ed estensione in [`scripts/README.md`](scripts/README.md).
+
+| Script | Tipo | Cosa fa |
+|---|---|---|
+| [`scripts/maestri_build.py`](scripts/maestri_build.py) | libreria | Classe `Partitura`, serializzazione `.maestripartitura`, ropePoints, layout, portali. |
+| [`scripts/roles_lib.py`](scripts/roles_lib.py) | libreria | Prompt di responsabilità (pt-BR) e template di nota. |
+| [`scripts/generate_partituras.py`](scripts/generate_partituras.py) | generatore | Costruisce le 257 partiture per area, i pacchetti e i cataloghi. |
+| [`scripts/generate_hub.py`](scripts/generate_hub.py) | generatore | Genera `roles/` (role.json), `notas/` e `instrucoes/`. |
+| [`tests/validate_partituras.py`](tests/validate_partituras.py) | validazione | Confronta ogni partitura con la referenza ufficiale (zero scarti). |
+| [`tests/validate_hub.py`](tests/validate_hub.py) | validazione | Valida i role.json, le note e le coppie CLAUDE.md/AGENTS.md. |
+
 ## 🛠️ Rigenerare e validare
 
 > Il generatore non dipende da nulla oltre alla libreria standard di Python 3. UUID deterministici: rigenerare produce file identici byte per byte.

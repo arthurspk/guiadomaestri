@@ -137,6 +137,19 @@
 - **🛡️ Состязательное ревью** (релиз, wardens, дуэль) — `codex` / `gemini`, намеренно: другая модель ловит то, что упустила первая.
 - Подробности и предохранители в [docs/05](docs/05-modelos-e-seguranca.md).
 
+## 📜 Доступные скрипты
+
+> Весь хаб генерируется на Python (только stdlib). Использование и расширение в [`scripts/README.md`](scripts/README.md).
+
+| Скрипт | Тип | Что делает |
+|---|---|---|
+| [`scripts/maestri_build.py`](scripts/maestri_build.py) | библиотека | Класс `Partitura`, сериализация `.maestripartitura`, ropePoints, лейаут, порталы. |
+| [`scripts/roles_lib.py`](scripts/roles_lib.py) | библиотека | Промпты ролей (pt-BR) и шаблоны заметок. |
+| [`scripts/generate_partituras.py`](scripts/generate_partituras.py) | генератор | Собирает 257 партитур по областям, пакеты и каталоги. |
+| [`scripts/generate_hub.py`](scripts/generate_hub.py) | генератор | Генерирует `roles/` (role.json), `notas/` и `instrucoes/`. |
+| [`tests/validate_partituras.py`](tests/validate_partituras.py) | проверка | Сравнивает каждую партитуру с официальным эталоном (ноль расхождений). |
+| [`tests/validate_hub.py`](tests/validate_hub.py) | проверка | Проверяет role.json, заметки и пары CLAUDE.md/AGENTS.md. |
+
 ## 🛠️ Перегенерация и проверка
 
 > Генератору не нужно ничего, кроме стандартной библиотеки Python 3. Детерминированные UUID: перегенерация даёт побайтово идентичные файлы.

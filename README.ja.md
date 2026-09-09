@@ -137,6 +137,19 @@
 - **🛡️ 敵対的レビュー**（リリース、warden、決闘）— `codex` / `gemini`、意図的に：別のモデルが、もう一方の見逃しを捕らえます。
 - 詳細と安全策は [docs/05](docs/05-modelos-e-seguranca.md)。
 
+## 📜 利用可能なスクリプト
+
+> ハブ全体は Python（標準ライブラリのみ）で生成されます。使い方と拡張は [`scripts/README.md`](scripts/README.md)。
+
+| スクリプト | 種別 | 役割 |
+|---|---|---|
+| [`scripts/maestri_build.py`](scripts/maestri_build.py) | ライブラリ | `Partitura` クラス、`.maestripartitura` シリアライズ、ropePoints、レイアウト、ポータル。 |
+| [`scripts/roles_lib.py`](scripts/roles_lib.py) | ライブラリ | 責務プロンプト（pt-BR）とノートテンプレート。 |
+| [`scripts/generate_partituras.py`](scripts/generate_partituras.py) | ジェネレーター | 領域別に 257 スコア、バンドル、カタログを生成。 |
+| [`scripts/generate_hub.py`](scripts/generate_hub.py) | ジェネレーター | `roles/`（role.json）、`notas/`、`instrucoes/` を生成。 |
+| [`tests/validate_partituras.py`](tests/validate_partituras.py) | 検証 | 各スコアを公式リファレンスと比較（差異ゼロ）。 |
+| [`tests/validate_hub.py`](tests/validate_hub.py) | 検証 | role.json、ノート、CLAUDE.md/AGENTS.md ペアを検証。 |
+
 ## 🛠️ 再生成と検証
 
 > ジェネレーターは Python 3 標準ライブラリ以外に依存しません。決定的 UUID：再生成するとバイト単位で同一のファイルが得られます。
